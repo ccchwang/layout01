@@ -1,10 +1,50 @@
+@import 'normalize.css';
+
+$main-pink: #DBADA3;
+$light-pink: #F0CCBE;
+$secondary-color: #333;
+
+// --------------------------------
+
+
 * {
   box-sizing: border-box;
 }
 
 body {
   background: rgb(243, 242, 255);
+  margin: 0
 }
+
+#header {
+  height: 100vh;
+  background-color: $main-pink
+}
+
+#about-header {
+  height: 100vh;
+  background-color: $secondary-color;
+
+  h1 {
+    color: white
+  }
+}
+
+#work-header {
+  height: 100vh;
+  position: absolute;
+  left: 0
+}
+
+#work-main {
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  background-color: $light-pink;
+}
+
+
+// --------------------------------
 
 @mixin square($dimension) {
   width: $dimension;
