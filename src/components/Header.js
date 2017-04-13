@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap'
-import SocialShareMenu from '../SocialShareMenu'
+import MainMenu from '../MainMenu'
 
 export default function Header() {
 
@@ -8,8 +8,8 @@ export default function Header() {
     <Row className="show-grid">
       <Col xs={12} id="header">
 
+      <MainMenu />
 
-      <SocialShareMenu />
       <Col md={4}/>
 
       <Col md={8} id="header-content" >
