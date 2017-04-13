@@ -86,12 +86,12 @@ body {
 ////////////////
 
 #header-content {
-  height: 80vh;
-  top: 10vh;
+  height: 75vh;
+  top: 12.5vh;
   z-index: 2;
   padding: 20px 0;
-  border-top: 5px solid $highlight-color;
-  border-bottom: 5px solid $highlight-color;
+  border-top: 15px solid $highlight-color;
+  border-bottom: 15px solid $highlight-color;
   text-align: left
 }
 
@@ -104,7 +104,7 @@ body {
 
 #header-text {
   position: absolute;
-  top: 20vh;
+  top: 15vh;
   left: 5vw;
 }
 
@@ -120,15 +120,16 @@ body {
 
 @media screen and (min-width: 990px) {
   #header-content {
-    height: 90vh;
-    top: 5vh;
+    height: 85vh;
+    top: 7.5vh;
     padding-left: 20px;
     border-left: 5px solid $highlight-color;
+    border-width: 5px;
   }
 
   #header-text {
-    left: -14%;
-    top: 30%;
+    left: -111px;
+    top: 160px;
   }
 
 }

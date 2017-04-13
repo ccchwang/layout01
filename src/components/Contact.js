@@ -11,7 +11,6 @@ export default function Contact () {
       </Col>
 
       <Col xs={12} md={8}>
-        <h1>Contact</h1>
       </Col>
 
     </Row>

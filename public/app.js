@@ -58,7 +58,7 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _animation = __webpack_require__(446);
+	var _animation = __webpack_require__(448);
 	
 	var _animation2 = _interopRequireDefault(_animation);
 	
@@ -101,7 +101,7 @@
 	exports.i(__webpack_require__(4), "");
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: 'Playfair Display', serif; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  width: 100%;\n  height: 100%; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 3em;\n  border: 1px solid black;\n  padding: 20px;\n  font-weight: 900;\n  margin: 0; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 7em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.7em;\n    font-weight: 900; }\n\n@media screen and (max-width: 375px) {\n  #header h1 {\n    font-size: 15em; }\n  #header p {\n    font-size: 1.75em;\n    font-weight: 900; }\n  #header-content {\n    height: 80vh;\n    top: 10vh;\n    z-index: 2;\n    padding: 20px 0;\n    border-top: 5px solid #f7fb8e;\n    border-bottom: 5px solid #f7fb8e;\n    text-align: left; } }\n\n#header-content {\n  height: 80vh;\n  top: 10vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 5px solid #f7fb8e;\n  border-bottom: 5px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 20vh;\n  left: 5vw; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n@media screen and (min-width: 990px) {\n  #header-content {\n    height: 90vh;\n    top: 5vh;\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e; }\n  #header-text {\n    left: -14%;\n    top: 30%; } }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n#work-content {\n  height: 400vh;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  height: 100vh;\n  background-size: cover; }\n\n@media screen and (min-width: 990px) {\n  .work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed; }\n  .top {\n    top: 75%; }\n  #work-content {\n    position: absolute; } }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: 'Playfair Display', serif; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  width: 100%;\n  height: 100%; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 3em;\n  border: 1px solid black;\n  padding: 20px;\n  font-weight: 900;\n  margin: 0; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 7em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.7em;\n    font-weight: 900; }\n\n@media screen and (max-width: 375px) {\n  #header h1 {\n    font-size: 15em; }\n  #header p {\n    font-size: 1.75em;\n    font-weight: 900; }\n  #header-content {\n    height: 80vh;\n    top: 10vh;\n    z-index: 2;\n    padding: 20px 0;\n    border-top: 5px solid #f7fb8e;\n    border-bottom: 5px solid #f7fb8e;\n    text-align: left; } }\n\n#header-content {\n  height: 75vh;\n  top: 12.5vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 15vh;\n  left: 5vw; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n@media screen and (min-width: 990px) {\n  #header-content {\n    height: 85vh;\n    top: 7.5vh;\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e;\n    border-width: 5px; }\n  #header-text {\n    left: -111px;\n    top: 160px; } }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n#work-content {\n  height: 400vh;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  height: 100vh;\n  background-size: cover; }\n\n@media screen and (min-width: 990px) {\n  .work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed; }\n  .top {\n    top: 75%; }\n  #work-content {\n    position: absolute; } }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
 	
 	// exports
 
@@ -22174,19 +22174,19 @@
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _About = __webpack_require__(442);
+	var _About = __webpack_require__(444);
 	
 	var _About2 = _interopRequireDefault(_About);
 	
-	var _Work = __webpack_require__(443);
+	var _Work = __webpack_require__(445);
 	
 	var _Work2 = _interopRequireDefault(_Work);
 	
-	var _Contact = __webpack_require__(444);
+	var _Contact = __webpack_require__(446);
 	
 	var _Contact2 = _interopRequireDefault(_Contact);
 	
-	var _Footer = __webpack_require__(445);
+	var _Footer = __webpack_require__(447);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
@@ -22246,6 +22246,10 @@
 	
 	var _reactBootstrap = __webpack_require__(189);
 	
+	var _SocialShareMenu = __webpack_require__(442);
+	
+	var _SocialShareMenu2 = _interopRequireDefault(_SocialShareMenu);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function Header() {
@@ -22256,6 +22260,7 @@
 	    _react2.default.createElement(
 	      _reactBootstrap.Col,
 	      { xs: 12, id: 'header' },
+	      _react2.default.createElement(_SocialShareMenu2.default, null),
 	      _react2.default.createElement(_reactBootstrap.Col, { md: 4 }),
 	      _react2.default.createElement(
 	        _reactBootstrap.Col,
@@ -41526,6 +41531,70 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	exports.default = SocialShareMenu;
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _menu = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./menu\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	
+	var _menu2 = _interopRequireDefault(_menu);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function SocialShareMenu() {
+	
+	  return _react2.default.createElement(
+	    _menu2.default,
+	    {
+	      type: 'circle',
+	      margin: 120
+	    },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'button' },
+	      _react2.default.createElement('img', { src: '/public/images/favorite-5-16.png' })
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'button' },
+	      _react2.default.createElement('img', { src: '/public/images/facebook-24.png' })
+	    ),
+	    _react2.default.createElement('div', { className: 'button' }),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'button' },
+	      _react2.default.createElement('img', { src: '/public/images/email-3-24.png' })
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'button' },
+	      _react2.default.createElement('img', { src: '/public/images/pinterest-6-24.png' })
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'button' },
+	      _react2.default.createElement('img', { src: '/public/images/instagram-6-24.png' })
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'button' },
+	      _react2.default.createElement('img', { src: '/public/images/twitter-24.png' })
+	    )
+	  );
+	}
+
+/***/ },
+/* 443 */,
+/* 444 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 	exports.default = About;
 	
 	var _react = __webpack_require__(6);
@@ -41550,20 +41619,12 @@
 	        'about'
 	      )
 	    ),
-	    _react2.default.createElement(
-	      _reactBootstrap.Col,
-	      { xs: 12, md: 8 },
-	      _react2.default.createElement(
-	        'h1',
-	        null,
-	        'About'
-	      )
-	    )
+	    _react2.default.createElement(_reactBootstrap.Col, { xs: 12, md: 8 })
 	  );
 	}
 
 /***/ },
-/* 443 */
+/* 445 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41607,7 +41668,7 @@
 	}
 
 /***/ },
-/* 444 */
+/* 446 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41639,20 +41700,12 @@
 	        'contact'
 	      )
 	    ),
-	    _react2.default.createElement(
-	      _reactBootstrap.Col,
-	      { xs: 12, md: 8 },
-	      _react2.default.createElement(
-	        'h1',
-	        null,
-	        'Contact'
-	      )
-	    )
+	    _react2.default.createElement(_reactBootstrap.Col, { xs: 12, md: 8 })
 	  );
 	}
 
 /***/ },
-/* 445 */
+/* 447 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41684,7 +41737,7 @@
 	}
 
 /***/ },
-/* 446 */
+/* 448 */
 /***/ function(module, exports) {
 
 	'use strict';
