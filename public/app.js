@@ -101,7 +101,7 @@
 	exports.i(__webpack_require__(4), "");
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box; }\n\nbody {\n  background: #f3f2ff;\n  margin: 0; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://image.shutterstock.com/z/stock-vector-seamless-diagonal-line-pattern-vector-black-and-white-background-372402142.jpg\");\n  background-attachment: fixed; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  z-index: 2;\n  opacity: 0.9;\n  background-color: #DBADA3; }\n\n#about-header {\n  height: 100vh;\n  background-color: #333; }\n  #about-header h1 {\n    color: white; }\n\n#work-header {\n  height: 100vh;\n  position: absolute;\n  left: 0; }\n\n#work-main {\n  height: 200vh;\n  position: absolute;\n  right: 0;\n  background-color: #F0CCBE; }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: 'Playfair Display', serif; }\n\nbody {\n  background: #f3f2ff;\n  margin: 0; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://image.shutterstock.com/z/stock-vector-seamless-diagonal-line-pattern-vector-black-and-white-background-372402142.jpg\");\n  background-attachment: fixed; }\n  #header h1 {\n    font-size: 5em;\n    position: absolute;\n    z-index: 5;\n    font-weight: 900; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.9;\n  background-color: #DBADA3; }\n\n#about-header {\n  height: 100vh;\n  background-color: #333; }\n  #about-header h1 {\n    color: white;\n    font-size: 5em;\n    font-weight: 900; }\n\n.work-header {\n  height: 100vh; }\n\n#work-content {\n  height: 200vh;\n  right: 0;\n  background-color: #F0CCBE; }\n\n@media screen and (min-width: 990px) {\n  .work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed; }\n  .top {\n    top: 50%; }\n  #work-content {\n    position: absolute; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
 	
 	// exports
 
@@ -22248,8 +22248,16 @@
 	  return _react2.default.createElement(
 	    _reactBootstrap.Row,
 	    { className: 'show-grid' },
-	    _react2.default.createElement('div', { id: 'header-overlay' }),
-	    _react2.default.createElement(_reactBootstrap.Col, { xs: 12, id: 'header' })
+	    _react2.default.createElement(
+	      _reactBootstrap.Col,
+	      { xs: 12, id: 'header' },
+	      _react2.default.createElement(
+	        'h1',
+	        null,
+	        'Hello! My name is Chloe Hwang.'
+	      ),
+	      _react2.default.createElement('div', { id: 'header-overlay' })
+	    )
 	  );
 	}
 
@@ -41544,10 +41552,10 @@
 	
 	  return _react2.default.createElement(
 	    _reactBootstrap.Row,
-	    { id: 'try', className: 'show-grid', style: { position: 'relative', overflow: 'hidden', height: '200vh' } },
+	    { id: 'work-main', className: 'show-grid', style: { position: 'relative', overflow: 'hidden', height: '200vh' } },
 	    _react2.default.createElement(
 	      _reactBootstrap.Col,
-	      { xs: 12, md: 4, id: 'work-header' },
+	      { xs: 12, md: 4, className: 'work-header' },
 	      _react2.default.createElement(
 	        'h1',
 	        null,
@@ -41556,7 +41564,7 @@
 	    ),
 	    _react2.default.createElement(
 	      _reactBootstrap.Col,
-	      { xs: 12, md: 8, id: 'work-main' },
+	      { xs: 12, md: 8, id: 'work-content' },
 	      _react2.default.createElement(
 	        'h1',
 	        null,
@@ -41618,36 +41626,32 @@
 
 	'use strict';
 	
-	window.onload = function () {
-	  window.addEventListener('scroll', function () {
-	    var element = document.getElementById('try');
+	$(document).ready(function () {
+	  var $window = $(window),
+	      $header = $('.work-header'),
+	      $fixedHeader = $('.fixed-header'),
+	      $main = $('#work-main');
 	
-	    var elementTop = element.offsetTop;
-	    var windowTop = window.scrollY;
+	  $window.on('scroll', function () {
+	    if ($window.width() >= 992) {
+	      var mainTop = $main.offset().top;
+	      var windowTop = $window.scrollTop();
 	
-	    var objectBottom = element.offsetHeight + element.offsetTop;
-	    var windowBottom = window.innerHeight + window.scrollY;
+	      var mainBottom = $main.height() + mainTop;
+	      var windowBottom = $window.height() + windowTop;
 	
-	    console.log('top', elementTop, windowTop);
-	
-	    console.log('bottom', objectBottom, windowBottom);
-	
-	    if (windowTop > elementTop) {
-	      document.getElementById('work-header').style.position = 'fixed';
-	      document.getElementById('work-header').style.top = '0';
-	    }
-	
-	    if (windowTop < elementTop) {
-	      document.getElementById('work-header').style.position = 'absolute';
-	      document.getElementById('work-header').style.left = '0';
-	    }
-	
-	    if (windowBottom > objectBottom) {
-	      document.getElementById('work-header').style.position = 'absolute';
-	      document.getElementById('work-header').style.top = '50%';
+	      if (windowBottom > mainBottom) {
+	        $header.removeClass('fixed-header');
+	        $header.addClass('top');
+	      } else if (windowTop > mainTop) {
+	        $header.addClass('fixed-header');
+	        $header.removeClass('top');
+	      } else {
+	        $header.removeClass('fixed-header');
+	      }
 	    }
 	  });
-	};
+	});
 
 /***/ }
 /******/ ]);

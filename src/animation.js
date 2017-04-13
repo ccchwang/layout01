@@ -1,30 +1,39 @@
-window.onload = function() {
-  window.addEventListener('scroll', function(){
-    const element = document.getElementById('try');
 
-    let elementTop = element.offsetTop;
-    let windowTop = window.scrollY;
 
-    let objectBottom = element.offsetHeight + element.offsetTop;
-    let windowBottom = window.innerHeight + window.scrollY;
+$(document).ready(function () {
+  const $window = $(window),
+        $header = $('.work-header'),
+        $fixedHeader = $('.fixed-header'),
+        $main = $('#work-main');
 
-console.log('top', elementTop, windowTop)
 
-console.log('bottom', objectBottom, windowBottom)
+  $window.on('scroll', function () {
+    if ($window.width() >= 992) {
+      let mainTop = $main.offset().top;
+      let windowTop = $window.scrollTop();
 
-    if (windowTop > elementTop) {
-      document.getElementById('work-header').style.position = 'fixed';
-      document.getElementById('work-header').style.top = '0';
+      let mainBottom = $main.height() + mainTop;
+      let windowBottom = $window.height() + windowTop;
+
+      if (windowBottom > mainBottom) {
+        $header.removeClass('fixed-header');
+        $header.addClass('top')
+      }
+      else if (windowTop > mainTop) {
+        $header.addClass('fixed-header');
+        $header.removeClass('top');
+      }
+      else {
+        $header.removeClass('fixed-header');
+      }
     }
 
-    if (windowTop < elementTop) {
-      document.getElementById('work-header').style.position = 'absolute';
-      document.getElementById('work-header').style.left = '0';
-    }
+  }
+  )
 
-    if (windowBottom > objectBottom) {
-      document.getElementById('work-header').style.position = 'absolute';
-      document.getElementById('work-header').style.top = '50%';
-    }
-  })
-}
+
+
+
+})
+
+

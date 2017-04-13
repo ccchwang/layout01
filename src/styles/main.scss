@@ -9,6 +9,7 @@ $secondary-color: #333;
 
 * {
   box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
 }
 
 body {
@@ -16,41 +17,74 @@ body {
   margin: 0
 }
 
+// HEADER
+
 #header {
   height: 100vh;
   background-image: url('https://image.shutterstock.com/z/stock-vector-seamless-diagonal-line-pattern-vector-black-and-white-background-372402142.jpg');
-  background-attachment: fixed
+  background-attachment: fixed;
+
+  h1 {
+    font-size: 5em;
+    position: absolute;
+    z-index: 5;
+    font-weight: 900
+  }
 }
 
 #header-overlay {
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 2;
+  top: 0;
+  left: 0;
   opacity: 0.9;
   background-color: $main-pink
 }
+
+// ABOUT
 
 #about-header {
   height: 100vh;
   background-color: $secondary-color;
 
   h1 {
-    color: white
+    color: white;
+    font-size: 5em;
+    font-weight: 900
   }
 }
 
-#work-header {
+// WORK
+
+.work-header {
   height: 100vh;
-  position: absolute;
-  left: 0
 }
 
-#work-main {
+#work-content {
   height: 200vh;
-  position: absolute;
   right: 0;
   background-color: $light-pink;
+}
+
+@media screen and (min-width: 990px) {
+  .work-header {
+    position: absolute;
+    top: 0;
+    left: 0
+  }
+
+  .fixed-header {
+    position: fixed;
+  }
+
+  .top {
+    top: 50%
+  }
+
+  #work-content {
+    position: absolute;
+  }
 }
 
 

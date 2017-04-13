@@ -5,8 +5,12 @@ export default function Header() {
 
   return (
     <Row className="show-grid">
+      <Col xs={12} id="header">
+
+      <h1 >Hello! My name is Chloe Hwang.</h1>
       <div id="header-overlay" />
-      <Col xs={12} id="header" />
+      </Col>
+
     </Row>
 
   )

@@ -4,13 +4,13 @@ import { Row, Col } from 'react-bootstrap'
 export default function Work () {
 
   return (
-    <Row id='try' className="show-grid" style={{position: 'relative', overflow: 'hidden', height: '200vh'}}>
+    <Row id='work-main' className="show-grid" style={{position: 'relative', overflow: 'hidden', height: '200vh'}}>
 
-      <Col xs={12} md={4} id="work-header">
+      <Col xs={12} md={4} className="work-header">
         <h1>Work</h1>
       </Col>
 
-      <Col xs={12} md={8} id="work-main">
+      <Col xs={12} md={8} id="work-content">
         <h1>Work</h1>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed porta ex, non iaculis elit. Curabitur ullamcorper odio lectus, a varius magna imperdiet vitae. Integer velit lorem, volutpat a leo a, blandit malesuada eros. Nulla enim neque, dictum eu laoreet quis, fermentum non ex. Nunc eu maximus arcu, nec laoreet nulla. Morbi elementum ante augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur at eleifend enim.
 
