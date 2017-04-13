@@ -58,7 +58,7 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _animation = __webpack_require__(445);
+	var _animation = __webpack_require__(446);
 	
 	var _animation2 = _interopRequireDefault(_animation);
 	
@@ -101,7 +101,7 @@
 	exports.i(__webpack_require__(4), "");
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: 'Playfair Display', serif; }\n\nbody {\n  background: #f3f2ff;\n  margin: 0; }\n\n.img-responsive {\n  width: 100%;\n  height: 100%; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 7em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.7em;\n    font-weight: 700; }\n\n#header-content {\n  padding: 0;\n  height: 80vh;\n  top: 10vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 5px solid #f7fb8e;\n  border-bottom: 5px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"https://cdn.shutterstock.com/shutterstock/videos/7671634/thumb/1.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 300px;\n  width: 100%; }\n\n#header-roles {\n  position: absolute;\n  z-index: 2;\n  top: 90vh;\n  font-size: 2em;\n  font-weight: 900; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n@media screen and (min-width: 990px) {\n  #header-content {\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e; }\n  #header-text {\n    left: -12%;\n    top: 17%; } }\n\n#about-header {\n  height: 100vh;\n  background-color: #f7fb8e; }\n  #about-header h1 {\n    color: #333;\n    font-size: 5em;\n    font-weight: 900; }\n\n.work-header {\n  height: 100vh; }\n\n#work-content {\n  height: 400vh;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  height: 100vh;\n  background-size: cover; }\n\n@media screen and (min-width: 990px) {\n  .work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed; }\n  .top {\n    top: 50%; }\n  #work-content {\n    position: absolute; } }\n\n#contact-header {\n  height: 100vh;\n  background-color: #333; }\n  #contact-header h1 {\n    color: white;\n    font-size: 5em;\n    font-weight: 900; }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: 'Playfair Display', serif; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  width: 100%;\n  height: 100%; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 3em;\n  border: 1px solid black;\n  padding: 20px;\n  font-weight: 900;\n  margin: 0; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 7em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.7em;\n    font-weight: 900; }\n\n@media screen and (max-width: 375px) {\n  #header h1 {\n    font-size: 15em; }\n  #header p {\n    font-size: 1.75em;\n    font-weight: 900; }\n  #header-content {\n    height: 80vh;\n    top: 10vh;\n    z-index: 2;\n    padding: 20px 0;\n    border-top: 5px solid #f7fb8e;\n    border-bottom: 5px solid #f7fb8e;\n    text-align: left; } }\n\n#header-content {\n  height: 80vh;\n  top: 10vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 5px solid #f7fb8e;\n  border-bottom: 5px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 20vh;\n  left: 5vw; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n@media screen and (min-width: 990px) {\n  #header-content {\n    height: 90vh;\n    top: 5vh;\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e; }\n  #header-text {\n    left: -14%;\n    top: 30%; } }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n#work-content {\n  height: 400vh;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  height: 100vh;\n  background-size: cover; }\n\n@media screen and (min-width: 990px) {\n  .work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed; }\n  .top {\n    top: 75%; }\n  #work-content {\n    position: absolute; } }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
 	
 	// exports
 
@@ -22186,6 +22186,10 @@
 	
 	var _Contact2 = _interopRequireDefault(_Contact);
 	
+	var _Footer = __webpack_require__(445);
+	
+	var _Footer2 = _interopRequireDefault(_Footer);
+	
 	var _reactBootstrap = __webpack_require__(189);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -22214,7 +22218,8 @@
 	        _react2.default.createElement(_Header2.default, null),
 	        _react2.default.createElement(_About2.default, null),
 	        _react2.default.createElement(_Work2.default, null),
-	        _react2.default.createElement(_Contact2.default, null)
+	        _react2.default.createElement(_Contact2.default, null),
+	        _react2.default.createElement(_Footer2.default, null)
 	      );
 	    }
 	  }]);
@@ -22273,8 +22278,8 @@
 	            ),
 	            _react2.default.createElement(
 	              'h1',
-	              null,
-	              '-'
+	              { style: { marginTop: '-25px' } },
+	              '\u2014'
 	            ),
 	            _react2.default.createElement(
 	              'p',
@@ -41538,11 +41543,11 @@
 	    { className: 'show-grid' },
 	    _react2.default.createElement(
 	      _reactBootstrap.Col,
-	      { xs: 12, md: 4, id: 'about-header' },
+	      { xs: 12, md: 4, id: 'about-header', className: 'title-block' },
 	      _react2.default.createElement(
 	        'h1',
-	        null,
-	        'About'
+	        { className: 'title-text' },
+	        'about'
 	      )
 	    ),
 	    _react2.default.createElement(
@@ -41583,11 +41588,11 @@
 	    { id: 'work-main', className: 'show-grid', style: { position: 'relative', height: '400vh' } },
 	    _react2.default.createElement(
 	      _reactBootstrap.Col,
-	      { xs: 12, md: 4, className: 'work-header' },
+	      { xs: 12, md: 4, className: 'work-header title-block' },
 	      _react2.default.createElement(
 	        'h1',
-	        null,
-	        'Work'
+	        { className: 'title-text' },
+	        'work'
 	      )
 	    ),
 	    _react2.default.createElement(
@@ -41627,11 +41632,11 @@
 	    { className: 'show-grid' },
 	    _react2.default.createElement(
 	      _reactBootstrap.Col,
-	      { xs: 12, md: 4, id: 'contact-header' },
+	      { xs: 12, md: 4, id: 'contact-header', className: 'title-block' },
 	      _react2.default.createElement(
 	        'h1',
-	        null,
-	        'Contact'
+	        { className: 'title-text' },
+	        'contact'
 	      )
 	    ),
 	    _react2.default.createElement(
@@ -41648,6 +41653,38 @@
 
 /***/ },
 /* 445 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = Footer;
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(189);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function Footer() {
+	
+	  return _react2.default.createElement(
+	    _reactBootstrap.Row,
+	    { className: 'show-grid' },
+	    _react2.default.createElement(
+	      _reactBootstrap.Col,
+	      { xs: 12, id: 'header' },
+	      _react2.default.createElement('div', { id: 'header-overlay' })
+	    )
+	  );
+	}
+
+/***/ },
+/* 446 */
 /***/ function(module, exports) {
 
 	'use strict';

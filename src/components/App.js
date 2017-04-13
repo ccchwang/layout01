@@ -3,6 +3,7 @@ import Header from './Header'
 import About from './About'
 import Work from './Work'
 import Contact from './Contact'
+import Footer from './Footer'
 import { Grid } from 'react-bootstrap'
 
 export default class extends Component {
@@ -14,6 +15,7 @@ export default class extends Component {
         <About />
         <Work />
         <Contact />
+        <Footer />
       </Grid>
     )
   }

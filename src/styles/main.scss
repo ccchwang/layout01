@@ -2,7 +2,7 @@
 
 $main-color: #b5b4b4;
 $highlight-color: #f7fb8e;
-$secondary-color: #333;
+$secondary-color: #424242;
 
 // --------------------------------
 
@@ -13,7 +13,6 @@ $secondary-color: #333;
 }
 
 body {
-  background: rgb(243, 242, 255);
   margin: 0
 }
 
@@ -21,6 +20,27 @@ body {
   width: 100%;
   height: 100%
 }
+
+// SIDE HEADER TITLES
+
+.title-block {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-text {
+  color: $secondary-color;
+  font-size: 3em;
+  border: 1px solid black;
+  padding: 20px;
+  font-weight: 900;
+  margin: 0;
+}
+
+
+
 
 // HEADER
 
@@ -37,12 +57,35 @@ body {
   }
   p {
     font-size: 1.7em;
-    font-weight: 700
+    font-weight: 900
   }
 }
 
+//////need to figure out font for iphones
+@media screen and (max-width: 375px) {
+  #header {
+
+  h1 {
+    font-size: 15em;
+  }
+  p {
+    font-size: 1.75em;
+    font-weight: 900
+  }
+}
 #header-content {
-  padding: 0;
+  height: 80vh;
+  top: 10vh;
+  z-index: 2;
+  padding: 20px 0;
+  border-top: 5px solid $highlight-color;
+  border-bottom: 5px solid $highlight-color;
+  text-align: left
+}
+}
+////////////////
+
+#header-content {
   height: 80vh;
   top: 10vh;
   z-index: 2;
@@ -53,8 +96,7 @@ body {
 }
 
 #header-img {
-    background-image: url('https://cdn.shutterstock.com/shutterstock/videos/7671634/thumb/1.jpg');
-
+  background-image: url('/public/images/header-img.jpg');
   background-size: cover;
   background-color: white;
   height: 100%;
@@ -62,16 +104,8 @@ body {
 
 #header-text {
   position: absolute;
-  top: 300px;
-  width: 100%;
-}
-
-#header-roles {
-  position: absolute;
-  z-index: 2;
-  top: 90vh;
-  font-size: 2em;
-  font-weight: 900
+  top: 20vh;
+  left: 5vw;
 }
 
 #header-overlay {
@@ -86,35 +120,29 @@ body {
 
 @media screen and (min-width: 990px) {
   #header-content {
+    height: 90vh;
+    top: 5vh;
     padding-left: 20px;
     border-left: 5px solid $highlight-color;
   }
 
   #header-text {
-    left: -12%;
-    top: 17%;
+    left: -14%;
+    top: 30%;
   }
+
 }
 
 
 // ABOUT
 
 #about-header {
-  height: 100vh;
   background-color: $highlight-color;
-
-  h1 {
-    color: $secondary-color;
-    font-size: 5em;
-    font-weight: 900
-  }
 }
 
 // WORK
 
-.work-header {
-  height: 100vh;
-}
+
 
 #work-content {
   height: 400vh;
@@ -140,7 +168,7 @@ body {
   }
 
   .top {
-    top: 50%
+    top: 75%
   }
 
   #work-content {
@@ -150,13 +178,11 @@ body {
 
 // CONTACT
 #contact-header {
-  height: 100vh;
   background-color: $secondary-color;
 
-  h1 {
+  .title-text {
+    border-color: white;
     color: white;
-    font-size: 5em;
-    font-weight: 900
   }
 }
 
