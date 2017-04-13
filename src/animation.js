@@ -3,7 +3,6 @@
 $(document).ready(function () {
   const $window = $(window),
         $header = $('.work-header'),
-        $fixedHeader = $('.fixed-header'),
         $main = $('#work-main');
 
 
