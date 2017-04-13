@@ -6,7 +6,7 @@ export default function Contact () {
   return (
     <Row className="show-grid">
 
-      <Col xs={12} md={4} id="about-header">
+      <Col xs={12} md={4} id="contact-header">
         <h1>Contact</h1>
       </Col>
 

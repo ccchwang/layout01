@@ -101,7 +101,7 @@
 	exports.i(__webpack_require__(4), "");
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: 'Playfair Display', serif; }\n\nbody {\n  background: #f3f2ff;\n  margin: 0; }\n\n.img-responsive {\n  width: 100%;\n  height: 100%; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://image.shutterstock.com/z/stock-vector-seamless-diagonal-line-pattern-vector-black-and-white-background-372402142.jpg\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 5em;\n    position: absolute;\n    z-index: 5;\n    font-weight: 900; }\n\n#header-content {\n  padding: 0;\n  height: 70vh;\n  top: 15vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 5px solid #fddcd5;\n  border-bottom: 5px solid #fddcd5; }\n\n#header-img {\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 300px;\n  width: 100%; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.9;\n  background-color: #DBADA3; }\n\n@media screen and (min-width: 990px) {\n  #header-content {\n    padding-left: 20px;\n    border-left: 5px solid #fddcd5; }\n  #header-text {\n    left: -7%;\n    top: 20%; } }\n\n#about-header {\n  height: 100vh;\n  background-color: #333; }\n  #about-header h1 {\n    color: white;\n    font-size: 5em;\n    font-weight: 900; }\n\n.work-header {\n  height: 100vh; }\n\n#work-content {\n  height: 200vh;\n  right: 0;\n  background-color: #F0CCBE;\n  padding: 0; }\n\n.work-item {\n  height: 100vh;\n  background-size: cover; }\n\n@media screen and (min-width: 990px) {\n  .work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed; }\n  .top {\n    top: 50%; }\n  #work-content {\n    position: absolute; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: 'Playfair Display', serif; }\n\nbody {\n  background: #f3f2ff;\n  margin: 0; }\n\n.img-responsive {\n  width: 100%;\n  height: 100%; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 7em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.7em;\n    font-weight: 700; }\n\n#header-content {\n  padding: 0;\n  height: 80vh;\n  top: 10vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 5px solid #f7fb8e;\n  border-bottom: 5px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"https://cdn.shutterstock.com/shutterstock/videos/7671634/thumb/1.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 300px;\n  width: 100%; }\n\n#header-roles {\n  position: absolute;\n  z-index: 2;\n  top: 90vh;\n  font-size: 2em;\n  font-weight: 900; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n@media screen and (min-width: 990px) {\n  #header-content {\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e; }\n  #header-text {\n    left: -12%;\n    top: 17%; } }\n\n#about-header {\n  height: 100vh;\n  background-color: #f7fb8e; }\n  #about-header h1 {\n    color: #333;\n    font-size: 5em;\n    font-weight: 900; }\n\n.work-header {\n  height: 100vh; }\n\n#work-content {\n  height: 400vh;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  height: 100vh;\n  background-size: cover; }\n\n@media screen and (min-width: 990px) {\n  .work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed; }\n  .top {\n    top: 50%; }\n  #work-content {\n    position: absolute; } }\n\n#contact-header {\n  height: 100vh;\n  background-color: #333; }\n  #contact-header h1 {\n    color: white;\n    font-size: 5em;\n    font-weight: 900; }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
 	
 	// exports
 
@@ -22264,23 +22264,22 @@
 	            _react2.default.createElement(
 	              'h1',
 	              null,
-	              'Hello!'
+	              'Chloe'
 	            ),
-	            _react2.default.createElement('br', null),
-	            _react2.default.createElement('br', null),
-	            _react2.default.createElement('br', null),
-	            _react2.default.createElement('br', null),
 	            _react2.default.createElement(
 	              'h1',
 	              null,
-	              'I\'m Chloe.'
+	              'Hwang'
 	            ),
-	            _react2.default.createElement('br', null),
-	            _react2.default.createElement('br', null),
 	            _react2.default.createElement(
 	              'h1',
 	              null,
-	              '_'
+	              '-'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Frontend Software Engineer'
 	            )
 	          )
 	        )
@@ -41581,7 +41580,7 @@
 	
 	  return _react2.default.createElement(
 	    _reactBootstrap.Row,
-	    { id: 'work-main', className: 'show-grid', style: { position: 'relative', height: '200vh' } },
+	    { id: 'work-main', className: 'show-grid', style: { position: 'relative', height: '400vh' } },
 	    _react2.default.createElement(
 	      _reactBootstrap.Col,
 	      { xs: 12, md: 4, className: 'work-header' },
@@ -41594,8 +41593,10 @@
 	    _react2.default.createElement(
 	      _reactBootstrap.Col,
 	      { xs: 12, md: 8, id: 'work-content' },
+	      _react2.default.createElement('div', { className: 'work-item', style: { backgroundImage: "url('/public/images/3.png')" } }),
 	      _react2.default.createElement('div', { className: 'work-item', style: { backgroundImage: "url('/public/images/1.png')" } }),
-	      _react2.default.createElement('div', { className: 'work-item', style: { backgroundImage: "url('/public/images/2.png')" } })
+	      _react2.default.createElement('div', { className: 'work-item', style: { backgroundImage: "url('/public/images/2.png')" } }),
+	      _react2.default.createElement('div', { className: 'work-item', style: { backgroundImage: "url('/public/images/4.png')" } })
 	    )
 	  );
 	}
@@ -41626,7 +41627,7 @@
 	    { className: 'show-grid' },
 	    _react2.default.createElement(
 	      _reactBootstrap.Col,
-	      { xs: 12, md: 4, id: 'about-header' },
+	      { xs: 12, md: 4, id: 'contact-header' },
 	      _react2.default.createElement(
 	        'h1',
 	        null,

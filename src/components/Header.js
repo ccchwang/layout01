@@ -12,16 +12,18 @@ export default function Header() {
       <Col md={8} id="header-content" >
       <div id="header-img">
         <div id="header-text">
-          <h1>Hello!</h1>
-          <br /><br /><br /><br />
-          <h1>I'm Chloe.</h1>
-          <br /><br />
-          <h1>_</h1>
+          <h1>Chloe</h1>
+          <h1>Hwang</h1>
+          <h1>-</h1>
+          <p>Frontend Software Engineer</p>
         </div>
         </div>
       </Col>
 
+
+
       <div id="header-overlay" />
+
       </Col>
 
     </Row>

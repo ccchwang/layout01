@@ -1,7 +1,7 @@
 @import 'normalize.css';
 
-$main-pink: #DBADA3;
-$light-pink: #F0CCBE;
+$main-color: #b5b4b4;
+$highlight-color: #f7fb8e;
 $secondary-color: #333;
 
 // --------------------------------
@@ -26,32 +26,36 @@ body {
 
 #header {
   height: 100vh;
-  background-image: url('https://image.shutterstock.com/z/stock-vector-seamless-diagonal-line-pattern-vector-black-and-white-background-372402142.jpg');
+  background-image: url('https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524');
   background-attachment: fixed;
   padding: 0;
 
   h1 {
-    font-size: 5em;
-    position: absolute;
-    z-index: 5;
-    font-weight: 900
+    font-size: 7em;
+    font-weight: 900;
+    margin: 0
+  }
+  p {
+    font-size: 1.7em;
+    font-weight: 700
   }
 }
 
 #header-content {
-  // background-image: url('http://sporteluxe-wp.s3-ap-southeast-2.amazonaws.com/wp-content/uploads/2016/05/IndoorPlantPhilo.jpg');
-
-  //background-size: cover;
   padding: 0;
-  height: 70vh;
-  top: 15vh;
+  height: 80vh;
+  top: 10vh;
   z-index: 2;
   padding: 20px 0;
-  border-top: 5px solid #fddcd5;
-  border-bottom: 5px solid #fddcd5;
+  border-top: 5px solid $highlight-color;
+  border-bottom: 5px solid $highlight-color;
+  text-align: left
 }
 
 #header-img {
+    background-image: url('https://cdn.shutterstock.com/shutterstock/videos/7671634/thumb/1.jpg');
+
+  background-size: cover;
   background-color: white;
   height: 100%;
 }
@@ -59,7 +63,15 @@ body {
 #header-text {
   position: absolute;
   top: 300px;
-  width: 100%
+  width: 100%;
+}
+
+#header-roles {
+  position: absolute;
+  z-index: 2;
+  top: 90vh;
+  font-size: 2em;
+  font-weight: 900
 }
 
 #header-overlay {
@@ -68,19 +80,19 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.9;
-  background-color: $main-pink
+  opacity: 0.85;
+  background-color: $main-color
 }
 
 @media screen and (min-width: 990px) {
   #header-content {
     padding-left: 20px;
-    border-left: 5px solid #fddcd5;
+    border-left: 5px solid $highlight-color;
   }
 
   #header-text {
-    left: -7%;
-    top: 20%;
+    left: -12%;
+    top: 17%;
   }
 }
 
@@ -89,10 +101,10 @@ body {
 
 #about-header {
   height: 100vh;
-  background-color: $secondary-color;
+  background-color: $highlight-color;
 
   h1 {
-    color: white;
+    color: $secondary-color;
     font-size: 5em;
     font-weight: 900
   }
@@ -105,9 +117,9 @@ body {
 }
 
 #work-content {
-  height: 200vh;
+  height: 400vh;
   right: 0;
-  background-color: $light-pink;
+  background-color: $highlight-color;
   padding: 0
 }
 
@@ -133,6 +145,18 @@ body {
 
   #work-content {
     position: absolute;
+  }
+}
+
+// CONTACT
+#contact-header {
+  height: 100vh;
+  background-color: $secondary-color;
+
+  h1 {
+    color: white;
+    font-size: 5em;
+    font-weight: 900
   }
 }
 
