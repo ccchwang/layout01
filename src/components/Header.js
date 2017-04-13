@@ -7,7 +7,20 @@ export default function Header() {
     <Row className="show-grid">
       <Col xs={12} id="header">
 
-      <h1 >Hello! My name is Chloe Hwang.</h1>
+      <Col md={4}/>
+
+      <Col md={8} id="header-content" >
+      <div id="header-img">
+        <div id="header-text">
+          <h1>Hello!</h1>
+          <br /><br /><br /><br />
+          <h1>I'm Chloe.</h1>
+          <br /><br />
+          <h1>_</h1>
+        </div>
+        </div>
+      </Col>
+
       <div id="header-overlay" />
       </Col>
 
