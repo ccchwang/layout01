@@ -101,7 +101,7 @@
 	exports.i(__webpack_require__(4), "");
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: 'Playfair Display', serif; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  width: 100%;\n  height: 100%; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 3em;\n  border: 1px solid black;\n  padding: 20px;\n  font-weight: 900;\n  margin: 0; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 7em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.7em;\n    font-weight: 900; }\n\n@media screen and (max-width: 375px) {\n  #header h1 {\n    font-size: 15em; }\n  #header p {\n    font-size: 1.75em;\n    font-weight: 900; }\n  #header-content {\n    height: 80vh;\n    top: 10vh;\n    z-index: 2;\n    padding: 20px 0;\n    border-top: 5px solid #f7fb8e;\n    border-bottom: 5px solid #f7fb8e;\n    text-align: left; } }\n\n#header-content {\n  height: 75vh;\n  top: 12.5vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 15vh;\n  left: 5vw; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n@media screen and (min-width: 990px) {\n  #header-content {\n    height: 85vh;\n    top: 7.5vh;\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e;\n    border-width: 5px; }\n  #header-text {\n    left: -111px;\n    top: 160px; } }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n#work-content {\n  height: 400vh;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  height: 100vh;\n  background-size: cover; }\n\n@media screen and (min-width: 990px) {\n  .work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed; }\n  .top {\n    top: 75%; }\n  #work-content {\n    position: absolute; } }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: 'Playfair Display', serif; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  width: 100%;\n  height: 100%; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 3em;\n  border: 1px solid black;\n  padding: 20px;\n  font-weight: 900;\n  margin: 0; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 6em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.47em;\n    font-weight: 900; }\n\n#header-content {\n  height: 75vh;\n  top: 12.5vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 15vh;\n  left: 6vw; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n#work-content {\n  height: 400vh;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  height: 100vh;\n  background-size: cover; }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n@media screen and (max-width: 320px) {\n  #header h1 {\n    font-size: 5em; }\n  #header p {\n    font-size: 1.25em; }\n  .title-text {\n    font-size: 2em;\n    padding: 15px; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (orientation: landscape) {\n  #header h1 {\n    font-size: 4em; }\n  #header p {\n    font-size: 1em; }\n  #header-text {\n    top: 9vh; }\n  .title-text {\n    font-size: 2em;\n    padding: 15px; } }\n\n@media screen and (min-width: 668px) {\n  #header h1 {\n    font-size: 7em; }\n  #header p {\n    font-size: 1.7em; } }\n\n@media screen and (min-width: 990px) {\n  #header-content {\n    height: 85vh;\n    top: 7.5vh;\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e;\n    border-width: 5px; }\n  #header-text {\n    left: -111px;\n    top: 28.4%; }\n  .work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed; }\n  .top {\n    top: 75%; }\n  #work-content {\n    position: absolute; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
 	
 	// exports
 
@@ -22246,7 +22246,7 @@
 	
 	var _reactBootstrap = __webpack_require__(189);
 	
-	var _MainMenu = __webpack_require__(465);
+	var _MainMenu = __webpack_require__(442);
 	
 	var _MainMenu2 = _interopRequireDefault(_MainMenu);
 	
@@ -22283,7 +22283,7 @@
 	            ),
 	            _react2.default.createElement(
 	              'h1',
-	              { style: { marginTop: '-25px' } },
+	              { style: { marginTop: '-20px' } },
 	              '\u2014'
 	            ),
 	            _react2.default.createElement(
@@ -41523,9 +41523,495 @@
 	exports.ValidComponentChildren = _ValidComponentChildren3['default'];
 
 /***/ },
-/* 442 */,
-/* 443 */,
-/* 444 */,
+/* 442 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = SocialShareMenu;
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _menu = __webpack_require__(443);
+	
+	var _menu2 = _interopRequireDefault(_menu);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function SocialShareMenu() {
+	
+	  return _react2.default.createElement(
+	    _menu2.default,
+	    {
+	      type: 'horizontal',
+	      margin: 100,
+	      style: { position: 'fixed', zIndex: '300', left: '30px', top: '30px' }
+	    },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'button' },
+	      '='
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'button' },
+	      'about'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'button' },
+	      'work'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'button' },
+	      'contact'
+	    )
+	  );
+	}
+
+/***/ },
+/* 443 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _item = __webpack_require__(444);
+	
+	var _item2 = _interopRequireDefault(_item);
+	
+	var _button = __webpack_require__(459);
+	
+	var _button2 = _interopRequireDefault(_button);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var MotionMenu = function (_Component) {
+	  _inherits(MotionMenu, _Component);
+	
+	  function MotionMenu(props) {
+	    _classCallCheck(this, MotionMenu);
+	
+	    var _this = _possibleConstructorReturn(this, (MotionMenu.__proto__ || Object.getPrototypeOf(MotionMenu)).call(this, props));
+	
+	    _this.state = {
+	      itemNumber: 1,
+	      status: 'idle'
+	    };
+	    _this.items = [];
+	    _this.onOpenEnd = _this.onOpenEnd.bind(_this);
+	    _this.onCloseEnd = _this.onCloseEnd.bind(_this);
+	    _this.onClick = _this.onClick.bind(_this);
+	    return _this;
+	  }
+	
+	  _createClass(MotionMenu, [{
+	    key: 'onOpenEnd',
+	    value: function onOpenEnd(name) {
+	      if (this.state.action !== 'open') return;
+	      if (this.state.itemNumber < this.props.children.length) {
+	        this.items[this.state.itemNumber].start();
+	        this.setState({
+	          itemNumber: this.state.itemNumber + 1
+	        });
+	        return;
+	      }
+	      if (name === 'item' + (this.props.children.length - 1)) {
+	        this.props.onOpen();
+	      }
+	    }
+	  }, {
+	    key: 'onCloseEnd',
+	    value: function onCloseEnd(name) {
+	      if (this.state.action === 'open') return;
+	      if (name === 'item1') {
+	        this.props.onClose();
+	      }
+	      if (this.state.itemNumber > 1) {
+	        if (name === 'item1') {
+	          this.props.onClose();
+	        }
+	        this.setState({
+	          itemNumber: this.state.itemNumber - 1
+	        });
+	      }
+	    }
+	  }, {
+	    key: 'onClick',
+	    value: function onClick() {
+	      if (this.state.action === 'open') {
+	        this.closeItems();
+	      } else {
+	        this.openItem();
+	      }
+	    }
+	  }, {
+	    key: 'getDistance',
+	    value: function getDistance(i) {
+	      return this.props.wing ? (parseInt(i / 2, 10) + 1) * this.props.margin * (i % 2 || -1) : this.props.margin * (i + 1);
+	    }
+	  }, {
+	    key: 'getX',
+	    value: function getX(i, x) {
+	      var _props = this.props,
+	          type = _props.type,
+	          margin = _props.margin,
+	          children = _props.children;
+	
+	      if (type === 'horizontal') {
+	        return this.getDistance(i) + x;
+	      }
+	      if (type === 'circle') {
+	        return x + margin * Math.cos(Math.PI * 2 * i / (children.length - 1));
+	      }
+	      return x;
+	    }
+	  }, {
+	    key: 'getY',
+	    value: function getY(i, y) {
+	      var _props2 = this.props,
+	          type = _props2.type,
+	          margin = _props2.margin,
+	          children = _props2.children;
+	
+	      if (type === 'vertical') {
+	        return this.getDistance(i) + y;
+	      }
+	      if (type === 'circle') {
+	        return y + margin * Math.sin(Math.PI * 2 * i / (children.length - 1));
+	      }
+	      return y;
+	    }
+	  }, {
+	    key: 'getItems',
+	    value: function getItems() {
+	      var _this2 = this;
+	
+	      var _props3 = this.props,
+	          x = _props3.x,
+	          y = _props3.y,
+	          bumpy = _props3.bumpy;
+	
+	      return Array.from(Array(this.state.itemNumber).keys()).reverse().map(function (i) {
+	        return _react2.default.createElement(
+	          _item2.default,
+	          {
+	            key: i,
+	            ref: function ref(c) {
+	              _this2.items[i + 1] = c;
+	            },
+	            name: 'item' + (i + 1),
+	            onOpenAnimationEnd: _this2.onOpenEnd,
+	            onCloseAnimationEnd: _this2.onCloseEnd,
+	            x: _this2.getX(i, x),
+	            y: _this2.getY(i, y),
+	            bumpy: bumpy,
+	            openSpeed: _this2.props.openSpeed,
+	            reverse: _this2.props.reverse,
+	            type: _this2.props.type
+	          },
+	          _this2.props.children[i + 1]
+	        );
+	      });
+	    }
+	  }, {
+	    key: 'closeItems',
+	    value: function closeItems() {
+	      var _this3 = this;
+	
+	      this.setState({ action: 'close' });
+	      this.button.reverse();
+	      Array.from(Array(this.state.itemNumber).keys()).reverse().forEach(function (i) {
+	        return _this3.items[i + 1].reverse();
+	      });
+	    }
+	  }, {
+	    key: 'close',
+	    value: function close() {
+	      if (this.state.action !== 'open') return;
+	      this.closeItems();
+	    }
+	  }, {
+	    key: 'open',
+	    value: function open() {
+	      if (this.state.action === 'open') return;
+	      this.openItem();
+	    }
+	  }, {
+	    key: 'openItem',
+	    value: function openItem() {
+	      this.setState({ action: 'open' });
+	      this.button.start();
+	      this.items[this.state.itemNumber].start();
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        {
+	          style: this.props.style,
+	          className: this.props.className
+	        },
+	        _react2.default.createElement(
+	          'div',
+	          { style: { position: 'relative' } },
+	          this.menuButton,
+	          this.getItems()
+	        )
+	      );
+	    }
+	  }, {
+	    key: 'menuButton',
+	    get: function get() {
+	      var _this4 = this;
+	
+	      return _react2.default.createElement(
+	        _button2.default,
+	        {
+	          ref: function ref(c) {
+	            _this4.button = c;
+	          },
+	          onClick: this.onClick,
+	          x: this.props.x,
+	          y: this.props.y,
+	          bumpy: this.props.bumpy
+	        },
+	        this.props.children[0]
+	      );
+	    }
+	  }]);
+	
+	  return MotionMenu;
+	}(_react.Component);
+	
+	MotionMenu.propTypes = {
+	  margin: _react.PropTypes.number.isRequired,
+	  type: _react.PropTypes.oneOf(['horizontal', 'vertical', 'circle']).isRequired,
+	  wing: _react.PropTypes.bool,
+	  x: _react.PropTypes.number,
+	  y: _react.PropTypes.number,
+	  onClose: _react.PropTypes.func,
+	  onOpen: _react.PropTypes.func,
+	  className: _react.PropTypes.string,
+	  bumpy: _react.PropTypes.bool,
+	  openSpeed: _react.PropTypes.number,
+	  reverse: _react.PropTypes.bool
+	};
+	MotionMenu.defaultProps = {
+	  x: 0,
+	  y: 0,
+	  style: {},
+	  onClose: function onClose() {},
+	  onOpen: function onOpen() {},
+	  bumpy: true,
+	  openSpeed: 60,
+	  reverse: false
+	};
+	exports.default = MotionMenu;
+
+/***/ },
+/* 444 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactMotion = __webpack_require__(445);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var createSmoothParams = function createSmoothParams(_ref) {
+	  var x = _ref.x,
+	      y = _ref.y;
+	  return [{
+	    scaleX: (0, _reactMotion.spring)(0, { stiffness: 1500, damping: 100 }),
+	    scaleY: (0, _reactMotion.spring)(0, { stiffness: 1500, damping: 100 }),
+	    x: (0, _reactMotion.spring)(x, { stiffness: 1500, damping: 50 }),
+	    y: (0, _reactMotion.spring)(y, { stiffness: 1500, damping: 50 })
+	  }, {
+	    scaleX: (0, _reactMotion.spring)(0.5, { stiffness: 120, damping: 20 }),
+	    scaleY: (0, _reactMotion.spring)(0.5, { stiffness: 120, damping: 20 }),
+	    x: (0, _reactMotion.spring)(x, { stiffness: 120, damping: 20 }),
+	    y: (0, _reactMotion.spring)(y, { stiffness: 120, damping: 20 })
+	  }, {
+	    scaleX: (0, _reactMotion.spring)(1, { stiffness: 120, damping: 20 }),
+	    scaleY: (0, _reactMotion.spring)(1, { stiffness: 120, damping: 20 }),
+	    x: (0, _reactMotion.spring)(x, { stiffness: 120, damping: 20 }),
+	    y: (0, _reactMotion.spring)(y, { stiffness: 120, damping: 20 })
+	  }];
+	};
+	
+	var createBumpyParams = function createBumpyParams(x, y) {
+	  return [{
+	    scaleX: (0, _reactMotion.spring)(0, { stiffness: 1500, damping: 100 }),
+	    scaleY: (0, _reactMotion.spring)(0, { stiffness: 1500, damping: 100 }),
+	    x: (0, _reactMotion.spring)(x, { stiffness: 1500, damping: 50 }),
+	    y: (0, _reactMotion.spring)(y, { stiffness: 1500, damping: 50 })
+	  }, {
+	    scaleX: (0, _reactMotion.spring)(1.6, { stiffness: 1500, damping: 150 }),
+	    scaleY: (0, _reactMotion.spring)(0.7, { stiffness: 1500, damping: 150 }),
+	    x: (0, _reactMotion.spring)(x, { stiffness: 1500, damping: 100 }),
+	    y: (0, _reactMotion.spring)(y, { stiffness: 1500, damping: 100 })
+	  }, {
+	    scaleX: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 18 }),
+	    scaleY: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 18 }),
+	    x: (0, _reactMotion.spring)(x, { stiffness: 1500, damping: 100 }),
+	    y: (0, _reactMotion.spring)(y, { stiffness: 1500, damping: 100 })
+	  }];
+	};
+	
+	var MenuItem = function (_Component) {
+	  _inherits(MenuItem, _Component);
+	
+	  function MenuItem(props) {
+	    _classCallCheck(this, MenuItem);
+	
+	    var _this = _possibleConstructorReturn(this, (MenuItem.__proto__ || Object.getPrototypeOf(MenuItem)).call(this, props));
+	
+	    _this.timerIds = [];
+	    _this.state = {
+	      sequence: 0
+	    };
+	
+	    _this.sequenceParams = _this.props.bumpy ? createBumpyParams(props) : createSmoothParams(props);
+	    return _this;
+	  }
+	
+	  _createClass(MenuItem, [{
+	    key: 'start',
+	    value: function start() {
+	      var _this2 = this;
+	
+	      this.timerIds[1] = setTimeout(function () {
+	        _this2.setState({ sequence: 1 });
+	        _this2.timerIds[1] = null;
+	      }, this.props.openSpeed);
+	
+	      this.timerIds[2] = setTimeout(function () {
+	        _this2.setState({ sequence: 2 });
+	        _this2.timerIds[2] = null;
+	        _this2.props.onOpenAnimationEnd(_this2.props.name);
+	      }, this.props.openSpeed);
+	    }
+	  }, {
+	    key: 'reverse',
+	    value: function reverse() {
+	      var _this3 = this;
+	
+	      this.timerIds.forEach(function (id) {
+	        if (id) clearTimeout(id);
+	      });
+	      this.timerIds[0] = setTimeout(function () {
+	        _this3.timerIds[0] = null;
+	        _this3.props.onCloseAnimationEnd(_this3.props.name);
+	      }, 100);
+	      this.setState({ sequence: 0 });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _this4 = this;
+	
+	      var _props = this.props,
+	          x = _props.x,
+	          y = _props.y,
+	          reverse = _props.reverse,
+	          type = _props.type;
+	
+	      var newX = void 0;
+	      var newY = void 0;
+	      if (reverse) {
+	        newX = -1 * x;
+	        newY = type === 'vertical' ? -1 * y : y;
+	      } else {
+	        newX = x;
+	        newY = y;
+	      }
+	      if (!this.props.children) return null;
+	      return _react2.default.createElement(
+	        _reactMotion.Motion,
+	        { style: this.sequenceParams[this.state.sequence] },
+	        function (_ref2) {
+	          var scaleX = _ref2.scaleX,
+	              scaleY = _ref2.scaleY;
+	          return (0, _react.cloneElement)(_this4.props.children, _extends({}, _this4.props.children.props || {}, {
+	            style: _extends({}, _this4.props.children.props && _this4.props.children.props.style || {}, {
+	              transform: 'translate3d(' + newX + 'px, ' + newY + 'px, 0) scaleX(' + scaleX + ') scaleY(' + scaleY + ')',
+	              WebkitTransform: 'translate3d(' + newX + 'px, ' + newY + 'px, 0) scaleX(' + scaleX + ') scaleY(' + scaleY + ')',
+	              position: 'absolute',
+	              fontSize: '1.5em',
+	              fontWeight: '700',
+	              backgroundColor: '#424242',
+	              color: 'white',
+	              padding: '5px 13px 10px',
+	              cursor: 'pointer'
+	            })
+	          }));
+	        }
+	      );
+	    }
+	  }]);
+	
+	  return MenuItem;
+	}(_react.Component);
+	
+	MenuItem.propTypes = {
+	  x: _react.PropTypes.number.isRequired,
+	  y: _react.PropTypes.number.isRequired,
+	  name: _react.PropTypes.string.isRequired,
+	  onOpenAnimationEnd: _react.PropTypes.func,
+	  onCloseAnimationEnd: _react.PropTypes.func,
+	  bumpy: _react.PropTypes.bool.isRequired,
+	  openSpeed: _react.PropTypes.number.isRequired,
+	  reverse: _react.PropTypes.bool.isRequired,
+	  type: _react.PropTypes.oneOf(['horizontal', 'vertical', 'circle']).isRequired
+	};
+	MenuItem.defaultProps = {
+	  onOpenAnimationEnd: function onOpenAnimationEnd() {},
+	  onCloseAnimationEnd: function onCloseAnimationEnd() {}
+	};
+	exports.default = MenuItem;
+
+/***/ },
 /* 445 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -42997,7 +43483,136 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ },
-/* 459 */,
+/* 459 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactMotion = __webpack_require__(445);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var MenuButton = function (_Component) {
+	  _inherits(MenuButton, _Component);
+	
+	  function MenuButton(props) {
+	    _classCallCheck(this, MenuButton);
+	
+	    var _this = _possibleConstructorReturn(this, (MenuButton.__proto__ || Object.getPrototypeOf(MenuButton)).call(this, props));
+	
+	    _this.state = {
+	      sequence: 0
+	    };
+	    _this.sequenceParams = _this.props.bumpy ? [{
+	      scaleX: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 10 }),
+	      scaleY: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 10 })
+	    }, {
+	      scaleX: (0, _reactMotion.spring)(0.6, { stiffness: 1500, damping: 50 }),
+	      scaleY: (0, _reactMotion.spring)(0.6, { stiffness: 1500, damping: 50 })
+	    }, {
+	      scaleX: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 10 }),
+	      scaleY: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 10 })
+	    }] : [{
+	      scaleX: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 10 }),
+	      scaleY: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 10 })
+	    }, {
+	      scaleX: (0, _reactMotion.spring)(1, { stiffness: 200, damping: 50 }),
+	      scaleY: (0, _reactMotion.spring)(1, { stiffness: 200, damping: 50 })
+	    }, {
+	      scaleX: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 10 }),
+	      scaleY: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 10 })
+	    }];
+	    return _this;
+	  }
+	
+	  _createClass(MenuButton, [{
+	    key: 'start',
+	    value: function start() {
+	      var _this2 = this;
+	
+	      setTimeout(function () {
+	        return _this2.setState({ sequence: 1 });
+	      }, 100);
+	      setTimeout(function () {
+	        return _this2.setState({ sequence: 2 });
+	      }, 150);
+	    }
+	  }, {
+	    key: 'reverse',
+	    value: function reverse() {
+	      var _this3 = this;
+	
+	      this.setState({ sequence: 1 });
+	      setTimeout(function () {
+	        return _this3.setState({ sequence: 0 });
+	      }, 50);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _this4 = this;
+	
+	      var _props = this.props,
+	          x = _props.x,
+	          y = _props.y,
+	          onClick = _props.onClick;
+	
+	      if (!this.props.children) return null;
+	      return _react2.default.createElement(
+	        _reactMotion.Motion,
+	        { style: this.sequenceParams[this.state.sequence] },
+	        function (_ref) {
+	          var scaleX = _ref.scaleX,
+	              scaleY = _ref.scaleY;
+	          return (0, _react.cloneElement)(_this4.props.children, _extends({}, _this4.props.children.props || {}, {
+	            onClick: onClick,
+	            style: _extends({}, _this4.props.children.props && _this4.props.children.props.style || {}, {
+	              transform: 'translate3d(' + x + 'px, ' + y + 'px, 0) scaleX(' + scaleX + ') scaleY(' + scaleY + ')',
+	              WebkitTransform: 'translate3d(' + x + 'px, ' + y + 'px, 0) scaleX(' + scaleX + ') scaleY(' + scaleY + ')',
+	              position: 'absolute',
+	              fontSize: '1.5em',
+	              fontWeight: '700',
+	              backgroundColor: '#424242',
+	              color: 'white',
+	              padding: '5px 13px 10px',
+	              cursor: 'pointer'
+	            })
+	          }));
+	        }
+	      );
+	    }
+	  }]);
+	
+	  return MenuButton;
+	}(_react.Component);
+	
+	MenuButton.propTypes = {
+	  x: _react.PropTypes.number.isRequired,
+	  y: _react.PropTypes.number.isRequired,
+	  onClick: _react.PropTypes.func,
+	  bumpy: _react.PropTypes.bool
+	};
+	exports.default = MenuButton;
+
+/***/ },
 /* 460 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -43178,625 +43793,6 @@
 	    }
 	  });
 	});
-
-/***/ },
-/* 465 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = SocialShareMenu;
-	
-	var _react = __webpack_require__(6);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _menu = __webpack_require__(466);
-	
-	var _menu2 = _interopRequireDefault(_menu);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function SocialShareMenu() {
-	
-	  return _react2.default.createElement(
-	    _menu2.default,
-	    {
-	      type: 'horizontal',
-	      margin: 100,
-	      style: { position: 'fixed', zIndex: '300', left: '30px', top: '30px' }
-	    },
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'button' },
-	      '='
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'button' },
-	      'about'
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'button' },
-	      'work'
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'button' },
-	      'contact'
-	    )
-	  );
-	}
-
-/***/ },
-/* 466 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(6);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _item = __webpack_require__(467);
-	
-	var _item2 = _interopRequireDefault(_item);
-	
-	var _button = __webpack_require__(468);
-	
-	var _button2 = _interopRequireDefault(_button);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var MotionMenu = function (_Component) {
-	  _inherits(MotionMenu, _Component);
-	
-	  function MotionMenu(props) {
-	    _classCallCheck(this, MotionMenu);
-	
-	    var _this = _possibleConstructorReturn(this, (MotionMenu.__proto__ || Object.getPrototypeOf(MotionMenu)).call(this, props));
-	
-	    _this.state = {
-	      itemNumber: 1,
-	      status: 'idle'
-	    };
-	    _this.items = [];
-	    _this.onOpenEnd = _this.onOpenEnd.bind(_this);
-	    _this.onCloseEnd = _this.onCloseEnd.bind(_this);
-	    _this.onClick = _this.onClick.bind(_this);
-	    return _this;
-	  }
-	
-	  _createClass(MotionMenu, [{
-	    key: 'onOpenEnd',
-	    value: function onOpenEnd(name) {
-	      if (this.state.action !== 'open') return;
-	      if (this.state.itemNumber < this.props.children.length) {
-	        this.items[this.state.itemNumber].start();
-	        this.setState({
-	          itemNumber: this.state.itemNumber + 1
-	        });
-	        return;
-	      }
-	      if (name === 'item' + (this.props.children.length - 1)) {
-	        this.props.onOpen();
-	      }
-	    }
-	  }, {
-	    key: 'onCloseEnd',
-	    value: function onCloseEnd(name) {
-	      if (this.state.action === 'open') return;
-	      if (name === 'item1') {
-	        this.props.onClose();
-	      }
-	      if (this.state.itemNumber > 1) {
-	        if (name === 'item1') {
-	          this.props.onClose();
-	        }
-	        this.setState({
-	          itemNumber: this.state.itemNumber - 1
-	        });
-	      }
-	    }
-	  }, {
-	    key: 'onClick',
-	    value: function onClick() {
-	      if (this.state.action === 'open') {
-	        this.closeItems();
-	      } else {
-	        this.openItem();
-	      }
-	    }
-	  }, {
-	    key: 'getDistance',
-	    value: function getDistance(i) {
-	      return this.props.wing ? (parseInt(i / 2, 10) + 1) * this.props.margin * (i % 2 || -1) : this.props.margin * (i + 1);
-	    }
-	  }, {
-	    key: 'getX',
-	    value: function getX(i, x) {
-	      var _props = this.props,
-	          type = _props.type,
-	          margin = _props.margin,
-	          children = _props.children;
-	
-	      if (type === 'horizontal') {
-	        return this.getDistance(i) + x;
-	      }
-	      if (type === 'circle') {
-	        return x + margin * Math.cos(Math.PI * 2 * i / (children.length - 1));
-	      }
-	      return x;
-	    }
-	  }, {
-	    key: 'getY',
-	    value: function getY(i, y) {
-	      var _props2 = this.props,
-	          type = _props2.type,
-	          margin = _props2.margin,
-	          children = _props2.children;
-	
-	      if (type === 'vertical') {
-	        return this.getDistance(i) + y;
-	      }
-	      if (type === 'circle') {
-	        return y + margin * Math.sin(Math.PI * 2 * i / (children.length - 1));
-	      }
-	      return y;
-	    }
-	  }, {
-	    key: 'getItems',
-	    value: function getItems() {
-	      var _this2 = this;
-	
-	      var _props3 = this.props,
-	          x = _props3.x,
-	          y = _props3.y,
-	          bumpy = _props3.bumpy;
-	
-	      return Array.from(Array(this.state.itemNumber).keys()).reverse().map(function (i) {
-	        return _react2.default.createElement(
-	          _item2.default,
-	          {
-	            key: i,
-	            ref: function ref(c) {
-	              _this2.items[i + 1] = c;
-	            },
-	            name: 'item' + (i + 1),
-	            onOpenAnimationEnd: _this2.onOpenEnd,
-	            onCloseAnimationEnd: _this2.onCloseEnd,
-	            x: _this2.getX(i, x),
-	            y: _this2.getY(i, y),
-	            bumpy: bumpy,
-	            openSpeed: _this2.props.openSpeed,
-	            reverse: _this2.props.reverse,
-	            type: _this2.props.type
-	          },
-	          _this2.props.children[i + 1]
-	        );
-	      });
-	    }
-	  }, {
-	    key: 'closeItems',
-	    value: function closeItems() {
-	      var _this3 = this;
-	
-	      this.setState({ action: 'close' });
-	      this.button.reverse();
-	      Array.from(Array(this.state.itemNumber).keys()).reverse().forEach(function (i) {
-	        return _this3.items[i + 1].reverse();
-	      });
-	    }
-	  }, {
-	    key: 'close',
-	    value: function close() {
-	      if (this.state.action !== 'open') return;
-	      this.closeItems();
-	    }
-	  }, {
-	    key: 'open',
-	    value: function open() {
-	      if (this.state.action === 'open') return;
-	      this.openItem();
-	    }
-	  }, {
-	    key: 'openItem',
-	    value: function openItem() {
-	      this.setState({ action: 'open' });
-	      this.button.start();
-	      this.items[this.state.itemNumber].start();
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        {
-	          style: this.props.style,
-	          className: this.props.className
-	        },
-	        _react2.default.createElement(
-	          'div',
-	          { style: { position: 'relative' } },
-	          this.menuButton,
-	          this.getItems()
-	        )
-	      );
-	    }
-	  }, {
-	    key: 'menuButton',
-	    get: function get() {
-	      var _this4 = this;
-	
-	      return _react2.default.createElement(
-	        _button2.default,
-	        {
-	          ref: function ref(c) {
-	            _this4.button = c;
-	          },
-	          onClick: this.onClick,
-	          x: this.props.x,
-	          y: this.props.y,
-	          bumpy: this.props.bumpy
-	        },
-	        this.props.children[0]
-	      );
-	    }
-	  }]);
-	
-	  return MotionMenu;
-	}(_react.Component);
-	
-	MotionMenu.propTypes = {
-	  margin: _react.PropTypes.number.isRequired,
-	  type: _react.PropTypes.oneOf(['horizontal', 'vertical', 'circle']).isRequired,
-	  wing: _react.PropTypes.bool,
-	  x: _react.PropTypes.number,
-	  y: _react.PropTypes.number,
-	  onClose: _react.PropTypes.func,
-	  onOpen: _react.PropTypes.func,
-	  className: _react.PropTypes.string,
-	  bumpy: _react.PropTypes.bool,
-	  openSpeed: _react.PropTypes.number,
-	  reverse: _react.PropTypes.bool
-	};
-	MotionMenu.defaultProps = {
-	  x: 0,
-	  y: 0,
-	  style: {},
-	  onClose: function onClose() {},
-	  onOpen: function onOpen() {},
-	  bumpy: true,
-	  openSpeed: 60,
-	  reverse: false
-	};
-	exports.default = MotionMenu;
-
-/***/ },
-/* 467 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(6);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactMotion = __webpack_require__(445);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var createSmoothParams = function createSmoothParams(_ref) {
-	  var x = _ref.x,
-	      y = _ref.y;
-	  return [{
-	    scaleX: (0, _reactMotion.spring)(0, { stiffness: 1500, damping: 100 }),
-	    scaleY: (0, _reactMotion.spring)(0, { stiffness: 1500, damping: 100 }),
-	    x: (0, _reactMotion.spring)(x, { stiffness: 1500, damping: 50 }),
-	    y: (0, _reactMotion.spring)(y, { stiffness: 1500, damping: 50 })
-	  }, {
-	    scaleX: (0, _reactMotion.spring)(0.5, { stiffness: 120, damping: 20 }),
-	    scaleY: (0, _reactMotion.spring)(0.5, { stiffness: 120, damping: 20 }),
-	    x: (0, _reactMotion.spring)(x, { stiffness: 120, damping: 20 }),
-	    y: (0, _reactMotion.spring)(y, { stiffness: 120, damping: 20 })
-	  }, {
-	    scaleX: (0, _reactMotion.spring)(1, { stiffness: 120, damping: 20 }),
-	    scaleY: (0, _reactMotion.spring)(1, { stiffness: 120, damping: 20 }),
-	    x: (0, _reactMotion.spring)(x, { stiffness: 120, damping: 20 }),
-	    y: (0, _reactMotion.spring)(y, { stiffness: 120, damping: 20 })
-	  }];
-	};
-	
-	var createBumpyParams = function createBumpyParams(x, y) {
-	  return [{
-	    scaleX: (0, _reactMotion.spring)(0, { stiffness: 1500, damping: 100 }),
-	    scaleY: (0, _reactMotion.spring)(0, { stiffness: 1500, damping: 100 }),
-	    x: (0, _reactMotion.spring)(x, { stiffness: 1500, damping: 50 }),
-	    y: (0, _reactMotion.spring)(y, { stiffness: 1500, damping: 50 })
-	  }, {
-	    scaleX: (0, _reactMotion.spring)(1.6, { stiffness: 1500, damping: 150 }),
-	    scaleY: (0, _reactMotion.spring)(0.7, { stiffness: 1500, damping: 150 }),
-	    x: (0, _reactMotion.spring)(x, { stiffness: 1500, damping: 100 }),
-	    y: (0, _reactMotion.spring)(y, { stiffness: 1500, damping: 100 })
-	  }, {
-	    scaleX: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 18 }),
-	    scaleY: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 18 }),
-	    x: (0, _reactMotion.spring)(x, { stiffness: 1500, damping: 100 }),
-	    y: (0, _reactMotion.spring)(y, { stiffness: 1500, damping: 100 })
-	  }];
-	};
-	
-	var MenuItem = function (_Component) {
-	  _inherits(MenuItem, _Component);
-	
-	  function MenuItem(props) {
-	    _classCallCheck(this, MenuItem);
-	
-	    var _this = _possibleConstructorReturn(this, (MenuItem.__proto__ || Object.getPrototypeOf(MenuItem)).call(this, props));
-	
-	    _this.timerIds = [];
-	    _this.state = {
-	      sequence: 0
-	    };
-	
-	    _this.sequenceParams = _this.props.bumpy ? createBumpyParams(props) : createSmoothParams(props);
-	    return _this;
-	  }
-	
-	  _createClass(MenuItem, [{
-	    key: 'start',
-	    value: function start() {
-	      var _this2 = this;
-	
-	      this.timerIds[1] = setTimeout(function () {
-	        _this2.setState({ sequence: 1 });
-	        _this2.timerIds[1] = null;
-	      }, this.props.openSpeed);
-	
-	      this.timerIds[2] = setTimeout(function () {
-	        _this2.setState({ sequence: 2 });
-	        _this2.timerIds[2] = null;
-	        _this2.props.onOpenAnimationEnd(_this2.props.name);
-	      }, this.props.openSpeed);
-	    }
-	  }, {
-	    key: 'reverse',
-	    value: function reverse() {
-	      var _this3 = this;
-	
-	      this.timerIds.forEach(function (id) {
-	        if (id) clearTimeout(id);
-	      });
-	      this.timerIds[0] = setTimeout(function () {
-	        _this3.timerIds[0] = null;
-	        _this3.props.onCloseAnimationEnd(_this3.props.name);
-	      }, 100);
-	      this.setState({ sequence: 0 });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _this4 = this;
-	
-	      var _props = this.props,
-	          x = _props.x,
-	          y = _props.y,
-	          reverse = _props.reverse,
-	          type = _props.type;
-	
-	      var newX = void 0;
-	      var newY = void 0;
-	      if (reverse) {
-	        newX = -1 * x;
-	        newY = type === 'vertical' ? -1 * y : y;
-	      } else {
-	        newX = x;
-	        newY = y;
-	      }
-	      if (!this.props.children) return null;
-	      return _react2.default.createElement(
-	        _reactMotion.Motion,
-	        { style: this.sequenceParams[this.state.sequence] },
-	        function (_ref2) {
-	          var scaleX = _ref2.scaleX,
-	              scaleY = _ref2.scaleY;
-	          return (0, _react.cloneElement)(_this4.props.children, _extends({}, _this4.props.children.props || {}, {
-	            style: _extends({}, _this4.props.children.props && _this4.props.children.props.style || {}, {
-	              transform: 'translate3d(' + newX + 'px, ' + newY + 'px, 0) scaleX(' + scaleX + ') scaleY(' + scaleY + ')',
-	              WebkitTransform: 'translate3d(' + newX + 'px, ' + newY + 'px, 0) scaleX(' + scaleX + ') scaleY(' + scaleY + ')',
-	              position: 'absolute',
-	              fontSize: '1.5em',
-	              fontWeight: '700',
-	              backgroundColor: '#424242',
-	              color: 'white',
-	              padding: '5px 13px 10px',
-	              cursor: 'pointer'
-	            })
-	          }));
-	        }
-	      );
-	    }
-	  }]);
-	
-	  return MenuItem;
-	}(_react.Component);
-	
-	MenuItem.propTypes = {
-	  x: _react.PropTypes.number.isRequired,
-	  y: _react.PropTypes.number.isRequired,
-	  name: _react.PropTypes.string.isRequired,
-	  onOpenAnimationEnd: _react.PropTypes.func,
-	  onCloseAnimationEnd: _react.PropTypes.func,
-	  bumpy: _react.PropTypes.bool.isRequired,
-	  openSpeed: _react.PropTypes.number.isRequired,
-	  reverse: _react.PropTypes.bool.isRequired,
-	  type: _react.PropTypes.oneOf(['horizontal', 'vertical', 'circle']).isRequired
-	};
-	MenuItem.defaultProps = {
-	  onOpenAnimationEnd: function onOpenAnimationEnd() {},
-	  onCloseAnimationEnd: function onCloseAnimationEnd() {}
-	};
-	exports.default = MenuItem;
-
-/***/ },
-/* 468 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(6);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactMotion = __webpack_require__(445);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var MenuButton = function (_Component) {
-	  _inherits(MenuButton, _Component);
-	
-	  function MenuButton(props) {
-	    _classCallCheck(this, MenuButton);
-	
-	    var _this = _possibleConstructorReturn(this, (MenuButton.__proto__ || Object.getPrototypeOf(MenuButton)).call(this, props));
-	
-	    _this.state = {
-	      sequence: 0
-	    };
-	    _this.sequenceParams = _this.props.bumpy ? [{
-	      scaleX: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 10 }),
-	      scaleY: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 10 })
-	    }, {
-	      scaleX: (0, _reactMotion.spring)(0.6, { stiffness: 1500, damping: 50 }),
-	      scaleY: (0, _reactMotion.spring)(0.6, { stiffness: 1500, damping: 50 })
-	    }, {
-	      scaleX: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 10 }),
-	      scaleY: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 10 })
-	    }] : [{
-	      scaleX: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 10 }),
-	      scaleY: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 10 })
-	    }, {
-	      scaleX: (0, _reactMotion.spring)(1, { stiffness: 200, damping: 50 }),
-	      scaleY: (0, _reactMotion.spring)(1, { stiffness: 200, damping: 50 })
-	    }, {
-	      scaleX: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 10 }),
-	      scaleY: (0, _reactMotion.spring)(1, { stiffness: 1500, damping: 10 })
-	    }];
-	    return _this;
-	  }
-	
-	  _createClass(MenuButton, [{
-	    key: 'start',
-	    value: function start() {
-	      var _this2 = this;
-	
-	      setTimeout(function () {
-	        return _this2.setState({ sequence: 1 });
-	      }, 100);
-	      setTimeout(function () {
-	        return _this2.setState({ sequence: 2 });
-	      }, 150);
-	    }
-	  }, {
-	    key: 'reverse',
-	    value: function reverse() {
-	      var _this3 = this;
-	
-	      this.setState({ sequence: 1 });
-	      setTimeout(function () {
-	        return _this3.setState({ sequence: 0 });
-	      }, 50);
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _this4 = this;
-	
-	      var _props = this.props,
-	          x = _props.x,
-	          y = _props.y,
-	          onClick = _props.onClick;
-	
-	      if (!this.props.children) return null;
-	      return _react2.default.createElement(
-	        _reactMotion.Motion,
-	        { style: this.sequenceParams[this.state.sequence] },
-	        function (_ref) {
-	          var scaleX = _ref.scaleX,
-	              scaleY = _ref.scaleY;
-	          return (0, _react.cloneElement)(_this4.props.children, _extends({}, _this4.props.children.props || {}, {
-	            onClick: onClick,
-	            style: _extends({}, _this4.props.children.props && _this4.props.children.props.style || {}, {
-	              transform: 'translate3d(' + x + 'px, ' + y + 'px, 0) scaleX(' + scaleX + ') scaleY(' + scaleY + ')',
-	              WebkitTransform: 'translate3d(' + x + 'px, ' + y + 'px, 0) scaleX(' + scaleX + ') scaleY(' + scaleY + ')',
-	              position: 'absolute',
-	              fontSize: '1.5em',
-	              fontWeight: '700',
-	              backgroundColor: '#424242',
-	              color: 'white',
-	              padding: '5px 13px 10px',
-	              cursor: 'pointer'
-	            })
-	          }));
-	        }
-	      );
-	    }
-	  }]);
-	
-	  return MenuButton;
-	}(_react.Component);
-	
-	MenuButton.propTypes = {
-	  x: _react.PropTypes.number.isRequired,
-	  y: _react.PropTypes.number.isRequired,
-	  onClick: _react.PropTypes.func,
-	  bumpy: _react.PropTypes.bool
-	};
-	exports.default = MenuButton;
 
 /***/ }
 /******/ ]);
