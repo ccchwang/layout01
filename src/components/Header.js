@@ -17,7 +17,7 @@ export default function Header() {
         <div id="header-text">
           <h1>Chloe</h1>
           <h1>Hwang</h1>
-          <h1 style={{marginTop: '-20px'}}>—</h1>
+          <h1 id="header-divider">—</h1>
           <p>Frontend Software Engineer</p>
         </div>
         </div>
