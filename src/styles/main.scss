@@ -7,6 +7,8 @@ $secondary-color: #424242;
 // --------------------------------
 
 
+//*** IPHONE 5 OR SMALLER
+
 * {
   box-sizing: border-box;
   font-family: 'Playfair Display', serif;
@@ -32,11 +34,12 @@ body {
 
 .title-text {
   color: $secondary-color;
-  font-size: 3em;
+  font-size: 2em;
   border: 1px solid black;
-  padding: 20px;
+  padding: 15px;
   font-weight: 900;
   margin: 0;
+
 }
 
 // HEADER
@@ -48,12 +51,12 @@ body {
   padding: 0;
 
   h1 {
-    font-size: 6em;
+    font-size: 5em;
     font-weight: 900;
     margin: 0
   }
   p {
-    font-size: 1.47em;
+    font-size: 1.25em;
     font-weight: 900
   }
 }
@@ -127,48 +130,30 @@ body {
 }
 
 
-// IPHONE 5 OR SMALLER
-@media screen and (max-width: 320px) {
+
+//*** BIGGER PHONES
+@media screen and (min-width: 321px) {
   #header {
     h1 {
-      font-size: 5em;
+      font-size: 6em;
     }
     p {
-      font-size: 1.25em;
+      font-size: 1.47em;
     }
   }
 
   .title-text {
-    font-size: 2em;
-    padding: 15px
-  }
-}
-
-// PHONES IN LANDSCAPE
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 667px)
-  and (orientation: landscape) {
-    #header {
-    h1 {
-      font-size: 4em;
-    }
-    p {
-      font-size: 1em;
-    }
-  }
-  #header-text {
-    top: 9vh;
-  }
-  .title-text {
-    font-size: 2em;
-    padding: 15px
+    font-size: 3em;
+    padding: 20px;
   }
 }
 
 
 
-// BIGGER THAN PHONES
+
+
+
+//*** HALF DESKTOP
 @media screen and (min-width: 668px) {
 
   //HEADER
@@ -184,7 +169,7 @@ body {
 }
 
 
-// FULL SIZE COMPUTER
+//*** FULL SIZE DESKTOP
 @media screen and (min-width: 990px) {
 
   // HEADER
@@ -224,6 +209,29 @@ body {
     position: absolute;
   }
 
+}
+
+
+//*** PHONES IN LANDSCAPE
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 736px)
+  and (orientation: landscape) {
+    #header {
+      h1 {
+        font-size: 4em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+    #header-text {
+      top: 9vh;
+    }
+    .title-text {
+      font-size: 2em;
+      padding: 15px
+    }
 }
 
 
