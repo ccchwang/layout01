@@ -5,13 +5,10 @@ export default function SocialShareMenu () {
 
   const scrollToElement = (e) => {
     const section = e.target.id.split("-")[0];
-    let element;
+    let element = `#${section}-header`;
 
     if ($(window).width() >= 992) {
       element = section === 'work' ? `#work-content` : `#${section}-header`;
-    }
-    else {
-      element = `#${section}-header`;
     }
 
     $('body').animate({
@@ -21,13 +18,13 @@ export default function SocialShareMenu () {
 
 
   return (
+    <div id="menu">
     <Menu
-      type="horizontal"
-      margin={100}
-      style={{position: 'fixed', zIndex: '300', left: '30px', top: '30px'}}
+      type="vertical"
+      margin={60}
     >
-      <div className="button">
-        =
+      <div id="menu-btn" className="button">
+        <img src="/public/images/bars.png" id="menu-icon" />
       </div>
       <div onClick={scrollToElement} id="about-btn" className="button">
         about
@@ -39,6 +36,7 @@ export default function SocialShareMenu () {
         contact
       </div>
     </Menu>
+    </div>
   )
 }
 

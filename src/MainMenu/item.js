@@ -105,6 +105,8 @@ export default class MenuItem extends Component {
       newX = x;
       newY = y;
     }
+
+    console.log(newX)
     if (!this.props.children) return null;
     return (
       <Motion style={this.sequenceParams[this.state.sequence]}>
@@ -118,13 +120,12 @@ export default class MenuItem extends Component {
                 transform: `translate3d(${newX}px, ${newY}px, 0) scaleX(${scaleX}) scaleY(${scaleY})`,
                 WebkitTransform: `translate3d(${newX}px, ${newY}px, 0) scaleX(${scaleX}) scaleY(${scaleY})`,
                 position: 'absolute',
-                fontSize: '1.5em',
                 fontWeight: '700',
                 backgroundColor: '#424242',
                 color: 'white',
-                padding: '5px 13px 10px',
                 cursor: 'pointer'
               },
+              className: "menu-item"
             },
           )
         )

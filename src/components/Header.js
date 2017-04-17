@@ -1,16 +1,12 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap'
-import MainMenu from '../MainMenu'
 
 export default function Header() {
 
   return (
-    <Row className="show-grid">
-      <Col xs={12} id="header">
+    <Row id="header" className="show-grid">
 
-      <MainMenu />
-
-      <Col md={4}/>
+      <Col md={4} />
 
       <Col md={8} id="header-content" >
       <div id="header-img">
@@ -24,10 +20,7 @@ export default function Header() {
       </Col>
 
 
-
       <div id="header-overlay" />
-
-      </Col>
 
     </Row>
 

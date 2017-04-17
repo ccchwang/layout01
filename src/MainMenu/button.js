@@ -68,11 +68,8 @@ export default class MenuButton extends Component {
                 transform: `translate3d(${x}px, ${y}px, 0) scaleX(${scaleX}) scaleY(${scaleY})`,
                 WebkitTransform: `translate3d(${x}px, ${y}px, 0) scaleX(${scaleX}) scaleY(${scaleY})`,
                 position: 'absolute',
-                fontSize: '1.5em',
-                fontWeight: '700',
                 backgroundColor: '#424242',
                 color: 'white',
-                padding: '5px 13px 10px',
                 cursor: 'pointer'
               },
             },

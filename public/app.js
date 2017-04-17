@@ -101,7 +101,7 @@
 	exports.i(__webpack_require__(4), "");
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: 'Playfair Display', serif; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  width: 100%;\n  height: 100%; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 5em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.25em;\n    font-weight: 900; }\n\n#header-content {\n  height: 75vh;\n  top: 12.5vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 13vh;\n  left: 6vw; }\n\n#header-divider {\n  margin-top: -20px !important; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n#work-content {\n  height: 400vh;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  height: 100vh;\n  background-size: cover; }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n@media screen and (min-width: 321px) {\n  #header h1 {\n    font-size: 6em; }\n  #header p {\n    font-size: 1.47em; }\n  .title-text {\n    font-size: 3em;\n    padding: 20px; } }\n\n@media screen and (min-width: 668px) {\n  #header h1 {\n    font-size: 7em; }\n  #header p {\n    font-size: 1.7em; } }\n\n@media screen and (min-width: 990px) {\n  #header-content {\n    height: 85vh;\n    top: 7.5vh;\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e;\n    border-width: 5px; }\n  #header-text {\n    left: -111px;\n    top: 28.4%; }\n  #header-divider {\n    margin-top: -25px !important; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed !important; }\n  .top {\n    top: 75% !important; }\n  #work-content {\n    position: absolute; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape) {\n  #header h1 {\n    font-size: 4em; }\n  #header p {\n    font-size: 1em; }\n  #header-text {\n    top: 9vh; }\n  .title-text {\n    font-size: 2em;\n    padding: 15px; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: 'Playfair Display', serif; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  width: 100%; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 12px 15px 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#menu {\n  position: fixed;\n  z-index: 300;\n  left: 20px;\n  top: 20px; }\n\n#menu-btn {\n  width: 41px;\n  height: 41px;\n  padding-top: 8px; }\n\n.menu-item {\n  font-size: 1.4em;\n  padding: 7px 13px 9px; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 5em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.25em;\n    font-weight: 900; }\n\n#header-content {\n  height: 75vh;\n  top: 12.5vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 13vh;\n  left: 6vw; }\n\n#header-divider {\n  margin-top: -20px !important; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n#work-content {\n  height: 400vh;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  height: 100vh;\n  background-size: cover; }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n@media screen and (min-width: 321px) {\n  #header h1 {\n    font-size: 6em; }\n  #header p {\n    font-size: 1.47em; }\n  .title-text {\n    font-size: 3em;\n    padding: 15px 20px 20px; } }\n\n@media screen and (min-width: 668px) {\n  #header h1 {\n    font-size: 7em; }\n  #header p {\n    font-size: 1.7em; } }\n\n@media screen and (min-width: 990px) {\n  #header-content {\n    height: 85vh;\n    top: 7.5vh;\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e;\n    border-width: 5px; }\n  #header-text {\n    left: -111px;\n    top: 28.4%; }\n  #header-divider {\n    margin-top: -25px !important; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed !important; }\n  .top {\n    top: 75% !important; }\n  #work-content {\n    position: absolute; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape) {\n  #header h1 {\n    font-size: 4em; }\n  #header p {\n    font-size: 1em; }\n  #header-text {\n    top: 9vh; }\n  .title-text {\n    font-size: 2em;\n    padding: 12px 15px 15px; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
 	
 	// exports
 
@@ -22190,6 +22190,10 @@
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
+	var _MainMenu = __webpack_require__(442);
+	
+	var _MainMenu2 = _interopRequireDefault(_MainMenu);
+	
 	var _reactBootstrap = __webpack_require__(189);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -22215,6 +22219,7 @@
 	      return _react2.default.createElement(
 	        _reactBootstrap.Grid,
 	        { style: { width: '100%' } },
+	        _react2.default.createElement(_MainMenu2.default, null),
 	        _react2.default.createElement(_Header2.default, null),
 	        _react2.default.createElement(_About2.default, null),
 	        _react2.default.createElement(_Work2.default, null),
@@ -22246,56 +22251,47 @@
 	
 	var _reactBootstrap = __webpack_require__(189);
 	
-	var _MainMenu = __webpack_require__(442);
-	
-	var _MainMenu2 = _interopRequireDefault(_MainMenu);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function Header() {
 	
 	  return _react2.default.createElement(
 	    _reactBootstrap.Row,
-	    { className: 'show-grid' },
+	    { id: 'header', className: 'show-grid' },
+	    _react2.default.createElement(_reactBootstrap.Col, { md: 4 }),
 	    _react2.default.createElement(
 	      _reactBootstrap.Col,
-	      { xs: 12, id: 'header' },
-	      _react2.default.createElement(_MainMenu2.default, null),
-	      _react2.default.createElement(_reactBootstrap.Col, { md: 4 }),
+	      { md: 8, id: 'header-content' },
 	      _react2.default.createElement(
-	        _reactBootstrap.Col,
-	        { md: 8, id: 'header-content' },
+	        'div',
+	        { id: 'header-img' },
 	        _react2.default.createElement(
 	          'div',
-	          { id: 'header-img' },
+	          { id: 'header-text' },
 	          _react2.default.createElement(
-	            'div',
-	            { id: 'header-text' },
-	            _react2.default.createElement(
-	              'h1',
-	              null,
-	              'Chloe'
-	            ),
-	            _react2.default.createElement(
-	              'h1',
-	              null,
-	              'Hwang'
-	            ),
-	            _react2.default.createElement(
-	              'h1',
-	              { id: 'header-divider' },
-	              '\u2014'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Frontend Software Engineer'
-	            )
+	            'h1',
+	            null,
+	            'Chloe'
+	          ),
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            'Hwang'
+	          ),
+	          _react2.default.createElement(
+	            'h1',
+	            { id: 'header-divider' },
+	            '\u2014'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Frontend Software Engineer'
 	          )
 	        )
-	      ),
-	      _react2.default.createElement('div', { id: 'header-overlay' })
-	    )
+	      )
+	    ),
+	    _react2.default.createElement('div', { id: 'header-overlay' })
 	  );
 	}
 
@@ -41547,12 +41543,10 @@
 	
 	  var scrollToElement = function scrollToElement(e) {
 	    var section = e.target.id.split("-")[0];
-	    var element = void 0;
+	    var element = '#' + section + '-header';
 	
 	    if ($(window).width() >= 992) {
 	      element = section === 'work' ? '#work-content' : '#' + section + '-header';
-	    } else {
-	      element = '#' + section + '-header';
 	    }
 	
 	    $('body').animate({
@@ -41561,31 +41555,34 @@
 	  };
 	
 	  return _react2.default.createElement(
-	    _menu2.default,
-	    {
-	      type: 'horizontal',
-	      margin: 100,
-	      style: { position: 'fixed', zIndex: '300', left: '30px', top: '30px' }
-	    },
+	    'div',
+	    { id: 'menu' },
 	    _react2.default.createElement(
-	      'div',
-	      { className: 'button' },
-	      '='
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { onClick: scrollToElement, id: 'about-btn', className: 'button' },
-	      'about'
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { onClick: scrollToElement, id: 'work-btn', className: 'button' },
-	      'work'
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { onClick: scrollToElement, id: 'contact-btn', className: 'button' },
-	      'contact'
+	      _menu2.default,
+	      {
+	        type: 'vertical',
+	        margin: 60
+	      },
+	      _react2.default.createElement(
+	        'div',
+	        { id: 'menu-btn', className: 'button' },
+	        _react2.default.createElement('img', { src: '/public/images/bars.png', id: 'menu-icon' })
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { onClick: scrollToElement, id: 'about-btn', className: 'button' },
+	        'about'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { onClick: scrollToElement, id: 'work-btn', className: 'button' },
+	        'work'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { onClick: scrollToElement, id: 'contact-btn', className: 'button' },
+	        'contact'
+	      )
 	    )
 	  );
 	}
@@ -41981,6 +41978,8 @@
 	        newX = x;
 	        newY = y;
 	      }
+	
+	      console.log(newX);
 	      if (!this.props.children) return null;
 	      return _react2.default.createElement(
 	        _reactMotion.Motion,
@@ -41993,13 +41992,12 @@
 	              transform: 'translate3d(' + newX + 'px, ' + newY + 'px, 0) scaleX(' + scaleX + ') scaleY(' + scaleY + ')',
 	              WebkitTransform: 'translate3d(' + newX + 'px, ' + newY + 'px, 0) scaleX(' + scaleX + ') scaleY(' + scaleY + ')',
 	              position: 'absolute',
-	              fontSize: '1.5em',
 	              fontWeight: '700',
 	              backgroundColor: '#424242',
 	              color: 'white',
-	              padding: '5px 13px 10px',
 	              cursor: 'pointer'
-	            })
+	            }),
+	            className: "menu-item"
 	          }));
 	        }
 	      );
@@ -43603,11 +43601,8 @@
 	              transform: 'translate3d(' + x + 'px, ' + y + 'px, 0) scaleX(' + scaleX + ') scaleY(' + scaleY + ')',
 	              WebkitTransform: 'translate3d(' + x + 'px, ' + y + 'px, 0) scaleX(' + scaleX + ') scaleY(' + scaleY + ')',
 	              position: 'absolute',
-	              fontSize: '1.5em',
-	              fontWeight: '700',
 	              backgroundColor: '#424242',
 	              color: 'white',
-	              padding: '5px 13px 10px',
 	              cursor: 'pointer'
 	            })
 	          }));
