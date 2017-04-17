@@ -6,7 +6,7 @@ export default function Work () {
   return (
     <Row id='work-main' className="show-grid" style={{position: 'relative', height: '400vh'}}>
 
-      <Col xs={12} md={4} className="work-header title-block">
+      <Col xs={12} md={4} id="work-header" className="title-block">
         <h1  className="title-text">work</h1>
       </Col>
 

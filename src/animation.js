@@ -1,8 +1,7 @@
-
-
 $(document).ready(function () {
+
   const $window = $(window),
-        $header = $('.work-header'),
+        $header = $('#work-header'),
         $main = $('#work-main');
 
 
@@ -27,8 +26,7 @@ $(document).ready(function () {
       }
     }
 
-  }
-  )
+  })
 
 
 

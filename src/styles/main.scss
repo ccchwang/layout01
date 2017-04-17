@@ -191,18 +191,18 @@ body {
   }
 
   //WORK
-  .work-header {
+  #work-header {
     position: absolute;
     top: 0;
     left: 0
   }
 
   .fixed-header {
-    position: fixed;
+    position: fixed !important;
   }
 
   .top {
-    top: 75%
+    top: 75% !important;
   }
 
   #work-content {

@@ -101,7 +101,7 @@
 	exports.i(__webpack_require__(4), "");
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: 'Playfair Display', serif; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  width: 100%;\n  height: 100%; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 5em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.25em;\n    font-weight: 900; }\n\n#header-content {\n  height: 75vh;\n  top: 12.5vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 13vh;\n  left: 6vw; }\n\n#header-divider {\n  margin-top: -20px !important; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n#work-content {\n  height: 400vh;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  height: 100vh;\n  background-size: cover; }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n@media screen and (min-width: 321px) {\n  #header h1 {\n    font-size: 6em; }\n  #header p {\n    font-size: 1.47em; }\n  .title-text {\n    font-size: 3em;\n    padding: 20px; } }\n\n@media screen and (min-width: 668px) {\n  #header h1 {\n    font-size: 7em; }\n  #header p {\n    font-size: 1.7em; } }\n\n@media screen and (min-width: 990px) {\n  #header-content {\n    height: 85vh;\n    top: 7.5vh;\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e;\n    border-width: 5px; }\n  #header-text {\n    left: -111px;\n    top: 28.4%; }\n  #header-divider {\n    margin-top: -25px !important; }\n  .work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed; }\n  .top {\n    top: 75%; }\n  #work-content {\n    position: absolute; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape) {\n  #header h1 {\n    font-size: 4em; }\n  #header p {\n    font-size: 1em; }\n  #header-text {\n    top: 9vh; }\n  .title-text {\n    font-size: 2em;\n    padding: 15px; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: 'Playfair Display', serif; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  width: 100%;\n  height: 100%; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 5em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.25em;\n    font-weight: 900; }\n\n#header-content {\n  height: 75vh;\n  top: 12.5vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 13vh;\n  left: 6vw; }\n\n#header-divider {\n  margin-top: -20px !important; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n#work-content {\n  height: 400vh;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  height: 100vh;\n  background-size: cover; }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n@media screen and (min-width: 321px) {\n  #header h1 {\n    font-size: 6em; }\n  #header p {\n    font-size: 1.47em; }\n  .title-text {\n    font-size: 3em;\n    padding: 20px; } }\n\n@media screen and (min-width: 668px) {\n  #header h1 {\n    font-size: 7em; }\n  #header p {\n    font-size: 1.7em; } }\n\n@media screen and (min-width: 990px) {\n  #header-content {\n    height: 85vh;\n    top: 7.5vh;\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e;\n    border-width: 5px; }\n  #header-text {\n    left: -111px;\n    top: 28.4%; }\n  #header-divider {\n    margin-top: -25px !important; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed !important; }\n  .top {\n    top: 75% !important; }\n  #work-content {\n    position: absolute; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape) {\n  #header h1 {\n    font-size: 4em; }\n  #header p {\n    font-size: 1em; }\n  #header-text {\n    top: 9vh; }\n  .title-text {\n    font-size: 2em;\n    padding: 15px; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
 	
 	// exports
 
@@ -41545,6 +41545,21 @@
 	
 	function SocialShareMenu() {
 	
+	  var scrollToElement = function scrollToElement(e) {
+	    var section = e.target.id.split("-")[0];
+	    var element = void 0;
+	
+	    if ($(window).width() >= 992) {
+	      element = section === 'work' ? '#work-content' : '#' + section + '-header';
+	    } else {
+	      element = '#' + section + '-header';
+	    }
+	
+	    $('body').animate({
+	      scrollTop: $(element).offset().top
+	    }, 800);
+	  };
+	
 	  return _react2.default.createElement(
 	    _menu2.default,
 	    {
@@ -41559,17 +41574,17 @@
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'button' },
+	      { onClick: scrollToElement, id: 'about-btn', className: 'button' },
 	      'about'
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'button' },
+	      { onClick: scrollToElement, id: 'work-btn', className: 'button' },
 	      'work'
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'button' },
+	      { onClick: scrollToElement, id: 'contact-btn', className: 'button' },
 	      'contact'
 	    )
 	  );
@@ -43675,7 +43690,7 @@
 	    { id: 'work-main', className: 'show-grid', style: { position: 'relative', height: '400vh' } },
 	    _react2.default.createElement(
 	      _reactBootstrap.Col,
-	      { xs: 12, md: 4, className: 'work-header title-block' },
+	      { xs: 12, md: 4, id: 'work-header', className: 'title-block' },
 	      _react2.default.createElement(
 	        'h1',
 	        { className: 'title-text' },
@@ -43769,8 +43784,9 @@
 	'use strict';
 	
 	$(document).ready(function () {
+	
 	  var $window = $(window),
-	      $header = $('.work-header'),
+	      $header = $('#work-header'),
 	      $main = $('#work-main');
 	
 	  $window.on('scroll', function () {
