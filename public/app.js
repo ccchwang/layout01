@@ -22174,23 +22174,23 @@
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _About = __webpack_require__(460);
+	var _About = __webpack_require__(442);
 	
 	var _About2 = _interopRequireDefault(_About);
 	
-	var _Work = __webpack_require__(461);
+	var _Work = __webpack_require__(443);
 	
 	var _Work2 = _interopRequireDefault(_Work);
 	
-	var _Contact = __webpack_require__(462);
+	var _Contact = __webpack_require__(444);
 	
 	var _Contact2 = _interopRequireDefault(_Contact);
 	
-	var _Footer = __webpack_require__(463);
+	var _Footer = __webpack_require__(445);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
-	var _MainMenu = __webpack_require__(442);
+	var _MainMenu = __webpack_require__(446);
 	
 	var _MainMenu2 = _interopRequireDefault(_MainMenu);
 	
@@ -41527,13 +41527,163 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	exports.default = About;
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(189);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function About() {
+	
+	  return _react2.default.createElement(
+	    _reactBootstrap.Row,
+	    { className: 'show-grid' },
+	    _react2.default.createElement(
+	      _reactBootstrap.Col,
+	      { xs: 12, md: 4, id: 'about-header', className: 'title-block' },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: 'title-text' },
+	        'about'
+	      )
+	    ),
+	    _react2.default.createElement(_reactBootstrap.Col, { xs: 12, md: 8 })
+	  );
+	}
+
+/***/ },
+/* 443 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = Work;
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(189);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function Work() {
+	
+	  return _react2.default.createElement(
+	    _reactBootstrap.Row,
+	    { id: 'work-main', className: 'show-grid', style: { position: 'relative', height: '400vh' } },
+	    _react2.default.createElement(
+	      _reactBootstrap.Col,
+	      { xs: 12, md: 4, id: 'work-header', className: 'title-block' },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: 'title-text' },
+	        'work'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      _reactBootstrap.Col,
+	      { xs: 12, md: 8, id: 'work-content' },
+	      _react2.default.createElement('div', { className: 'work-item', style: { backgroundImage: "url('/public/images/3.png')" } }),
+	      _react2.default.createElement('div', { className: 'work-item', style: { backgroundImage: "url('/public/images/macbox.png')" } }),
+	      _react2.default.createElement('div', { className: 'work-item', style: { backgroundImage: "url('/public/images/rdi.jpg')" } }),
+	      _react2.default.createElement('div', { className: 'work-item', style: { backgroundImage: "url('/public/images/education.jpg')" } })
+	    )
+	  );
+	}
+
+/***/ },
+/* 444 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = Contact;
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(189);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function Contact() {
+	
+	  return _react2.default.createElement(
+	    _reactBootstrap.Row,
+	    { className: 'show-grid' },
+	    _react2.default.createElement(
+	      _reactBootstrap.Col,
+	      { xs: 12, md: 4, id: 'contact-header', className: 'title-block' },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: 'title-text' },
+	        'contact'
+	      )
+	    ),
+	    _react2.default.createElement(_reactBootstrap.Col, { xs: 12, md: 8 })
+	  );
+	}
+
+/***/ },
+/* 445 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = Footer;
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(189);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function Footer() {
+	
+	  return _react2.default.createElement(
+	    _reactBootstrap.Row,
+	    { className: 'show-grid' },
+	    _react2.default.createElement(
+	      _reactBootstrap.Col,
+	      { xs: 12, id: 'header' },
+	      _react2.default.createElement('div', { id: 'header-overlay' })
+	    )
+	  );
+	}
+
+/***/ },
+/* 446 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 	exports.default = SocialShareMenu;
 	
 	var _react = __webpack_require__(6);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _menu = __webpack_require__(443);
+	var _menu = __webpack_require__(447);
 	
 	var _menu2 = _interopRequireDefault(_menu);
 	
@@ -41588,7 +41738,7 @@
 	}
 
 /***/ },
-/* 443 */
+/* 447 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41603,11 +41753,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _item = __webpack_require__(444);
+	var _item = __webpack_require__(448);
 	
 	var _item2 = _interopRequireDefault(_item);
 	
-	var _button = __webpack_require__(459);
+	var _button = __webpack_require__(463);
 	
 	var _button2 = _interopRequireDefault(_button);
 	
@@ -41844,7 +41994,7 @@
 	exports.default = MotionMenu;
 
 /***/ },
-/* 444 */
+/* 448 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41861,7 +42011,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactMotion = __webpack_require__(445);
+	var _reactMotion = __webpack_require__(449);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -42025,7 +42175,7 @@
 	exports.default = MenuItem;
 
 /***/ },
-/* 445 */
+/* 449 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42034,34 +42184,34 @@
 	
 	function _interopRequire(obj) { return obj && obj.__esModule ? obj['default'] : obj; }
 	
-	var _Motion = __webpack_require__(446);
+	var _Motion = __webpack_require__(450);
 	
 	exports.Motion = _interopRequire(_Motion);
 	
-	var _StaggeredMotion = __webpack_require__(453);
+	var _StaggeredMotion = __webpack_require__(457);
 	
 	exports.StaggeredMotion = _interopRequire(_StaggeredMotion);
 	
-	var _TransitionMotion = __webpack_require__(454);
+	var _TransitionMotion = __webpack_require__(458);
 	
 	exports.TransitionMotion = _interopRequire(_TransitionMotion);
 	
-	var _spring = __webpack_require__(456);
+	var _spring = __webpack_require__(460);
 	
 	exports.spring = _interopRequire(_spring);
 	
-	var _presets = __webpack_require__(457);
+	var _presets = __webpack_require__(461);
 	
 	exports.presets = _interopRequire(_presets);
 	
 	// deprecated, dummy warning function
 	
-	var _reorderKeys = __webpack_require__(458);
+	var _reorderKeys = __webpack_require__(462);
 	
 	exports.reorderKeys = _interopRequire(_reorderKeys);
 
 /***/ },
-/* 446 */
+/* 450 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42072,27 +42222,27 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _mapToZero = __webpack_require__(447);
+	var _mapToZero = __webpack_require__(451);
 	
 	var _mapToZero2 = _interopRequireDefault(_mapToZero);
 	
-	var _stripStyle = __webpack_require__(448);
+	var _stripStyle = __webpack_require__(452);
 	
 	var _stripStyle2 = _interopRequireDefault(_stripStyle);
 	
-	var _stepper3 = __webpack_require__(449);
+	var _stepper3 = __webpack_require__(453);
 	
 	var _stepper4 = _interopRequireDefault(_stepper3);
 	
-	var _performanceNow = __webpack_require__(450);
+	var _performanceNow = __webpack_require__(454);
 	
 	var _performanceNow2 = _interopRequireDefault(_performanceNow);
 	
-	var _raf = __webpack_require__(451);
+	var _raf = __webpack_require__(455);
 	
 	var _raf2 = _interopRequireDefault(_raf);
 	
-	var _shouldStopAnimation = __webpack_require__(452);
+	var _shouldStopAnimation = __webpack_require__(456);
 	
 	var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
 	
@@ -42307,7 +42457,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 447 */
+/* 451 */
 /***/ function(module, exports) {
 
 	
@@ -42331,7 +42481,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 448 */
+/* 452 */
 /***/ function(module, exports) {
 
 	
@@ -42357,7 +42507,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 449 */
+/* 453 */
 /***/ function(module, exports) {
 
 	
@@ -42405,7 +42555,7 @@
 	// array reference around.
 
 /***/ },
-/* 450 */
+/* 454 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {// Generated by CoffeeScript 1.7.1
@@ -42444,10 +42594,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ },
-/* 451 */
+/* 455 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var now = __webpack_require__(450)
+	/* WEBPACK VAR INJECTION */(function(global) {var now = __webpack_require__(454)
 	  , root = typeof window === 'undefined' ? global : window
 	  , vendors = ['moz', 'webkit']
 	  , suffix = 'AnimationFrame'
@@ -42523,7 +42673,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 452 */
+/* 456 */
 /***/ function(module, exports) {
 
 	
@@ -42559,7 +42709,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 453 */
+/* 457 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42570,27 +42720,27 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _mapToZero = __webpack_require__(447);
+	var _mapToZero = __webpack_require__(451);
 	
 	var _mapToZero2 = _interopRequireDefault(_mapToZero);
 	
-	var _stripStyle = __webpack_require__(448);
+	var _stripStyle = __webpack_require__(452);
 	
 	var _stripStyle2 = _interopRequireDefault(_stripStyle);
 	
-	var _stepper3 = __webpack_require__(449);
+	var _stepper3 = __webpack_require__(453);
 	
 	var _stepper4 = _interopRequireDefault(_stepper3);
 	
-	var _performanceNow = __webpack_require__(450);
+	var _performanceNow = __webpack_require__(454);
 	
 	var _performanceNow2 = _interopRequireDefault(_performanceNow);
 	
-	var _raf = __webpack_require__(451);
+	var _raf = __webpack_require__(455);
 	
 	var _raf2 = _interopRequireDefault(_raf);
 	
-	var _shouldStopAnimation = __webpack_require__(452);
+	var _shouldStopAnimation = __webpack_require__(456);
 	
 	var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
 	
@@ -42826,7 +42976,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 454 */
+/* 458 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42837,31 +42987,31 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _mapToZero = __webpack_require__(447);
+	var _mapToZero = __webpack_require__(451);
 	
 	var _mapToZero2 = _interopRequireDefault(_mapToZero);
 	
-	var _stripStyle = __webpack_require__(448);
+	var _stripStyle = __webpack_require__(452);
 	
 	var _stripStyle2 = _interopRequireDefault(_stripStyle);
 	
-	var _stepper3 = __webpack_require__(449);
+	var _stepper3 = __webpack_require__(453);
 	
 	var _stepper4 = _interopRequireDefault(_stepper3);
 	
-	var _mergeDiff = __webpack_require__(455);
+	var _mergeDiff = __webpack_require__(459);
 	
 	var _mergeDiff2 = _interopRequireDefault(_mergeDiff);
 	
-	var _performanceNow = __webpack_require__(450);
+	var _performanceNow = __webpack_require__(454);
 	
 	var _performanceNow2 = _interopRequireDefault(_performanceNow);
 	
-	var _raf = __webpack_require__(451);
+	var _raf = __webpack_require__(455);
 	
 	var _raf2 = _interopRequireDefault(_raf);
 	
-	var _shouldStopAnimation = __webpack_require__(452);
+	var _shouldStopAnimation = __webpack_require__(456);
 	
 	var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
 	
@@ -43317,7 +43467,7 @@
 	// that you've unmounted but that's still animating. This is where it lives
 
 /***/ },
-/* 455 */
+/* 459 */
 /***/ function(module, exports) {
 
 	
@@ -43430,7 +43580,7 @@
 	// to loop through and find a key's index each time), but I no longer care
 
 /***/ },
-/* 456 */
+/* 460 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43443,7 +43593,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _presets = __webpack_require__(457);
+	var _presets = __webpack_require__(461);
 	
 	var _presets2 = _interopRequireDefault(_presets);
 	
@@ -43458,7 +43608,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 457 */
+/* 461 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -43473,7 +43623,7 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 458 */
+/* 462 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -43496,7 +43646,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ },
-/* 459 */
+/* 463 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43513,7 +43663,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactMotion = __webpack_require__(445);
+	var _reactMotion = __webpack_require__(449);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -43621,156 +43771,6 @@
 	  bumpy: _react.PropTypes.bool
 	};
 	exports.default = MenuButton;
-
-/***/ },
-/* 460 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = About;
-	
-	var _react = __webpack_require__(6);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(189);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function About() {
-	
-	  return _react2.default.createElement(
-	    _reactBootstrap.Row,
-	    { className: 'show-grid' },
-	    _react2.default.createElement(
-	      _reactBootstrap.Col,
-	      { xs: 12, md: 4, id: 'about-header', className: 'title-block' },
-	      _react2.default.createElement(
-	        'h1',
-	        { className: 'title-text' },
-	        'about'
-	      )
-	    ),
-	    _react2.default.createElement(_reactBootstrap.Col, { xs: 12, md: 8 })
-	  );
-	}
-
-/***/ },
-/* 461 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = Work;
-	
-	var _react = __webpack_require__(6);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(189);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function Work() {
-	
-	  return _react2.default.createElement(
-	    _reactBootstrap.Row,
-	    { id: 'work-main', className: 'show-grid', style: { position: 'relative', height: '400vh' } },
-	    _react2.default.createElement(
-	      _reactBootstrap.Col,
-	      { xs: 12, md: 4, id: 'work-header', className: 'title-block' },
-	      _react2.default.createElement(
-	        'h1',
-	        { className: 'title-text' },
-	        'work'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      _reactBootstrap.Col,
-	      { xs: 12, md: 8, id: 'work-content' },
-	      _react2.default.createElement('div', { className: 'work-item', style: { backgroundImage: "url('/public/images/3.png')" } }),
-	      _react2.default.createElement('div', { className: 'work-item', style: { backgroundImage: "url('/public/images/1.png')" } }),
-	      _react2.default.createElement('div', { className: 'work-item', style: { backgroundImage: "url('/public/images/2.png')" } }),
-	      _react2.default.createElement('div', { className: 'work-item', style: { backgroundImage: "url('/public/images/4.png')" } })
-	    )
-	  );
-	}
-
-/***/ },
-/* 462 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = Contact;
-	
-	var _react = __webpack_require__(6);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(189);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function Contact() {
-	
-	  return _react2.default.createElement(
-	    _reactBootstrap.Row,
-	    { className: 'show-grid' },
-	    _react2.default.createElement(
-	      _reactBootstrap.Col,
-	      { xs: 12, md: 4, id: 'contact-header', className: 'title-block' },
-	      _react2.default.createElement(
-	        'h1',
-	        { className: 'title-text' },
-	        'contact'
-	      )
-	    ),
-	    _react2.default.createElement(_reactBootstrap.Col, { xs: 12, md: 8 })
-	  );
-	}
-
-/***/ },
-/* 463 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = Footer;
-	
-	var _react = __webpack_require__(6);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(189);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function Footer() {
-	
-	  return _react2.default.createElement(
-	    _reactBootstrap.Row,
-	    { className: 'show-grid' },
-	    _react2.default.createElement(
-	      _reactBootstrap.Col,
-	      { xs: 12, id: 'header' },
-	      _react2.default.createElement('div', { id: 'header-overlay' })
-	    )
-	  );
-	}
 
 /***/ },
 /* 464 */

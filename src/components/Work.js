@@ -12,10 +12,13 @@ export default function Work () {
 
       <Col xs={12} md={8} id="work-content">
       <div className="work-item" style={{backgroundImage: "url('/public/images/3.png')"}} />
-        <div className="work-item" style={{backgroundImage: "url('/public/images/1.png')"}} />
-        <div className="work-item" style={{backgroundImage: "url('/public/images/2.png')"}} />
 
-        <div className="work-item" style={{backgroundImage: "url('/public/images/4.png')"}} />
+      <div className="work-item" style={{backgroundImage: "url('/public/images/macbox.png')"}} />
+
+        <div className="work-item" style={{backgroundImage: "url('/public/images/rdi.jpg')"}} />
+
+
+        <div className="work-item" style={{backgroundImage: "url('/public/images/education.jpg')"}} />
       </Col>
 
     </Row>
