@@ -17,6 +17,10 @@ export default function Work () {
           <div className="work-item-border" />
           <div className="work-item-box">
             <h1 className="work-item-title">Omni</h1>
+            <div className="outer">
+              <div className="inner" />
+                <h3 className="work-item-subtitle">Dream analysis app</h3>
+            </div>
           </div>
 
 

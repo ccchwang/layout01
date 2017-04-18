@@ -167,27 +167,40 @@ body {
 .work-item-border {
   position: absolute;
   z-index: 2000;
-  width: 150px;
-  height: 100px;
-  border: 1.5px solid white;
+  width: 250px;
+  height: 110px;
+  border: 2px solid $highlight-color;
   padding: 10px;
   transition: 0.3s
 }
 
 .work-item-box {
   position: absolute;
-  height: 80px;
-  width: 120px;
+  height: 90px;
+  width: 230px;
   z-index: 2000;
-  background-color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.9);
   transition: height 0.3s, width 0.3s, border 0.1s
 }
 
 .work-item-title {
+  font-size: 4em;
+  letter-spacing: 12px;
+  margin: 15px;
   color: $secondary-color;
   font-family: Raleway;
   font-weight: 100;
   text-transform: uppercase;
+}
+
+.work-item-subtitle {
+  color: $secondary-color;
+  font-family: Raleway;
+  font-weight: 100;
+  text-transform: uppercase;
+  transform: translateX(300px);
+  transition: 0.3s;
 }
 
 
@@ -203,11 +216,35 @@ body {
   }
 
   .work-item-box {
-    height: 150px;
-    width: 200px;
-    border: 1.75px solid white;
+    height: 200px;
+    width: 300px;
+    border: 2px solid $highlight-color;
+
   }
 
+  .work-item-subtitle {
+    transform: translateX(0px);
+  }
+
+.inner {
+  transform: translateX(-300px);
+}
+}
+
+.outer {
+  overflow: hidden;
+}
+
+.inner {
+      position: absolute;
+    background-color: red;
+    z-index: 3000;
+    width: 300px;
+    height: 30px;
+    top: 110px;
+transition: 1s;
+  transition-delay: 0.3s;
+        transform: translateX(300px);
 }
 
 // CONTACT
