@@ -106,7 +106,6 @@ export default class MenuItem extends Component {
       newY = y;
     }
 
-    console.log(newX)
     if (!this.props.children) return null;
     return (
       <Motion style={this.sequenceParams[this.state.sequence]}>

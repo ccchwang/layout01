@@ -11,14 +11,33 @@ export default function Work () {
       </Col>
 
       <Col xs={12} md={8} id="work-content">
-      <div className="work-item" style={{backgroundImage: "url('/public/images/3.png')"}} />
 
-      <div className="work-item" style={{backgroundImage: "url('/public/images/macbox.png')"}} />
+         <div className="work-item">
+          <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}}/>
+          <div className="work-item-box">
+            <h1 className="work-item-title">Omni</h1>
+          </div>
 
-        <div className="work-item" style={{backgroundImage: "url('/public/images/rdi.jpg')"}} />
+        </div>
 
+        <div className="work-item">
+          <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/macbox.png')"}} />
+          <div className="work-item-box" />
+          <h1 className="work-item-title">Macbox</h1>
+        </div>
 
-        <div className="work-item" style={{backgroundImage: "url('/public/images/education.jpg')"}} />
+        <div className="work-item">
+          <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/rdi.jpg')"}} />
+          <div className="work-item-box" />
+          <h1 className="work-item-title">react-dynamic-UI</h1>
+        </div>
+
+        <div className="work-item">
+          <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/education.jpg')"}} />
+          <div className="work-item-box" />
+          <h1 className="work-item-title">Education for All</h1>
+        </div>
+
       </Col>
 
     </Row>
