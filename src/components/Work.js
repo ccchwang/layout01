@@ -14,27 +14,29 @@ export default function Work () {
 
          <div className="work-item">
           <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}}/>
+          <div className="work-item-border" />
           <div className="work-item-box">
             <h1 className="work-item-title">Omni</h1>
           </div>
+
 
         </div>
 
         <div className="work-item">
           <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/macbox.png')"}} />
-          <div className="work-item-box" />
+          <div className="work-item-border" />
           <h1 className="work-item-title">Macbox</h1>
         </div>
 
         <div className="work-item">
           <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/rdi.jpg')"}} />
-          <div className="work-item-box" />
+          <div className="work-item-border" />
           <h1 className="work-item-title">react-dynamic-UI</h1>
         </div>
 
         <div className="work-item">
           <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/education.jpg')"}} />
-          <div className="work-item-box" />
+          <div className="work-item-border" />
           <h1 className="work-item-title">Education for All</h1>
         </div>
 
