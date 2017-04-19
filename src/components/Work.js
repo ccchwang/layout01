@@ -20,6 +20,7 @@ export default function Work () {
           <div className="work-item-header">
             <h1 className="work-item-title">Omni</h1>
             <div className="border-wrapper">
+              <img className="border-arrow" src="/public/images/next-white.png" />
               <div className="border-top" />
               <div className="border-right" />
               <div className="border-bottom" />

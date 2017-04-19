@@ -17,6 +17,8 @@ $ease-border: ease-in;
 * {
   box-sizing: border-box;
   font-family: $serif-font;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -200,8 +202,7 @@ body {
   position: absolute;
   width: 300px;
   margin-top: -39px;
-  transition: 0.2s;
-  transition-delay: 0.6s
+  transition: 0.4s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 // work - border
@@ -213,11 +214,19 @@ body {
   margin-top: 20px;
 }
 
+.border-arrow {
+  position: absolute;
+  top: 16.5px;
+  left: -24px;
+  transition: 0.5s 0.3s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
 .border-top {
   position: absolute;
   border-top: $main-border;
   top: 0;
-  width: 230px;
+  width: 112px;
   right: 50%;
   transition: right 0.2s 0.6s;
   transition-timing-function: $ease-border;
@@ -227,7 +236,7 @@ body {
   position: absolute;
   border-bottom: $main-border;
   top: 0;
-  width: 230px;
+  width: 112px;
   height: 64.8px;
   left: 100%;
   transition: left 0.2s 0.2s;
@@ -261,6 +270,15 @@ body {
     transform: scale(1.4)
   }
 
+  .border-arrow {
+    position: absolute;
+    top: 16.5px;
+    left: 43px;
+    transition: 0.5s;
+    transition-delay: 0.9s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
   .border-top {
     right: 0;
     transition: 0.2s;
@@ -286,6 +304,7 @@ body {
   }
 
   .subtitle-wrapper {
+    margin-top: -20px;
     opacity: 0;
     transition: 0.2s;
   }
