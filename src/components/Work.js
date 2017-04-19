@@ -14,12 +14,18 @@ export default function Work () {
 
          <div className="work-item">
           <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}}/>
-          <div className="work-item-border" />
+
           <div className="work-item-box">
             <h1 className="work-item-title">Omni</h1>
-            <div className="outer">
-              <div className="inner" />
-                <h3 className="work-item-subtitle">Dream analysis app</h3>
+            <div style={{position: 'relative', overflow: 'hidden', width: '230px', height: '70px'}}>
+              <div className="border-top" />
+              <div className="border-right" />
+              <div className="border-bottom" />
+              <div className="border-left" />
+            </div>
+            <div className="subtitle-box">
+              <p className="work-item-subtitle">Dream analysis app</p>
+              <p style={{marginTop: '-5px'}} className="work-item-subtitle">NERD Stack, A-frame, Victory</p>
             </div>
           </div>
 
@@ -51,3 +57,4 @@ export default function Work () {
 
 
 }
+

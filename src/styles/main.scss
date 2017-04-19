@@ -4,6 +4,8 @@ $main-color: #b5b4b4;
 $highlight-color: #f7fb8e;
 $secondary-color: #424242;
 
+$serif-font: 'Playfair Display';
+$sanserif-font: 'Poppins';
 // --------------------------------
 
 
@@ -11,7 +13,7 @@ $secondary-color: #424242;
 
 * {
   box-sizing: border-box;
-  font-family: 'Playfair Display', serif;
+  font-family: $serif-font;
 }
 
 body {
@@ -155,12 +157,10 @@ body {
   height: 100vh;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .work-item-image {
-  transition: 0.3s;
+  transition: 0.4s;
   background-size: cover;
 }
 
@@ -169,38 +169,34 @@ body {
   z-index: 2000;
   width: 250px;
   height: 110px;
-  border: 2px solid $highlight-color;
+  border: 2px solid white;
   padding: 10px;
   transition: 0.3s
 }
 
 .work-item-box {
+  padding: 40px;
   position: absolute;
-  height: 90px;
-  width: 230px;
   z-index: 2000;
-  overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.9);
+  text-align: left;
   transition: height 0.3s, width 0.3s, border 0.1s
 }
 
 .work-item-title {
-  font-size: 4em;
-  letter-spacing: 12px;
-  margin: 15px;
-  color: $secondary-color;
-  font-family: Raleway;
-  font-weight: 100;
-  text-transform: uppercase;
+  font-size: 6em;
+  margin: 0;
+  color: white;
+  font-family: $sanserif-font;
+  font-weight: 600;
 }
 
 .work-item-subtitle {
-  color: $secondary-color;
-  font-family: Raleway;
+  color: white;
+  font-family: 'Poppins';
   font-weight: 100;
-  text-transform: uppercase;
-  transform: translateX(300px);
+  // margin-top: -10px;
   transition: 0.3s;
+  font-size: 17px
 }
 
 
@@ -208,43 +204,77 @@ body {
 .work-item:hover {
 
   .work-item-image {
-    transform: scale(1.1)
+    transform: scale(1.4)
   }
 
-  .work-item-border {
+  .border-top {
+    right: 0;
+    transition: 0.2s
+  }
+  .border-bottom {
+    left: 0;
+    transition: 0.2s;
+    transition-delay: 0.4s
+  }
+  .border-right {
+    bottom: 0;
+    transition: 0.2s;
+    transition-delay: 0.2s
+  }
+  .border-left {
+    top: 0;
+    transition: 0.2s;
+    transition-delay: 0.6s
+  }
+
+  .subtitle-box {
     opacity: 0;
+    transition: 0.2s;
   }
-
-  .work-item-box {
-    height: 200px;
-    width: 300px;
-    border: 2px solid $highlight-color;
-
-  }
-
-  .work-item-subtitle {
-    transform: translateX(0px);
-  }
-
-.inner {
-  transform: translateX(-300px);
-}
 }
 
-.outer {
-  overflow: hidden;
+.subtitle-box {
+  position: absolute;
+  margin-top: -30px;
+  transition: 0.2s;
+  transition-delay: 0.4s
 }
 
-.inner {
-      position: absolute;
-    background-color: red;
-    z-index: 3000;
-    width: 300px;
-    height: 30px;
-    top: 110px;
-transition: 1s;
-  transition-delay: 0.3s;
-        transform: translateX(300px);
+.border-top {
+  border-top: 10px solid white;
+  position: absolute;
+  top: 0;
+  width: 230px;
+  right: 50%;
+  transition: right 0.2s 0.6s
+}
+
+.border-bottom {
+  border-bottom: 10px solid white;
+  position: absolute;
+  top: 0;
+  width: 230px;
+  height: 70px;
+  left: 100%;
+  transition: left 0.2s 0.2s
+}
+
+.border-right {
+  border-right: 10px solid white;
+  position: absolute;
+  height: 70px;
+  right: 0;
+  bottom: 100%;
+  transition: bottom 0.2s 0.4s
+}
+
+.border-left {
+  border-right: 10px solid white;
+  position: absolute;
+  height: 70px;
+  left: 0;
+  top: 100%;
+  transition: top 0.2s
 }
 
 // CONTACT
