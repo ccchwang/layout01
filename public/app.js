@@ -101,7 +101,7 @@
 	exports.i(__webpack_require__(4), "");
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: \"Playfair Display\"; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  height: 100%;\n  width: 100%; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 12px 15px 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#menu {\n  position: fixed;\n  z-index: 300;\n  left: 20px;\n  top: 20px; }\n\n#menu-btn {\n  width: 41px;\n  height: 41px;\n  padding-top: 8px; }\n\n.menu-item {\n  font-size: 1.2em;\n  padding: 6px 11px 8px; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 5em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.25em;\n    font-weight: 900; }\n\n#header-content {\n  height: 75vh;\n  top: 12.5vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 13vh;\n  left: 6vw; }\n\n#header-divider {\n  margin-top: -20px !important; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n#work-content {\n  height: 400vh;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  height: 100vh;\n  overflow: hidden;\n  display: flex; }\n\n.work-item-image {\n  transition: 0.4s;\n  background-size: cover; }\n\n.work-item-border {\n  position: absolute;\n  z-index: 2000;\n  width: 250px;\n  height: 110px;\n  border: 2px solid white;\n  padding: 10px;\n  transition: 0.3s; }\n\n.work-item-box {\n  padding: 40px;\n  position: absolute;\n  z-index: 2000;\n  text-align: left;\n  transition: height 0.3s, width 0.3s, border 0.1s; }\n\n.work-item-title {\n  font-size: 6em;\n  margin: 0;\n  color: white;\n  font-family: \"Poppins\";\n  font-weight: 600; }\n\n.work-item-subtitle {\n  color: white;\n  font-family: 'Poppins';\n  font-weight: 100;\n  transition: 0.3s;\n  font-size: 17px; }\n\n.work-item:hover .work-item-image {\n  transform: scale(1.4); }\n\n.work-item:hover .border-top {\n  right: 0;\n  transition: 0.2s; }\n\n.work-item:hover .border-bottom {\n  left: 0;\n  transition: 0.2s;\n  transition-delay: 0.4s; }\n\n.work-item:hover .border-right {\n  bottom: 0;\n  transition: 0.2s;\n  transition-delay: 0.2s; }\n\n.work-item:hover .border-left {\n  top: 0;\n  transition: 0.2s;\n  transition-delay: 0.6s; }\n\n.work-item:hover .subtitle-box {\n  opacity: 0;\n  transition: 0.2s; }\n\n.subtitle-box {\n  position: absolute;\n  margin-top: -30px;\n  transition: 0.2s;\n  transition-delay: 0.4s; }\n\n.border-top {\n  border-top: 10px solid white;\n  position: absolute;\n  top: 0;\n  width: 230px;\n  right: 50%;\n  transition: right 0.2s 0.6s; }\n\n.border-bottom {\n  border-bottom: 10px solid white;\n  position: absolute;\n  top: 0;\n  width: 230px;\n  height: 70px;\n  left: 100%;\n  transition: left 0.2s 0.2s; }\n\n.border-right {\n  border-right: 10px solid white;\n  position: absolute;\n  height: 70px;\n  right: 0;\n  bottom: 100%;\n  transition: bottom 0.2s 0.4s; }\n\n.border-left {\n  border-right: 10px solid white;\n  position: absolute;\n  height: 70px;\n  left: 0;\n  top: 100%;\n  transition: top 0.2s; }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n@media screen and (min-width: 321px) {\n  #header h1 {\n    font-size: 6em; }\n  #header p {\n    font-size: 1.47em; }\n  .title-text {\n    font-size: 3em;\n    padding: 15px 20px 20px; }\n  .menu-item {\n    font-size: 1.4em;\n    padding: 7px 13px 9px; } }\n\n@media screen and (min-width: 668px) {\n  #header h1 {\n    font-size: 7em; }\n  #header p {\n    font-size: 1.7em; } }\n\n@media screen and (min-width: 990px) {\n  #header-content {\n    height: 85vh;\n    top: 7.5vh;\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e;\n    border-width: 5px; }\n  #header-text {\n    left: -111px;\n    top: 28.4%; }\n  #header-divider {\n    margin-top: -25px !important; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed !important; }\n  .top {\n    top: 75% !important; }\n  #work-content {\n    position: absolute; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape) {\n  #header h1 {\n    font-size: 4em; }\n  #header p {\n    font-size: 1em; }\n  #header-text {\n    top: 9vh; }\n  .title-text {\n    font-size: 2em;\n    padding: 12px 15px 15px; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: \"Playfair Display\"; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  height: 100%;\n  width: 100%; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 12px 15px 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#menu {\n  position: fixed;\n  z-index: 300;\n  left: 20px;\n  top: 20px; }\n\n#menu-btn {\n  width: 41px;\n  height: 41px;\n  padding-top: 8px; }\n\n.menu-item {\n  font-size: 1.2em;\n  padding: 6px 11px 8px; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 5em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.25em;\n    font-weight: 900; }\n\n#header-content {\n  height: 75vh;\n  top: 12.5vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 13vh;\n  left: 6vw; }\n\n#header-divider {\n  margin-top: -20px !important; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n.about-content {\n  font-family: \"Raleway\"; }\n\n#work-content {\n  height: 400vh;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  height: 100vh;\n  overflow: hidden;\n  display: flex; }\n\n.work-item-image {\n  transition: 10s linear;\n  background-size: cover; }\n\n.work-item-header {\n  padding: 40px;\n  position: absolute;\n  z-index: 2000;\n  text-align: left; }\n\n.work-item-title {\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  margin: 0;\n  color: white;\n  font-family: \"Raleway\";\n  font-size: 4em;\n  font-weight: 300; }\n\n.work-item-subtitle {\n  color: white;\n  font-family: \"Raleway\";\n  font-size: 18px;\n  font-weight: 700;\n  transition: 0.3s; }\n\n.subtitle-wrapper {\n  position: absolute;\n  width: 300px;\n  margin-top: -39px;\n  transition: 0.2s;\n  transition-delay: 0.6s; }\n\n.border-wrapper {\n  position: relative;\n  overflow: hidden;\n  width: 112px;\n  height: 64.8px;\n  margin-top: 20px; }\n\n.border-top {\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  width: 230px;\n  right: 50%;\n  transition: right 0.2s 0.6s;\n  transition-timing-function: ease-in; }\n\n.border-bottom {\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 230px;\n  height: 64.8px;\n  left: 100%;\n  transition: left 0.2s 0.2s;\n  transition-timing-function: ease-in; }\n\n.border-right {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  right: 0;\n  bottom: 100%;\n  transition: bottom 0.2s 0.4s;\n  transition-timing-function: ease-in; }\n\n.border-left {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  left: 0;\n  top: 100%;\n  transition: top 0.2s;\n  transition-timing-function: ease-in; }\n\n.work-item:hover .work-item-image {\n  transform: scale(1.4); }\n\n.work-item:hover .border-top {\n  right: 0;\n  transition: 0.2s;\n  transition-timing-function: ease-in; }\n\n.work-item:hover .border-bottom {\n  left: 0;\n  transition: 0.2s;\n  transition-delay: 0.4s;\n  transition-timing-function: ease-in; }\n\n.work-item:hover .border-right {\n  bottom: 0;\n  transition: 0.2s;\n  transition-delay: 0.2s;\n  transition-timing-function: ease-in; }\n\n.work-item:hover .border-left {\n  top: 0;\n  transition: 0.2s;\n  transition-delay: 0.6s;\n  transition-timing-function: ease-in; }\n\n.work-item:hover .subtitle-wrapper {\n  opacity: 0;\n  transition: 0.2s; }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n@media screen and (min-width: 321px) {\n  #header h1 {\n    font-size: 6em; }\n  #header p {\n    font-size: 1.47em; }\n  .title-text {\n    font-size: 3em;\n    padding: 15px 20px 20px; }\n  .menu-item {\n    font-size: 1.4em;\n    padding: 7px 13px 9px; } }\n\n@media screen and (min-width: 668px) {\n  #header h1 {\n    font-size: 7em; }\n  #header p {\n    font-size: 1.7em; } }\n\n@media screen and (min-width: 992px) {\n  #header-content {\n    height: 85vh;\n    top: 7.5vh;\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e;\n    border-width: 5px; }\n  #header h1 {\n    font-size: 7.5em; }\n  #header p {\n    font-size: 1.85em; }\n  #header-text {\n    left: -119px;\n    top: 24.4%; }\n  #header-divider {\n    margin-top: -25px !important; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed !important; }\n  .top {\n    top: 75% !important; }\n  #work-content {\n    position: absolute; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape) {\n  #header h1 {\n    font-size: 4em; }\n  #header p {\n    font-size: 1em; }\n  #header-text {\n    top: 9vh; }\n  .title-text {\n    font-size: 2em;\n    padding: 12px 15px 15px; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
 	
 	// exports
 
@@ -41551,7 +41551,11 @@
 	        'about'
 	      )
 	    ),
-	    _react2.default.createElement(_reactBootstrap.Col, { xs: 12, md: 8 })
+	    _react2.default.createElement(
+	      _reactBootstrap.Col,
+	      { className: 'about-content', xs: 12, md: 8 },
+	      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo sit amet lacus non egestas. Aliquam nec turpis vitae nisl sodales dignissim et sed nisl. Pellentesque suscipit magna elit, quis luctus turpis pharetra a. Pellentesque sodales fermentum neque eget bibendum. Nullam quis aliquet elit. Donec vulputate nec mi vitae ornare. Praesent aliquet sodales egestas. Donec tempus, purus nec interdum posuere, nibh diam accumsan mi, id ullamcorper enim lorem nec augue. Mauris enim metus, dignissim sit amet porta vitae, pharetra vel justo. Nunc eu sodales turpis, in euismod lorem. Integer eu erat pretium, aliquam lorem vitae, faucibus lectus. Aliquam ut auctor eros, vel consequat tortor. Nullam hendrerit sapien eget scelerisque lacinia. Curabitur sed semper tellus. Curabitur imperdiet luctus augue, eu auctor sem ultricies non. Fusce augue sapien, viverra eu accumsan a, imperdiet ac mauris. Nam ac est malesuada, maximus nulla sed, aliquam enim. Aliquam pellentesque lectus in sodales ullamcorper. Mauris quis aliquet mauris. Phasellus pharetra elit eleifend magna porttitor, nec faucibus velit gravida. Morbi dictum volutpat justo. Morbi non aliquet odio, id tempor libero. Sed tempor luctus tempus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam dictum sapien nec sem hendrerit, in imperdiet leo tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce accumsan magna in hendrerit fringilla. Sed non felis at ante euismod aliquet feugiat vitae dolor. Duis interdum ante in dui facilisis blandit. Duis malesuada eleifend sapien ut laoreet. Cras non purus nec libero sodales gravida id faucibus sapien. Maecenas ultricies cursus purus. Etiam urna nunc, dapibus non sem at, sagittis luctus lorem. Sed a odio in lectus tristique condimentum. Nam euismod orci vel enim tempor efficitur. Vestibulum dui est, lacinia et semper nec, lacinia sit amet odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc nec faucibus ipsum, ut suscipit quam. Proin maximus ut sem aliquet interdum. Vestibulum quis venenatis leo, et facilisis elit. Pellentesque cursus cursus lacus, in porttitor nibh molestie a. Aliquam pharetra ut libero et pulvinar. Suspendisse egestas eu ipsum ut facilisis. Curabitur id enim nec est vehicula vulputate in ac elit. Nam accumsan metus a velit aliquam, eget gravida nulla egestas. Proin rhoncus sollicitudin metus faucibus gravida. Quisque tempor consectetur arcu, sit amet feugiat quam bibendum quis. Nunc vestibulum lectus massa, vel lacinia nulla aliquet eget.'
+	    )
 	  );
 	}
 
@@ -41597,7 +41601,7 @@
 	        _react2.default.createElement('div', { className: 'work-item-image img-responsive', style: { backgroundImage: "url('/public/images/3.png')" } }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'work-item-box' },
+	          { className: 'work-item-header' },
 	          _react2.default.createElement(
 	            'h1',
 	            { className: 'work-item-title' },
@@ -41605,7 +41609,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { style: { position: 'relative', overflow: 'hidden', width: '230px', height: '70px' } },
+	            { className: 'border-wrapper' },
 	            _react2.default.createElement('div', { className: 'border-top' }),
 	            _react2.default.createElement('div', { className: 'border-right' }),
 	            _react2.default.createElement('div', { className: 'border-bottom' }),
@@ -41613,7 +41617,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'subtitle-box' },
+	            { className: 'subtitle-wrapper' },
 	            _react2.default.createElement(
 	              'p',
 	              { className: 'work-item-subtitle' },
@@ -41630,34 +41634,109 @@
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'work-item' },
-	        _react2.default.createElement('div', { className: 'work-item-image img-responsive', style: { backgroundImage: "url('/public/images/macbox.png')" } }),
-	        _react2.default.createElement('div', { className: 'work-item-border' }),
+	        _react2.default.createElement('div', { className: 'work-item-image img-responsive', style: { backgroundImage: "url('/public/images/rdi.jpg')" } }),
 	        _react2.default.createElement(
-	          'h1',
-	          { className: 'work-item-title' },
-	          'Macbox'
+	          'div',
+	          { className: 'work-item-header' },
+	          _react2.default.createElement(
+	            'h1',
+	            { className: 'work-item-title', style: { color: '#424242' } },
+	            'react-dynamic-UI'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'border-wrapper' },
+	            _react2.default.createElement('div', { className: 'border-top', style: { borderColor: '#424242' } }),
+	            _react2.default.createElement('div', { className: 'border-right', style: { borderColor: '#424242' } }),
+	            _react2.default.createElement('div', { className: 'border-bottom', style: { borderColor: '#424242' } }),
+	            _react2.default.createElement('div', { className: 'border-left', style: { borderColor: '#424242' } })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'subtitle-wrapper' },
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'work-item-subtitle', style: { color: '#424242' } },
+	              'UI library for React.js'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { style: { marginTop: '-5px', color: '#424242' }, className: 'work-item-subtitle' },
+	              'NERD Stack, A-frame, Victory'
+	            )
+	          )
 	        )
 	      ),
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'work-item' },
-	        _react2.default.createElement('div', { className: 'work-item-image img-responsive', style: { backgroundImage: "url('/public/images/rdi.jpg')" } }),
-	        _react2.default.createElement('div', { className: 'work-item-border' }),
+	        _react2.default.createElement('div', { className: 'work-item-image img-responsive', style: { backgroundImage: "url('/public/images/macbox.png')" } }),
 	        _react2.default.createElement(
-	          'h1',
-	          { className: 'work-item-title' },
-	          'react-dynamic-UI'
+	          'div',
+	          { className: 'work-item-header' },
+	          _react2.default.createElement(
+	            'h1',
+	            { className: 'work-item-title' },
+	            'Macbox'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'border-wrapper' },
+	            _react2.default.createElement('div', { className: 'border-top' }),
+	            _react2.default.createElement('div', { className: 'border-right' }),
+	            _react2.default.createElement('div', { className: 'border-bottom' }),
+	            _react2.default.createElement('div', { className: 'border-left' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'subtitle-wrapper' },
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'work-item-subtitle' },
+	              'Prototype e-commerce site'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { style: { marginTop: '-5px' }, className: 'work-item-subtitle' },
+	              'NERD Stack, A-frame, Victory'
+	            )
+	          )
 	        )
 	      ),
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'work-item' },
 	        _react2.default.createElement('div', { className: 'work-item-image img-responsive', style: { backgroundImage: "url('/public/images/education.jpg')" } }),
-	        _react2.default.createElement('div', { className: 'work-item-border' }),
 	        _react2.default.createElement(
-	          'h1',
-	          { className: 'work-item-title' },
-	          'Education for All'
+	          'div',
+	          { className: 'work-item-header' },
+	          _react2.default.createElement(
+	            'h1',
+	            { className: 'work-item-title' },
+	            'Education for All'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'border-wrapper' },
+	            _react2.default.createElement('div', { className: 'border-top' }),
+	            _react2.default.createElement('div', { className: 'border-right' }),
+	            _react2.default.createElement('div', { className: 'border-bottom' }),
+	            _react2.default.createElement('div', { className: 'border-left' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'subtitle-wrapper' },
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'work-item-subtitle' },
+	              'Design concept for nonprofit'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { style: { marginTop: '-5px' }, className: 'work-item-subtitle' },
+	              'NERD Stack, A-frame, Victory'
+	            )
+	          )
 	        )
 	      )
 	    )

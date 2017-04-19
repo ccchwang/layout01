@@ -5,7 +5,10 @@ $highlight-color: #f7fb8e;
 $secondary-color: #424242;
 
 $serif-font: 'Playfair Display';
-$sanserif-font: 'Poppins';
+$sanserif-font: 'Raleway';
+
+$main-border: 5px solid white;
+$ease-border: ease-in;
 // --------------------------------
 
 
@@ -144,6 +147,10 @@ body {
   background-color: $highlight-color;
 }
 
+.about-content {
+  font-family: $sanserif-font
+}
+
 // WORK
 
 #work-content {
@@ -160,47 +167,94 @@ body {
 }
 
 .work-item-image {
-  transition: 0.4s;
+  transition: 10s linear;
   background-size: cover;
 }
 
-.work-item-border {
-  position: absolute;
-  z-index: 2000;
-  width: 250px;
-  height: 110px;
-  border: 2px solid white;
-  padding: 10px;
-  transition: 0.3s
-}
-
-.work-item-box {
+.work-item-header {
   padding: 40px;
   position: absolute;
   z-index: 2000;
   text-align: left;
-  transition: height 0.3s, width 0.3s, border 0.1s
 }
 
 .work-item-title {
-  font-size: 6em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin: 0;
   color: white;
   font-family: $sanserif-font;
-  font-weight: 600;
+  font-size: 4em;
+  font-weight: 300;
 }
 
 .work-item-subtitle {
   color: white;
-  font-family: 'Poppins';
-  font-weight: 100;
-  // margin-top: -10px;
+  font-family: $sanserif-font;
+  font-size: 18px;
+  font-weight: 700;
   transition: 0.3s;
-  font-size: 17px
 }
 
+.subtitle-wrapper {
+  position: absolute;
+  width: 300px;
+  margin-top: -39px;
+  transition: 0.2s;
+  transition-delay: 0.6s
+}
 
+// work - border
+.border-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 112px;
+  height: 64.8px;
+  margin-top: 20px;
+}
 
+.border-top {
+  position: absolute;
+  border-top: $main-border;
+  top: 0;
+  width: 230px;
+  right: 50%;
+  transition: right 0.2s 0.6s;
+  transition-timing-function: $ease-border;
+}
+
+.border-bottom {
+  position: absolute;
+  border-bottom: $main-border;
+  top: 0;
+  width: 230px;
+  height: 64.8px;
+  left: 100%;
+  transition: left 0.2s 0.2s;
+  transition-timing-function: $ease-border;
+}
+
+.border-right {
+  position: absolute;
+  border-right: $main-border;
+  height: 64.8px;
+  right: 0;
+  bottom: 100%;
+  transition: bottom 0.2s 0.4s;
+  transition-timing-function: $ease-border;
+}
+
+.border-left {
+  position: absolute;
+  border-right: $main-border;
+  height: 64.8px;
+  left: 0;
+  top: 100%;
+  transition: top 0.2s;
+  transition-timing-function: $ease-border;
+}
+
+// WORK - HOVER
 .work-item:hover {
 
   .work-item-image {
@@ -209,73 +263,35 @@ body {
 
   .border-top {
     right: 0;
-    transition: 0.2s
+    transition: 0.2s;
+    transition-timing-function: $ease-border;
   }
   .border-bottom {
     left: 0;
     transition: 0.2s;
-    transition-delay: 0.4s
+    transition-delay: 0.4s;
+    transition-timing-function: $ease-border;
   }
   .border-right {
     bottom: 0;
     transition: 0.2s;
-    transition-delay: 0.2s
+    transition-delay: 0.2s;
+    transition-timing-function: $ease-border;
   }
   .border-left {
     top: 0;
     transition: 0.2s;
-    transition-delay: 0.6s
+    transition-delay: 0.6s;
+    transition-timing-function: $ease-border;
   }
 
-  .subtitle-box {
+  .subtitle-wrapper {
     opacity: 0;
     transition: 0.2s;
   }
 }
 
-.subtitle-box {
-  position: absolute;
-  margin-top: -30px;
-  transition: 0.2s;
-  transition-delay: 0.4s
-}
 
-.border-top {
-  border-top: 10px solid white;
-  position: absolute;
-  top: 0;
-  width: 230px;
-  right: 50%;
-  transition: right 0.2s 0.6s
-}
-
-.border-bottom {
-  border-bottom: 10px solid white;
-  position: absolute;
-  top: 0;
-  width: 230px;
-  height: 70px;
-  left: 100%;
-  transition: left 0.2s 0.2s
-}
-
-.border-right {
-  border-right: 10px solid white;
-  position: absolute;
-  height: 70px;
-  right: 0;
-  bottom: 100%;
-  transition: bottom 0.2s 0.4s
-}
-
-.border-left {
-  border-right: 10px solid white;
-  position: absolute;
-  height: 70px;
-  left: 0;
-  top: 100%;
-  transition: top 0.2s
-}
 
 // CONTACT
 #contact-header {
@@ -333,7 +349,7 @@ body {
 
 
 //*** FULL SIZE DESKTOP
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 992px) {
 
   // HEADER
   #header-content {
@@ -344,9 +360,18 @@ body {
     border-width: 5px;
   }
 
+  #header {
+    h1 {
+      font-size: 7.5em;
+    }
+    p {
+      font-size: 1.85em;
+    }
+  }
+
   #header-text {
-    left: -111px;
-    top: 28.4%;
+    left: -119px;
+    top: 24.4%;
   }
 
   #header-divider {
