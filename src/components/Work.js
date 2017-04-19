@@ -57,7 +57,7 @@ export default function Work () {
 
         {/*** MACBOX ***/}
         <div className="work-item">
-          <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/macbox.png')"}} />
+          <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
 
           <div className="work-item-header">
             <h1 className="work-item-title">Macbox</h1>
@@ -78,7 +78,7 @@ export default function Work () {
 
         {/*** NONPROF ***/}
         <div className="work-item">
-          <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/education.jpg')"}} />
+          <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
 
           <div className="work-item-header">
             <h1 className="work-item-title">Education for All</h1>
