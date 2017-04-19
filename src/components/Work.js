@@ -41,6 +41,7 @@ export default function Work () {
           <div className="work-item-header">
             <h1 className="work-item-title" style={{color: '#424242'}}>react-dynamic-UI</h1>
             <div className="border-wrapper">
+              <img className="border-arrow" src="/public/images/next-black.png" />
               <div className="border-top" style={{borderColor: '#424242'}}/>
               <div className="border-right" style={{borderColor: '#424242'}}/>
               <div className="border-bottom" style={{borderColor: '#424242'}}/>
@@ -61,6 +62,7 @@ export default function Work () {
           <div className="work-item-header">
             <h1 className="work-item-title">Macbox</h1>
             <div className="border-wrapper">
+              <img className="border-arrow" src="/public/images/next-white.png" />
               <div className="border-top" />
               <div className="border-right" />
               <div className="border-bottom" />
@@ -81,6 +83,7 @@ export default function Work () {
           <div className="work-item-header">
             <h1 className="work-item-title">Education for All</h1>
             <div className="border-wrapper">
+              <img className="border-arrow" src="/public/images/next-white.png" />
               <div className="border-top" />
               <div className="border-right" />
               <div className="border-bottom" />
