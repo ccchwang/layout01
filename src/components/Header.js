@@ -14,7 +14,7 @@ export default function Header() {
           <h1>Chloe</h1>
           <h1>Hwang</h1>
           <h1 id="header-divider">—</h1>
-          <p>Frontend Software Engineer</p>
+          <p>Frontend Web Developer</p>
         </div>
         </div>
       </Col>

@@ -10,7 +10,11 @@ export default function About () {
         <h1 className="title-text">about</h1>
       </Col>
 
-      <Col xs={12} md={8}>
+      <Col className="about-content" xs={12} md={8}>
+        <p className="about-heading-text">Art Direction</p>
+        <p className="about-text">Starting with basic websites several years ago I found myself working as an Art Director for complex projects with a holistic approach soon. Visually appealing designs, subtle details and brand guidelines combined to innovative interfaces across various touch points became my daily companion.</p>
+        <p className="about-heading-text">Art Direction</p>
+        <p className="about-text">Starting with basic websites several years ago I found myself working as an Art Director for complex projects with a holistic approach soon. Visually appealing designs, subtle details and brand guidelines combined to innovative interfaces across various touch points became my daily companion.</p>
 
       </Col>
 

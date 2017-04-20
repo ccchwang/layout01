@@ -101,7 +101,7 @@
 	exports.i(__webpack_require__(4), "");
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: 'Playfair Display', serif; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  height: 100%;\n  width: 100%; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 12px 15px 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#menu {\n  position: fixed;\n  z-index: 300;\n  left: 20px;\n  top: 20px; }\n\n#menu-btn {\n  width: 41px;\n  height: 41px;\n  padding-top: 8px; }\n\n.menu-item {\n  font-size: 1.2em;\n  padding: 6px 11px 8px; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 5em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.25em;\n    font-weight: 900; }\n\n#header-content {\n  height: 75vh;\n  top: 12.5vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 13vh;\n  left: 6vw; }\n\n#header-divider {\n  margin-top: -20px !important; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n#work-content {\n  height: 400vh;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  height: 100vh;\n  overflow: hidden;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.work-item-image {\n  transition: 0.3s;\n  background-size: cover; }\n\n.work-item-border {\n  position: absolute;\n  z-index: 2000;\n  width: 250px;\n  height: 110px;\n  border: 2px solid #f7fb8e;\n  padding: 10px;\n  transition: 0.3s; }\n\n.work-item-box {\n  position: absolute;\n  height: 90px;\n  width: 230px;\n  z-index: 2000;\n  overflow: hidden;\n  background-color: rgba(255, 255, 255, 0.9);\n  transition: height 0.3s, width 0.3s, border 0.1s; }\n\n.work-item-title {\n  font-size: 4em;\n  letter-spacing: 12px;\n  margin: 15px;\n  color: #424242;\n  font-family: Raleway;\n  font-weight: 100;\n  text-transform: uppercase; }\n\n.work-item-subtitle {\n  color: #424242;\n  font-family: Raleway;\n  font-weight: 100;\n  text-transform: uppercase;\n  transform: translateX(300px);\n  transition: 0.3s; }\n\n.work-item:hover .work-item-image {\n  transform: scale(1.1); }\n\n.work-item:hover .work-item-border {\n  opacity: 0; }\n\n.work-item:hover .work-item-box {\n  height: 200px;\n  width: 300px;\n  border: 2px solid #f7fb8e; }\n\n.work-item:hover .work-item-subtitle {\n  transform: translateX(0px); }\n\n.work-item:hover .inner {\n  transform: translateX(-300px); }\n\n.outer {\n  overflow: hidden; }\n\n.inner {\n  position: absolute;\n  background-color: red;\n  z-index: 3000;\n  width: 300px;\n  height: 30px;\n  top: 110px;\n  transition: 1s;\n  transition-delay: 0.3s;\n  transform: translateX(300px); }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n@media screen and (min-width: 321px) {\n  #header h1 {\n    font-size: 6em; }\n  #header p {\n    font-size: 1.47em; }\n  .title-text {\n    font-size: 3em;\n    padding: 15px 20px 20px; }\n  .menu-item {\n    font-size: 1.4em;\n    padding: 7px 13px 9px; } }\n\n@media screen and (min-width: 668px) {\n  #header h1 {\n    font-size: 7em; }\n  #header p {\n    font-size: 1.7em; } }\n\n@media screen and (min-width: 990px) {\n  #header-content {\n    height: 85vh;\n    top: 7.5vh;\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e;\n    border-width: 5px; }\n  #header-text {\n    left: -111px;\n    top: 28.4%; }\n  #header-divider {\n    margin-top: -25px !important; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed !important; }\n  .top {\n    top: 75% !important; }\n  #work-content {\n    position: absolute; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape) {\n  #header h1 {\n    font-size: 4em; }\n  #header p {\n    font-size: 1em; }\n  #header-text {\n    top: 9vh; }\n  .title-text {\n    font-size: 2em;\n    padding: 12px 15px 15px; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:after {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: \"Playfair Display\";\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  height: 100%;\n  width: 100%; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 12px 15px 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#menu {\n  position: fixed;\n  z-index: 3000;\n  left: 20px;\n  top: 20px; }\n\n#menu-btn {\n  width: 41px;\n  height: 41px;\n  padding-top: 8px; }\n\n.menu-item {\n  font-size: 1.2em;\n  padding: 6px 11px 8px; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 5em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.25em;\n    font-weight: 900; }\n\n#header-content {\n  height: 75vh;\n  top: 12.5vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 13vh;\n  left: 6vw; }\n\n#header-divider {\n  margin-top: -20px !important; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n.about-content {\n  font-family: \"Poppins\";\n  text-align: left;\n  padding: 90px 100px; }\n\n#about-btn::before, #work-btn::before, #contact-btn::before {\n  content: '';\n  position: absolute;\n  z-index: -1;\n  width: 0%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: #f7fb8e;\n  transition: 0.3s; }\n\n#about-btn:hover, #work-btn:hover, #contact-btn:hover {\n  color: #424242 !important;\n  transition: 0.3s; }\n\n#about-btn, #work-btn, #contact-btn {\n  transition: color 0.3s; }\n\n#about-btn:focus::before, #about-btn:hover::before,\n#work-btn:focus::before, #work-btn:hover::before,\n#contact-btn:focus::before, #contact-btn:hover::before {\n  width: 100%; }\n\n.about-heading-text {\n  font-size: 30px;\n  font-family: \"Poppins\";\n  font-weight: 500; }\n\n.about-text {\n  font-family: \"Poppins\";\n  font-size: 17px;\n  font-weight: 300;\n  line-height: 25px; }\n\n#work-content {\n  height: 400vh;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  height: 100vh;\n  overflow: hidden;\n  display: flex; }\n\n.work-item-image {\n  transition: 5s linear;\n  background-size: cover; }\n\n.work-item-header {\n  padding: 40px;\n  position: absolute;\n  z-index: 2000;\n  text-align: left; }\n\n.work-item-title {\n  margin: 0;\n  color: white;\n  font-family: \"Poppins\";\n  font-size: 4.5em;\n  font-weight: 600; }\n\n.work-item-subtitle {\n  color: white;\n  font-family: \"Poppins\";\n  font-size: 19px;\n  transition: 0.3s; }\n\n.subtitle-wrapper {\n  position: absolute;\n  width: 300px;\n  margin-top: -33px;\n  margin-left: 5px;\n  transition: 0.4s 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275); }\n\n.border-wrapper {\n  position: relative;\n  overflow: hidden;\n  width: 168px;\n  height: 64.8px;\n  margin-top: 20px;\n  margin-left: 5px; }\n\n.border-wrapper::before {\n  content: 'SEE MORE';\n  font-family: 'poppins';\n  color: white;\n  font-size: 18px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: 20.5px;\n  left: -104px;\n  transition: 0.6s 0.3s;\n  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }\n\n.border-top {\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  width: 168px;\n  right: 50%;\n  transition: right 0.2s 0.6s;\n  transition-timing-function: linear; }\n\n.border-bottom {\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 168px;\n  height: 64.8px;\n  left: 100%;\n  transition: left 0.2s 0.2s;\n  transition-timing-function: linear; }\n\n.border-right {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  right: 0;\n  bottom: 100%;\n  transition: bottom 0.2s 0.4s;\n  transition-timing-function: linear; }\n\n.border-left {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  left: 0;\n  top: 100%;\n  transition: top 0.2s;\n  transition-timing-function: linear; }\n\n.work-item:hover {\n  cursor: pointer; }\n  .work-item:hover .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }\n  .work-item:hover .work-item-image {\n    transform: scale(1.3); }\n  .work-item:hover .border-top {\n    right: 0;\n    transition: right 0.2s;\n    transition-timing-function: linear; }\n  .work-item:hover .border-bottom {\n    left: 0;\n    transition: left 0.2s;\n    transition-delay: 0.4s;\n    transition-timing-function: linear; }\n  .work-item:hover .border-right {\n    bottom: 0;\n    transition: bottom 0.2s;\n    transition-delay: 0.2s;\n    transition-timing-function: linear; }\n  .work-item:hover .border-left {\n    top: 0;\n    transition: top 0.2s;\n    transition-delay: 0.6s;\n    transition-timing-function: linear; }\n  .work-item:hover .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; }\n\n.border-wrapper:hover {\n  filter: grayscale(0) sepia(100%) contrast(100%) saturate(7.5); }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n@media screen and (min-width: 321px) {\n  #header h1 {\n    font-size: 6em; }\n  #header p {\n    font-size: 1.47em; }\n  .title-text {\n    font-size: 3em;\n    padding: 15px 20px 20px; }\n  .menu-item {\n    font-size: 1.4em;\n    padding: 7px 13px 9px; } }\n\n@media screen and (min-width: 668px) {\n  #header h1 {\n    font-size: 7em; }\n  #header p {\n    font-size: 1.7em; } }\n\n@media screen and (min-width: 992px) {\n  #header-content {\n    height: 85vh;\n    top: 7.5vh;\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e;\n    border-width: 5px; }\n  #header h1 {\n    font-size: 8em; }\n  #header p {\n    font-family: 'Poppins';\n    text-transform: uppercase;\n    font-weight: 500;\n    font-size: 1.8em;\n    letter-spacing: 2px;\n    margin-top: 2px; }\n  #header-text {\n    left: -140px;\n    top: 19.4%; }\n  #header-divider {\n    margin-top: -40px !important; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  .fixed-header {\n    position: fixed !important; }\n  .top {\n    top: 75% !important; }\n  #work-content {\n    position: absolute; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape) {\n  #header h1 {\n    font-size: 4em; }\n  #header p {\n    font-size: 1em; }\n  #header-text {\n    top: 9vh; }\n  .title-text {\n    font-size: 2em;\n    padding: 12px 15px 15px; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:before {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
 	
 	// exports
 
@@ -22286,7 +22286,7 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Frontend Software Engineer'
+	            'Frontend Web Developer'
 	          )
 	        )
 	      )
@@ -41551,7 +41551,30 @@
 	        'about'
 	      )
 	    ),
-	    _react2.default.createElement(_reactBootstrap.Col, { xs: 12, md: 8 })
+	    _react2.default.createElement(
+	      _reactBootstrap.Col,
+	      { className: 'about-content', xs: 12, md: 8 },
+	      _react2.default.createElement(
+	        'p',
+	        { className: 'about-heading-text' },
+	        'Art Direction'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        { className: 'about-text' },
+	        'Starting with basic websites several years ago I found myself working as an Art Director for complex projects with a holistic approach soon. Visually appealing designs, subtle details and brand guidelines combined to innovative interfaces across various touch points became my daily companion.'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        { className: 'about-heading-text' },
+	        'Art Direction'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        { className: 'about-text' },
+	        'Starting with basic websites several years ago I found myself working as an Art Director for complex projects with a holistic approach soon. Visually appealing designs, subtle details and brand guidelines combined to innovative interfaces across various touch points became my daily companion.'
+	      )
+	    )
 	  );
 	}
 
@@ -41595,10 +41618,9 @@
 	        'div',
 	        { className: 'work-item' },
 	        _react2.default.createElement('div', { className: 'work-item-image img-responsive', style: { backgroundImage: "url('/public/images/3.png')" } }),
-	        _react2.default.createElement('div', { className: 'work-item-border' }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'work-item-box' },
+	          { className: 'work-item-header' },
 	          _react2.default.createElement(
 	            'h1',
 	            { className: 'work-item-title' },
@@ -41606,12 +41628,24 @@
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'outer' },
-	            _react2.default.createElement('div', { className: 'inner' }),
+	            { className: 'border-wrapper' },
+	            _react2.default.createElement('div', { className: 'border-top' }),
+	            _react2.default.createElement('div', { className: 'border-right' }),
+	            _react2.default.createElement('div', { className: 'border-bottom' }),
+	            _react2.default.createElement('div', { className: 'border-left' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'subtitle-wrapper' },
 	            _react2.default.createElement(
-	              'h3',
+	              'p',
 	              { className: 'work-item-subtitle' },
 	              'Dream analysis app'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { style: { marginTop: '-5px' }, className: 'work-item-subtitle' },
+	              'NERD Stack, A-frame, Victory'
 	            )
 	          )
 	        )
@@ -41619,34 +41653,109 @@
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'work-item' },
-	        _react2.default.createElement('div', { className: 'work-item-image img-responsive', style: { backgroundImage: "url('/public/images/macbox.png')" } }),
-	        _react2.default.createElement('div', { className: 'work-item-border' }),
-	        _react2.default.createElement(
-	          'h1',
-	          { className: 'work-item-title' },
-	          'Macbox'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'work-item' },
 	        _react2.default.createElement('div', { className: 'work-item-image img-responsive', style: { backgroundImage: "url('/public/images/rdi.jpg')" } }),
-	        _react2.default.createElement('div', { className: 'work-item-border' }),
 	        _react2.default.createElement(
-	          'h1',
-	          { className: 'work-item-title' },
-	          'react-dynamic-UI'
+	          'div',
+	          { className: 'work-item-header' },
+	          _react2.default.createElement(
+	            'h1',
+	            { className: 'work-item-title', style: { color: '#424242' } },
+	            'react-dynamic-UI'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'border-wrapper' },
+	            _react2.default.createElement('div', { className: 'border-top', style: { borderColor: '#424242' } }),
+	            _react2.default.createElement('div', { className: 'border-right', style: { borderColor: '#424242' } }),
+	            _react2.default.createElement('div', { className: 'border-bottom', style: { borderColor: '#424242' } }),
+	            _react2.default.createElement('div', { className: 'border-left', style: { borderColor: '#424242' } })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'subtitle-wrapper' },
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'work-item-subtitle', style: { color: '#424242' } },
+	              'UI library for React.js'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { style: { marginTop: '-5px', color: '#424242' }, className: 'work-item-subtitle' },
+	              'CSS3, React.js, Node.js'
+	            )
+	          )
 	        )
 	      ),
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'work-item' },
-	        _react2.default.createElement('div', { className: 'work-item-image img-responsive', style: { backgroundImage: "url('/public/images/education.jpg')" } }),
-	        _react2.default.createElement('div', { className: 'work-item-border' }),
+	        _react2.default.createElement('div', { className: 'work-item-image img-responsive', style: { backgroundImage: "url('/public/images/3.png')" } }),
 	        _react2.default.createElement(
-	          'h1',
-	          { className: 'work-item-title' },
-	          'Education for All'
+	          'div',
+	          { className: 'work-item-header' },
+	          _react2.default.createElement(
+	            'h1',
+	            { className: 'work-item-title' },
+	            'Macbox'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'border-wrapper' },
+	            _react2.default.createElement('div', { className: 'border-top' }),
+	            _react2.default.createElement('div', { className: 'border-right' }),
+	            _react2.default.createElement('div', { className: 'border-bottom' }),
+	            _react2.default.createElement('div', { className: 'border-left' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'subtitle-wrapper' },
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'work-item-subtitle' },
+	              'Prototype e-commerce site'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { style: { marginTop: '-5px' }, className: 'work-item-subtitle' },
+	              'NERD Stack, A-frame, Victory'
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'work-item' },
+	        _react2.default.createElement('div', { className: 'work-item-image img-responsive', style: { backgroundImage: "url('/public/images/3.png')" } }),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'work-item-header' },
+	          _react2.default.createElement(
+	            'h1',
+	            { className: 'work-item-title' },
+	            'Education for All'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'border-wrapper' },
+	            _react2.default.createElement('div', { className: 'border-top' }),
+	            _react2.default.createElement('div', { className: 'border-right' }),
+	            _react2.default.createElement('div', { className: 'border-bottom' }),
+	            _react2.default.createElement('div', { className: 'border-left' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'subtitle-wrapper' },
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'work-item-subtitle' },
+	              'Design concept for nonprofit'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { style: { marginTop: '-5px' }, className: 'work-item-subtitle' },
+	              'NERD Stack, A-frame, Victory'
+	            )
+	          )
 	        )
 	      )
 	    )
