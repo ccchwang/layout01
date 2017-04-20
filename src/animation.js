@@ -59,18 +59,21 @@ $(document).ready(function () {
           })
 
           //make page expand;
-          $("#work-header").addClass('minimized');
-          $(".work-content").addClass('expanded-column');
+          setTimeout(function(){
+            $("#work-header").addClass('minimized');
+            $(".work-content").addClass('expanded-column');
 
-          //give border to title block
-          $("#work-header").addClass('add-border');
+            //give border to title block
+            $("#work-header").addClass('add-border');
 
 
-          //give height to hidden content
-          $(`#${section} > .work-item-content`).addClass('expanded-content');
+            //give height to hidden content
+            $(`#${section} > .work-item-content`).addClass('expanded-content');
 
-          //raise up header image
-          $(`#${section} > .work-item-header`).addClass('small-header');
+            //raise up header image
+            $(`#${section} > .work-item-header`).addClass('small-header');
+            }, 300)
+
         }
         );
 
