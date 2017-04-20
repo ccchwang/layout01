@@ -6,8 +6,15 @@ $(document).ready(function () {
         $header = $('#work-header'),
         $main = $('#work-main');
 
+  const fixedHeaderTop = $header.offset().top + $header.height()
+
+
+
   $window.on('scroll', function () {
     if ($window.width() >= 992) {
+
+      // let ttop = $('.work-content.expanded-column').height() * 0.355;
+
       let mainTop = $main.offset().top;
       let windowTop = $window.scrollTop();
 
@@ -16,82 +23,58 @@ $(document).ready(function () {
 
       if (windowBottom > mainBottom) {
         $header.removeClass('fixed-header');
-        $header.addClass('top')
+        $header.css('top', fixedHeaderTop)
       }
       else if (windowTop > mainTop) {
         $header.addClass('fixed-header');
-        $header.removeClass('top');
+        $header.css('top', 0)
       }
       else {
         $header.removeClass('fixed-header');
       }
     }
+  });
+
+
+  //*** TRANSITION ANIMATION ***//
+  const sections = ['omni', 'rdi', 'macbox', 'nonprof'];
+
+  sections.forEach((section, i) => {
+    $(`#${section}`).click(function () {
+
+      //make header unclickable
+      $(`#${section}`).removeClass('closed')
+
+
+      $('body').animate(
+        //scroll to section
+        {scrollTop: $(`#${section}`).offset().top},
+        400,
+        function() {
+
+          //hide other sections
+          sections.forEach((otherSection, j) => {
+            if (j !== i) {
+              $(`#${otherSection}`).addClass('hide-section');
+            }
+          })
+
+          //make page expand;
+          $("#work-header").addClass('minimized');
+          $(".work-content").addClass('expanded-column');
+
+          //give height to hidden content
+          $(`#${section} > .work-item-content`).addClass('expanded-content');
+
+          //raise up header image
+          $(`#${section} > .work-item-header`).addClass('small-header');
+        });
+    })
   })
 
 
-  //***
-
-  $('#omni').click(function () {
-
-    //make header unclickable
-    $('#omni').removeClass('closed')
-
-    //scroll to section
-    $('body').animate({
-        scrollTop: $('#work-main').offset().top
-      }, 400);
-
-    //hide other sections
-    setTimeout(function() {
-      $("#rdi").addClass('hide-section');
-      $("#macbox").addClass('hide-section');
-      $("#nonprof").addClass('hide-section');
-    }, 400)
-
-    //make page expand;
-    $("#work-header").addClass('minimized');
-    $(".work-content").addClass('expanded');
-
-    //raise up header image
-    $(".work-item-header.omni").addClass('small-header');
-
-    $(".work-item").addClass('tryt')
-  })
 
 
-
-
-
-  $('#rdi').click(function () {
-
-    //make header unclickable
-    $('#rdi').removeClass('closed')
-
-
-    //scroll to section, then hide other sections
-    $('body').animate(
-      {scrollTop: $('#rdi').offset().top},
-      400,
-      function() {
-        $("#omni").addClass('hide-section');
-        $("#macbox").addClass('hide-section');
-        $("#nonprof").addClass('hide-section');
-
-        //make page expand;
-        $("#work-header").addClass('minimized');
-        $(".work-content").addClass('expanded');
-
-        //raise up header image
-        $(".work-item-header.rdi").addClass('small-header');
-      });
-
-
-
-
-
-
-
-  })
 
 
 })

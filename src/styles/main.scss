@@ -535,7 +535,7 @@ body {
   display: flex
 }
 
-.work-item-header.omni, .work-item-header.rdi {
+.work-item-header {
   min-height: 270px;
   overflow: hidden;
   transition: 1s height cubic-bezier(.77,0,.175,1) 1s;
@@ -544,17 +544,21 @@ body {
 .work-item-content {
   background-color: white;
   text-align: left;
-  padding: 40px;
+  height: 0;
 }
 
 .hide-section {
   display: none;
 }
+.expanded-content {
+  height: 100%;
+  padding: 40px;
+}
 .minimized {
   width: 25%;
   border-right: 1px solid #dcdcdc
 }
-.expanded {
+.expanded-column {
   width: 75%;
   left: 25%
 }
@@ -562,11 +566,6 @@ body {
   height: 40vh
 }
 
-.tryt{
-  height: 100% !important;
-  transition: 0.5s;
-  transition-delay: 1s
-}
 
 /////////////
 
