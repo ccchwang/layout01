@@ -14,13 +14,13 @@ export default function Work () {
 
 
         {/*** OMNI ***/}
-        <div className="work-item" id="omni">
+        <div className="work-item closed" id="omni">
 
           {/* OMNI - header image */}
-          <div className="work-header-image omni">
-            <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
-            <div className="work-item-header">
-              <h1 className="work-item-title">Omni</h1>
+          <div className="work-item-header omni">
+            <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
+            <div className="header-text-wrapper">
+              <h1 className="header-title">Omni</h1>
               <div className="border-wrapper">
                 <div className="border-top" />
                 <div className="border-right" />
@@ -28,10 +28,14 @@ export default function Work () {
                 <div className="border-left" />
               </div>
               <div className="subtitle-wrapper">
-                <p className="work-item-subtitle">Dream analysis app</p>
-                <p style={{marginTop: '-5px'}} className="work-item-subtitle">NERD Stack, A-frame, Victory</p>
+                <p className="header-subtitle">Dream analysis app</p>
+                <p style={{marginTop: '-5px'}} className="header-subtitle">NERD Stack, A-frame, Victory</p>
               </div>
             </div>
+          </div>
+
+          {/* OMNI - content */}
+          <div className="work-item-content">
           </div>
 
 

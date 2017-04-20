@@ -33,6 +33,9 @@ $(document).ready(function () {
 
   $('#omni').click(function () {
 
+    //make header unclickable
+    $('#omni').removeClass('closed')
+
     //scroll to section
     $('body').animate({
         scrollTop: $('#omni').offset().top
@@ -50,7 +53,7 @@ $(document).ready(function () {
     $("#work-content").addClass('expanded');
 
     //raise up header image
-    $(".work-header-image.omni").addClass('small-header');
+    $(".work-item-header.omni").addClass('small-header');
 
   })
 
