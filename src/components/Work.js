@@ -49,7 +49,7 @@ export default function Work () {
             </div>
             <div className="subtitle-wrapper">
               <p className="work-item-subtitle" style={{color: '#424242'}}>UI library for React.js</p>
-              <p style={{marginTop: '-5px', color: '#424242'}} className="work-item-subtitle" >NERD Stack, A-frame, Victory</p>
+              <p style={{marginTop: '-5px', color: '#424242'}} className="work-item-subtitle">CSS3, React.js, Node.js</p>
             </div>
           </div>
 
