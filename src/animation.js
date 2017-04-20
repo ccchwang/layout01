@@ -38,7 +38,7 @@ $(document).ready(function () {
 
     //scroll to section
     $('body').animate({
-        scrollTop: $('#omni').offset().top
+        scrollTop: $('#work-main').offset().top
       }, 400);
 
     //hide other sections
@@ -50,15 +50,50 @@ $(document).ready(function () {
 
     //make page expand;
     $("#work-header").addClass('minimized');
-    $("#work-content").addClass('expanded');
+    $(".work-content").addClass('expanded');
 
     //raise up header image
     $(".work-item-header.omni").addClass('small-header');
 
+    $(".work-item").addClass('tryt')
   })
 
 
 
+
+
+  $('#rdi').click(function () {
+
+    //make header unclickable
+    $('#rdi').removeClass('closed')
+
+
+    //scroll to section, then hide other sections
+    $('body').animate(
+      {scrollTop: $('#rdi').offset().top},
+      400,
+      function() {
+        $("#omni").addClass('hide-section');
+        $("#macbox").addClass('hide-section');
+        $("#nonprof").addClass('hide-section');
+      });
+
+    //hide other sections
+    // setTimeout(function() {
+    //   $("#omni").addClass('hide-section');
+    //   $("#macbox").addClass('hide-section');
+    //   $("#nonprof").addClass('hide-section');
+    // }, 400)
+
+    //make page expand;
+    $("#work-header").addClass('minimized');
+    $(".work-content").addClass('expanded');
+
+    //raise up header image
+    $(".work-item-header.rdi").addClass('small-header');
+
+
+  })
 
 
 })
