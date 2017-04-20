@@ -14,27 +14,31 @@ export default function Work () {
 
 
         {/*** OMNI ***/}
-        <div className="work-item">
-          <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
+        <div className="work-item" id="omni">
 
-          <div className="work-item-header">
-            <h1 className="work-item-title">Omni</h1>
-            <div className="border-wrapper">
-              <div className="border-top" />
-              <div className="border-right" />
-              <div className="border-bottom" />
-              <div className="border-left" />
-            </div>
-            <div className="subtitle-wrapper">
-              <p className="work-item-subtitle">Dream analysis app</p>
-              <p style={{marginTop: '-5px'}} className="work-item-subtitle">NERD Stack, A-frame, Victory</p>
+          {/* OMNI - header image */}
+          <div className="work-header-image omni">
+            <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
+            <div className="work-item-header">
+              <h1 className="work-item-title">Omni</h1>
+              <div className="border-wrapper">
+                <div className="border-top" />
+                <div className="border-right" />
+                <div className="border-bottom" />
+                <div className="border-left" />
+              </div>
+              <div className="subtitle-wrapper">
+                <p className="work-item-subtitle">Dream analysis app</p>
+                <p style={{marginTop: '-5px'}} className="work-item-subtitle">NERD Stack, A-frame, Victory</p>
+              </div>
             </div>
           </div>
+
 
         </div>
 
         {/*** RDI ***/}
-        <div className="work-item">
+        <div className="work-item" id="rdi">
           <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/rdi.jpg')"}} />
 
           <div className="work-item-header">
@@ -54,7 +58,7 @@ export default function Work () {
         </div>
 
         {/*** MACBOX ***/}
-        <div className="work-item">
+        <div className="work-item" id="macbox">
           <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
 
           <div className="work-item-header">
@@ -74,7 +78,7 @@ export default function Work () {
         </div>
 
         {/*** NONPROF ***/}
-        <div className="work-item">
+        <div className="work-item" id="nonprof">
           <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
 
           <div className="work-item-header">

@@ -12,6 +12,7 @@ $ease-border: linear;
 // --------------------------------
 
 
+
 //*** IPHONE 5 OR SMALLER
 
 * {
@@ -210,7 +211,6 @@ body {
 .work-item {
   height: 100vh;
   overflow: hidden;
-  display: flex;
 }
 
 .work-item-image {
@@ -388,7 +388,42 @@ body {
   }
 }
 
+///////
 
+#work-header {
+  transition: 1s width cubic-bezier(.77,0,.175,1) 0.4s;
+}
+
+#work-content {
+  transition: 1s width cubic-bezier(.77,0,.175,1) 0.4s;
+}
+
+.work-header-image {
+  width: 100%;
+  height: 100%;
+  display: flex
+}
+
+.work-header-image.omni {
+  min-height: 270px;
+  overflow: hidden;
+  transition: 1s height cubic-bezier(.77,0,.175,1) 1.4s;
+}
+
+.hide-section {
+  display: none;
+}
+.minimized {
+  width: 25%
+}
+.expanded {
+  width: 75%;
+}
+.small-header {
+  height: 40vh
+}
+
+/////////////
 
 //*** BIGGER PHONES
 @media screen and (min-width: 321px) {

@@ -1,9 +1,10 @@
 $(document).ready(function () {
 
+
+  //*** WORK SECTION STICKY
   const $window = $(window),
         $header = $('#work-header'),
         $main = $('#work-main');
-
 
   $window.on('scroll', function () {
     if ($window.width() >= 992) {
@@ -25,8 +26,34 @@ $(document).ready(function () {
         $header.removeClass('fixed-header');
       }
     }
+  })
+
+
+  //***
+
+  $('#omni').click(function () {
+
+    //scroll to section
+    $('body').animate({
+        scrollTop: $('#omni').offset().top
+      }, 400);
+
+    //hide other sections
+    setTimeout(function() {
+      $("#rdi").addClass('hide-section');
+      $("#macbox").addClass('hide-section');
+      $("#nonprof").addClass('hide-section');
+    }, 400)
+
+    //make page expand;
+    $("#work-header").addClass('minimized');
+    $("#work-content").addClass('expanded');
+
+    //raise up header image
+    $(".work-header-image.omni").addClass('small-header');
 
   })
+
 
 
 
