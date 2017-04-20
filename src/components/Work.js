@@ -6,9 +6,14 @@ export default function Work () {
   return (
     <Row id='work-main' className="show-grid" style={{position: 'relative'}}>
 
-      <Col xs={12} md={4} id="work-header" className="title-block">
+      <div className="title-block col-md-4 fixed-header" id="work-header">
+        <div style={{    width: '100vw',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'}}>
         <h1  className="title-text">work</h1>
-      </Col>
+        </div>
+      </div>
 
       <Col xs={12} md={8} className="work-content">
 

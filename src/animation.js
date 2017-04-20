@@ -23,11 +23,11 @@ $(document).ready(function () {
 
       if (windowBottom > mainBottom) {
         $header.removeClass('fixed-header');
-        $header.css('top', fixedHeaderTop)
+        $header.addClass('top')
       }
       else if (windowTop > mainTop) {
         $header.addClass('fixed-header');
-        $header.css('top', 0)
+        $header.removeClass('top')
       }
       else {
         $header.removeClass('fixed-header');
@@ -45,12 +45,11 @@ $(document).ready(function () {
       //make header unclickable
       $(`#${section}`).removeClass('closed')
 
-
       $('body').animate(
         //scroll to section
         {scrollTop: $(`#${section}`).offset().top},
         400,
-        function() {
+        function () {
 
           //hide other sections
           sections.forEach((otherSection, j) => {
@@ -63,14 +62,35 @@ $(document).ready(function () {
           $("#work-header").addClass('minimized');
           $(".work-content").addClass('expanded-column');
 
+          //give border to title block
+          $("#work-header").addClass('add-border');
+
+
           //give height to hidden content
           $(`#${section} > .work-item-content`).addClass('expanded-content');
 
           //raise up header image
           $(`#${section} > .work-item-header`).addClass('small-header');
-        });
+        }
+        );
+
+
+
     })
   })
+
+  // $window.resize(function(){
+  //   if ($window.width() <= 992) {
+  //     $("#work-header").removeClass('minimized');
+  //     $(".work-content").removeClass('expanded-column');
+  //     $header.css('top', 0)
+  //   }
+  //   else {
+  //     $("#work-header").addClass('minimized');
+  //     $(".work-content").addClass('expanded-column');
+  //     $header.css('top', '271.5px')
+  //   }
+  // })
 
 
 
