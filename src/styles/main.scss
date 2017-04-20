@@ -522,11 +522,11 @@ body {
 ///////
 
 #work-header {
-  transition: 1s width cubic-bezier(.77,0,.175,1) 0.8s;
+  transition: 1s width cubic-bezier(.77,0,.175,1) 0.2s;
 }
 
 .work-content {
-  transition: 1s cubic-bezier(.77,0,.175,1) 0.8s;
+  transition: 1s cubic-bezier(.77,0,.175,1) 0.2s;
 }
 
 .work-item-header {
@@ -538,7 +538,7 @@ body {
 .work-item-header.omni, .work-item-header.rdi {
   min-height: 270px;
   overflow: hidden;
-  transition: 1s height cubic-bezier(.77,0,.175,1) 1.8s;
+  transition: 1s height cubic-bezier(.77,0,.175,1) 1s;
 }
 
 .work-item-content {

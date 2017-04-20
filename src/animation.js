@@ -76,21 +76,19 @@ $(document).ready(function () {
         $("#omni").addClass('hide-section');
         $("#macbox").addClass('hide-section');
         $("#nonprof").addClass('hide-section');
+
+        //make page expand;
+        $("#work-header").addClass('minimized');
+        $(".work-content").addClass('expanded');
+
+        //raise up header image
+        $(".work-item-header.rdi").addClass('small-header');
       });
 
-    //hide other sections
-    // setTimeout(function() {
-    //   $("#omni").addClass('hide-section');
-    //   $("#macbox").addClass('hide-section');
-    //   $("#nonprof").addClass('hide-section');
-    // }, 400)
 
-    //make page expand;
-    $("#work-header").addClass('minimized');
-    $(".work-content").addClass('expanded');
 
-    //raise up header image
-    $(".work-item-header.rdi").addClass('small-header');
+
+
 
 
   })
