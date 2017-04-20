@@ -22,7 +22,6 @@ export default function SocialShareMenu () {
     <Menu
       type="vertical"
       margin={60}
-      bumpy={false}
     >
       <div id="menu-btn" className="button">
         <img src="/public/images/bars.png" id="menu-icon" />

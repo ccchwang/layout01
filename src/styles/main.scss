@@ -11,14 +11,7 @@ $main-border: 5px solid white;
 $ease-border: linear;
 // --------------------------------
 
-.try {
 
-  border: $main-border;
-  border-color: black;
-  width: 168px;
-  height: 64.8px;
-
-}
 //*** IPHONE 5 OR SMALLER
 
 * {
@@ -179,6 +172,10 @@ body {
   transition: 0.3s
 }
 
+#about-btn, #work-btn, #contact-btn {
+  transition: color 0.3s
+}
+
 #about-btn:focus::before, #about-btn:hover::before,
 #work-btn:focus::before, #work-btn:hover::before,
 #contact-btn:focus::before, #contact-btn:hover::before {
@@ -248,7 +245,7 @@ body {
   width: 300px;
   margin-top: -33px;
   margin-left: 5px;
-  transition: 0.4s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.4s 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 // work - border
@@ -348,7 +345,6 @@ body {
 
   .border-arrow {
     position: absolute;
-    top: 20.5px;
     left: 32px;
     transition: 0.5s;
     transition-delay: 0.9s;
@@ -477,7 +473,7 @@ body {
   }
 
   #header-divider {
-    margin-top: -30px !important;
+    margin-top: -40px !important;
   }
 
   //WORK
