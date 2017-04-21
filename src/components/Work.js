@@ -6,8 +6,10 @@ export default function Work () {
   return (
     <Row id='work-main' className="show-grid" style={{position: 'relative'}}>
 
-      <div className="title-block col-md-4 fixed-header" id="work-header">
+      <div className="title-block col-md-4" id="work-header">
+        <div>
         <h1  className="title-text">work</h1>
+        </div>
       </div>
 
       <Col xs={12} md={8} className="work-content">
@@ -40,7 +42,6 @@ export default function Work () {
             <p className="about-heading-text">About</p>
             <p className="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et lorem posuere, pellentesque ex sit amet, bibendum nibh. Fusce sed massa orci. Etiam hendrerit pretium nisl, vitae accumsan massa cursus aliquet. Sed lobortis id mi vitae gravida. Praesent ut porttitor eros, vitae eleifend velit. Suspendisse quis elit quis nunc convallis sagittis..</p>
 
-            <p className="about-heading-text">The Stack</p>
             <p className="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et lorem posuere, pellentesque ex sit amet, bibendum nibh. Fusce sed massa orci. Etiam hendrerit pretium nisl, vitae accumsan massa cursus aliquet. Sed lobortis id mi vitae gravida. Praesent ut porttitor eros, vitae eleifend velit.</p>
             <p className="about-heading-text">About</p>
             <p className="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et lorem posuere, pellentesque ex sit amet, bibendum nibh. Fusce sed massa orci. Etiam hendrerit pretium nisl, vitae accumsan massa cursus aliquet. Sed lobortis id mi vitae gravida. Praesent ut porttitor eros, vitae eleifend velit. Suspendisse quis elit quis nunc convallis sagittis..</p>

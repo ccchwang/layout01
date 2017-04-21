@@ -8,7 +8,7 @@ export default function SocialShareMenu () {
     let element = `#${section}-header`;
 
     if ($(window).width() >= 992) {
-      element = section === 'work' ? `#work-content` : `#${section}-header`;
+      element = section === 'work' ? `.work-content` : `#${section}-header`;
     }
 
     $('body').animate({

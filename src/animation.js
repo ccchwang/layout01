@@ -6,14 +6,11 @@ $(document).ready(function () {
         $header = $('#work-header'),
         $main = $('#work-main');
 
-  const fixedHeaderTop = $header.offset().top + $header.height()
-
-
-
-  $window.on('scroll', function () {
+  $window.on('scroll resize', function () {
     if ($window.width() >= 992) {
 
-      // let ttop = $('.work-content.expanded-column').height() * 0.355;
+      //height of all work section content minus height of window
+      let headerTop = $('.work-content').height() - $window.height();
 
       let mainTop = $main.offset().top;
       let windowTop = $window.scrollTop();
@@ -23,15 +20,19 @@ $(document).ready(function () {
 
       if (windowBottom > mainBottom) {
         $header.removeClass('fixed-header');
-        $header.addClass('top')
+        $header.css('top', headerTop)
       }
+
       else if (windowTop > mainTop) {
         $header.addClass('fixed-header');
-        $header.removeClass('top')
+        $header.css('top', 0)
       }
       else {
         $header.removeClass('fixed-header');
       }
+    }
+    else {
+      $header.css('top', 0)
     }
   });
 
@@ -41,6 +42,8 @@ $(document).ready(function () {
 
   sections.forEach((section, i) => {
     $(`#${section}`).click(function () {
+
+
 
       //make header unclickable
       $(`#${section}`).removeClass('closed')
@@ -83,15 +86,18 @@ $(document).ready(function () {
   })
 
   // $window.resize(function(){
-  //   if ($window.width() <= 992) {
-  //     $("#work-header").removeClass('minimized');
-  //     $(".work-content").removeClass('expanded-column');
-  //     $header.css('top', 0)
+
+  //   if ($window.width() >= 992) {
+  //     let mainBottom = $main.height() + $main.offset().top;
+  //     let windowBottom = $window.height() + $window.scrollTop();
+
+  //     if (!$header.hasClass('fixed-header') && windowBottom > mainBottom) {
+  //       let headerTop = $('.work-content').height() - $window.height();
+  //       $header.css('top', headerTop)
+  //     }
   //   }
   //   else {
-  //     $("#work-header").addClass('minimized');
-  //     $(".work-content").addClass('expanded-column');
-  //     $header.css('top', '271.5px')
+  //     $header.css('top', 0)
   //   }
   // })
 
