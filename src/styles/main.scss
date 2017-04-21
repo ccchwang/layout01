@@ -9,6 +9,7 @@ $sanserif-font: 'Poppins';
 
 $main-border: 5px solid white;
 $ease-border: linear;
+$ease-expand-page: cubic-bezier(.77,0,.175,1);
 // --------------------------------
 
 
@@ -74,7 +75,7 @@ body {
 //   #menu-icon {
 //     animation-name: menu-hover;
 //     animation-play-state: running;
-//     animation-timing-function:  cubic-bezier(.77,0,.175,1);
+//     animation-timing-function:  $ease-expand-page;
 //     animation-duration: 0.2s;
 //     animation-direction: normal;
 //     animation-fill-mode: backwards
@@ -218,7 +219,7 @@ body {
   display: flex;
   min-height: 270px;
   overflow: hidden;
-  transition: 0.8s height cubic-bezier(.77,0,.175,1) 0.5s;
+  transition: 0.8s height $ease-expand-page 0.5s;
 }
 
 .work-item-content {
@@ -403,7 +404,7 @@ body {
   display: none;
 }
 .small-header {
-  height: 40vh
+  height: 55vh
 }
 .expanded-content {
   height: 100%;
@@ -515,11 +516,11 @@ body {
 ///////
 
 #work-header {
-  transition: 0.5s width cubic-bezier(.77,0,.175,1);
+  transition: 0.5s width $ease-expand-page;
 }
 
 .work-content {
-  transition: 0.5s cubic-bezier(.77,0,.175,1);
+  transition: 0.5s $ease-expand-page;
 
 }
 

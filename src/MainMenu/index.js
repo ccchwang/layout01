@@ -5,10 +5,10 @@ export default function SocialShareMenu () {
 
   const scrollToElement = (e) => {
     const section = e.target.id.split("-")[0];
-    let element = `#${section}-header`;
+    let element = `#${section}-main`;
 
     if ($(window).width() >= 992) {
-      element = section === 'work' ? `.work-content` : `#${section}-header`;
+      element = section === 'work' ? `.work-content` : `#${section}-main`;
     }
 
     $('body').animate({

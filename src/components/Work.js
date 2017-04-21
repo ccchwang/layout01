@@ -12,8 +12,8 @@ export default function Work () {
         </div>
       </div>
 
-      <Col xs={12} md={8} className="work-content">
 
+      <Col xs={12} md={8} className="work-content">
 
         {/*** OMNI ***/}
         <div className="work-item closed" id="omni">
