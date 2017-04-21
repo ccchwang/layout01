@@ -94,7 +94,7 @@ $(document).ready(function () {
           $xBtnRight.delay(960).animate({bottom: 0}, 160, 'swing');
           $xBtnBottom.delay(1120).animate({left: 0}, 160, 'swing');
           $xBtnLeft.delay(1280).animate({top: 0}, 160, 'swing');
-          $xBtnP.delay(1440).animate({left: '4.5px'}, 160, 'swing')
+          $xBtnP.delay(1440).animate({left: '4.5px'}, 180, 'swing')
 
           //raise up header image
           setTimeout(function(){
@@ -108,7 +108,7 @@ $(document).ready(function () {
 
 
 
-  //*** X BUTTON ANIMATION ***//
+  //*** CLOSE BUTTON ANIMATION ***//
   $xBtn.click(function(e){
     e.stopPropagation();
     let $openedElem = $('.opened');
