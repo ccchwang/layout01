@@ -21,7 +21,18 @@ export default function Work () {
           {/* OMNI - header image */}
           <div className="work-item-header">
             <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
-            <div className="x-btn">X</div>
+
+
+            <div className="x-btn">
+              <p>X</p>
+              <div className="top" />
+              <div className="right" />
+              <div className="bottom" />
+              <div className="left" />
+            </div>
+
+
+
             <div className="header-text-wrapper">
               <h1 className="header-title">Omni</h1>
               <div className="border-wrapper">
@@ -60,6 +71,15 @@ export default function Work () {
           {/* OMNI - header image */}
           <div className="work-item-header">
             <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/rdi.jpg')"}} />
+
+            <div className="x-btn">
+              <p>X</p>
+              <div className="top" />
+              <div className="right" />
+              <div className="bottom" />
+              <div className="left" />
+            </div>
+
             <div className="header-text-wrapper">
               <h1 className="header-title">react-dynamic-UI</h1>
               <div className="border-wrapper">
@@ -127,24 +147,7 @@ export default function Work () {
         </div>
 
         {/*** NONPROF ***/}
-        <div className="work-item" id="nonprof">
-          <div className="work-item-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
 
-          <div className="work-item-header">
-            <h1 className="work-item-title">Education for All</h1>
-            <div className="border-wrapper">
-              <div className="border-top" />
-              <div className="border-right" />
-              <div className="border-bottom" />
-              <div className="border-left" />
-            </div>
-            <div className="subtitle-wrapper">
-              <p className="work-item-subtitle">Design concept for nonprofit</p>
-              <p style={{marginTop: '-5px'}} className="work-item-subtitle">NERD Stack, A-frame, Victory</p>
-            </div>
-          </div>
-
-        </div>
 
       </Col>
 
