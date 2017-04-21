@@ -41676,7 +41676,7 @@
 	          _react2.default.createElement(
 	            'p',
 	            { className: 'about-heading-text' },
-	            'About'
+	            'omni'
 	          ),
 	          _react2.default.createElement(
 	            'p',
@@ -41777,7 +41777,7 @@
 	          _react2.default.createElement(
 	            'p',
 	            { className: 'about-heading-text' },
-	            'About'
+	            'rdi'
 	          ),
 	          _react2.default.createElement(
 	            'p',
@@ -44090,6 +44090,7 @@
 	      $main = $('#work-main'),
 	      $content = $('.work-content'),
 	      $itemHeader = $('.work-item-header'),
+	      $itemContent = $('.work-item-content'),
 	      $xBtn = $('.x-btn'),
 	      $xBtnTop = $('.x-btn > .top'),
 	      $xBtnRight = $('.x-btn > .right'),
@@ -44181,15 +44182,20 @@
 	  //*** X BUTTON ANIMATION ***//
 	  $xBtn.click(function (e) {
 	    e.stopPropagation();
+	    var $openedElem = $('.opened');
 	
-	    $body.animate({ scrollTop: $('.expanded-column').offset().top }, 400, function () {
+	    $body.animate({ scrollTop: $content.offset().top }, 400, function () {
+	
+	      //show hidden sections again
+	      $('.work-content > div').removeClass('hide-section');
+	      $window.scrollTop($openedElem.offset().top);
 	
 	      //drop down header
 	      $itemHeader.removeClass('small-header');
 	
 	      //make header img clickable
-	      $('.opened').addClass('closed');
-	      $('.opened').removeClass('opened');
+	      $openedElem.addClass('closed');
+	      $openedElem.removeClass('opened');
 	
 	      //hide x button
 	      $xBtnP.animate({ left: '-46px' }, 200, 'swing');
@@ -44204,7 +44210,7 @@
 	
 	      setTimeout(function () {
 	        //remove height from hidden content
-	        $('.work-item-content').removeClass('expanded-content');
+	        $itemContent.removeClass('expanded-content');
 	
 	        //close page
 	        $header.removeClass('minimized');
@@ -44212,9 +44218,6 @@
 	
 	        //remove border from title block
 	        $header.removeClass('add-border');
-	
-	        //show other sections again
-	        $('.work-content > div').removeClass('hide-section');
 	      }, 800);
 	    });
 	  });
