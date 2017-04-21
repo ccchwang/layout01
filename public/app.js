@@ -101,7 +101,7 @@
 	exports.i(__webpack_require__(4), "");
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: \"Playfair Display\";\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  height: 100%;\n  width: 100%; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 12px 15px 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#menu {\n  position: fixed;\n  z-index: 3000;\n  left: 20px;\n  top: 20px; }\n\n#menu-btn {\n  width: 41px;\n  height: 41px;\n  padding-top: 8px; }\n\n.menu-item {\n  font-size: 1.2em;\n  padding: 6px 11px 8px; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 5em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.25em;\n    font-weight: 900; }\n\n#header-content {\n  height: 75vh;\n  top: 12.5vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 13vh;\n  left: 6vw; }\n\n#header-divider {\n  margin-top: -20px !important; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n.about-content {\n  font-family: \"Poppins\";\n  text-align: left;\n  padding: 90px 100px; }\n\n#about-btn::before, #work-btn::before, #contact-btn::before {\n  content: '';\n  position: absolute;\n  z-index: -1;\n  width: 0%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: #f7fb8e;\n  transition: 0.3s; }\n\n#about-btn:hover, #work-btn:hover, #contact-btn:hover {\n  color: #424242 !important;\n  transition: 0.3s; }\n\n#about-btn, #work-btn, #contact-btn {\n  transition: color 0.3s; }\n\n#about-btn:focus::before, #about-btn:hover::before,\n#work-btn:focus::before, #work-btn:hover::before,\n#contact-btn:focus::before, #contact-btn:hover::before {\n  width: 100%; }\n\n.about-heading-text {\n  font-size: 30px;\n  font-family: \"Poppins\";\n  font-weight: 500; }\n\n.about-text {\n  font-family: \"Poppins\";\n  font-size: 17px;\n  font-weight: 300;\n  line-height: 25px; }\n\n.work-content {\n  height: auto;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  overflow: hidden; }\n\n.work-item-header {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  min-height: 270px;\n  overflow: hidden;\n  transition: 0.8s height cubic-bezier(0.77, 0, 0.175, 1) 0.5s; }\n\n.work-item-content {\n  background-color: white;\n  text-align: left;\n  height: 0; }\n\n.header-image {\n  transition: 5s linear;\n  background-size: cover; }\n\n.header-text-wrapper {\n  padding: 40px;\n  position: absolute;\n  z-index: 2000;\n  text-align: left; }\n\n.header-title {\n  margin: 0;\n  color: white;\n  font-family: \"Poppins\";\n  font-size: 4.5em;\n  font-weight: 600; }\n\n.header-subtitle {\n  color: white;\n  font-family: \"Poppins\";\n  font-size: 19px;\n  transition: 0.3s; }\n\n.subtitle-wrapper {\n  position: absolute;\n  width: 300px;\n  margin-top: -33px;\n  margin-left: 5px;\n  transition: 0.4s 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275); }\n\n.border-wrapper {\n  position: relative;\n  overflow: hidden;\n  width: 168px;\n  height: 64.8px;\n  margin-top: 20px;\n  margin-left: 5px; }\n\n.border-wrapper::before {\n  content: 'SEE MORE';\n  font-family: 'poppins';\n  color: white;\n  font-size: 18px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: 20.5px;\n  left: -104px;\n  transition: 0.6s 0.3s;\n  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }\n\n.border-top {\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  width: 168px;\n  right: 50%;\n  transition: right 0.2s 0.6s;\n  transition-timing-function: linear; }\n\n.border-bottom {\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 168px;\n  height: 64.8px;\n  left: 100%;\n  transition: left 0.2s 0.2s;\n  transition-timing-function: linear; }\n\n.border-right {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  right: 0;\n  bottom: 100%;\n  transition: bottom 0.2s 0.4s;\n  transition-timing-function: linear; }\n\n.border-left {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  left: 0;\n  top: 100%;\n  transition: top 0.2s;\n  transition-timing-function: linear; }\n\n.work-item {\n  position: relative; }\n\n.work-item.closed:hover {\n  cursor: pointer; }\n  .work-item.closed:hover .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }\n  .work-item.closed:hover .header-image {\n    transform: scale(1.3); }\n  .work-item.closed:hover .border-top {\n    right: 0;\n    transition: right 0.2s;\n    transition-timing-function: linear; }\n  .work-item.closed:hover .border-bottom {\n    left: 0;\n    transition: left 0.2s;\n    transition-delay: 0.4s;\n    transition-timing-function: linear; }\n  .work-item.closed:hover .border-right {\n    bottom: 0;\n    transition: bottom 0.2s;\n    transition-delay: 0.2s;\n    transition-timing-function: linear; }\n  .work-item.closed:hover .border-left {\n    top: 0;\n    transition: top 0.2s;\n    transition-delay: 0.6s;\n    transition-timing-function: linear; }\n  .work-item.closed:hover .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; }\n  .work-item.closed:hover .border-wrapper:hover {\n    filter: grayscale(0) sepia(100%) contrast(100%) saturate(7.5); }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n.hide-section {\n  display: none; }\n\n.small-header {\n  height: 55vh; }\n\n.expanded-content {\n  height: 100%;\n  padding: 40px; }\n\n@media screen and (min-width: 321px) {\n  #header h1 {\n    font-size: 6em; }\n  #header p {\n    font-size: 1.47em; }\n  .title-text {\n    font-size: 3em;\n    padding: 15px 20px 20px; }\n  .menu-item {\n    font-size: 1.4em;\n    padding: 7px 13px 9px; } }\n\n@media screen and (min-width: 668px) {\n  #header h1 {\n    font-size: 7em; }\n  #header p {\n    font-size: 1.7em; } }\n\n@media screen and (min-width: 992px) {\n  #header-content {\n    height: 85vh;\n    top: 7.5vh;\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e;\n    border-width: 5px; }\n  #header h1 {\n    font-size: 8em; }\n  #header p {\n    font-family: 'Poppins';\n    text-transform: uppercase;\n    font-weight: 500;\n    font-size: 1.8em;\n    letter-spacing: 2px;\n    margin-top: 2px; }\n  #header-text {\n    left: -140px;\n    top: 19.4%; }\n  #header-divider {\n    margin-top: -40px !important; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 200; }\n  .fixed-header {\n    position: fixed !important;\n    top: 0; }\n  .work-content {\n    position: relative;\n    z-index: 100;\n    left: 33.3%; }\n  #work-header {\n    transition: 0.5s width cubic-bezier(0.77, 0, 0.175, 1); }\n  .work-content {\n    transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1); }\n  .minimized {\n    width: 25%; }\n  .expanded-column {\n    width: 75%;\n    left: 25%; }\n  .add-border {\n    border-right: 1px solid #dcdcdc; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape) {\n  #header h1 {\n    font-size: 4em; }\n  #header p {\n    font-size: 1em; }\n  #header-text {\n    top: 9vh; }\n  .title-text {\n    font-size: 2em;\n    padding: 12px 15px 15px; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:before {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: \"Playfair Display\";\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  height: 100%;\n  width: 100%; }\n\n.next-btn {\n  width: 163px;\n  height: 64.8px;\n  border: 5px solid #424242;\n  background-color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n  .next-btn span {\n    font-size: 18px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 3px;\n    margin: 0;\n    margin-top: 1px;\n    width: 57px;\n    border-bottom: 1px solid white; }\n\n.next-btn:hover span {\n  border-color: #424242; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 12px 15px 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#menu {\n  position: fixed;\n  z-index: 3000;\n  left: 20px;\n  top: 20px; }\n\n#menu-btn {\n  width: 41px;\n  height: 41px;\n  padding-top: 8px; }\n\n.menu-item {\n  font-size: 1.2em;\n  padding: 6px 11px 8px; }\n\n#header {\n  height: 100vh;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 5em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.25em;\n    font-weight: 900; }\n\n#header-content {\n  height: 75vh;\n  top: 12.5vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 13vh;\n  left: 6vw; }\n\n#header-divider {\n  margin-top: -20px !important; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n.about-content {\n  font-family: \"Poppins\";\n  text-align: left;\n  padding: 90px 100px; }\n\n#about-btn::before, #work-btn::before, #contact-btn::before {\n  content: '';\n  position: absolute;\n  z-index: -1;\n  width: 0%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: #f7fb8e;\n  transition: 0.3s; }\n\n#about-btn:hover, #work-btn:hover, #contact-btn:hover {\n  color: #424242 !important;\n  transition: 0.3s; }\n\n#about-btn, #work-btn, #contact-btn {\n  transition: color 0.3s; }\n\n#about-btn:focus::before, #about-btn:hover::before,\n#work-btn:focus::before, #work-btn:hover::before,\n#contact-btn:focus::before, #contact-btn:hover::before {\n  width: 100%; }\n\n.about-heading-text {\n  font-size: 30px;\n  font-family: \"Poppins\";\n  font-weight: 500; }\n\n.about-text {\n  font-family: \"Poppins\";\n  font-size: 17px;\n  font-weight: 300;\n  line-height: 25px; }\n\n.work-content {\n  height: auto;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  overflow: hidden; }\n\n.work-item-header {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  min-height: 270px;\n  overflow: hidden;\n  transition: 0.8s height cubic-bezier(0.77, 0, 0.175, 1); }\n\n.work-item-content {\n  background-color: white;\n  text-align: left;\n  height: 0; }\n\n.header-image {\n  transition: 10s linear;\n  background-size: cover; }\n\n.header-text-wrapper {\n  padding: 40px;\n  position: absolute;\n  z-index: 2000;\n  text-align: left; }\n\n.header-title {\n  margin: 0;\n  color: white;\n  font-family: \"Poppins\";\n  font-size: 4.5em;\n  font-weight: 600; }\n\n.header-subtitle {\n  color: white;\n  font-family: \"Poppins\";\n  font-size: 19px;\n  transition: 0.3s; }\n\n.subtitle-wrapper {\n  position: absolute;\n  width: 300px;\n  margin-top: -33px;\n  margin-left: 5px;\n  transition: 0.4s 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275); }\n\n.border-wrapper {\n  position: relative;\n  overflow: hidden;\n  width: 168px;\n  height: 64.8px;\n  margin-top: 20px;\n  margin-left: 5px; }\n\n.border-wrapper::before {\n  content: 'SEE MORE';\n  font-family: 'poppins';\n  color: white;\n  font-size: 18px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: 20.5px;\n  left: -104px;\n  transition: 0.6s 0.3s;\n  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n\n.border-top {\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  width: 168px;\n  right: 50%;\n  transition: right 0.2s 0.6s;\n  transition-timing-function: ease-in; }\n\n.border-bottom {\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 168px;\n  height: 64.8px;\n  left: 100%;\n  transition: left 0.2s 0.2s;\n  transition-timing-function: ease-in; }\n\n.border-right {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  right: 0;\n  bottom: 100%;\n  transition: bottom 0.2s 0.4s;\n  transition-timing-function: ease-in; }\n\n.border-left {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  left: 0;\n  top: 100%;\n  transition: top 0.2s;\n  transition-timing-function: ease-in; }\n\n.x-btn {\n  visibility: hidden;\n  position: fixed;\n  top: 0;\n  right: 0;\n  padding: 10px;\n  color: white;\n  font-family: \"Poppins\";\n  border: 5px solid #f7fb8e; }\n\n.work-item {\n  position: relative; }\n\n.work-item.closed:hover {\n  cursor: pointer; }\n  .work-item.closed:hover .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n  .work-item.closed:hover .header-image {\n    transform: scale(1.4); }\n  .work-item.closed:hover .border-top {\n    right: 0;\n    transition: right 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-bottom {\n    left: 0;\n    transition: left 0.2s;\n    transition-delay: 0.4s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-right {\n    bottom: 0;\n    transition: bottom 0.2s;\n    transition-delay: 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-left {\n    top: 0;\n    transition: top 0.2s;\n    transition-delay: 0.6s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; }\n  .work-item.closed:hover .border-wrapper:hover {\n    filter: grayscale(0) sepia(100%) contrast(100%) saturate(7.5); }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n.hide-section {\n  display: none; }\n\n.small-header {\n  height: 55vh; }\n\n.expanded-content {\n  height: 100%;\n  padding: 40px; }\n\n@media screen and (min-width: 321px) {\n  #header h1 {\n    font-size: 6em; }\n  #header p {\n    font-size: 1.47em; }\n  .title-text {\n    font-size: 3em;\n    padding: 15px 20px 20px; }\n  .menu-item {\n    font-size: 1.4em;\n    padding: 7px 13px 9px; } }\n\n@media screen and (min-width: 668px) {\n  #header h1 {\n    font-size: 7em; }\n  #header p {\n    font-size: 1.7em; } }\n\n@media screen and (min-width: 992px) {\n  #header-content {\n    height: 85vh;\n    top: 7.5vh;\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e;\n    border-width: 5px; }\n  #header h1 {\n    font-size: 8em; }\n  #header p {\n    font-family: 'Poppins';\n    text-transform: uppercase;\n    font-weight: 500;\n    font-size: 1.8em;\n    letter-spacing: 2px;\n    margin-top: 2px; }\n  #header-text {\n    left: -140px;\n    top: 19.4%; }\n  #header-divider {\n    margin-top: -40px !important; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 200; }\n  .fixed-header {\n    position: fixed !important;\n    top: 0; }\n  .work-content {\n    position: relative;\n    z-index: 100;\n    left: 33.3%; }\n  #work-header {\n    -webkit-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -moz-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -ms-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -o-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .work-content {\n    transition: 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .minimized {\n    width: 25%; }\n  .expanded-column {\n    width: 75%;\n    left: 25%; }\n  .add-border {\n    border-right: 1px solid #dcdcdc; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape) {\n  #header h1 {\n    font-size: 4em; }\n  #header p {\n    font-size: 1em; }\n  #header-text {\n    top: 9vh; }\n  .title-text {\n    font-size: 2em;\n    padding: 12px 15px 15px; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:before {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
 	
 	// exports
 
@@ -41627,6 +41627,11 @@
 	          _react2.default.createElement('div', { className: 'header-image img-responsive', style: { backgroundImage: "url('/public/images/3.png')" } }),
 	          _react2.default.createElement(
 	            'div',
+	            { className: 'x-btn' },
+	            'X'
+	          ),
+	          _react2.default.createElement(
+	            'div',
 	            { className: 'header-text-wrapper' },
 	            _react2.default.createElement(
 	              'h1',
@@ -41694,6 +41699,15 @@
 	            'p',
 	            { className: 'about-text' },
 	            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et lorem posuere, pellentesque ex sit amet, bibendum nibh. Fusce sed massa orci. Etiam hendrerit pretium nisl, vitae accumsan massa cursus aliquet. Sed lobortis id mi vitae gravida. Praesent ut porttitor eros, vitae eleifend velit.'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'next-btn' },
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'Next'
+	            )
 	          )
 	        )
 	      ),
@@ -41703,14 +41717,14 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'work-item-header' },
-	          _react2.default.createElement('div', { className: 'header-image img-responsive', style: { backgroundImage: "url('/public/images/3.png')" } }),
+	          _react2.default.createElement('div', { className: 'header-image img-responsive', style: { backgroundImage: "url('/public/images/rdi.jpg')" } }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'header-text-wrapper' },
 	            _react2.default.createElement(
 	              'h1',
 	              { className: 'header-title' },
-	              'RDI'
+	              'react-dynamic-UI'
 	            ),
 	            _react2.default.createElement(
 	              'div',
@@ -41787,14 +41801,14 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'work-item-header macbox' },
-	          _react2.default.createElement('div', { className: 'header-image img-responsive', style: { backgroundImage: "url('/public/images/3.png')" } }),
+	          _react2.default.createElement('div', { className: 'header-image img-responsive', style: { backgroundImage: "url('/public/images/macbox.png')" } }),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'header-text-wrapper' },
 	            _react2.default.createElement(
 	              'h1',
 	              { className: 'header-title' },
-	              'macbox'
+	              'Macbox'
 	            ),
 	            _react2.default.createElement(
 	              'div',
@@ -41983,19 +41997,8 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.default = SocialShareMenu;
 	
-	var _react = __webpack_require__(6);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _menu = __webpack_require__(447);
-	
-	var _menu2 = _interopRequireDefault(_menu);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function SocialShareMenu() {
+	exports.default = function () {
 	
 	  var scrollToElement = function scrollToElement(e) {
 	    var section = e.target.id.split("-")[0];
@@ -42041,7 +42044,17 @@
 	      )
 	    )
 	  );
-	}
+	};
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _menu = __webpack_require__(447);
+	
+	var _menu2 = _interopRequireDefault(_menu);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ },
 /* 447 */
@@ -44090,7 +44103,8 @@
 	      $body = $('body'),
 	      $header = $('#work-header'),
 	      $main = $('#work-main'),
-	      $content = $('.work-content');
+	      $content = $('.work-content'),
+	      $xBtn = $('.x-btn');
 	
 	  $window.on('scroll resize', function () {
 	
@@ -44120,56 +44134,77 @@
 	  var sections = ['omni', 'rdi', 'macbox', 'nonprof'];
 	
 	  sections.forEach(function (section, i) {
-	    $('#' + section).click(function () {
+	    $('#' + section).click(function (e) {
+	      e.stopPropagation();
+	
+	      if ($('#' + section).hasClass('opened')) {
+	        return;
+	      }
 	
 	      //make header img unclickable
 	      $('#' + section).removeClass('closed');
+	      $('#' + section).addClass('opened');
 	
 	      $body.animate(
 	      //scroll to section
 	      { scrollTop: $('#' + section).offset().top }, 400, function () {
 	        //hide other sections
-	        sections.forEach(function (otherSection, j) {
-	          if (j !== i) {
-	            $('#' + otherSection).addClass('hide-section');
-	          }
-	        });
+	        $('.work-content > div.closed').addClass('hide-section');
 	
-	        //delay while scrolling to section, then:
+	        //show x button
+	        $xBtn.css('visibility', 'visible');
+	
+	        //give border to title block
+	        $header.addClass('add-border');
+	
+	        //give height to hidden content
+	        $('#' + section + ' > .work-item-content').addClass('expanded-content');
+	
+	        ////delay while scrolling to section, then:
+	
+	        //make page expand;
 	        setTimeout(function () {
-	          //make page expand;
 	          $header.addClass('minimized');
 	          $content.addClass('expanded-column');
-	
-	          //give border to title block
-	          $header.addClass('add-border');
-	
-	          //give height to hidden content
-	          $('#' + section + ' > .work-item-content').addClass('expanded-content');
-	
-	          //raise up header image
-	          $('#' + section + ' > .work-item-header').addClass('small-header');
 	        }, 300);
+	
+	        //raise up header image
+	        setTimeout(function () {
+	          $('#' + section + ' > .work-item-header').addClass('small-header');
+	        }, 800);
 	      });
 	    });
 	  });
 	
-	  // $window.resize(function(){
+	  //*** X BUTTON ANIMATION ***//
+	  $('.x-btn').click(function (e) {
+	    e.stopPropagation();
 	
-	  //   if ($window.width() >= 992) {
-	  //     let mainBottom = $main.height() + $main.offset().top;
-	  //     let windowBottom = $window.height() + $window.scrollTop();
+	    $body.animate({ scrollTop: $('.expanded-column').offset().top }, 400, function () {
 	
-	  //     if (!$header.hasClass('fixed-header') && windowBottom > mainBottom) {
-	  //       let headerTop = $('.work-content').height() - $window.height();
-	  //       $header.css('top', headerTop)
-	  //     }
-	  //   }
-	  //   else {
-	  //     $header.css('top', 0)
-	  //   }
-	  // })
+	      //drop down header
+	      $('.work-item-header').removeClass('small-header');
 	
+	      //make header img clickable
+	      $('.opened').addClass('closed');
+	      $('.opened').removeClass('opened');
+	
+	      setTimeout(function () {
+	        //remove height from hidden content
+	        $('.work-item-content').removeClass('expanded-content');
+	
+	        //close page
+	        $header.removeClass('minimized');
+	        $content.removeClass('expanded-column');
+	
+	        //remove border from title block
+	        $header.removeClass('add-border');
+	
+	        //show other sections again
+	        $('.work-content > div').removeClass('hide-section');
+	      }, 800);
+	    });
+	  });
 	});
 
 /***/ }

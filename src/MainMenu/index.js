@@ -1,7 +1,7 @@
 import React from 'react';
 import Menu from './menu'
 
-export default function SocialShareMenu () {
+export default function () {
 
   const scrollToElement = (e) => {
     const section = e.target.id.split("-")[0];

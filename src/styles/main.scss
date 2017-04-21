@@ -8,7 +8,7 @@ $serif-font: 'Playfair Display';
 $sanserif-font: 'Poppins';
 
 $main-border: 5px solid white;
-$ease-border: linear;
+$ease-border: ease-in;
 $ease-expand-page: cubic-bezier(.77,0,.175,1);
 // --------------------------------
 
@@ -31,6 +31,37 @@ body {
   height: 100%;
   width: 100%;
 }
+
+.next-btn {
+  width: 163px;
+  height: 64.8px;
+  border: 5px solid $secondary-color;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0;
+  margin-top: 1px;
+  width: 57px;
+  border-bottom: 1px solid white;
+  }
+}
+
+.next-btn:hover {
+  span {
+    border-color:$secondary-color;
+  }
+}
+
+
+
+
 
 // SIDE BLOCK TITLES
 
@@ -219,7 +250,7 @@ body {
   display: flex;
   min-height: 270px;
   overflow: hidden;
-  transition: 0.8s height $ease-expand-page 0.5s;
+  transition: 0.8s height $ease-expand-page;
 }
 
 .work-item-content {
@@ -229,7 +260,7 @@ body {
 }
 
 .header-image {
-  transition: 5s linear;
+  transition: 10s linear;
   background-size: cover;
 }
 
@@ -285,7 +316,7 @@ body {
   top: 20.5px;
   left: -104px;
   transition: 0.6s 0.3s;
-  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 
@@ -333,6 +364,17 @@ body {
   transition-timing-function: $ease-border;
 }
 
+.x-btn {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  color: white;
+  font-family: $sanserif-font;
+  border: 5px solid $highlight-color;
+}
+
 // WORK - HOVER
 .work-item {
   position: relative
@@ -345,11 +387,11 @@ body {
     left: 32px;
     transition: 0.5s;
     transition-delay: 0.9s;
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   }
 
   .header-image {
-    transform: scale(1.3)
+    transform: scale(1.4)
   }
 
   .border-top {
@@ -516,11 +558,15 @@ body {
 ///////
 
 #work-header {
-  transition: 0.5s width $ease-expand-page;
+  -webkit-transition: width 0.6s $ease-expand-page;
+  -moz-transition: width 0.6s $ease-expand-page;
+  -ms-transition: width 0.6s $ease-expand-page;
+  -o-transition: width 0.6s $ease-expand-page;
+  transition: width 0.6s $ease-expand-page;
 }
 
 .work-content {
-  transition: 0.5s $ease-expand-page;
+  transition: 0.6s $ease-expand-page;
 
 }
 

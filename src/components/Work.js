@@ -21,6 +21,7 @@ export default function Work () {
           {/* OMNI - header image */}
           <div className="work-item-header">
             <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
+            <div className="x-btn">X</div>
             <div className="header-text-wrapper">
               <h1 className="header-title">Omni</h1>
               <div className="border-wrapper">
@@ -47,6 +48,7 @@ export default function Work () {
             <p className="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et lorem posuere, pellentesque ex sit amet, bibendum nibh. Fusce sed massa orci. Etiam hendrerit pretium nisl, vitae accumsan massa cursus aliquet. Sed lobortis id mi vitae gravida. Praesent ut porttitor eros, vitae eleifend velit. Suspendisse quis elit quis nunc convallis sagittis..</p>
             <p className="about-heading-text">The Stack</p>
             <p className="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et lorem posuere, pellentesque ex sit amet, bibendum nibh. Fusce sed massa orci. Etiam hendrerit pretium nisl, vitae accumsan massa cursus aliquet. Sed lobortis id mi vitae gravida. Praesent ut porttitor eros, vitae eleifend velit.</p>
+            <div className="next-btn"><span>Next</span></div>
           </div>
 
 
@@ -57,9 +59,9 @@ export default function Work () {
 
           {/* OMNI - header image */}
           <div className="work-item-header">
-            <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
+            <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/rdi.jpg')"}} />
             <div className="header-text-wrapper">
-              <h1 className="header-title">RDI</h1>
+              <h1 className="header-title">react-dynamic-UI</h1>
               <div className="border-wrapper">
                 <div className="border-top" />
                 <div className="border-right" />
@@ -93,9 +95,9 @@ export default function Work () {
 
           {/* OMNI - header image */}
           <div className="work-item-header macbox">
-            <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
+            <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/macbox.png')"}} />
             <div className="header-text-wrapper">
-              <h1 className="header-title">macbox</h1>
+              <h1 className="header-title">Macbox</h1>
               <div className="border-wrapper">
                 <div className="border-top" />
                 <div className="border-right" />

@@ -6,7 +6,8 @@ $(document).ready(function () {
         $body = $('body'),
         $header = $('#work-header'),
         $main = $('#work-main'),
-        $content = $('.work-content');
+        $content = $('.work-content'),
+        $xBtn = $('.x-btn');
 
 
   $window.on('scroll resize', function () {
@@ -40,10 +41,16 @@ $(document).ready(function () {
   const sections = ['omni', 'rdi', 'macbox', 'nonprof'];
 
   sections.forEach((section, i) => {
-    $(`#${section}`).click(function () {
+    $(`#${section}`).click(function (e) {
+      e.stopPropagation();
+
+      if ($(`#${section}`).hasClass('opened')) {
+        return;
+      }
 
       //make header img unclickable
       $(`#${section}`).removeClass('closed')
+      $(`#${section}`).addClass('opened')
 
       $body.animate(
         //scroll to section
@@ -51,48 +58,66 @@ $(document).ready(function () {
         400,
         function () {
           //hide other sections
-          sections.forEach((otherSection, j) => {
-            if (j !== i) {
-              $(`#${otherSection}`).addClass('hide-section');
-            }
-          })
+          $('.work-content > div.closed').addClass('hide-section')
 
-          //delay while scrolling to section, then:
+          //show x button
+          $xBtn.css('visibility', 'visible')
+
+          //give border to title block
+          $header.addClass('add-border');
+
+          //give height to hidden content
+          $(`#${section} > .work-item-content`).addClass('expanded-content');
+
+
+          ////delay while scrolling to section, then:
+
+          //make page expand;
           setTimeout(function(){
-            //make page expand;
             $header.addClass('minimized');
             $content.addClass('expanded-column');
+          }, 300)
 
-            //give border to title block
-            $header.addClass('add-border');
-
-            //give height to hidden content
-            $(`#${section} > .work-item-content`).addClass('expanded-content');
-
-            //raise up header image
+          //raise up header image
+          setTimeout(function(){
             $(`#${section} > .work-item-header`).addClass('small-header');
-            }, 300)
+            }, 800)
         });
     })
   })
 
-  // $window.resize(function(){
 
-  //   if ($window.width() >= 992) {
-  //     let mainBottom = $main.height() + $main.offset().top;
-  //     let windowBottom = $window.height() + $window.scrollTop();
+  //*** X BUTTON ANIMATION ***//
+  $('.x-btn').click(function(e){
+    e.stopPropagation();
 
-  //     if (!$header.hasClass('fixed-header') && windowBottom > mainBottom) {
-  //       let headerTop = $('.work-content').height() - $window.height();
-  //       $header.css('top', headerTop)
-  //     }
-  //   }
-  //   else {
-  //     $header.css('top', 0)
-  //   }
-  // })
+    $body.animate({scrollTop: $('.expanded-column').offset().top}, 400, function(){
 
+      //drop down header
+      $('.work-item-header').removeClass('small-header')
 
+      //make header img clickable
+      $('.opened').addClass('closed');
+      $('.opened').removeClass('opened')
+
+      setTimeout(function(){
+        //remove height from hidden content
+        $(`.work-item-content`).removeClass('expanded-content');
+
+        //close page
+        $header.removeClass('minimized');
+        $content.removeClass('expanded-column');
+
+        //remove border from title block
+        $header.removeClass('add-border');
+
+        //show other sections again
+        $('.work-content > div').removeClass('hide-section')
+      }, 800)
+
+    })
+
+  })
 
 
 
