@@ -116,10 +116,6 @@ $(document).ready(function () {
 
     $body.animate({scrollTop: $content.offset().top}, 400, function(){
 
-      //show hidden sections again
-      $('.work-content > div').removeClass('hide-section')
-      $window.scrollTop($openedElem.offset().top)
-
       //drop down header
       $itemHeader.removeClass('small-header')
 
@@ -143,12 +139,17 @@ $(document).ready(function () {
         //remove height from hidden content
         $itemContent.removeClass('expanded-content');
 
+
         //close page
         $header.removeClass('minimized');
         $content.removeClass('expanded-column');
 
         //remove border from title block
         $header.removeClass('add-border');
+
+        //show hidden sections again
+      $('.work-content > div').removeClass('hide-section')
+      $window.scrollTop($openedElem.offset().top)
       }, 800)
     })
 

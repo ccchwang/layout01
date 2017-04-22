@@ -44186,10 +44186,6 @@
 	
 	    $body.animate({ scrollTop: $content.offset().top }, 400, function () {
 	
-	      //show hidden sections again
-	      $('.work-content > div').removeClass('hide-section');
-	      $window.scrollTop($openedElem.offset().top);
-	
 	      //drop down header
 	      $itemHeader.removeClass('small-header');
 	
@@ -44218,6 +44214,10 @@
 	
 	        //remove border from title block
 	        $header.removeClass('add-border');
+	
+	        //show hidden sections again
+	        $('.work-content > div').removeClass('hide-section');
+	        $window.scrollTop($openedElem.offset().top);
 	      }, 800);
 	    });
 	  });
