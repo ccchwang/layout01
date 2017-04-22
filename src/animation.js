@@ -31,9 +31,12 @@ $(document).ready(function () {
 
     if (windowBottom > mainBottom) {
       $header.removeClass('fixed-header');
-   //   $xBtn.removeClass('fixed-btn');
       $header.css('top', headerTop);
-  //    $xBtn.css('top', headerTop + 20)
+
+      if ($window.width() >= 992) {
+        $xBtn.removeClass('fixed-btn');
+        $xBtn.css('top', headerTop + 20)
+      }
     }
     else if (windowTop > mainTop) {
       $header.addClass('fixed-header');
@@ -43,9 +46,12 @@ $(document).ready(function () {
     }
     else {
       $header.removeClass('fixed-header');
-    //  $xBtn.removeClass('fixed-btn');
       $header.css('top', 0);
-    //  $xBtn.css('top', 20)
+
+      if ($window.width() >= 992) {
+        $xBtn.removeClass('fixed-btn');
+        $xBtn.css('top', 20)
+      }
     }
   });
 

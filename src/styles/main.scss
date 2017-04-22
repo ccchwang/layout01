@@ -123,6 +123,8 @@ body {
 
 #header {
   height: 100vh;
+  position: relative;
+  z-index: 2;
   background-image: url('https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524');
   background-attachment: fixed;
   padding: 0;
@@ -178,12 +180,17 @@ body {
 
 // ABOUT
 
+#about-main {
+  z-index: 2
+}
+
 #about-header {
   background-color: $highlight-color;
 }
 
 .about-content {
   font-family: $sanserif-font;
+  background-color: white;
   text-align: left;
   padding: 90px 100px;
 }
@@ -368,6 +375,7 @@ body {
 .x-btn {
   visibility: hidden;
   position: absolute;
+  z-index: 1;
   top: 20px;
   right: 20px;
   overflow: hidden;
@@ -477,6 +485,10 @@ body {
 
 
 // CONTACT
+#contact-main {
+  z-index: 2
+}
+
 #contact-header {
   background-color: $secondary-color;
 
