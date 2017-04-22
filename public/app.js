@@ -44148,6 +44148,7 @@
 	      { scrollTop: $('#' + section).offset().top }, 400, function () {
 	        //hide other sections
 	        $('.work-content > div.closed').addClass('hide-section');
+	        $window.scrollTop($('.opened').offset().top);
 	
 	        //give border to title block
 	        $header.addClass('add-border');
@@ -44212,12 +44213,12 @@
 	        $header.removeClass('minimized');
 	        $content.removeClass('expanded-column');
 	
-	        //remove border from title block
-	        $header.removeClass('add-border');
-	
 	        //show hidden sections again
 	        $('.work-content > div').removeClass('hide-section');
 	        $window.scrollTop($openedElem.offset().top);
+	
+	        //remove border from title block
+	        $header.removeClass('add-border');
 	      }, 800);
 	    });
 	  });

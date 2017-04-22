@@ -71,7 +71,8 @@ $(document).ready(function () {
         400,
         function () {
           //hide other sections
-          $('.work-content > div.closed').addClass('hide-section')
+          $('.work-content > div.closed').addClass('hide-section');
+          $window.scrollTop($('.opened').offset().top)
 
           //give border to title block
           $header.addClass('add-border');
@@ -139,14 +140,13 @@ $(document).ready(function () {
         //remove height from hidden content
         $itemContent.removeClass('expanded-content');
 
-
         //close page
         $header.removeClass('minimized');
         $content.removeClass('expanded-column');
 
         //show hidden sections again
-      $('.work-content > div').removeClass('hide-section')
-      $window.scrollTop($openedElem.offset().top)
+        $('.work-content > div').removeClass('hide-section')
+        $window.scrollTop($openedElem.offset().top)
 
         //remove border from title block
         $header.removeClass('add-border');
