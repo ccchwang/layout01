@@ -144,12 +144,14 @@ $(document).ready(function () {
         $header.removeClass('minimized');
         $content.removeClass('expanded-column');
 
-        //remove border from title block
-        $header.removeClass('add-border');
-
         //show hidden sections again
       $('.work-content > div').removeClass('hide-section')
       $window.scrollTop($openedElem.offset().top)
+
+        //remove border from title block
+        $header.removeClass('add-border');
+
+
       }, 800)
     })
 
