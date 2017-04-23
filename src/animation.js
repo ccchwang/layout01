@@ -1,5 +1,25 @@
 $(document).ready(function () {
 
+$(function() {
+  $('.intro').addClass('go');
+
+  setTimeout(function(){
+    $('svg > text').addClass('fill');
+    $('#fade-in-text').css('opacity', 1)
+  }, 4200)
+
+  // $('.reload').click(function() {
+  //   $('.intro').removeClass('go').delay(200).queue(function(next) {
+  //     $('.intro').addClass('go');
+  //     next();
+  //   });
+
+  // });
+})
+
+
+
+
 
   //*** MAKE WORK SECTION STICKY
   const $window = $(window),

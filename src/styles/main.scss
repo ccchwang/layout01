@@ -13,6 +13,83 @@ $ease-expand-page: cubic-bezier(.77,0,.175,1);
 // --------------------------------
 
 
+.fill {
+ fill: #333 !important;
+ transition: 3s
+}
+
+#fade-in-text {
+  opacity: 0;
+  top: 320px;
+  position: absolute;
+  width: 500px;
+  transition: 3s 0.1s
+
+}
+
+
+svg.intro {
+  position: absolute;
+  height: 300px;
+  width: 380px;
+
+  .text {
+    display: none;
+  }
+  &.go {
+    .text {
+      font-family: $serif-font;
+      font-size: 8em;
+      font-weight: 900;
+      display: block;
+    }
+    .text-stroke {
+      fill: transparent;
+      stroke: #f555bc;
+      stroke-width: 7px;
+      stroke-dashoffset: -900;
+      stroke-dasharray: 900;
+      stroke-linecap: butt;
+      stroke-linejoin: round;
+      animation: dash 2.5s ease-in-out forwards;
+    }
+    .text-stroke:nth-child(2) {
+      animation-delay: .3s;
+    }
+    .text-stroke:nth-child(3) {
+      animation-delay: .9s;
+    }
+    .text-stroke-2 {
+      stroke: $highlight-color;
+      animation: dash2 2.5s ease-in-out forwards;
+      animation-delay: 1.2s;
+    }
+    .text-stroke:nth-child(5) {
+      animation-delay: 1.5s;
+    }
+    .text-stroke:nth-child(6) {
+      animation-delay: 1.8s;
+    }
+  }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+    stroke: $highlight-color
+  }
+}
+
+@keyframes dash2 {
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #333
+  }
+}
+
+
+
 
 //*** IPHONE 5 OR SMALLER
 
