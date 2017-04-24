@@ -1,5 +1,24 @@
 $(document).ready(function () {
 
+$(function() {
+
+  //after 5s, set border color to main highlight and pause animation
+  setTimeout(function(){
+    $('#header-border').css('border-color', '#f7fb8e');
+    $('#header-border-animation > .top').css('animation-play-state', 'paused');
+    $('#header-border-animation > .left').css('animation-play-state', 'paused');
+    $('#header-border-animation > .bottom').css('animation-play-state', 'paused');
+    $('.intro > text').addClass('svg-fill');
+  }, 5040)
+
+
+
+   $('.intro').addClass('go');
+
+
+})
+
+
 
   //*** MAKE WORK SECTION STICKY
   const $window = $(window),

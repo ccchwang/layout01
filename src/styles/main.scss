@@ -140,14 +140,21 @@ body {
   }
 }
 
-#header-content {
+#header-main {
+  position: relative;
   height: 75vh;
   top: 12.5vh;
   z-index: 2;
-  padding: 20px 0;
-  border-top: 15px solid $highlight-color;
-  border-bottom: 15px solid $highlight-color;
+  padding: 0;
   text-align: left
+}
+
+#header-border {
+  height: 100%;
+  width: 100%;
+  padding: 20px 0;
+  border-top: 15px solid #888;
+  border-bottom: 15px solid #888;
 }
 
 #header-img {
@@ -157,14 +164,64 @@ body {
   height: 100%;
 }
 
+svg.intro {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  top: 21%;
+  left: -145px;
+  z-index: 50;
+
+  .text {
+    display: none;
+  }
+  &.go {
+    .text {
+      font-family: $serif-font;
+      font-size: 8em;
+      font-weight: 900;
+      display: block;
+    }
+    .text-stroke {
+      fill: transparent;
+      stroke: #333;
+      stroke-width: 5px;
+      stroke-dashoffset: -900;
+      stroke-dasharray: 900;
+      stroke-linecap: butt;
+      stroke-linejoin: round;
+      transition-duration: 3.5s;
+      animation: dash 2.5s ease-in-out forwards 0.69s;
+    }
+    .text-stroke:nth-child(2) {
+      animation-delay: 1.79s;
+    }
+    .text-stroke:nth-child(3) {
+      animation-delay: 1.89s;
+    }
+    .text-stroke:nth-child(4) {
+      transition-duration: 0s;
+      animation: dash 3.3s ease-in-out forwards 1.59s;
+    }
+  }
+}
+
+.svg-fill {
+  fill: #333 !important;
+}
+
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
 #header-text {
   position: absolute;
   top: 13vh;
   left: 6vw;
-}
-
-#header-divider {
-  margin-top: -20px !important;
 }
 
 #header-overlay {
@@ -563,26 +620,76 @@ body {
 @media screen and (min-width: 992px) {
 
   // HEADER
-  #header-content {
+  #header-main {
     height: 85vh;
     top: 7.5vh;
-    padding-left: 20px;
-    border-left: 5px solid $highlight-color;
-    border-width: 5px;
   }
 
-  #header {
-    h1 {
-      font-size: 8em;
+  #header-border-animation {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden
+  }
+
+  #header-border-animation > .top {
+    position: absolute;
+    border-top: 7px solid $highlight-color;
+    top: 0;
+    width: 65.9vw;
+    left: 100%;
+    animation: loadingTop 0.5s $ease-expand-page forwards 0.4s;
+  }
+
+  #header-border-animation > .bottom {
+    position: absolute;
+    border-bottom: 7px solid $highlight-color;
+    top: 83.9vh;
+    width: 65.5vw;
+    right: 100%;
+    animation: loadingBottom 0.5s $ease-expand-page forwards 1.4s;
+  }
+
+  #header-border-animation > .left {
+    position: absolute;
+    border-right: 7px solid $highlight-color;
+    height: 85vh;
+    left: 0;
+    bottom: 100%;
+    animation: loadingLeft 0.5s $ease-expand-page forwards 0.9s;
+  }
+
+  @keyframes loadingTop {
+    100% {
+      left: 0%;
     }
-    p {
-      font-family: 'Poppins';
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 1.8em;
-      letter-spacing: 2px;
-      margin-top: 2px
+  }
+  @keyframes loadingBottom {
+    100% {
+      right: 0%;
     }
+  }
+  @keyframes loadingLeft {
+    100% {
+      bottom: 0%;
+    }
+  }
+
+
+
+
+  #header-border {
+    padding-left: 20px;
+    border-left: 7px solid #888;
+    border-width: 7px;
+  }
+
+  #small-text {
+    font-family: $sanserif-font;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.8em;
+    letter-spacing: 2px;
   }
 
   #header-text {
