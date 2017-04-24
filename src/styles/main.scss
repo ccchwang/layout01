@@ -195,26 +195,6 @@ body {
   height: 100%;
 }
 
-#svg-text-1 {
-  transform: translateY(110px);
-}
-#svg-text-2 {
-  transform: translateY(192px);
-}
-#svg-text-3 {
-  transform: translateY(248px);
-}
-.svg-text-4 {
-  transform: translateY(280px);
-}
-#small-text {
-  font-family: $sanserif-font;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1.25em;
-  letter-spacing: 2px;
-}
-
 
 svg.intro {
   position: absolute;
@@ -238,8 +218,8 @@ svg.intro {
       fill: transparent;
       stroke: #333;
       stroke-width: 5px;
-      stroke-dashoffset: -1390;
-      stroke-dasharray: 1390;
+      stroke-dashoffset: -900;
+      stroke-dasharray: 900;
       stroke-linecap: butt;
       stroke-linejoin: round;
       transition-duration: 3s;
@@ -256,6 +236,27 @@ svg.intro {
       animation: dash 3.3s ease-in-out forwards 1.09s;
     }
   }
+}
+
+
+#svg-text-1 {
+  transform: translateY(110px);
+}
+#svg-text-2 {
+  transform: translateY(192px);
+}
+#svg-text-3 {
+  transform: translateY(248px);
+}
+.svg-text-4 {
+  transform: translateY(280px);
+}
+#small-text {
+  font-family: $sanserif-font;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.25em;
+  letter-spacing: 2px;
 }
 
 .svg-fill {
@@ -621,6 +622,16 @@ svg.intro {
 
 //*** BIGGER PHONES
 @media screen and (min-width: 321px) {
+
+  svg.intro {
+    height: 350px;
+    width: 320px;
+    &.go {
+      .text {
+        font-size: 6.6em;
+      }
+    }
+  }
   #svg-text-2 {
     transform: translateY(212px);
   }
@@ -632,16 +643,6 @@ svg.intro {
   }
   #small-text {
     font-size: 1.38em;
-  }
-
-  svg.intro {
-    height: 350px;
-    width: 320px;
-    &.go {
-      .text {
-        font-size: 6.6em;
-      }
-    }
   }
 
   .title-text {
@@ -660,11 +661,25 @@ svg.intro {
 
 
 
+//*** BIGGER THAN PHONE PORTRAIT
+@media screen and (min-width: 415px) {
+
+  //HEADER
+  svg.intro {
+    &.go {
+      .text-stroke {
+        stroke-dashoffset: -900;
+        stroke-dasharray: 900;
+      }
+    }
+  }
+}
+
+
 //*** HALF DESKTOP
 @media screen and (min-width: 668px) {
 
   //HEADER
-
   #svg-text-2 {
     transform: translateY(230px);
   }
@@ -678,15 +693,11 @@ svg.intro {
     font-size: 1.8em;
   }
 
-
   svg.intro {
+    width: 400px;
     &.go {
       .text {
         font-size: 8em;
-      }
-      .text-stroke {
-        stroke-dashoffset: -900;
-        stroke-dasharray: 900;
       }
     }
   }
