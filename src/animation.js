@@ -1,46 +1,6 @@
-window.onload = function() {
-   const $window = $(window),
-        $body = $('body'),
-        $header = $('#work-header'),
-        $main = $('#work-main'),
-        $content = $('.work-content'),
-        $itemHeader = $('.work-item-header'),
-        $itemContent = $('.work-item-content'),
-        $xBtn = $('.x-btn'),
-        $xBtnTop = $('.x-btn > .top'),
-        $xBtnRight = $('.x-btn > .right'),
-        $xBtnBottom = $('.x-btn > .bottom'),
-        $xBtnLeft = $('.x-btn > .left'),
-        $xBtnP = $('.x-btn > p'),
-        $svgIntro = $('.intro'),
-        $svgText = $('.intro > text'),
-        $headerBorder = $('#header-border'),
-        $headerBorderTop = $('#header-border-animation > .top'),
-        $headerBorderLeft = $('#header-border-animation > .left'),
-        $headerBorderBottom = $('#header-border-animation > .bottom');
-
-
-      $headerBorderTop.css('animation-play-state', 'running');
-      $headerBorderLeft.css('animation-play-state', 'running');
-      $headerBorderBottom.css('animation-play-state', 'running');
-      $svgText.addClass('svg-fill');
-
-
-    //set off animation
-    $svgIntro.addClass('go');
-
-    let delay = $window.width() < 992 ? 4500 : 5100;
-
-    //after 5s, set border color to main highlight and pause animation
-    setTimeout(function(){
-      $headerBorder.css('border-color', '#f7fb8e');
-      $headerBorderTop.css('animation-play-state', 'paused');
-      $headerBorderLeft.css('animation-play-state', 'paused');
-      $headerBorderBottom.css('animation-play-state', 'paused');
-      $svgText.addClass('svg-fill');
-    }, delay)
-};
-
+window.onload = function(){
+  $('body').addClass('loaded')
+}
 
 $(document).ready(function () {
 
@@ -67,24 +27,22 @@ $(document).ready(function () {
         $headerBorderBottom = $('#header-border-animation > .bottom');
 
 
-//   //*** HEADER TEXT ANIMATION
-// $(window).load(function(){
-//     console.log('hihi')
-//     //set off animation
-//     $svgIntro.addClass('go');
+  //*** HEADER TEXT ANIMATION
+  $(function() {
+    //set off animation
+    $svgIntro.addClass('go');
 
-//     let delay = $window.width() < 992 ? 4500 : 5100;
+    let delay = $window.width() < 992 ? 4500 : 5100;
 
-//     //after 5s, set border color to main highlight and pause animation
-//     setTimeout(function(){
-//       $headerBorder.css('border-color', '#f7fb8e');
-//       $headerBorderTop.css('animation-play-state', 'paused');
-//       $headerBorderLeft.css('animation-play-state', 'paused');
-//       $headerBorderBottom.css('animation-play-state', 'paused');
-//       $svgText.addClass('svg-fill');
-//     }, delay)
-//   })
-
+    //after 5s, set border color to main highlight and pause animation
+    setTimeout(function(){
+      $headerBorder.css('border-color', '#f7fb8e');
+      $headerBorderTop.css('animation-play-state', 'paused');
+      $headerBorderLeft.css('animation-play-state', 'paused');
+      $headerBorderBottom.css('animation-play-state', 'paused');
+      $svgText.addClass('svg-fill');
+    }, delay)
+  })
 
 
   //*** MAKE WORK SECTION STICKY

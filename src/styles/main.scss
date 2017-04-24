@@ -24,7 +24,12 @@ $ease-expand-page: cubic-bezier(.77,0,.175,1);
 }
 
 body {
-  margin: 0
+  margin: 0;
+  overflow: hidden
+}
+
+body.loaded {
+  overflow: auto
 }
 
 .img-responsive {
@@ -736,7 +741,6 @@ svg.intro {
   #header-border-animation > .top {
     border-width: 7px;
     width: 65.9vw;
-    animation-play-state: paused
   }
 
 
@@ -746,7 +750,6 @@ svg.intro {
     width: 65.5vw;
     animation: loadingBottom 0.5s $ease-expand-page forwards 1.4s;
     -webkit-animation: loadingBottom 0.5s $ease-expand-page forwards 1.4s;
-    animation-play-state: paused
   }
 
   #header-border-animation > .left {
@@ -757,7 +760,6 @@ svg.intro {
     bottom: 100%;
     animation: loadingLeft 0.5s $ease-expand-page forwards 0.9s;
     -webkit-animation: loadingLeft 0.5s $ease-expand-page forwards 0.9s;
-    animation-play-state: paused
   }
 
   #header-border {
