@@ -28,7 +28,7 @@ $(document).ready(function () {
     //set off animation
     $svgIntro.addClass('go');
 
-    let delay = $window.width() < 992 ? 4500 : 5040;
+    let delay = $window.width() < 992 ? 4500 : 5100;
 
     //after 5s, set border color to main highlight and pause animation
     setTimeout(function(){

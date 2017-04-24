@@ -218,8 +218,8 @@ svg.intro {
       fill: transparent;
       stroke: #333;
       stroke-width: 5px;
-      stroke-dashoffset: -1390;
-      stroke-dasharray: 1390;
+      stroke-dashoffset: 900;
+      stroke-dasharray: 900;
       stroke-linecap: butt;
       stroke-linejoin: round;
       transition-duration: 3s;
@@ -272,13 +272,13 @@ svg.intro {
 }
 
 @-webkit-keyframes dash {
-  100% {
+  to {
     stroke-dashoffset: 0;
   }
 }
 
 @keyframes dash {
-  100% {
+  to {
     stroke-dashoffset: 0;
   }
 }
@@ -682,14 +682,14 @@ svg.intro {
 @media screen and (min-width: 415px) {
 
   //HEADER
-  svg.intro {
-    &.go {
-      .text-stroke {
-        stroke-dashoffset: -900;
-        stroke-dasharray: 900;
-      }
-    }
-  }
+  // svg.intro {
+  //   &.go {
+  //     .text-stroke {
+  //       stroke-dashoffset: -900;
+  //       stroke-dasharray: 900;
+  //     }
+  //   }
+  // }
 }
 
 
@@ -791,20 +791,20 @@ svg.intro {
         font-size: 8em;
       }
       .text-stroke {
-        animation: dash 2.5s ease-in-out forwards 0.69s;
-        -webkit-animation: dash 2.5s ease-in-out forwards 0.69s;
+        animation: dash 2.5s ease-in-out forwards 1.75s;
+        -webkit-animation: dash 2.5s ease-in-out forwards 1.75s;
       }
       .text-stroke:nth-child(2) {
-        animation-delay: 1.79s;
-        -webkit-animation-delay: 1.79s;
+        animation-delay: 2.85s;
+        -webkit-animation-delay: 2.85s;
       }
       .text-stroke:nth-child(3) {
-        animation-delay: 1.89s;
-        -webkit-animation-delay: 1.89s;
+        animation-delay: 3.35s;
+        -webkit-animation-delay: 3.35s;
       }
       .text-stroke:nth-child(4) {
-        animation: dash 3.3s ease-in-out forwards 1.59s;
-        -webkit-animation: dash 3.3s ease-in-out forwards 1.59s;
+        animation-delay: 4.05s;
+        -webkit-animation-delay: 4.05s;
       }
     }
   }
