@@ -750,8 +750,8 @@ svg.intro {
     border-width: 7px;
     height: 85vh;
     width: 65.5vw;
-    animation: loadingBottom 1s $ease-expand-page forwards 1s;
-    -webkit-animation: loadingBottom 1s $ease-expand-page forwards 1s;
+    animation: loadingBottom 1s $ease-expand-page forwards 2s;
+    -webkit-animation: loadingBottom 1s $ease-expand-page forwards 2s;
   }
 
   #header-border-animation > .left {
@@ -760,8 +760,8 @@ svg.intro {
     height: 85vh;
     left: 0;
     bottom: 100%;
-    animation: loadingLeft 1s $ease-expand-page forwards 2s;
-    -webkit-animation: loadingLeft 1s $ease-expand-page forwards 2s;
+    animation: loadingLeft 1s $ease-expand-page forwards 1s;
+    -webkit-animation: loadingLeft 1s $ease-expand-page forwards 1s;
   }
 
   #header-border {
