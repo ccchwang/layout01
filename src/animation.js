@@ -36,7 +36,7 @@ $(document).ready(function () {
       $headerBorderTop.css('animation-play-state', 'paused');
       $headerBorderLeft.css('animation-play-state', 'paused');
       $headerBorderBottom.css('animation-play-state', 'paused');
-      //$svgText.addClass('svg-fill');
+      $svgText.addClass('svg-fill');
     }, delay)
   })
 

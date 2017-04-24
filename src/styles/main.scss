@@ -102,23 +102,6 @@ body {
 }
 
 
-// #menu-btn:hover {
-//   #menu-icon {
-//     animation-name: menu-hover;
-//     animation-play-state: running;
-//     animation-timing-function:  $ease-expand-page;
-//     animation-duration: 0.2s;
-//     animation-direction: normal;
-//     animation-fill-mode: backwards
-//   }
-// }
-
-// @-webkit-keyframes menu-hover {
-//   0% {-webkit-transform:scale(1); }
-//   50% {-webkit-transform:scale(1.2);}
-//   100% {-webkit-transform:scale(1);}
-// }
-
 // HEADER
 
 #header {
@@ -153,32 +136,49 @@ body {
   width: 100vw;
   left: 100%;
   animation: loadingTop 0.5s $ease-expand-page forwards 0.4s;
+  -webkit-animation: loadingTop 0.5s $ease-expand-page forwards 0.4s;
 }
 
 #header-border-animation > .bottom {
   position: absolute;
   border-bottom: 15px solid $highlight-color;
-  top: 72.9vh;
   width: 100vw;
+  height: 75vh;
   right: 100%;
   animation: loadingBottom 0.5s $ease-expand-page forwards 0.9s;
+  -webkit-animation: loadingBottom 0.5s $ease-expand-page forwards 0.9s;
 }
 
 @keyframes loadingTop {
-    100% {
-      left: 0%;
-    }
+  100% {
+    left: 0%;
   }
-  @keyframes loadingBottom {
-    100% {
-      right: 0%;
-    }
+}
+@keyframes loadingBottom {
+  100% {
+    right: 0%;
   }
-  @keyframes loadingLeft {
-    100% {
-      bottom: 0%;
-    }
+}
+@keyframes loadingLeft {
+  100% {
+    bottom: 0%;
   }
+}
+@-webkit-keyframes loadingTop {
+  100% {
+    left: 0%;
+  }
+}
+@-webkit-keyframes loadingBottom {
+  100% {
+    right: 0%;
+  }
+}
+@-webkit-keyframes loadingLeft {
+  100% {
+    bottom: 0%;
+  }
+}
 
 #header-border {
   height: 100%;
@@ -218,22 +218,26 @@ svg.intro {
       fill: transparent;
       stroke: #333;
       stroke-width: 5px;
-      stroke-dashoffset: -900;
-      stroke-dasharray: 900;
+      stroke-dashoffset: -1390;
+      stroke-dasharray: 1390;
       stroke-linecap: butt;
       stroke-linejoin: round;
       transition-duration: 3s;
       animation: dash 2.5s ease-in-out forwards 0.19s;
+      -webkit-animation: dash 2.5s ease-in-out forwards 0.19s;
     }
     .text-stroke:nth-child(2) {
       animation-delay: 1.29s;
+      -webkit-animation-delay: 1.29s;
     }
     .text-stroke:nth-child(3) {
       animation-delay: 1.39s;
+      -webkit-animation-delay: 1.39s;
     }
     .text-stroke:nth-child(4) {
       transition-duration: 0s;
       animation: dash 3.3s ease-in-out forwards 1.09s;
+      -webkit-animation: dash 3.3s ease-in-out forwards 1.09s;
     }
   }
 }
@@ -241,15 +245,19 @@ svg.intro {
 
 #svg-text-1 {
   transform: translateY(110px);
+  -webkit-transform: translateY(110px);
 }
 #svg-text-2 {
   transform: translateY(192px);
+  -webkit-transform: translateY(192px);
 }
 #svg-text-3 {
   transform: translateY(248px);
+  -webkit-transform: translateY(248px);
 }
 .svg-text-4 {
   transform: translateY(280px);
+  -webkit-transform: translateY(280px);
 }
 #small-text {
   font-family: $sanserif-font;
@@ -263,6 +271,11 @@ svg.intro {
   fill: #333 !important;
 }
 
+@-webkit-keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 
 @keyframes dash {
   100% {
@@ -549,7 +562,8 @@ svg.intro {
   }
 
   .header-image {
-    transform: scale(1.4)
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4)
   }
 
   .border-top {
@@ -634,12 +648,15 @@ svg.intro {
   }
   #svg-text-2 {
     transform: translateY(212px);
+    -webkit-transform: translateY(212px);
   }
   #svg-text-3 {
     transform: translateY(286px);
+    -webkit-transform: translateY(286px);
   }
   .svg-text-4 {
     transform: translateY(328px);
+    -webkit-transform: translateY(328px);
   }
   #small-text {
     font-size: 1.38em;
@@ -682,12 +699,15 @@ svg.intro {
   //HEADER
   #svg-text-2 {
     transform: translateY(230px);
+    -webkit-transform: translateY(230px);
   }
   #svg-text-3 {
     transform: translateY(308px);
+    -webkit-transform: translateY(308px);
   }
   .svg-text-4 {
     transform: translateY(350px);
+    -webkit-transform: translateY(350px);
   }
   #small-text {
     font-size: 1.8em;
@@ -720,10 +740,11 @@ svg.intro {
 
 
   #header-border-animation > .bottom {
-    border-width: 15px;
-    top: 83.9vh;
+    border-width: 7px;
+    height: 85vh;
     width: 65.5vw;
     animation: loadingBottom 0.5s $ease-expand-page forwards 1.4s;
+    -webkit-animation: loadingBottom 0.5s $ease-expand-page forwards 1.4s;
   }
 
   #header-border-animation > .left {
@@ -733,6 +754,7 @@ svg.intro {
     left: 0;
     bottom: 100%;
     animation: loadingLeft 0.5s $ease-expand-page forwards 0.9s;
+    -webkit-animation: loadingLeft 0.5s $ease-expand-page forwards 0.9s;
   }
 
   #header-border {
@@ -743,12 +765,15 @@ svg.intro {
 
   #svg-text-2 {
     transform: translateY(230px);
+    -webkit-transform: translateY(230px);
   }
   #svg-text-3 {
     transform: translateY(308px);
+    -webkit-transform: translateY(308px);
   }
   .svg-text-4 {
     transform: translateY(350px);
+    -webkit-transform: translateY(350px);
   }
   #small-text {
     font-size: 1.8em;
@@ -767,15 +792,19 @@ svg.intro {
       }
       .text-stroke {
         animation: dash 2.5s ease-in-out forwards 0.69s;
+        -webkit-animation: dash 2.5s ease-in-out forwards 0.69s;
       }
       .text-stroke:nth-child(2) {
         animation-delay: 1.79s;
+        -webkit-animation-delay: 1.79s;
       }
       .text-stroke:nth-child(3) {
         animation-delay: 1.89s;
+        -webkit-animation-delay: 1.89s;
       }
       .text-stroke:nth-child(4) {
         animation: dash 3.3s ease-in-out forwards 1.59s;
+        -webkit-animation: dash 3.3s ease-in-out forwards 1.59s;
       }
     }
   }

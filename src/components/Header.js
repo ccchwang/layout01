@@ -14,9 +14,9 @@ export default function Header() {
       <Col md={8} id="header-main" >
 
       <svg className="intro">
-        <text textAnchor="start" x="10" id="svg-text-1" className="text text-stroke to-fill" clipPath="url(#text1)">Chloe</text>
-        <text textAnchor="start" x="10" id='svg-text-2' className="text text-stroke to-fill" clipPath="url(#text2)">Hwang</text>
-        <text textAnchor="start" x="10" id='svg-text-3' className="text text-stroke to-fill" clipPath="url(#text3)">—</text>
+        <text textAnchor="start" x="10" id="svg-text-1" className="text text-stroke" clipPath="url(#text1)">Chloe</text>
+        <text textAnchor="start" x="10" id='svg-text-2' className="text text-stroke" clipPath="url(#text2)">Hwang</text>
+        <text textAnchor="start" x="10" id='svg-text-3' className="text text-stroke" clipPath="url(#text3)">—</text>
         <text textAnchor="start" x="10" className="text text-stroke svg-text-4" id="small-text" clipPath="url(#text4)">Frontend Web Developer</text>
 
         <defs>
