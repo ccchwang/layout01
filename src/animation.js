@@ -18,11 +18,11 @@ setTimeout(function(){
 
 
   setTimeout(function(){
-    $('.intro > .to-fill').addClass('fill');
+    $('.intro > text').addClass('fill');
 
 
 
-  }, 4000)
+  }, 4600)
 
 
 
