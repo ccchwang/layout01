@@ -1,26 +1,7 @@
 $(document).ready(function () {
 
-$(function() {
-
-  //after 5s, set border color to main highlight and pause animation
-  setTimeout(function(){
-    $('#header-border').css('border-color', '#f7fb8e');
-    $('#header-border-animation > .top').css('animation-play-state', 'paused');
-    $('#header-border-animation > .left').css('animation-play-state', 'paused');
-    $('#header-border-animation > .bottom').css('animation-play-state', 'paused');
-    $('.intro > text').addClass('svg-fill');
-  }, 5040)
 
 
-
-   $('.intro').addClass('go');
-
-
-})
-
-
-
-  //*** MAKE WORK SECTION STICKY
   const $window = $(window),
         $body = $('body'),
         $header = $('#work-header'),
@@ -33,9 +14,34 @@ $(function() {
         $xBtnRight = $('.x-btn > .right'),
         $xBtnBottom = $('.x-btn > .bottom'),
         $xBtnLeft = $('.x-btn > .left'),
-        $xBtnP = $('.x-btn > p');
+        $xBtnP = $('.x-btn > p'),
+        $svgIntro = $('.intro'),
+        $svgText = $('.intro > text'),
+        $headerBorder = $('#header-border'),
+        $headerBorderTop = $('#header-border-animation > .top'),
+        $headerBorderLeft = $('#header-border-animation > .left'),
+        $headerBorderBottom = $('#header-border-animation > .bottom');
 
 
+  //*** HEADER TEXT ANIMATION
+  $(function() {
+    //set off animation
+    $svgIntro.addClass('go');
+
+    let delay = $window.width() < 992 ? 4500 : 5040;
+
+    //after 5s, set border color to main highlight and pause animation
+    setTimeout(function(){
+      $headerBorder.css('border-color', '#f7fb8e');
+      $headerBorderTop.css('animation-play-state', 'paused');
+      $headerBorderLeft.css('animation-play-state', 'paused');
+      $headerBorderBottom.css('animation-play-state', 'paused');
+      $svgText.addClass('svg-fill');
+    }, delay)
+  })
+
+
+  //*** MAKE WORK SECTION STICKY
   $window.on('scroll resize', function () {
 
     //height of all work section content minus height of window

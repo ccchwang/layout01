@@ -128,16 +128,6 @@ body {
   background-image: url('https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524');
   background-attachment: fixed;
   padding: 0;
-
-  h1 {
-    font-size: 5em;
-    font-weight: 900;
-    margin: 0
-  }
-  p {
-    font-size: 1.25em;
-    font-weight: 900
-  }
 }
 
 #header-main {
@@ -148,6 +138,47 @@ body {
   padding: 0;
   text-align: left
 }
+
+#header-border-animation {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden
+}
+
+#header-border-animation > .top {
+  position: absolute;
+  border-top: 15px solid $highlight-color;
+  top: 0;
+  width: 100vw;
+  left: 100%;
+  animation: loadingTop 0.5s $ease-expand-page forwards 0.4s;
+}
+
+#header-border-animation > .bottom {
+  position: absolute;
+  border-bottom: 15px solid $highlight-color;
+  top: 72.9vh;
+  width: 100vw;
+  right: 100%;
+  animation: loadingBottom 0.5s $ease-expand-page forwards 0.9s;
+}
+
+@keyframes loadingTop {
+    100% {
+      left: 0%;
+    }
+  }
+  @keyframes loadingBottom {
+    100% {
+      right: 0%;
+    }
+  }
+  @keyframes loadingLeft {
+    100% {
+      bottom: 0%;
+    }
+  }
 
 #header-border {
   height: 100%;
@@ -164,12 +195,20 @@ body {
   height: 100%;
 }
 
+#small-text {
+  font-family: $sanserif-font;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.8em;
+  letter-spacing: 2px;
+}
+
 svg.intro {
   position: absolute;
-  height: 500px;
-  width: 500px;
-  top: 21%;
-  left: -145px;
+  height: 380px;
+  width: 400px;
+  top: 13vh;
+  left: 6vw;
   z-index: 50;
 
   .text {
@@ -191,17 +230,17 @@ svg.intro {
       stroke-linecap: butt;
       stroke-linejoin: round;
       transition-duration: 3.5s;
-      animation: dash 2.5s ease-in-out forwards 0.69s;
+      animation: dash 2.5s ease-in-out forwards 0.19s;
     }
     .text-stroke:nth-child(2) {
-      animation-delay: 1.79s;
+      animation-delay: 1.29s;
     }
     .text-stroke:nth-child(3) {
-      animation-delay: 1.89s;
+      animation-delay: 1.39s;
     }
     .text-stroke:nth-child(4) {
       transition-duration: 0s;
-      animation: dash 3.3s ease-in-out forwards 1.59s;
+      animation: dash 3.3s ease-in-out forwards 1.09s;
     }
   }
 }
@@ -217,12 +256,6 @@ svg.intro {
   }
 }
 
-
-#header-text {
-  position: absolute;
-  top: 13vh;
-  left: 6vw;
-}
 
 #header-overlay {
   width: 100%;
@@ -625,28 +658,16 @@ svg.intro {
     top: 7.5vh;
   }
 
-  #header-border-animation {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden
+  #header-border-animation > .top {
+    border-width: 7px;
+    width: 65.9vw;
   }
 
-  #header-border-animation > .top {
-    position: absolute;
-    border-top: 7px solid $highlight-color;
-    top: 0;
-    width: 65.9vw;
-    left: 100%;
-    animation: loadingTop 0.5s $ease-expand-page forwards 0.4s;
-  }
 
   #header-border-animation > .bottom {
-    position: absolute;
-    border-bottom: 7px solid $highlight-color;
+    border-width: 15px;
     top: 83.9vh;
     width: 65.5vw;
-    right: 100%;
     animation: loadingBottom 0.5s $ease-expand-page forwards 1.4s;
   }
 
@@ -659,47 +680,33 @@ svg.intro {
     animation: loadingLeft 0.5s $ease-expand-page forwards 0.9s;
   }
 
-  @keyframes loadingTop {
-    100% {
-      left: 0%;
-    }
-  }
-  @keyframes loadingBottom {
-    100% {
-      right: 0%;
-    }
-  }
-  @keyframes loadingLeft {
-    100% {
-      bottom: 0%;
-    }
-  }
-
-
-
-
   #header-border {
     padding-left: 20px;
     border-left: 7px solid #888;
     border-width: 7px;
   }
 
-  #small-text {
-    font-family: $sanserif-font;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.8em;
-    letter-spacing: 2px;
+  svg.intro {
+    top: 21%;
+    left: -145px;
+
+    &.go {
+      .text-stroke {
+        animation: dash 2.5s ease-in-out forwards 0.69s;
+      }
+      .text-stroke:nth-child(2) {
+        animation-delay: 1.79s;
+      }
+      .text-stroke:nth-child(3) {
+        animation-delay: 1.89s;
+      }
+      .text-stroke:nth-child(4) {
+        animation: dash 3.3s ease-in-out forwards 1.59s;
+      }
+    }
   }
 
-  #header-text {
-    left: -140px;
-    top: 19.4%;
-  }
 
-  #header-divider {
-    margin-top: -40px !important;
-  }
 
   //WORK
   #work-header {
