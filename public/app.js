@@ -101,7 +101,7 @@
 	exports.i(__webpack_require__(4), "");
 	
 	// module
-	exports.push([module.id, ".fill {\n  fill: #333 !important;\n  transition: 3s; }\n\n#fade-in-text {\n  opacity: 0;\n  top: 320px;\n  position: absolute;\n  width: 500px;\n  transition: 3s 0.1s; }\n\nsvg.intro {\n  position: absolute;\n  height: 300px;\n  width: 380px; }\n  svg.intro .text {\n    display: none; }\n  svg.intro.go .text {\n    font-family: \"Playfair Display\";\n    font-size: 8em;\n    font-weight: 900;\n    display: block; }\n  svg.intro.go .text-stroke {\n    fill: transparent;\n    stroke: #f555bc;\n    stroke-width: 7px;\n    stroke-dashoffset: -900;\n    stroke-dasharray: 900;\n    stroke-linecap: butt;\n    stroke-linejoin: round;\n    animation: dash 2.5s ease-in-out forwards; }\n  svg.intro.go .text-stroke:nth-child(2) {\n    animation-delay: .3s; }\n  svg.intro.go .text-stroke:nth-child(3) {\n    animation-delay: .9s; }\n  svg.intro.go .text-stroke-2 {\n    stroke: #f7fb8e;\n    animation: dash2 2.5s ease-in-out forwards;\n    animation-delay: 1.2s; }\n  svg.intro.go .text-stroke:nth-child(5) {\n    animation-delay: 1.5s; }\n  svg.intro.go .text-stroke:nth-child(6) {\n    animation-delay: 1.8s; }\n\n@keyframes dash {\n  100% {\n    stroke-dashoffset: 0;\n    stroke: #f7fb8e; } }\n\n@keyframes dash2 {\n  100% {\n    stroke-dashoffset: 0;\n    stroke: #333; } }\n\n* {\n  box-sizing: border-box;\n  font-family: \"Playfair Display\";\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  height: 100%;\n  width: 100%; }\n\n.next-btn {\n  width: 163px;\n  height: 64.8px;\n  border: 5px solid #424242;\n  background-color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n  .next-btn span {\n    font-size: 18px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 3px;\n    margin: 0;\n    margin-top: 1px;\n    width: 57px;\n    border-bottom: 1px solid white; }\n\n.next-btn:hover span {\n  border-color: #424242; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 12px 15px 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#menu {\n  position: fixed;\n  z-index: 3000;\n  left: 25px;\n  top: 25px; }\n\n#menu-btn {\n  width: 41px;\n  height: 41px;\n  padding-top: 8px; }\n\n.menu-item {\n  font-size: 1.2em;\n  padding: 6px 11px 8px; }\n\n#header {\n  height: 100vh;\n  position: relative;\n  z-index: 2;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 5em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.25em;\n    font-weight: 900; }\n\n#header-content {\n  height: 75vh;\n  top: 12.5vh;\n  z-index: 2;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\n#header-text {\n  position: absolute;\n  top: 13vh;\n  left: 6vw; }\n\n#header-divider {\n  margin-top: -20px !important; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-main {\n  z-index: 2; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n.about-content {\n  font-family: \"Poppins\";\n  background-color: white;\n  text-align: left;\n  padding: 90px 100px; }\n\n#about-btn::before, #work-btn::before, #contact-btn::before {\n  content: '';\n  position: absolute;\n  z-index: -1;\n  width: 0%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: #f7fb8e;\n  transition: 0.3s; }\n\n#about-btn:hover, #work-btn:hover, #contact-btn:hover {\n  color: #424242 !important;\n  transition: 0.3s; }\n\n#about-btn, #work-btn, #contact-btn {\n  transition: color 0.3s; }\n\n#about-btn:focus::before, #about-btn:hover::before,\n#work-btn:focus::before, #work-btn:hover::before,\n#contact-btn:focus::before, #contact-btn:hover::before {\n  width: 100%; }\n\n.about-heading-text {\n  font-size: 30px;\n  font-family: \"Poppins\";\n  font-weight: 500; }\n\n.about-text {\n  font-family: \"Poppins\";\n  font-size: 17px;\n  font-weight: 300;\n  line-height: 25px; }\n\n.work-content {\n  height: auto;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  overflow: hidden;\n  position: relative; }\n\n.work-item-header {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  min-height: 270px;\n  overflow: hidden;\n  transition: 0.8s height cubic-bezier(0.77, 0, 0.175, 1); }\n\n.work-item-content {\n  background-color: white;\n  text-align: left;\n  height: 0; }\n\n.header-image {\n  transition: 10s linear;\n  background-size: cover; }\n\n.header-text-wrapper {\n  padding: 45px 60px;\n  position: absolute;\n  z-index: 2000;\n  text-align: left; }\n\n.header-title {\n  margin: 0;\n  color: white;\n  font-family: \"Poppins\";\n  font-size: 4.5em;\n  font-weight: 600; }\n\n.header-subtitle {\n  color: white;\n  font-family: \"Poppins\";\n  font-size: 19px;\n  transition: 0.3s; }\n\n.subtitle-wrapper {\n  position: absolute;\n  width: 300px;\n  margin-top: -33px;\n  margin-left: 5px;\n  transition: 0.4s 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275); }\n\n.border-wrapper {\n  position: relative;\n  overflow: hidden;\n  width: 168px;\n  height: 64.8px;\n  margin-top: 20px;\n  margin-left: 5px; }\n\n.border-wrapper::before {\n  content: 'SEE MORE';\n  font-family: \"Poppins\";\n  color: white;\n  font-size: 18px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: 20.5px;\n  left: -104px;\n  transition: 0.6s 0.3s;\n  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n\n.border-top {\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  width: 168px;\n  right: 50%;\n  transition: right 0.2s 0.6s;\n  transition-timing-function: ease-in; }\n\n.border-bottom {\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 168px;\n  height: 64.8px;\n  left: 100%;\n  transition: left 0.2s 0.2s;\n  transition-timing-function: ease-in; }\n\n.border-right {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  right: 0;\n  bottom: 100%;\n  transition: bottom 0.2s 0.4s;\n  transition-timing-function: ease-in; }\n\n.border-left {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  left: 0;\n  top: 100%;\n  transition: top 0.2s;\n  transition-timing-function: ease-in; }\n\n.x-btn {\n  visibility: hidden;\n  position: absolute;\n  z-index: 1;\n  top: 20px;\n  right: 20px;\n  overflow: hidden;\n  width: 50px;\n  height: 50px;\n  cursor: pointer; }\n\n.x-btn > p {\n  font-family: \"Poppins\";\n  color: white;\n  background-color: #424242;\n  font-size: 20px;\n  padding: 15px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: -1.6px;\n  left: -46px; }\n\n.x-btn > .top {\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  width: 50px;\n  right: 100%; }\n\n.x-btn > .right {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 50px;\n  right: 0;\n  bottom: 100%; }\n\n.x-btn > .bottom {\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 50px;\n  height: 50px;\n  left: 100%; }\n\n.x-btn > .left {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 50px;\n  left: 0;\n  top: 100%; }\n\n.work-item.closed:hover {\n  cursor: pointer; }\n  .work-item.closed:hover .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n  .work-item.closed:hover .header-image {\n    transform: scale(1.4); }\n  .work-item.closed:hover .border-top {\n    right: 0;\n    transition: right 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-bottom {\n    left: 0;\n    transition: left 0.2s;\n    transition-delay: 0.4s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-right {\n    bottom: 0;\n    transition: bottom 0.2s;\n    transition-delay: 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-left {\n    top: 0;\n    transition: top 0.2s;\n    transition-delay: 0.6s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; }\n  .work-item.closed:hover .border-wrapper:hover {\n    filter: grayscale(0) sepia(100%) contrast(100%) saturate(7.5); }\n\n#contact-main {\n  z-index: 2; }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n.hide-section {\n  display: none; }\n\n.small-header {\n  height: 55vh; }\n\n.expanded-content {\n  height: 100%;\n  padding: 70px; }\n\n.fixed-btn {\n  position: fixed !important; }\n\n@media screen and (min-width: 321px) {\n  #header h1 {\n    font-size: 6em; }\n  #header p {\n    font-size: 1.47em; }\n  .title-text {\n    font-size: 3em;\n    padding: 15px 20px 20px; }\n  .menu-item {\n    font-size: 1.4em;\n    padding: 7px 13px 9px; } }\n\n@media screen and (min-width: 668px) {\n  #header h1 {\n    font-size: 7em; }\n  #header p {\n    font-size: 1.7em; } }\n\n@media screen and (min-width: 992px) {\n  #header-content {\n    height: 85vh;\n    top: 7.5vh;\n    padding-left: 20px;\n    border-left: 5px solid #f7fb8e;\n    border-width: 5px; }\n  #header h1 {\n    font-size: 8em; }\n  #header p {\n    font-family: 'Poppins';\n    text-transform: uppercase;\n    font-weight: 500;\n    font-size: 1.8em;\n    letter-spacing: 2px;\n    margin-top: 2px; }\n  #header-text {\n    left: -140px;\n    top: 19.4%; }\n  #header-divider {\n    margin-top: -40px !important; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 200; }\n  .fixed-header {\n    position: fixed !important; }\n  .work-content {\n    position: relative;\n    z-index: 100;\n    left: 33.3%; }\n  #work-header {\n    -webkit-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -moz-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -ms-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -o-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .work-content {\n    transition: 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .minimized {\n    width: 25%; }\n  .expanded-column {\n    width: 75%;\n    left: 25%; }\n  .add-border {\n    border-right: 1px solid #dcdcdc; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape) {\n  #header h1 {\n    font-size: 4em; }\n  #header p {\n    font-size: 1em; }\n  #header-text {\n    top: 9vh; }\n  .title-text {\n    font-size: 2em;\n    padding: 12px 15px 15px; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:before {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
+	exports.push([module.id, ".fill {\n  fill: #333 !important;\n  transition: 3s; }\n\n#fade-in-text {\n  opacity: 0;\n  top: 450px;\n  position: absolute;\n  width: 500px;\n  transition: 1s 0.5s; }\n\nsvg.intro {\n  position: absolute;\n  height: 600px;\n  width: 500px;\n  top: 150px;\n  right: 600px;\n  z-index: 50; }\n  svg.intro .text {\n    display: none; }\n  svg.intro.go .text {\n    font-family: \"Playfair Display\";\n    font-size: 8em;\n    font-weight: 900;\n    display: block; }\n  svg.intro.go .text-stroke {\n    fill: transparent;\n    stroke: #f7fb8e;\n    stroke-width: 8px;\n    stroke-dashoffset: -900;\n    stroke-dasharray: 900;\n    stroke-linecap: butt;\n    stroke-linejoin: round;\n    animation: dash 2.5s ease-in-out forwards; }\n  svg.intro.go .text-stroke:nth-child(2) {\n    animation-delay: .7s; }\n  svg.intro.go .text-stroke:nth-child(3) {\n    animation-delay: 0.8s; }\n  svg.intro.go .text-stroke:nth-child(4) {\n    animation-delay: 1s; }\n  svg.intro.go .text-stroke-2 {\n    stroke: #333;\n    animation-delay: 3.3s; }\n  svg.intro.go .text-stroke:nth-child(5) {\n    animation-delay: 3.3s; }\n  svg.intro.go .text-stroke:nth-child(6) {\n    animation-delay: 3.8s; }\n  svg.intro.go .text-stroke:nth-child(7) {\n    animation-delay: 3.9s; }\n  svg.intro.go .text-stroke:nth-child(8) {\n    animation-delay: 4.2s; }\n\n@keyframes dash {\n  100% {\n    stroke-dashoffset: 0; } }\n\n* {\n  box-sizing: border-box;\n  font-family: \"Playfair Display\";\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nbody {\n  margin: 0; }\n\n.img-responsive {\n  height: 100%;\n  width: 100%; }\n\n.next-btn {\n  width: 163px;\n  height: 64.8px;\n  border: 5px solid #424242;\n  background-color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n  .next-btn span {\n    font-size: 18px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 3px;\n    margin: 0;\n    margin-top: 1px;\n    width: 57px;\n    border-bottom: 1px solid white; }\n\n.next-btn:hover span {\n  border-color: #424242; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 12px 15px 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#menu {\n  position: fixed;\n  z-index: 3000;\n  left: 25px;\n  top: 25px; }\n\n#menu-btn {\n  width: 41px;\n  height: 41px;\n  padding-top: 8px; }\n\n.menu-item {\n  font-size: 1.2em;\n  padding: 6px 11px 8px; }\n\n#header {\n  height: 100vh;\n  position: relative;\n  z-index: 2;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n  #header h1 {\n    font-size: 5em;\n    font-weight: 900;\n    margin: 0; }\n  #header p {\n    font-size: 1.25em;\n    font-weight: 900; }\n\n#header-content {\n  height: 75vh;\n  top: 12.5vh;\n  z-index: 2;\n  padding: 20px 0;\n  text-align: left; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.jpg\");\n  background-size: cover;\n  left: 100%;\n  position: absolute;\n  height: 90%;\n  width: 100%; }\n\n.tryy {\n  left: 20px !important;\n  transition: 0.25s cubic-bezier(0.77, 0, 0.175, 1); }\n\n.try2 {\n  left: 0 !important;\n  transition: 0.25s cubic-bezier(0.77, 0, 0.175, 1); }\n\n.try3 {\n  bottom: 0 !important;\n  transition: 0.25s cubic-bezier(0.77, 0, 0.175, 1) 0.25s; }\n\n.try4 {\n  right: 0 !important;\n  transition: 0.25s cubic-bezier(0.77, 0, 0.175, 1) 0.5s; }\n\n#header-text {\n  position: absolute;\n  top: 13vh;\n  left: 6vw; }\n\n#header-divider {\n  margin-top: -20px !important; }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-main {\n  z-index: 2; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n.about-content {\n  font-family: \"Poppins\";\n  background-color: white;\n  text-align: left;\n  padding: 90px 100px; }\n\n#about-btn::before, #work-btn::before, #contact-btn::before {\n  content: '';\n  position: absolute;\n  z-index: -1;\n  width: 0%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: #f7fb8e;\n  transition: 0.3s; }\n\n#about-btn:hover, #work-btn:hover, #contact-btn:hover {\n  color: #424242 !important;\n  transition: 0.3s; }\n\n#about-btn, #work-btn, #contact-btn {\n  transition: color 0.3s; }\n\n#about-btn:focus::before, #about-btn:hover::before,\n#work-btn:focus::before, #work-btn:hover::before,\n#contact-btn:focus::before, #contact-btn:hover::before {\n  width: 100%; }\n\n.about-heading-text {\n  font-size: 30px;\n  font-family: \"Poppins\";\n  font-weight: 500; }\n\n.about-text {\n  font-family: \"Poppins\";\n  font-size: 17px;\n  font-weight: 300;\n  line-height: 25px; }\n\n.work-content {\n  height: auto;\n  right: 0;\n  background-color: #f7fb8e;\n  padding: 0; }\n\n.work-item {\n  overflow: hidden;\n  position: relative; }\n\n.work-item-header {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  min-height: 270px;\n  overflow: hidden;\n  transition: 0.8s height cubic-bezier(0.77, 0, 0.175, 1); }\n\n.work-item-content {\n  background-color: white;\n  text-align: left;\n  height: 0; }\n\n.header-image {\n  transition: 10s linear;\n  background-size: cover; }\n\n.header-text-wrapper {\n  padding: 45px 60px;\n  position: absolute;\n  z-index: 2000;\n  text-align: left; }\n\n.header-title {\n  margin: 0;\n  color: white;\n  font-family: \"Poppins\";\n  font-size: 4.5em;\n  font-weight: 600; }\n\n.header-subtitle {\n  color: white;\n  font-family: \"Poppins\";\n  font-size: 19px;\n  transition: 0.3s; }\n\n.subtitle-wrapper {\n  position: absolute;\n  width: 300px;\n  margin-top: -33px;\n  margin-left: 5px;\n  transition: 0.4s 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275); }\n\n.border-wrapper {\n  position: relative;\n  overflow: hidden;\n  width: 168px;\n  height: 64.8px;\n  margin-top: 20px;\n  margin-left: 5px; }\n\n.border-wrapper::before {\n  content: 'SEE MORE';\n  font-family: \"Poppins\";\n  color: white;\n  font-size: 18px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: 20.5px;\n  left: -104px;\n  transition: 0.6s 0.3s;\n  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n\n.border-top {\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  width: 168px;\n  right: 50%;\n  transition: right 0.2s 0.6s;\n  transition-timing-function: ease-in; }\n\n.border-bottom {\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 168px;\n  height: 64.8px;\n  left: 100%;\n  transition: left 0.2s 0.2s;\n  transition-timing-function: ease-in; }\n\n.border-right {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  right: 0;\n  bottom: 100%;\n  transition: bottom 0.2s 0.4s;\n  transition-timing-function: ease-in; }\n\n.border-left {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  left: 0;\n  top: 100%;\n  transition: top 0.2s;\n  transition-timing-function: ease-in; }\n\n.x-btn {\n  visibility: hidden;\n  position: absolute;\n  z-index: 1;\n  top: 20px;\n  right: 20px;\n  overflow: hidden;\n  width: 50px;\n  height: 50px;\n  cursor: pointer; }\n\n.x-btn > p {\n  font-family: \"Poppins\";\n  color: white;\n  background-color: #424242;\n  font-size: 20px;\n  padding: 15px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: -1.6px;\n  left: -46px; }\n\n.x-btn > .top {\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  width: 50px;\n  right: 100%; }\n\n.x-btn > .right {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 50px;\n  right: 0;\n  bottom: 100%; }\n\n.x-btn > .bottom {\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 50px;\n  height: 50px;\n  left: 100%; }\n\n.x-btn > .left {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 50px;\n  left: 0;\n  top: 100%; }\n\n.work-item.closed:hover {\n  cursor: pointer; }\n  .work-item.closed:hover .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n  .work-item.closed:hover .header-image {\n    transform: scale(1.4); }\n  .work-item.closed:hover .border-top {\n    right: 0;\n    transition: right 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-bottom {\n    left: 0;\n    transition: left 0.2s;\n    transition-delay: 0.4s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-right {\n    bottom: 0;\n    transition: bottom 0.2s;\n    transition-delay: 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-left {\n    top: 0;\n    transition: top 0.2s;\n    transition-delay: 0.6s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; }\n  .work-item.closed:hover .border-wrapper:hover {\n    filter: grayscale(0) sepia(100%) contrast(100%) saturate(7.5); }\n\n#contact-main {\n  z-index: 2; }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n.hide-section {\n  display: none; }\n\n.small-header {\n  height: 55vh; }\n\n.expanded-content {\n  height: 100%;\n  padding: 70px; }\n\n.fixed-btn {\n  position: fixed !important; }\n\n@media screen and (min-width: 321px) {\n  #header h1 {\n    font-size: 6em; }\n  #header p {\n    font-size: 1.47em; }\n  .title-text {\n    font-size: 3em;\n    padding: 15px 20px 20px; }\n  .menu-item {\n    font-size: 1.4em;\n    padding: 7px 13px 9px; } }\n\n@media screen and (min-width: 668px) {\n  #header h1 {\n    font-size: 7em; }\n  #header p {\n    font-size: 1.7em; } }\n\n@media screen and (min-width: 992px) {\n  #header-content {\n    height: 85vh;\n    top: 7.5vh;\n    padding-left: 20px;\n    overflow: hidden; }\n  #header-content > .top {\n    position: absolute;\n    border-top: 5px solid #f7fb8e;\n    top: 0;\n    width: 65.5vw;\n    left: 100%; }\n  #header-content > .bottom {\n    position: absolute;\n    border-bottom: 5px solid #f7fb8e;\n    top: 0;\n    width: 65.5vw;\n    height: 84vh;\n    right: 100%; }\n  #header-content > .left {\n    position: absolute;\n    border-right: 5px solid #f7fb8e;\n    height: 84vh;\n    left: 0;\n    bottom: 100%; }\n  #header h1 {\n    font-size: 8em; }\n  #header p, #header #test {\n    font-family: 'Poppins';\n    text-transform: uppercase;\n    font-weight: 500;\n    font-size: 1.8em;\n    letter-spacing: 2px;\n    margin-top: 2px;\n    z-index: 200;\n    /* color: black; */\n    left: 100px; }\n  #header-text {\n    left: -140px;\n    top: 19.4%; }\n  #header-divider {\n    margin-top: -40px !important; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 200; }\n  .fixed-header {\n    position: fixed !important; }\n  .work-content {\n    position: relative;\n    z-index: 100;\n    left: 33.3%; }\n  #work-header {\n    -webkit-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -moz-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -ms-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -o-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .work-content {\n    transition: 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .minimized {\n    width: 25%; }\n  .expanded-column {\n    width: 75%;\n    left: 25%; }\n  .add-border {\n    border-right: 1px solid #dcdcdc; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape) {\n  #header h1 {\n    font-size: 4em; }\n  #header p {\n    font-size: 1em; }\n  #header-text {\n    top: 9vh; }\n  .title-text {\n    font-size: 2em;\n    padding: 12px 15px 15px; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:before {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
 	
 	// exports
 
@@ -22260,85 +22260,99 @@
 	    { id: 'header', className: 'show-grid' },
 	    _react2.default.createElement(_reactBootstrap.Col, { md: 4 }),
 	    _react2.default.createElement(
-	      _reactBootstrap.Col,
-	      { md: 8, id: 'header-content' },
+	      'svg',
+	      { className: 'intro' },
 	      _react2.default.createElement(
-	        'div',
-	        { id: 'header-img' },
+	        'text',
+	        { textAnchor: 'start', x: '10', y: '100', className: 'text text-stroke', clipPath: 'url(#text1)' },
+	        'Chloe'
+	      ),
+	      _react2.default.createElement(
+	        'text',
+	        { textAnchor: 'start', x: '10', y: '200', className: 'text text-stroke', clipPath: 'url(#text2)' },
+	        'Hwang'
+	      ),
+	      _react2.default.createElement(
+	        'text',
+	        { textAnchor: 'start', x: '10', y: '300', className: 'text text-stroke', clipPath: 'url(#text3)' },
+	        '\u2014'
+	      ),
+	      _react2.default.createElement(
+	        'text',
+	        { textAnchor: 'start', x: '10', y: '350', className: 'text text-stroke', id: 'test', clipPath: 'url(#text4)' },
+	        'Frontend Web Developer'
+	      ),
+	      _react2.default.createElement(
+	        'text',
+	        { textAnchor: 'start', x: '10', y: '100', className: 'text text-stroke text-stroke-2', clipPath: 'url(#text1)' },
+	        'Chloe'
+	      ),
+	      _react2.default.createElement(
+	        'text',
+	        { textAnchor: 'start', x: '10', y: '200', className: 'text text-stroke text-stroke-2', clipPath: 'url(#text2)' },
+	        'Hwang'
+	      ),
+	      _react2.default.createElement(
+	        'text',
+	        { textAnchor: 'start', x: '10', y: '300', className: 'text text-stroke text-stroke-2', clipPath: 'url(#text3)' },
+	        '\u2014'
+	      ),
+	      _react2.default.createElement(
+	        'text',
+	        { textAnchor: 'start', x: '10', y: '350', className: 'text text-stroke text-stroke-2', clipPath: 'url(#text4)', id: 'test' },
+	        'Frontend Web Developer'
+	      ),
+	      _react2.default.createElement(
+	        'defs',
+	        null,
 	        _react2.default.createElement(
-	          'div',
-	          { id: 'header-text' },
+	          'clipPath',
+	          { id: 'text1' },
 	          _react2.default.createElement(
-	            'svg',
-	            { className: 'intro' },
-	            _react2.default.createElement(
-	              'text',
-	              { textAnchor: 'start', x: '10', y: '100', className: 'text text-stroke', clipPath: 'url(#text1)' },
-	              'Chloe'
-	            ),
-	            _react2.default.createElement(
-	              'text',
-	              { textAnchor: 'start', x: '10', y: '200', className: 'text text-stroke', clipPath: 'url(#text2)' },
-	              'Hwang'
-	            ),
-	            _react2.default.createElement(
-	              'text',
-	              { textAnchor: 'start', x: '10', y: '300', className: 'text text-stroke', clipPath: 'url(#text3)' },
-	              '\u2014'
-	            ),
-	            _react2.default.createElement(
-	              'text',
-	              { textAnchor: 'start', x: '10', y: '100', className: 'text text-stroke text-stroke-2', clipPath: 'url(#text1)' },
-	              'Chloe'
-	            ),
-	            _react2.default.createElement(
-	              'text',
-	              { textAnchor: 'start', x: '10', y: '200', className: 'text text-stroke text-stroke-2', clipPath: 'url(#text2)' },
-	              'Hwang'
-	            ),
-	            _react2.default.createElement(
-	              'text',
-	              { textAnchor: 'start', x: '10', y: '300', className: 'text text-stroke text-stroke-2', clipPath: 'url(#text3)' },
-	              '\u2014'
-	            ),
-	            _react2.default.createElement(
-	              'defs',
-	              null,
-	              _react2.default.createElement(
-	                'clipPath',
-	                { id: 'text1' },
-	                _react2.default.createElement(
-	                  'text',
-	                  { textAnchor: 'start', x: '10', y: '100', className: 'text' },
-	                  'Chloe'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'clipPath',
-	                { id: 'text2' },
-	                _react2.default.createElement(
-	                  'text',
-	                  { textAnchor: 'start', x: '10', y: '200', className: 'text' },
-	                  'Hwang'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'clipPath',
-	                { id: 'text3' },
-	                _react2.default.createElement(
-	                  'text',
-	                  { textAnchor: 'start', x: '10', y: '300', className: 'text' },
-	                  '\u2014'
-	                )
-	              )
-	            )
-	          ),
+	            'text',
+	            { textAnchor: 'start', x: '10', y: '100', className: 'text' },
+	            'Chloe'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'clipPath',
+	          { id: 'text2' },
 	          _react2.default.createElement(
-	            'p',
-	            { id: 'fade-in-text' },
+	            'text',
+	            { textAnchor: 'start', x: '10', y: '200', className: 'text' },
+	            'Hwang'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'clipPath',
+	          { id: 'text3' },
+	          _react2.default.createElement(
+	            'text',
+	            { textAnchor: 'start', x: '10', y: '300', className: 'text' },
+	            '\u2014'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'clipPath',
+	          { id: 'text4' },
+	          _react2.default.createElement(
+	            'text',
+	            { textAnchor: 'start', x: '10', y: '350', className: 'text', id: 'test' },
 	            'Frontend Web Developer'
 	          )
 	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      _reactBootstrap.Col,
+	      { md: 8, id: 'header-content' },
+	      _react2.default.createElement('div', { className: 'top' }),
+	      _react2.default.createElement('div', { className: 'bottom' }),
+	      _react2.default.createElement('div', { className: 'left' }),
+	      _react2.default.createElement(
+	        'div',
+	        { id: 'header-img' },
+	        _react2.default.createElement('div', { id: 'header-text' })
 	      )
 	    ),
 	    _react2.default.createElement('div', { id: 'header-overlay' })
@@ -44124,9 +44138,19 @@
 	    $('.intro').addClass('go');
 	
 	    setTimeout(function () {
-	      $('svg > text').addClass('fill');
-	      $('#fade-in-text').css('opacity', 1);
-	    }, 4200);
+	
+	      $('#header-img').addClass('tryy');
+	    }, 4100);
+	
+	    setTimeout(function () {
+	      $('.intro > text').addClass('fill');
+	    }, 7000);
+	
+	    setTimeout(function () {
+	      $('#header-content > .top').addClass('try2');
+	      $('#header-content > .left').addClass('try3');
+	      $('#header-content > .bottom').addClass('try4');
+	    }, 3300);
 	
 	    // $('.reload').click(function() {
 	    //   $('.intro').removeClass('go').delay(200).queue(function(next) {

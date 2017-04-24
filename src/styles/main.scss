@@ -20,18 +20,21 @@ $ease-expand-page: cubic-bezier(.77,0,.175,1);
 
 #fade-in-text {
   opacity: 0;
-  top: 320px;
+  top: 450px;
   position: absolute;
   width: 500px;
-  transition: 3s 0.1s
+  transition: 1s 0.5s
 
 }
 
 
 svg.intro {
   position: absolute;
-  height: 300px;
-  width: 380px;
+  height: 600px;
+  width: 500px;
+    top: 150px;
+    right: 600px;
+    z-index: 50;
 
   .text {
     display: none;
@@ -45,8 +48,8 @@ svg.intro {
     }
     .text-stroke {
       fill: transparent;
-      stroke: #f555bc;
-      stroke-width: 7px;
+      stroke: $highlight-color;
+      stroke-width: 8px;
       stroke-dashoffset: -900;
       stroke-dasharray: 900;
       stroke-linecap: butt;
@@ -54,39 +57,41 @@ svg.intro {
       animation: dash 2.5s ease-in-out forwards;
     }
     .text-stroke:nth-child(2) {
-      animation-delay: .3s;
+      animation-delay: .7s;
     }
     .text-stroke:nth-child(3) {
-      animation-delay: .9s;
+      animation-delay: 0.8s;
+    }
+    .text-stroke:nth-child(4) {
+      animation-delay: 1s;
     }
     .text-stroke-2 {
-      stroke: $highlight-color;
-      animation: dash2 2.5s ease-in-out forwards;
-      animation-delay: 1.2s;
+      stroke: #333;
+      animation-delay: 3.3s;
     }
     .text-stroke:nth-child(5) {
-      animation-delay: 1.5s;
+      animation-delay: 3.3s;
     }
     .text-stroke:nth-child(6) {
-      animation-delay: 1.8s;
+      animation-delay: 3.8s;
+    }
+    .text-stroke:nth-child(7) {
+      animation-delay: 3.9s;
+    }
+    .text-stroke:nth-child(8) {
+      animation-delay: 4.2s;
     }
   }
 }
+
 
 @keyframes dash {
   100% {
     stroke-dashoffset: 0;
-    stroke: $highlight-color
   }
 }
 
-@keyframes dash2 {
 
-  100% {
-    stroke-dashoffset: 0;
-    stroke: #333
-  }
-}
 
 
 
@@ -222,17 +227,37 @@ body {
   top: 12.5vh;
   z-index: 2;
   padding: 20px 0;
-  border-top: 15px solid $highlight-color;
-  border-bottom: 15px solid $highlight-color;
+  // border-top: 15px solid $highlight-color;
+  // border-bottom: 15px solid $highlight-color;
   text-align: left
 }
 
 #header-img {
   background-image: url('/public/images/header-img.jpg');
   background-size: cover;
-  background-color: white;
-  height: 100%;
+      left: 100%;
+    position: absolute;
+    height: 90%;
+    width: 100%;
 }
+
+.tryy {
+  left: 20px !important;
+  transition: 0.25s $ease-expand-page
+}
+
+  .try2 {
+    left: 0 !important;
+    transition: 0.25s $ease-expand-page
+  }
+  .try3 {
+    bottom: 0 !important;
+    transition: 0.25s $ease-expand-page 0.25s
+  }
+  .try4 {
+    right: 0 !important;
+    transition: 0.25s $ease-expand-page 0.5s
+  }
 
 #header-text {
   position: absolute;
@@ -644,21 +669,50 @@ body {
     height: 85vh;
     top: 7.5vh;
     padding-left: 20px;
-    border-left: 5px solid $highlight-color;
-    border-width: 5px;
+    overflow: hidden;
   }
+
+  #header-content > .top {
+  position: absolute;
+  border-top: 5px solid $highlight-color;
+  top: 0;
+  width: 65.5vw;
+  left: 100%;
+}
+
+#header-content > .bottom {
+  position: absolute;
+  border-bottom: 5px solid $highlight-color;
+  top: 0;
+  width: 65.5vw;
+  height: 84vh;
+  right: 100%;
+}
+
+#header-content > .left {
+  position: absolute;
+  border-right: 5px solid $highlight-color;
+  height: 84vh;
+  left: 0;
+  bottom: 100%;
+}
 
   #header {
     h1 {
       font-size: 8em;
     }
-    p {
+    p, #test {
       font-family: 'Poppins';
       text-transform: uppercase;
       font-weight: 500;
       font-size: 1.8em;
       letter-spacing: 2px;
-      margin-top: 2px
+      margin-top: 2px;
+
+    z-index: 200;
+
+    /* color: black; */
+    left: 100px;
     }
   }
 

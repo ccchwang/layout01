@@ -8,46 +8,47 @@ export default function Header() {
 
       <Col md={4} />
 
+      <svg className="intro">
+        <text textAnchor="start" x="10" y="100" className="text text-stroke" clipPath="url(#text1)">Chloe</text>
+        <text textAnchor="start" x="10" y="200" className="text text-stroke" clipPath="url(#text2)">Hwang</text>
+        <text textAnchor="start" x="10" y="300" className="text text-stroke" clipPath="url(#text3)">—</text>
+        <text textAnchor="start" x="10" y="350" className="text text-stroke" id="test" clipPath="url(#text4)">Frontend Web Developer</text>
+
+
+        <text textAnchor="start" x="10" y="100" className="text text-stroke text-stroke-2" clipPath="url(#text1)">Chloe</text>
+        <text textAnchor="start" x="10" y="200" className="text text-stroke text-stroke-2" clipPath="url(#text2)">Hwang</text>
+        <text textAnchor="start" x="10" y="300" className="text text-stroke text-stroke-2" clipPath="url(#text3)">—</text>
+        <text textAnchor="start" x="10" y="350" className="text text-stroke text-stroke-2" clipPath="url(#text4)" id="test" >Frontend Web Developer</text>
+        <defs>
+          <clipPath id="text1">
+            <text textAnchor="start" x="10" y="100" className="text">Chloe</text>
+          </clipPath>
+          <clipPath id="text2">
+            <text textAnchor="start" x="10" y="200" className="text">Hwang</text>
+          </clipPath>
+          <clipPath id="text3">
+            <text textAnchor="start" x="10" y="300" className="text">—</text>
+          </clipPath>
+          <clipPath id="text4">
+            <text textAnchor="start" x="10" y="350" className="text" id="test" >Frontend Web Developer</text>
+          </clipPath>
+        </defs>
+      </svg>
+
+
+
       <Col md={8} id="header-content" >
+
+
+          <div className="top" />
+          <div className="bottom" />
+          <div className="left" />
+
+
 
       <div id="header-img">
         <div id="header-text">
 
-
-
-<svg className="intro">
-
-  <text textAnchor="start" x="10" y="100" className="text text-stroke" clipPath="url(#text1)">Chloe</text>
-  <text textAnchor="start" x="10" y="200" className="text text-stroke" clipPath="url(#text2)">Hwang</text>
-  <text textAnchor="start" x="10" y="300" className="text text-stroke" clipPath="url(#text3)">—</text>
-
-
-  <text textAnchor="start" x="10" y="100" className="text text-stroke text-stroke-2" clipPath="url(#text1)">Chloe</text>
-  <text textAnchor="start" x="10" y="200" className="text text-stroke text-stroke-2" clipPath="url(#text2)">Hwang</text>
-  <text textAnchor="start" x="10" y="300" className="text text-stroke text-stroke-2" clipPath="url(#text3)">—</text>
-
-
-
-  <defs>
-    <clipPath id="text1">
-      <text textAnchor="start" x="10" y="100" className="text">Chloe</text>
-    </clipPath>
-    <clipPath id="text2">
-      <text textAnchor="start" x="10" y="200" className="text">Hwang</text>
-    </clipPath>
-    <clipPath id="text3">
-      <text textAnchor="start" x="10" y="300" className="text">—</text>
-    </clipPath>
-  </defs>
-</svg>
-
-
-
-
-
-
-
-          <p id="fade-in-text">Frontend Web Developer</p>
         </div>
         </div>
       </Col>

@@ -4,9 +4,31 @@ $(function() {
   $('.intro').addClass('go');
 
   setTimeout(function(){
-    $('svg > text').addClass('fill');
-    $('#fade-in-text').css('opacity', 1)
-  }, 4200)
+
+
+    $('#header-img').addClass('tryy')
+
+  }, 4100)
+
+  setTimeout(function(){
+    $('.intro > text').addClass('fill');
+
+
+
+  }, 7000)
+
+
+setTimeout(function(){
+      $('#header-content > .top').addClass('try2');
+          $('#header-content > .left').addClass('try3');
+          $('#header-content > .bottom').addClass('try4');
+}, 3300)
+
+
+
+
+
+
 
   // $('.reload').click(function() {
   //   $('.intro').removeClass('go').delay(200).queue(function(next) {
