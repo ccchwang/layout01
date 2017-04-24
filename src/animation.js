@@ -14,7 +14,7 @@ $(function() {
 
 setTimeout(function(){
    $('.intro').addClass('go');
-}, 150)
+}, 720)
 
 
   setTimeout(function(){
@@ -22,7 +22,7 @@ setTimeout(function(){
 
 
 
-  }, 4600)
+  }, 5070)
 
 
 

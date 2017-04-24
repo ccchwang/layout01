@@ -64,7 +64,7 @@ svg.intro {
     }
     .text-stroke:nth-child(4) {
       animation-delay: 1.9s;
-      animation: dash 3.3s ease-in-out forwards 1s;
+      animation: dash 3.3s ease-in-out forwards 0.9s;
     }
     // .text-stroke-2 {
     //   stroke: #333;
@@ -249,15 +249,15 @@ body {
 
   .try2 {
     left: 0 !important;
-    transition: 0.28s $ease-expand-page 0.4s
+    transition: 0.5s $ease-expand-page 0.4s
   }
   .try3 {
     bottom: 0 !important;
-    transition: 0.28s $ease-expand-page 0.68s
+    transition: 0.5s $ease-expand-page 0.9s
   }
   .try4 {
     right: 0 !important;
-    transition: 0.28s $ease-expand-page 0.96s
+    transition: 0.5s $ease-expand-page 1.4s
   }
 
 #header-text {
