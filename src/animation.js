@@ -1,28 +1,35 @@
 $(document).ready(function () {
 
 $(function() {
-  $('.intro').addClass('go');
+
 
   setTimeout(function(){
 
 
     $('#header-img').addClass('tryy')
 
-  }, 4100)
+  }, 900)
+
+
+
+
+   $('.intro').addClass('go');
+
+
 
   setTimeout(function(){
     $('.intro > text').addClass('fill');
 
 
 
-  }, 7000)
+  }, 4300)
 
 
-setTimeout(function(){
+
       $('#header-content > .top').addClass('try2');
           $('#header-content > .left').addClass('try3');
           $('#header-content > .bottom').addClass('try4');
-}, 3300)
+
 
 
 
