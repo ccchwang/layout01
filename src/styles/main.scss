@@ -741,6 +741,8 @@ svg.intro {
   #header-border-animation > .top {
     border-width: 7px;
     width: 65.9vw;
+    animation: loadingTop 1s $ease-expand-page forwards 1.4s;
+    -webkit-animation: loadingTop 1s $ease-expand-page forwards 1.4s;
   }
 
 
@@ -748,8 +750,8 @@ svg.intro {
     border-width: 7px;
     height: 85vh;
     width: 65.5vw;
-    animation: loadingBottom 0.5s $ease-expand-page forwards 1.4s;
-    -webkit-animation: loadingBottom 0.5s $ease-expand-page forwards 1.4s;
+    animation: loadingBottom 1s $ease-expand-page forwards 3.4s;
+    -webkit-animation: loadingBottom 1s $ease-expand-page forwards 3.4s;
   }
 
   #header-border-animation > .left {
@@ -758,8 +760,8 @@ svg.intro {
     height: 85vh;
     left: 0;
     bottom: 100%;
-    animation: loadingLeft 0.5s $ease-expand-page forwards 0.9s;
-    -webkit-animation: loadingLeft 0.5s $ease-expand-page forwards 0.9s;
+    animation: loadingLeft 1s $ease-expand-page forwards 2.4s;
+    -webkit-animation: loadingLeft 1s $ease-expand-page forwards 2.4s;
   }
 
   #header-border {
