@@ -44143,21 +44143,22 @@
 	      $headerBorderBottom = $('#header-border-animation > .bottom');
 	
 	  //*** HEADER TEXT ANIMATION
-	  $(function () {
-	    //set off animation
-	    $svgIntro.addClass('go');
+	  // $(function() {
+	  //   //set off animation
+	  //   $svgIntro.addClass('go');
 	
-	    var delay = $window.width() < 992 ? 4500 : 5100;
+	  //   let delay = $window.width() < 992 ? 4500 : 5100;
 	
-	    //after 5s, set border color to main highlight and pause animation
-	    setTimeout(function () {
-	      $headerBorder.css('border-color', '#f7fb8e');
-	      $headerBorderTop.css('animation-play-state', 'paused');
-	      $headerBorderLeft.css('animation-play-state', 'paused');
-	      $headerBorderBottom.css('animation-play-state', 'paused');
-	      $svgText.addClass('svg-fill');
-	    }, delay);
-	  });
+	  //   //after 5s, set border color to main highlight and pause animation
+	  //   setTimeout(function(){
+	  //     $headerBorder.css('border-color', '#f7fb8e');
+	  //     $headerBorderTop.css('animation-play-state', 'paused');
+	  //     $headerBorderLeft.css('animation-play-state', 'paused');
+	  //     $headerBorderBottom.css('animation-play-state', 'paused');
+	  //     $svgText.addClass('svg-fill');
+	  //   }, delay)
+	  // })
+	
 	
 	  //*** MAKE WORK SECTION STICKY
 	  $window.on('scroll resize', function () {
