@@ -3,26 +3,26 @@ $(document).ready(function () {
 $(function() {
 
 
-  setTimeout(function(){
+  // setTimeout(function(){
 
 
-    $('#header-img').addClass('tryy')
+  //   $('#header-img').addClass('tryy')
 
-  }, 900)
-
-
+  // }, 900)
 
 
+
+setTimeout(function(){
    $('.intro').addClass('go');
-
+}, 150)
 
 
   setTimeout(function(){
-    $('.intro > text').addClass('fill');
+    $('.intro > .to-fill').addClass('fill');
 
 
 
-  }, 4300)
+  }, 4000)
 
 
 
