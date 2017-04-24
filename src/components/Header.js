@@ -14,23 +14,23 @@ export default function Header() {
       <Col md={8} id="header-main" >
 
       <svg className="intro">
-        <text textAnchor="start" x="10" y="110" className="text text-stroke to-fill" clipPath="url(#text1)">Chloe</text>
-        <text textAnchor="start" x="10" y="230" className="text text-stroke to-fill" clipPath="url(#text2)">Hwang</text>
-        <text textAnchor="start" x="10" y="308" className="text text-stroke to-fill" clipPath="url(#text3)">—</text>
-        <text textAnchor="start" x="10" y="350" className="text text-stroke small-text" id="small-text" clipPath="url(#text4)">Frontend Web Developer</text>
+        <text textAnchor="start" x="10" id="svg-text-1" className="text text-stroke to-fill" clipPath="url(#text1)">Chloe</text>
+        <text textAnchor="start" x="10" id='svg-text-2' className="text text-stroke to-fill" clipPath="url(#text2)">Hwang</text>
+        <text textAnchor="start" x="10" id='svg-text-3' className="text text-stroke to-fill" clipPath="url(#text3)">—</text>
+        <text textAnchor="start" x="10" className="text text-stroke svg-text-4" id="small-text" clipPath="url(#text4)">Frontend Web Developer</text>
 
         <defs>
           <clipPath id="text1">
-            <text textAnchor="start" x="10" y="110" className="text">Chloe</text>
+            <text textAnchor="start" x="10" className="text">Chloe</text>
           </clipPath>
           <clipPath id="text2">
-            <text textAnchor="start" x="10" y="230" className="text">Hwang</text>
+            <text textAnchor="start" x="10" className="text">Hwang</text>
           </clipPath>
           <clipPath id="text3">
-            <text textAnchor="start" x="10" y="308" className="text">—</text>
+            <text textAnchor="start" x="10" className="text">—</text>
           </clipPath>
           <clipPath id="text4">
-            <text textAnchor="start" x="10" y="350" className="text" id="small-text" >Frontend Web Developer</text>
+            <text textAnchor="start" x="10" className="text" id="small-text">Frontend Web Developer</text>
           </clipPath>
         </defs>
       </svg>

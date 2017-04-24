@@ -195,18 +195,31 @@ body {
   height: 100%;
 }
 
+#svg-text-1 {
+  transform: translateY(110px);
+}
+#svg-text-2 {
+  transform: translateY(192px);
+}
+#svg-text-3 {
+  transform: translateY(248px);
+}
+.svg-text-4 {
+  transform: translateY(280px);
+}
 #small-text {
   font-family: $sanserif-font;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.8em;
+  font-size: 1.25em;
   letter-spacing: 2px;
 }
 
+
 svg.intro {
   position: absolute;
-  height: 380px;
-  width: 400px;
+  height: 300px;
+  width: 290px;
   top: 13vh;
   left: 6vw;
   z-index: 50;
@@ -217,7 +230,7 @@ svg.intro {
   &.go {
     .text {
       font-family: $serif-font;
-      font-size: 8em;
+      font-size: 5.5em;
       font-weight: 900;
       display: block;
     }
@@ -225,11 +238,11 @@ svg.intro {
       fill: transparent;
       stroke: #333;
       stroke-width: 5px;
-      stroke-dashoffset: -900;
-      stroke-dasharray: 900;
+      stroke-dashoffset: -1390;
+      stroke-dasharray: 1390;
       stroke-linecap: butt;
       stroke-linejoin: round;
-      transition-duration: 3.5s;
+      transition-duration: 3s;
       animation: dash 2.5s ease-in-out forwards 0.19s;
     }
     .text-stroke:nth-child(2) {
@@ -608,12 +621,26 @@ svg.intro {
 
 //*** BIGGER PHONES
 @media screen and (min-width: 321px) {
-  #header {
-    h1 {
-      font-size: 6em;
-    }
-    p {
-      font-size: 1.47em;
+  #svg-text-2 {
+    transform: translateY(212px);
+  }
+  #svg-text-3 {
+    transform: translateY(286px);
+  }
+  .svg-text-4 {
+    transform: translateY(328px);
+  }
+  #small-text {
+    font-size: 1.38em;
+  }
+
+  svg.intro {
+    height: 350px;
+    width: 320px;
+    &.go {
+      .text {
+        font-size: 6.6em;
+      }
     }
   }
 
@@ -638,12 +665,29 @@ svg.intro {
 
   //HEADER
 
-  #header {
-    h1 {
-      font-size: 7em;
-    }
-    p {
-      font-size: 1.7em;
+  #svg-text-2 {
+    transform: translateY(230px);
+  }
+  #svg-text-3 {
+    transform: translateY(308px);
+  }
+  .svg-text-4 {
+    transform: translateY(350px);
+  }
+  #small-text {
+    font-size: 1.8em;
+  }
+
+
+  svg.intro {
+    &.go {
+      .text {
+        font-size: 8em;
+      }
+      .text-stroke {
+        stroke-dashoffset: -900;
+        stroke-dasharray: 900;
+      }
     }
   }
 }
@@ -686,11 +730,30 @@ svg.intro {
     border-width: 7px;
   }
 
+  #svg-text-2 {
+    transform: translateY(230px);
+  }
+  #svg-text-3 {
+    transform: translateY(308px);
+  }
+  .svg-text-4 {
+    transform: translateY(350px);
+  }
+  #small-text {
+    font-size: 1.8em;
+  }
+
+
   svg.intro {
     top: 21%;
     left: -145px;
+    height: 380px;
+    width: 400px;
 
     &.go {
+      .text {
+        font-size: 8em;
+      }
       .text-stroke {
         animation: dash 2.5s ease-in-out forwards 0.69s;
       }
@@ -705,6 +768,7 @@ svg.intro {
       }
     }
   }
+
 
 
 
