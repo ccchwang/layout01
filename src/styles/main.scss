@@ -140,8 +140,8 @@ body.loaded {
   top: 0;
   width: 100vw;
   left: 100%;
-  animation: loadingTop 0.5s $ease-expand-page forwards 0.4s;
-  -webkit-animation: loadingTop 0.5s $ease-expand-page forwards 0.4s;
+  // animation: loadingTop 0.5s $ease-expand-page forwards 0.4s;
+  // -webkit-animation: loadingTop 0.5s $ease-expand-page forwards 0.4s;
 }
 
 #header-border-animation > .bottom {
@@ -150,8 +150,8 @@ body.loaded {
   width: 100vw;
   height: 75vh;
   right: 100%;
-  animation: loadingBottom 0.5s $ease-expand-page forwards 0.9s;
-  -webkit-animation: loadingBottom 0.5s $ease-expand-page forwards 0.9s;
+  // animation: loadingBottom 0.5s $ease-expand-page forwards 0.9s;
+  // -webkit-animation: loadingBottom 0.5s $ease-expand-page forwards 0.9s;
 }
 
 @keyframes loadingTop {
@@ -740,18 +740,16 @@ svg.intro {
 
   #header-border-animation > .top {
     border-width: 7px;
-    width: 65.9vw;
-    animation: loadingTop 1s $ease-expand-page forwards;
-    -webkit-animation: loadingTop 1s $ease-expand-page forwards;
+    width: 67vw;
   }
 
 
   #header-border-animation > .bottom {
     border-width: 7px;
     height: 85vh;
-    width: 65.5vw;
-    animation: loadingBottom 1s $ease-expand-page forwards 2s;
-    -webkit-animation: loadingBottom 1s $ease-expand-page forwards 2s;
+    width: 67vw;
+    // animation: loadingBottom 1s $ease-expand-page forwards 2s;
+    // -webkit-animation: loadingBottom 1s $ease-expand-page forwards 2s;
   }
 
   #header-border-animation > .left {
@@ -760,8 +758,8 @@ svg.intro {
     height: 85vh;
     left: 0;
     bottom: 100%;
-    animation: loadingLeft 1s $ease-expand-page forwards 1s;
-    -webkit-animation: loadingLeft 1s $ease-expand-page forwards 1s;
+    // animation: loadingLeft 1s $ease-expand-page forwards 1s;
+    // -webkit-animation: loadingLeft 1s $ease-expand-page forwards 1s;
   }
 
   #header-border {

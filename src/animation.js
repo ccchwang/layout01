@@ -1,21 +1,6 @@
-window.onload = function(){
-  const $svgIntro = $('.intro'),
-        $svgText = $('.intro > text'),
-        $headerBorder = $('#header-border'),
-        $headerBorderTop = $('#header-border-animation > .top'),
-        $headerBorderLeft = $('#header-border-animation > .left'),
-        $headerBorderBottom = $('#header-border-animation > .bottom');
 
-  //$headerBorder.css('border-color', '#f7fb8e');
-  $('body').addClass('loaded');
-  setTimeout(function(){
-    $svgIntro.addClass('go');
-  }, 1000)
-
-}
 
 $(document).ready(function () {
-
 
 
   const $window = $(window),
@@ -37,6 +22,38 @@ $(document).ready(function () {
         $headerBorderTop = $('#header-border-animation > .top'),
         $headerBorderLeft = $('#header-border-animation > .left'),
         $headerBorderBottom = $('#header-border-animation > .bottom');
+
+
+  $(function() {
+
+   // let TweenMax = new TweenMax();
+
+
+
+// TweenLite.
+//   to($headerBorderTop, 2, {
+//     left: 0,
+//     ease: Power2.easeInOut
+//   })
+
+  TweenLite.to($headerBorderTop, 1, {left:0, onComplete: animateLeft});
+
+  function animateLeft() {
+    TweenLite.to($headerBorderLeft, 1, {bottom:0, onComplete: animateBottom});
+  }
+
+  function animateBottom() {
+    TweenLite.to($headerBorderBottom, 1, {right:0, onComplete: startSVGAnimation});
+  }
+
+  function startSVGAnimation() {
+
+      $svgIntro.addClass('go');
+      $('body').addClass('loaded');
+
+  }
+
+  })
 
 
   //*** HEADER TEXT ANIMATION
