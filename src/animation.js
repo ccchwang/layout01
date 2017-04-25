@@ -1,5 +1,17 @@
 window.onload = function(){
-  $('body').addClass('loaded')
+  const $svgIntro = $('.intro'),
+        $svgText = $('.intro > text'),
+        $headerBorder = $('#header-border'),
+        $headerBorderTop = $('#header-border-animation > .top'),
+        $headerBorderLeft = $('#header-border-animation > .left'),
+        $headerBorderBottom = $('#header-border-animation > .bottom');
+
+  //$headerBorder.css('border-color', '#f7fb8e');
+  $('body').addClass('loaded');
+  setTimeout(function(){
+    $svgIntro.addClass('go');
+  }, 1000)
+
 }
 
 $(document).ready(function () {
