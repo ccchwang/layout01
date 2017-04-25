@@ -34,20 +34,25 @@ $(document).ready(function () {
     }
 
     function animateBottom() {
-      TweenMax.to($headerBorderBottom, 1, {right:0, onComplete: startSVGAnimation});
+      TweenMax.to($headerBorderBottom, 1, {right:30, onComplete: checkLoad});
     }
 
-    function startSVGAnimation() {
+    function checkLoad() {
       if (window.loaded) {
-        $svgIntro.addClass('go');
-        $body.addClass('loaded');
+        TweenMax.to($headerBorderBottom, 1, {right:0, onComplete: startSVGAnimation});
       }
       else {
         window.onload = function() {
-          $svgIntro.addClass('go');
-          $body.addClass('loaded');
+          TweenMax.to($headerBorderBottom, 1, {right:0, onComplete: startSVGAnimation});
         }
       }
+    }
+
+    function startSVGAnimation() {
+
+          $svgIntro.addClass('go');
+          $body.addClass('loaded');
+
     }
   })
 

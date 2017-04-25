@@ -44150,19 +44150,23 @@
 	    }
 	
 	    function animateBottom() {
-	      TweenMax.to($headerBorderBottom, 1, { right: 0, onComplete: startSVGAnimation });
+	      TweenMax.to($headerBorderBottom, 1, { right: 30, onComplete: checkLoad });
+	    }
+	
+	    function checkLoad() {
+	      if (window.loaded) {
+	        TweenMax.to($headerBorderBottom, 1, { right: 0, onComplete: startSVGAnimation });
+	      } else {
+	        window.onload = function () {
+	          TweenMax.to($headerBorderBottom, 1, { right: 0, onComplete: startSVGAnimation });
+	        };
+	      }
 	    }
 	
 	    function startSVGAnimation() {
-	      if (window.loaded) {
-	        $svgIntro.addClass('go');
-	        $body.addClass('loaded');
-	      } else {
-	        window.onload = function () {
-	          $svgIntro.addClass('go');
-	          $body.addClass('loaded');
-	        };
-	      }
+	
+	      $svgIntro.addClass('go');
+	      $body.addClass('loaded');
 	    }
 	  });
 	
