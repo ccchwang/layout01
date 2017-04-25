@@ -25,7 +25,13 @@ $(document).ready(function () {
 
 
   $(function() {
-    TweenLite.to($headerBorderTop, 0.5, {left:0, onComplete: animateLeft});
+    TweenLite.to($headerBorderTop, 0.25, {left:'50%', ease: Linear.easeNone, onComplete: animateRest});
+
+
+    function animateRest() {
+      TweenLite.to($headerBorderTop, 0.25, {left:0, ease: Linear.easeNone, onComplete: animateLeft});
+    }
+
 
     function animateLeft() {
       TweenLite.to($headerBorderLeft, 0.5, {bottom:0, onComplete: animateBottom});
