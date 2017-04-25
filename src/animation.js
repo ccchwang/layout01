@@ -36,14 +36,14 @@ $(document).ready(function () {
 //     ease: Power2.easeInOut
 //   })
 
-  TweenLite.to($headerBorderTop, 1, {left:0, onComplete: animateLeft});
+  TweenMax.to($headerBorderTop, 1, {left:0, onComplete: animateLeft});
 
   function animateLeft() {
-    TweenLite.to($headerBorderLeft, 1, {bottom:0, onComplete: animateBottom});
+    TweenMax.to($headerBorderLeft, 1, {bottom:0, onComplete: animateBottom});
   }
 
   function animateBottom() {
-    TweenLite.to($headerBorderBottom, 1, {right:0, onComplete: startSVGAnimation});
+    TweenMax.to($headerBorderBottom, 1, {right:0, onComplete: startSVGAnimation});
   }
 
   function startSVGAnimation() {
