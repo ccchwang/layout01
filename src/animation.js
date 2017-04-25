@@ -56,11 +56,7 @@ $(document).ready(function () {
     function fillSVGText() {
       let delay = $window.width() < 992 ? 4500 : 5000;
 
-      //after 5s, set border color to main highlight and pause animation
-      setTimeout(function(){
-        $headerBorder.css('border-color', '#f7fb8e');
-        $svgText.addClass('svg-fill');
-      }, 3500)
+      //TweenLite.to($svgText, 3, {fill: '#333', delay: 3.5})
     }
   })
 
@@ -136,15 +132,13 @@ $(document).ready(function () {
         $(`#${section} > .work-item-content`).addClass('expanded-content');
 
 
-        ////delay while scrolling to section, then:
-        // TweenLite.to($header, 0.6, {width:'25%', delay: 0.3});
-        // TweenLite.to($content, 0.6, {width:'75%', left: '25%', delay: 0.3});
-
         //make page expand;
-        setTimeout(function(){
-          $header.addClass('minimized');
-          $content.addClass('expanded-column');
-        }, 300)
+        TweenLite.to($header, 0.6, {width:'25%', ease: Power2.easeInOut, delay: 0.3});
+        TweenLite.to($content, 0.6, {width:'75%', left: '25%', ease: Power2.easeInOut, delay: 0.3, onComplete: function(){
+          //when page expanded, raise up header image
+          $(`#${section} > .work-item-header`).addClass('small-header');
+
+        }});
 
         //show x button
         $xBtn.css('visibility', 'visible');
@@ -162,11 +156,6 @@ $(document).ready(function () {
         function animateP() {
           TweenLite.to($xBtnP, 0.18, {left:'4.5px'})
         }
-
-        //raise up header image
-        setTimeout(function(){
-          $(`#${section} > .work-item-header`).addClass('small-header');
-          }, 900)
       }});
 
 
@@ -209,16 +198,11 @@ $(document).ready(function () {
         }})
       }
 
-// TweenLite.to($header, 0.6, {width:'33.33333333%', delay: 0.8});
-// TweenLite.to($content, 0.6, {width:'66.66666667%', left: '33.3%', delay: 0.8});
-
-      setTimeout(function(){
-        //remove height from hidden content
+      //close page
+      TweenLite.to($header, 0.6, {width:'33.33333333%', delay: 0.8, ease: Power3.easeInOut});
+      TweenLite.to($content, 0.6, {width:'66.66666667%', left: '33.3%', delay: 0.8, ease: Power3.easeInOut, onComplete: function(){
+        //after page closed, remove height from hidden content
         $itemContent.removeClass('expanded-content');
-
-        //close page
-        $header.removeClass('minimized');
-        $content.removeClass('expanded-column');
 
         //show hidden sections again
         $('.work-content > div').removeClass('hide-section')
@@ -226,7 +210,7 @@ $(document).ready(function () {
 
         //remove border from title block
         $header.removeClass('add-border');
-      }, 800)
+      }});
     }})
 
   })
