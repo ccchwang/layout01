@@ -32,16 +32,16 @@ $(document).ready(function () {
     }
 
     function animateBottom() {
-      TweenLite.to($headerBorderBottom, 1, {right:30, onComplete: checkLoad});
+      TweenLite.to($headerBorderBottom, 0.5, {right:'40%', onComplete: checkLoad});
     }
 
     function checkLoad() {
       if (window.loaded) {
-        TweenLite.to($headerBorderBottom, 1, {right:0, onComplete: startSVGAnimation});
+        TweenLite.to($headerBorderBottom, 0.5, {right:0, ease: Power2.easeInOut, onComplete: startSVGAnimation});
       }
       else {
         window.onload = function() {
-          TweenLite.to($headerBorderBottom, 1, {right:0, onComplete: startSVGAnimation});
+          TweenLite.to($headerBorderBottom, 0.5, {right:0, ease: Power2.easeInOut, onComplete: startSVGAnimation});
         }
       }
     }
@@ -137,6 +137,8 @@ $(document).ready(function () {
 
 
         ////delay while scrolling to section, then:
+        // TweenLite.to($header, 0.6, {width:'25%', delay: 0.3});
+        // TweenLite.to($content, 0.6, {width:'75%', left: '25%', delay: 0.3});
 
         //make page expand;
         setTimeout(function(){
@@ -207,6 +209,8 @@ $(document).ready(function () {
         }})
       }
 
+// TweenLite.to($header, 0.6, {width:'33.33333333%', delay: 0.8});
+// TweenLite.to($content, 0.6, {width:'66.66666667%', left: '33.3%', delay: 0.8});
 
       setTimeout(function(){
         //remove height from hidden content

@@ -25,11 +25,13 @@ $ease-expand-page: cubic-bezier(.77,0,.175,1);
 
 body {
   margin: 0;
-  overflow: hidden
+  overflow: hidden;
+  position: fixed
 }
 
 body.loaded {
-  overflow: auto
+  overflow: auto;
+  position: initial
 }
 
 .img-responsive {
