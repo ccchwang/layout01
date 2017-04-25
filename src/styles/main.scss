@@ -140,8 +140,6 @@ body.loaded {
   top: 0;
   width: 100vw;
   left: 100%;
-  // animation: loadingTop 0.5s $ease-expand-page forwards 0.4s;
-  // -webkit-animation: loadingTop 0.5s $ease-expand-page forwards 0.4s;
 }
 
 #header-border-animation > .bottom {
@@ -150,39 +148,6 @@ body.loaded {
   width: 100vw;
   height: 75vh;
   right: 100%;
-  // animation: loadingBottom 0.5s $ease-expand-page forwards 0.9s;
-  // -webkit-animation: loadingBottom 0.5s $ease-expand-page forwards 0.9s;
-}
-
-@keyframes loadingTop {
-  100% {
-    left: 0%;
-  }
-}
-@keyframes loadingBottom {
-  100% {
-    right: 0%;
-  }
-}
-@keyframes loadingLeft {
-  100% {
-    bottom: 0%;
-  }
-}
-@-webkit-keyframes loadingTop {
-  100% {
-    left: 0%;
-  }
-}
-@-webkit-keyframes loadingBottom {
-  100% {
-    right: 0%;
-  }
-}
-@-webkit-keyframes loadingLeft {
-  100% {
-    bottom: 0%;
-  }
 }
 
 #header-border {
@@ -748,8 +713,6 @@ svg.intro {
     border-width: 7px;
     height: 85vh;
     width: 67vw;
-    // animation: loadingBottom 1s $ease-expand-page forwards 2s;
-    // -webkit-animation: loadingBottom 1s $ease-expand-page forwards 2s;
   }
 
   #header-border-animation > .left {
@@ -758,8 +721,6 @@ svg.intro {
     height: 85vh;
     left: 0;
     bottom: 100%;
-    // animation: loadingLeft 1s $ease-expand-page forwards 1s;
-    // -webkit-animation: loadingLeft 1s $ease-expand-page forwards 1s;
   }
 
   #header-border {
@@ -796,20 +757,20 @@ svg.intro {
         font-size: 8em;
       }
       .text-stroke {
-        animation: dash 2.5s ease-in-out forwards 1.75s;
-        -webkit-animation: dash 2.5s ease-in-out forwards 1.75s;
+        animation: dash 2.5s ease-in-out forwards;
+        -webkit-animation: dash 2.5s ease-in-out forwards;
       }
       .text-stroke:nth-child(2) {
-        animation-delay: 2.85s;
-        -webkit-animation-delay: 2.85s;
+        animation-delay: 1.1s;
+        -webkit-animation-delay: 1.1s;
       }
       .text-stroke:nth-child(3) {
-        animation-delay: 3.35s;
-        -webkit-animation-delay: 3.35s;
+        animation-delay: 1.6s;
+        -webkit-animation-delay: 1.6s;
       }
       .text-stroke:nth-child(4) {
-        animation-delay: 4.05s;
-        -webkit-animation-delay: 4.05s;
+        animation-delay: 2.3s;
+        -webkit-animation-delay: 2.3s;
       }
     }
   }

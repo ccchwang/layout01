@@ -3,8 +3,6 @@ window.onload = function() {
 }
 
 $(document).ready(function () {
-
-
   const $window = $(window),
         $body = $('body'),
         $header = $('#work-header'),
@@ -27,52 +25,47 @@ $(document).ready(function () {
 
 
   $(function() {
-    TweenMax.to($headerBorderTop, 1, {left:0, onComplete: animateLeft});
+    TweenLite.to($headerBorderTop, 0.5, {left:0, onComplete: animateLeft});
 
     function animateLeft() {
-      TweenMax.to($headerBorderLeft, 1, {bottom:0, onComplete: animateBottom});
+      TweenLite.to($headerBorderLeft, 0.5, {bottom:0, onComplete: animateBottom});
     }
 
     function animateBottom() {
-      TweenMax.to($headerBorderBottom, 1, {right:30, onComplete: checkLoad});
+      TweenLite.to($headerBorderBottom, 1, {right:30, onComplete: checkLoad});
     }
 
     function checkLoad() {
       if (window.loaded) {
-        TweenMax.to($headerBorderBottom, 1, {right:0, onComplete: startSVGAnimation});
+        TweenLite.to($headerBorderBottom, 1, {right:0, onComplete: startSVGAnimation});
       }
       else {
         window.onload = function() {
-          TweenMax.to($headerBorderBottom, 1, {right:0, onComplete: startSVGAnimation});
+          TweenLite.to($headerBorderBottom, 1, {right:0, onComplete: startSVGAnimation});
         }
       }
     }
 
     function startSVGAnimation() {
+      $svgIntro.addClass('go');
+      $body.addClass('loaded');
 
-          $svgIntro.addClass('go');
-          $body.addClass('loaded');
+      fillSVGText()
+    }
 
+    function fillSVGText() {
+      let delay = $window.width() < 992 ? 4500 : 5000;
+
+      //after 5s, set border color to main highlight and pause animation
+      setTimeout(function(){
+        $headerBorder.css('border-color', '#f7fb8e');
+        $svgText.addClass('svg-fill');
+      }, 3500)
     }
   })
 
 
-  //*** HEADER TEXT ANIMATION
-  // $(function() {
-  //   //set off animation
-  //   $svgIntro.addClass('go');
 
-  //   let delay = $window.width() < 992 ? 4500 : 5100;
-
-  //   //after 5s, set border color to main highlight and pause animation
-  //   setTimeout(function(){
-  //     $headerBorder.css('border-color', '#f7fb8e');
-  //     $headerBorderTop.css('animation-play-state', 'paused');
-  //     $headerBorderLeft.css('animation-play-state', 'paused');
-  //     $headerBorderBottom.css('animation-play-state', 'paused');
-  //     $svgText.addClass('svg-fill');
-  //   }, delay)
-  // })
 
 
   //*** MAKE WORK SECTION STICKY
@@ -130,43 +123,51 @@ $(document).ready(function () {
       $(`#${section}`).removeClass('closed')
       $(`#${section}`).addClass('opened')
 
-      $body.animate(
-        //scroll to section
-        {scrollTop: $(`#${section}`).offset().top},
-        400,
-        function () {
-          //hide other sections
-          $('.work-content > div.closed').addClass('hide-section');
-          $window.scrollTop($('.opened').offset().top)
+      //scroll to section
+      TweenLite.to($body, 0.4, {scrollTop:$(`#${section}`).offset().top, onComplete: function () {
+        //hide other sections
+        $('.work-content > div.closed').addClass('hide-section');
+        $window.scrollTop($('.opened').offset().top)
 
-          //give border to title block
-          $header.addClass('add-border');
+        //give border to title block
+        $header.addClass('add-border');
 
-          //give height to hidden content
-          $(`#${section} > .work-item-content`).addClass('expanded-content');
+        //give height to hidden content
+        $(`#${section} > .work-item-content`).addClass('expanded-content');
 
 
-          ////delay while scrolling to section, then:
+        ////delay while scrolling to section, then:
 
-          //make page expand;
-          setTimeout(function(){
-            $header.addClass('minimized');
-            $content.addClass('expanded-column');
-          }, 300)
+        //make page expand;
+        setTimeout(function(){
+          $header.addClass('minimized');
+          $content.addClass('expanded-column');
+        }, 300)
 
-          //show x button
-          $xBtn.css('visibility', 'visible');
-          $xBtnTop.delay(800).animate({right: 0}, 160, 'swing');
-          $xBtnRight.delay(960).animate({bottom: 0}, 160, 'swing');
-          $xBtnBottom.delay(1120).animate({left: 0}, 160, 'swing');
-          $xBtnLeft.delay(1280).animate({top: 0}, 160, 'swing');
-          $xBtnP.delay(1440).animate({left: '4.5px'}, 180, 'swing')
+        //show x button
+        $xBtn.css('visibility', 'visible');
+        TweenLite.to($xBtnTop, 0.16, {right:0, delay: 0.8, onComplete: animateRight})
 
-          //raise up header image
-          setTimeout(function(){
-            $(`#${section} > .work-item-header`).addClass('small-header');
-            }, 900)
-        });
+        function animateRight() {
+          TweenLite.to($xBtnRight, 0.16, {bottom:0, onComplete: animateBottom})
+        }
+        function animateBottom() {
+          TweenLite.to($xBtnBottom, 0.16, {left:0, onComplete: animateLeft})
+        }
+        function animateLeft() {
+          TweenLite.to($xBtnLeft, 0.16, {top:0, onComplete: animateP})
+        }
+        function animateP() {
+          TweenLite.to($xBtnP, 0.18, {left:'4.5px'})
+        }
+
+        //raise up header image
+        setTimeout(function(){
+          $(`#${section} > .work-item-header`).addClass('small-header');
+          }, 900)
+      }});
+
+
     })
   })
 
@@ -179,8 +180,7 @@ $(document).ready(function () {
     e.stopPropagation();
     let $openedElem = $('.opened');
 
-
-    $body.animate({scrollTop: $content.offset().top}, 400, function(){
+    TweenLite.to($body, 0.4, {scrollTop: $content.offset().top, onComplete: function () {
 
       //drop down header
       $itemHeader.removeClass('small-header')
@@ -190,15 +190,22 @@ $(document).ready(function () {
       $openedElem.removeClass('opened')
 
       //hide x button
-      $xBtnP.animate({left: '-46px'}, 200, 'swing');
-      $xBtnLeft.delay(300).animate({top: '100%'}, 200, 'swing', function(){
-        $xBtnBottom.animate({left: '100%'}, 200, 'swing');
-      });
-      $xBtnRight.delay(700).animate({bottom: '100%'}, 200, 'swing', function() {
-        $xBtnTop.animate({right: '100%'}, 200, 'swing', function(){
-          $xBtn.css('visibility', 'hidden');
-        })
-      });
+      TweenLite.to($xBtnP, 0.2, {left:'-46px', onComplete: animateLeft})
+
+      function animateLeft() {
+        TweenLite.to($xBtnLeft, 0.2, {top:'100%', delay: 0.1, onComplete: animateBottom})
+      }
+      function animateBottom() {
+        TweenLite.to($xBtnBottom, 0.2, {left:'100%', onComplete: animateRight})
+      }
+      function animateRight() {
+        TweenLite.to($xBtnRight, 0.2, {bottom:'100%', onComplete: animateTop})
+      }
+      function animateTop() {
+        TweenLite.to($xBtnTop, 0.2, {right:'100%', onComplete: function(){
+         $xBtn.css('visibility', 'hidden');
+        }})
+      }
 
 
       setTimeout(function(){
@@ -215,10 +222,8 @@ $(document).ready(function () {
 
         //remove border from title block
         $header.removeClass('add-border');
-
-
       }, 800)
-    })
+    }})
 
   })
 
