@@ -44116,6 +44116,10 @@
 
 	'use strict';
 	
+	window.onload = function () {
+	  window.loaded = true;
+	};
+	
 	$(document).ready(function () {
 	
 	  var $window = $(window),
@@ -44139,16 +44143,6 @@
 	      $headerBorderBottom = $('#header-border-animation > .bottom');
 	
 	  $(function () {
-	
-	    // let TweenMax = new TweenMax();
-	
-	
-	    // TweenLite.
-	    //   to($headerBorderTop, 2, {
-	    //     left: 0,
-	    //     ease: Power2.easeInOut
-	    //   })
-	
 	    TweenMax.to($headerBorderTop, 1, { left: 0, onComplete: animateLeft });
 	
 	    function animateLeft() {
@@ -44160,9 +44154,15 @@
 	    }
 	
 	    function startSVGAnimation() {
-	
-	      $svgIntro.addClass('go');
-	      $('body').addClass('loaded');
+	      if (window.loaded) {
+	        $svgIntro.addClass('go');
+	        $body.addClass('loaded');
+	      } else {
+	        window.onload = function () {
+	          $svgIntro.addClass('go');
+	          $body.addClass('loaded');
+	        };
+	      }
 	    }
 	  });
 	

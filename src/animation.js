@@ -1,4 +1,6 @@
-
+window.onload = function() {
+  window.loaded = true;
+}
 
 $(document).ready(function () {
 
@@ -25,34 +27,28 @@ $(document).ready(function () {
 
 
   $(function() {
+    TweenMax.to($headerBorderTop, 1, {left:0, onComplete: animateLeft});
 
-   // let TweenMax = new TweenMax();
+    function animateLeft() {
+      TweenMax.to($headerBorderLeft, 1, {bottom:0, onComplete: animateBottom});
+    }
 
+    function animateBottom() {
+      TweenMax.to($headerBorderBottom, 1, {right:0, onComplete: startSVGAnimation});
+    }
 
-
-// TweenLite.
-//   to($headerBorderTop, 2, {
-//     left: 0,
-//     ease: Power2.easeInOut
-//   })
-
-  TweenMax.to($headerBorderTop, 1, {left:0, onComplete: animateLeft});
-
-  function animateLeft() {
-    TweenMax.to($headerBorderLeft, 1, {bottom:0, onComplete: animateBottom});
-  }
-
-  function animateBottom() {
-    TweenMax.to($headerBorderBottom, 1, {right:0, onComplete: startSVGAnimation});
-  }
-
-  function startSVGAnimation() {
-
-      $svgIntro.addClass('go');
-      $('body').addClass('loaded');
-
-  }
-
+    function startSVGAnimation() {
+      if (window.loaded) {
+        $svgIntro.addClass('go');
+        $body.addClass('loaded');
+      }
+      else {
+        window.onload = function() {
+          $svgIntro.addClass('go');
+          $body.addClass('loaded');
+        }
+      }
+    }
   })
 
 
