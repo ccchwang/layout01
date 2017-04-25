@@ -32,16 +32,16 @@ $(document).ready(function () {
     }
 
     function animateBottom() {
-      TweenLite.to($headerBorderBottom, 0.5, {right:'40%', onComplete: checkLoad});
+      TweenLite.to($headerBorderBottom, 0.5, {right:'60%',  onComplete: checkLoad});
     }
 
     function checkLoad() {
       if (window.loaded) {
-        TweenLite.to($headerBorderBottom, 0.5, {right:0, ease: Power2.easeInOut, onComplete: startSVGAnimation});
+        TweenLite.to($headerBorderBottom, 0.5, {right:0, ease: Power2.easeIn, onComplete: startSVGAnimation});
       }
       else {
         window.onload = function() {
-          TweenLite.to($headerBorderBottom, 0.5, {right:0, ease: Power2.easeInOut, onComplete: startSVGAnimation});
+          TweenLite.to($headerBorderBottom, 0.5, {right:0, ease: Power2.easeIn, onComplete: startSVGAnimation});
         }
       }
     }
@@ -56,7 +56,7 @@ $(document).ready(function () {
     function fillSVGText() {
       let delay = $window.width() < 992 ? 4500 : 5000;
 
-      //TweenLite.to($svgText, 3, {fill: '#333', delay: 3.5})
+      TweenLite.to($svgText, 3, {fill: '#333', delay: 3})
     }
   })
 

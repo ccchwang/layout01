@@ -206,8 +206,10 @@ svg.intro {
       -webkit-animation-delay: 1.39s;
     }
     .text-stroke:nth-child(4) {
-      animation: dash 3.3s ease-in-out forwards 1.09s;
-      -webkit-animation: dash 3.3s ease-in-out forwards 1.09s;
+      stroke-dashoffset: 400;
+      stroke-dasharray: 400;
+      // animation: dash 3.3s ease-in-out forwards 1.09s;
+      // -webkit-animation: dash 3.3s ease-in-out forwards 1.09s;
     }
   }
 }
@@ -762,16 +764,16 @@ svg.intro {
         -webkit-animation: dash 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards;
       }
       .text-stroke:nth-child(2) {
+        animation-delay: 0.5s;
+        -webkit-animation-delay: 0.5s;
+      }
+      .text-stroke:nth-child(3) {
         animation-delay: 1.1s;
         -webkit-animation-delay: 1.1s;
       }
-      .text-stroke:nth-child(3) {
-        animation-delay: 1.6s;
-        -webkit-animation-delay: 1.6s;
-      }
       .text-stroke:nth-child(4) {
-        animation-delay: 2.3s;
-        -webkit-animation-delay: 2.3s;
+        animation-delay: 1.9s;
+        -webkit-animation-delay: 1.9s;
       }
     }
   }
