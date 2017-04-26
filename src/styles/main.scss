@@ -229,8 +229,8 @@ svg.intro {
   -webkit-transform: translateY(243px);
 }
 .svg-text-4 {
-  transform: translateY(274px);
-  -webkit-transform: translateY(274px);
+  transform: translateY(268px);
+  -webkit-transform: translateY(268px);
 }
 #small-text {
   font-family: $sanserif-font;
@@ -749,8 +749,8 @@ svg.intro {
     -webkit-transform: translateY(281px);
   }
   .svg-text-4 {
-    transform: translateY(322px);
-    -webkit-transform: translateY(322px);
+    transform: translateY(315px);
+    -webkit-transform: translateY(315px);
   }
   #small-text {
     font-size: 1.41em;
@@ -776,14 +776,13 @@ svg.intro {
 @media screen and (min-width: 415px) {
 
   //HEADER
-  // svg.intro {
-  //   &.go {
-  //     .text-stroke {
-  //       stroke-dashoffset: -900;
-  //       stroke-dasharray: 900;
-  //     }
-  //   }
-  // }
+  #header {
+    height: 100vh;
+  }
+
+  #header-main {
+    top: 12.5vh;
+  }
 }
 
 
