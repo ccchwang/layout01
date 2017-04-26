@@ -41,7 +41,7 @@ export default function Header() {
 
 
         <div id="header-border-animation">
-          <div className="top" id='tryyy'/>
+          <div className="top" />
           <div className="bottom" />
           <div className="left" />
         </div>
