@@ -74,7 +74,7 @@ body.loaded {
 // SIDE BLOCK TITLES
 
 .title-block {
-  height: 100vh;
+  min-height: 667px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,7 +113,7 @@ body.loaded {
 // HEADER
 
 #header {
-  height: 100vh;
+  height: 95vh;
   position: relative;
   z-index: 2;
   background-image: url('https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524');
@@ -124,7 +124,7 @@ body.loaded {
 #header-main {
   position: relative;
   height: 75vh;
-  top: 12.5vh;
+  top: 10vh;
   z-index: 2;
   padding: 0;
   text-align: left
