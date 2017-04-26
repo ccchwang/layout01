@@ -191,8 +191,8 @@ svg.intro {
       fill: transparent;
       stroke: #333;
       stroke-width: 5px;
-      stroke-dashoffset: 1390;
-      stroke-dasharray: 1390;
+      stroke-dashoffset: 950;
+      stroke-dasharray: 950;
       stroke-linecap: butt;
       stroke-linejoin: round;
       animation: dashSmallscreen 2.5s $ease-svg-text forwards;
@@ -207,7 +207,8 @@ svg.intro {
       -webkit-animation-delay: 1.1s;
     }
     .text-stroke:nth-child(4) {
-      stroke-dasharray: 1390;
+      stroke-dashoffset: 650;
+      stroke-dasharray: 650;
       animation: dash2Smallscreen 2.5s $ease-svg-text forwards 1.7s;
       -webkit-animation: dash2Smallscreen 2.5s $ease-svg-text forwards 1.7s;
     }
@@ -314,7 +315,7 @@ svg.intro {
 //DASH ANIMATION - SMALL SCREEN
 @-webkit-keyframes dashSmallscreen {
   0% {
-    stroke-dashoffset: 1390;
+    stroke-dashoffset: 950;
     stroke: #57ffb9
   }
   70% {
@@ -328,7 +329,7 @@ svg.intro {
 }
 @keyframes dashSmallscreen {
   0% {
-    stroke-dashoffset: 1390;
+    stroke-dashoffset: 950;
     stroke: #57ffb9
   }
   70% {
@@ -343,7 +344,7 @@ svg.intro {
 
 @-webkit-keyframes dash2Smallscreen {
   0% {
-    stroke-dashoffset: 1390;
+    stroke-dashoffset: 650;
     stroke: $highlight-color
   }
   30% {
@@ -360,7 +361,7 @@ svg.intro {
 }
 @keyframes dash2Smallscreen {
   0% {
-    stroke-dashoffset: 1390;
+    stroke-dashoffset: 650;
     stroke: $highlight-color
   }
   30% {
@@ -863,10 +864,14 @@ svg.intro {
 
     &.go {
       .text-stroke {
+        stroke-dashoffset: 900;
+        stroke-dasharray: 900;
         animation-name: dash;
         -webkit-animation-name: dash
       }
       .text-stroke:nth-child(4) {
+        stroke-dashoffset: 300;
+        stroke-dasharray: 300;
         animation-name: dash2;
         -webkit-animation-name: dash2;
       }
