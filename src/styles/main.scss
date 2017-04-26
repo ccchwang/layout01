@@ -10,6 +10,7 @@ $sanserif-font: 'Poppins';
 $main-border: 5px solid white;
 $ease-border: ease-in;
 $ease-expand-page: cubic-bezier(.77,0,.175,1);
+$ease-svg-text: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 // --------------------------------
 
 
@@ -194,22 +195,21 @@ svg.intro {
       stroke-dasharray: 900;
       stroke-linecap: butt;
       stroke-linejoin: round;
-      animation: dash 2.5s ease-in-out forwards 0.19s;
-      -webkit-animation: dash 2.5s ease-in-out forwards 0.19s;
+      animation: dashSmallscreen 2.5s $ease-svg-text forwards;
+      -webkit-animation: dashSmallscreen 2.5s $ease-svg-text forwards;
     }
     .text-stroke:nth-child(2) {
-      animation-delay: 1.29s;
-      -webkit-animation-delay: 1.29s;
+      animation-delay: 0.5s;
+      -webkit-animation-delay: 0.5s;
     }
     .text-stroke:nth-child(3) {
-      animation-delay: 1.39s;
-      -webkit-animation-delay: 1.39s;
+      animation-delay: 1.1s;
+      -webkit-animation-delay: 1.1s;
     }
     .text-stroke:nth-child(4) {
-      stroke-dashoffset: 300;
       stroke-dasharray: 300;
-      // animation: dash 3.3s ease-in-out forwards 1.09s;
-      // -webkit-animation: dash 3.3s ease-in-out forwards 1.09s;
+      animation: dash2Smallscreen 2.5s $ease-svg-text forwards 1.7s;
+      -webkit-animation: dash2Smallscreen 2.5s $ease-svg-text forwards 1.7s;
     }
   }
 }
@@ -220,22 +220,22 @@ svg.intro {
   -webkit-transform: translateY(110px);
 }
 #svg-text-2 {
-  transform: translateY(192px);
-  -webkit-transform: translateY(192px);
+  transform: translateY(187px);
+  -webkit-transform: translateY(187px);
 }
 #svg-text-3 {
-  transform: translateY(248px);
-  -webkit-transform: translateY(248px);
+  transform: translateY(243px);
+  -webkit-transform: translateY(243px);
 }
 .svg-text-4 {
-  transform: translateY(280px);
-  -webkit-transform: translateY(280px);
+  transform: translateY(274px);
+  -webkit-transform: translateY(274px);
 }
 #small-text {
   font-family: $sanserif-font;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.25em;
+  font-size: 1.15em;
   letter-spacing: 2px;
 }
 
@@ -243,18 +243,138 @@ svg.intro {
   fill: #333 !important;
 }
 
+
+//DASH ANIMATION - LARGE SCREEN
 @-webkit-keyframes dash {
-  to {
+  0% {
+    stroke-dashoffset: 900;
+    stroke: $highlight-color
+  }
+  30% {
+    stroke: #13ff9d
+  }
+  60% {
+    stroke: #019c5c
+  }
+  100% {
+    stroke: #333;
     stroke-dashoffset: 0;
   }
 }
-
 @keyframes dash {
-  to {
+  0% {
+    stroke-dashoffset: 900;
+    stroke: $highlight-color
+  }
+  30% {
+    stroke: #13ff9d
+  }
+  60% {
+    stroke: #019c5c
+  }
+  100% {
+    stroke: #333;
     stroke-dashoffset: 0;
   }
 }
 
+@-webkit-keyframes dash2 {
+  0% {
+    stroke-dashoffset: 300;
+    stroke: $highlight-color
+  }
+  30% {
+    stroke: #13ff9d
+  }
+  80% {
+    stroke: #019c5c
+  }
+  100% {
+    stroke: #333;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash2 {
+  0% {
+    stroke-dashoffset: 300;
+    stroke: $highlight-color
+  }
+  30% {
+    stroke: #13ff9d
+  }
+  80% {
+    stroke: #019c5c
+  }
+  100% {
+    stroke: #333;
+    stroke-dashoffset: 0;
+  }
+}
+
+//DASH ANIMATION - SMALL SCREEN
+@-webkit-keyframes dashSmallscreen {
+  0% {
+    stroke-dashoffset: 900;
+    stroke: #57ffb9
+  }
+  70% {
+    stroke: #008c52
+  }
+
+  100% {
+    stroke: #333;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dashSmallscreen {
+  0% {
+    stroke-dashoffset: 900;
+    stroke: #57ffb9
+  }
+  70% {
+    stroke: #008c52
+  }
+
+  100% {
+    stroke: #333;
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash2Smallscreen {
+  0% {
+    stroke-dashoffset: 300;
+    stroke: $highlight-color
+  }
+  30% {
+    stroke: #57ffb9
+  }
+  80% {
+    stroke: #008c52
+  }
+
+  100% {
+    stroke: #333;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash2Smallscreen {
+  0% {
+    stroke-dashoffset: 300;
+    stroke: $highlight-color
+  }
+  30% {
+    stroke: #57ffb9
+  }
+  80% {
+    stroke: #008c52
+  }
+
+  100% {
+    stroke: #333;
+    stroke-dashoffset: 0;
+  }
+}
 
 #header-overlay {
   width: 100%;
@@ -620,19 +740,19 @@ svg.intro {
     }
   }
   #svg-text-2 {
-    transform: translateY(212px);
-    -webkit-transform: translateY(212px);
+    transform: translateY(207px);
+    -webkit-transform: translateY(207px);
   }
   #svg-text-3 {
-    transform: translateY(286px);
-    -webkit-transform: translateY(286px);
+    transform: translateY(281px);
+    -webkit-transform: translateY(281px);
   }
   .svg-text-4 {
-    transform: translateY(328px);
-    -webkit-transform: translateY(328px);
+    transform: translateY(322px);
+    -webkit-transform: translateY(322px);
   }
   #small-text {
-    font-size: 1.38em;
+    font-size: 1.41em;
   }
 
   .title-text {
@@ -671,16 +791,16 @@ svg.intro {
 
   //HEADER
   #svg-text-2 {
-    transform: translateY(230px);
-    -webkit-transform: translateY(230px);
+    transform: translateY(225px);
+    -webkit-transform: translateY(225px);
   }
   #svg-text-3 {
-    transform: translateY(308px);
-    -webkit-transform: translateY(308px);
+    transform: translateY(303px);
+    -webkit-transform: translateY(303px);
   }
   .svg-text-4 {
-    transform: translateY(350px);
-    -webkit-transform: translateY(350px);
+    transform: translateY(344px);
+    -webkit-transform: translateY(344px);
   }
   #small-text {
     font-size: 1.8em;
@@ -711,7 +831,6 @@ svg.intro {
     width: 67vw;
   }
 
-
   #header-border-animation > .bottom {
     border-width: 7px;
     height: 85vh;
@@ -732,50 +851,24 @@ svg.intro {
     border-width: 7px;
   }
 
-  #svg-text-2 {
-    transform: translateY(230px);
-    -webkit-transform: translateY(230px);
-  }
-  #svg-text-3 {
-    transform: translateY(308px);
-    -webkit-transform: translateY(308px);
-  }
-  .svg-text-4 {
-    transform: translateY(350px);
-    -webkit-transform: translateY(350px);
-  }
   #small-text {
     font-size: 1.8em;
   }
 
-
   svg.intro {
-    top: 21%;
+    top: 25%;
     left: -145px;
     height: 380px;
     width: 400px;
 
     &.go {
-      .text {
-        font-size: 8em;
-      }
       .text-stroke {
-        animation: dash 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards;
-        -webkit-animation: dash 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards;
-      }
-      .text-stroke:nth-child(2) {
-        animation-delay: 0.5s;
-        -webkit-animation-delay: 0.5s;
-      }
-      .text-stroke:nth-child(3) {
-        animation-delay: 1.1s;
-        -webkit-animation-delay: 1.1s;
+        animation-name: dash;
+        -webkit-animation-name: dash
       }
       .text-stroke:nth-child(4) {
-        animation: dash 2.2s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards;
-        -webkit-animation: dash 2.2s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards;
-        animation-delay: 1.8s;
-        -webkit-animation-delay: 1.8s;
+        animation-name: dash2;
+        -webkit-animation-name: dash2;
       }
     }
   }

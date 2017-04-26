@@ -62,7 +62,9 @@ $(document).ready(function () {
     function fillSVGText() {
       let delay = $window.width() < 992 ? 4500 : 5000;
 
-      TweenLite.to($svgText, 3, {fill: '#333', delay: 3})
+      TweenLite.to($svgText, 2.5, {fill: '#333', delay: 3, onComplete: function(){
+        $svgText.css('animation-play-state', 'paused')}
+      })
     }
   })
 
