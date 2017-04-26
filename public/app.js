@@ -22337,11 +22337,7 @@
 	      _react2.default.createElement(
 	        'div',
 	        { id: 'header-border' },
-	        _react2.default.createElement(
-	          'video',
-	          { autoPlay: true, style: { height: '100%' } },
-	          _react2.default.createElement('source', { src: '/public/images/me_5950832_Palm-leaves-isol.mp4', type: 'video/mp4' })
-	        )
+	        _react2.default.createElement('div', { id: 'header-img' })
 	      )
 	    )
 	  );

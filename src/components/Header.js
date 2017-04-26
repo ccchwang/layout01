@@ -47,9 +47,11 @@ export default function Header() {
         </div>
 
         <div id="header-border">
-          <video autoPlay style={{height: '100%'}}>
+          <div id="header-img" />
+
+         {/*} <video autoPlay loop style={{height: '100%'}}>
           <source src="/public/images/me_5950832_Palm-leaves-isol.mp4" type="video/mp4" />
-        </video>
+        </video>*/}
         </div>
       </Col>
 
