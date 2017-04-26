@@ -82,6 +82,20 @@ $(document).ready(function () {
     let mainTop = $main.offset().top;
     let windowTop = $window.scrollTop();
 
+
+//     let img = $('.header-image').offset().top
+
+// if (windowTop > img) {
+
+//   let diff = windowTop - img;
+// TweenLite.to($('.header-image'), 0.0001, {top: diff})
+//       //$('.header-image').css('top', diff)
+//     }
+//     else {
+//       TweenLite.to($('.header-image'), 0.0001, {top: 0})
+//     }
+
+
     let mainBottom = $main.height() + mainTop;
     let windowBottom = $window.height() + windowTop;
 

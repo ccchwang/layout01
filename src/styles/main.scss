@@ -115,6 +115,7 @@ body.loaded {
 #header {
   height: 90vh;
   position: relative;
+  overflow: hidden;
   z-index: 2;
   background-image: url('https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524');
   background-attachment: fixed;
@@ -479,8 +480,10 @@ svg.intro {
 }
 
 .header-image {
-  transition: 10s linear;
+  transition: 10s transform linear, 0.1s top linear;
   background-size: cover;
+  position: relative;
+  top: 0
 }
 
 .header-text-wrapper {
