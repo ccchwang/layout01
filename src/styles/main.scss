@@ -158,8 +158,8 @@ body.loaded {
   height: 100%;
   width: 100%;
   padding: 20px 0;
-  border-top: 15px solid #888;
-  border-bottom: 15px solid #888;
+  border-top: 15px solid $highlight-color;
+  border-bottom: 15px solid $highlight-color;
 }
 
 #header-img {
@@ -787,6 +787,10 @@ svg.intro {
 
   #header-main {
     top: 12.5vh;
+  }
+
+  #header-border {
+    border-color: #888;
   }
 }
 

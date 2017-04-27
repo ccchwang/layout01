@@ -71,9 +71,7 @@ $(document).ready(function () {
       TweenLite.to($headerBorderTop, 0.25, {left:'50%', ease: Linear.easeNone, onComplete: animateRest})
     }
     else {
-      $('#header-border').css('border-color', '#f7fb8e')
-      $svgIntro.addClass('go');
-      $body.addClass('loaded');
+      startSVGAnimation()
     }
   })
 
