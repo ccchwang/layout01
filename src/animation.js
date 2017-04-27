@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
   const $window = $(window),
         $body = $('body'),
@@ -21,29 +19,24 @@ $(document).ready(function () {
         $headerBorderLeft = $('#header-border-animation > .left'),
         $headerBorderBottom = $('#header-border-animation > .bottom');
 
-window.onload = function() {
-  window.loaded = true;
-
-  if (window.innerWidth <= 432) {
-    $('.intro').addClass('go');
-    $('body').addClass('loaded');
-
-    setTimeout(function(){
-      TweenLite.to($('.intro > text'), 2.5, {fill: '#333', onComplete: function(){
-        $('.intro > text').css('animation-play-state', 'paused')}
-      })
-    }, 3000)
-  }
-}
-
   if ($window.width() > 432) {
     loadingAnimation();
   }
 
+  window.onload = function() {
+    window.loaded = true;
+
+    if (window.innerWidth <= 432) {
+      startSVGAnimation()
+    }
+  }
+
   function loadingAnimation() {
     TweenLite.to($headerBorderTop, 0.25, {left:'50%', ease: Linear.easeNone, onComplete: animateRest})
+  }
 
-    function animateRest() {
+  //FUNCTIONS FOR LOADING ANIMATION
+  function animateRest() {
       TweenLite.to($headerBorderTop, 0.25, {left:0, ease: Linear.easeNone, onComplete: animateLeft});
     }
 
@@ -52,16 +45,16 @@ window.onload = function() {
     }
 
     function animateBottom() {
-      TweenLite.to($headerBorderBottom, 0.5, {right:'60%',  onComplete: checkLoad});
+      TweenLite.to($headerBorderBottom, 0.25, {right:'60%', ease: Linear.easeNone, onComplete: checkLoad});
     }
 
     function checkLoad() {
       if (window.loaded) {
-        TweenLite.to($headerBorderBottom, 0.5, {right:0, ease: Power2.easeIn, onComplete: startSVGAnimation});
+        TweenLite.to($headerBorderBottom, 0.25, {right:0, ease: Linear.easeNone, onComplete: startSVGAnimation});
       }
       else {
         window.onload = function() {
-          TweenLite.to($headerBorderBottom, 0.5, {right:0, ease: Power2.easeIn, onComplete: startSVGAnimation});
+          TweenLite.to($headerBorderBottom, 0.25, {right:0, ease: Linear.easeNone, onComplete: startSVGAnimation});
         }
       }
     }
@@ -81,7 +74,6 @@ window.onload = function() {
         $svgText.css('animation-play-state', 'paused')}
       })
     }
-  }
 
 
 
