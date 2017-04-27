@@ -159,17 +159,30 @@ $(document).ready(function () {
         //give height to hidden content
         $(`#${section} > .work-item-content`).addClass('expanded-content');
 
-        //make page expand;
-        TweenLite.to($header, 0.6, {width:'25%', ease: Power2.easeInOut, delay: 0.3});
-        TweenLite.to($content, 0.6, {width:'75%', left: '25%', ease: Power2.easeInOut, delay: 0.3, onComplete: function(){
-          //when page expanded, raise up header image
+
+        setTimeout(function(){
+          //make page expand
+          $header.addClass('minimized');
+          $content.addClass('expanded-column');
+
+          //raise up header image
           $(`#${section} > .work-item-header`).addClass('small-header');
 
           //add parallax scrolling to header image
           $(`#${section} > .work-item-header > .header-image`).addClass('scroll-header');
           window.openedSection = true;
+        }, 300)
 
-        }});
+        // TweenLite.to($header, 0.6, {width:'25%', ease: Power2.easeInOut, delay: 0.3});
+        // TweenLite.to($content, 0.6, {width:'75%', left: '25%', ease: Power2.easeInOut, delay: 0.3, onComplete: function(){
+        //   //when page expanded, raise up header image
+        //   $(`#${section} > .work-item-header`).addClass('small-header');
+
+        //   //add parallax scrolling to header image
+        //   $(`#${section} > .work-item-header > .header-image`).addClass('scroll-header');
+        //   window.openedSection = true;
+
+        // }});
 
         //show x button
         $xBtn.css('visibility', 'visible');
@@ -233,11 +246,13 @@ $(document).ready(function () {
         }})
       }
 
-      //close page
-      TweenLite.to($header, 0.6, {width:'33.33333333%', delay: 0.8, ease: Power3.easeInOut});
-      TweenLite.to($content, 0.6, {width:'66.66666667%', left: '33.3%', delay: 0.8, ease: Power3.easeInOut, onComplete: function(){
-        //after page closed, remove height from hidden content
+      setTimeout(function(){
+        //remove height from hidden content
         $itemContent.removeClass('expanded-content');
+
+        //close page
+        $header.removeClass('minimized');
+        $content.removeClass('expanded-column');
 
         //show hidden sections again
         $('.work-content > div').removeClass('hide-section')
@@ -245,7 +260,22 @@ $(document).ready(function () {
 
         //remove border from title block
         $header.removeClass('add-border');
-      }});
+      }, 800)
+
+
+      // //close page
+      // TweenLite.to($header, 0.6, {width:'33.33333333%', delay: 0.8, ease: Power3.easeInOut});
+      // TweenLite.to($content, 0.6, {width:'66.66666667%', left: '33.3%', delay: 0.8, ease: Power3.easeInOut, onComplete: function(){
+      //   //after page closed, remove height from hidden content
+      //   $itemContent.removeClass('expanded-content');
+
+      //   //show hidden sections again
+      //   $('.work-content > div').removeClass('hide-section')
+      //   $window.scrollTop($openedElem.offset().top)
+
+      //   //remove border from title block
+      //   $header.removeClass('add-border');
+      // }});
     }})
 
   })
