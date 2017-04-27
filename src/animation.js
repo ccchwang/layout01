@@ -172,6 +172,9 @@ $(document).ready(function () {
         $('.work-content > div.closed').addClass('hide-section');
         $window.scrollTop($('.opened').offset().top)
 
+        //make header image scale up
+        $headerImage.addClass('scale-up')
+
         //give border to title block
         $header.addClass('add-border');
 
@@ -238,6 +241,9 @@ $(document).ready(function () {
 
       //drop down header
       $itemHeader.removeClass('small-header')
+
+      //scale down header image
+      $headerImage.removeClass('scale-up')
 
       //remove parallax scrolling off header image
       $headerImage.removeClass('scroll-header');
