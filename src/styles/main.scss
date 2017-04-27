@@ -196,8 +196,8 @@ svg.intro {
       stroke-dasharray: 1390;
       stroke-linecap: butt;
       stroke-linejoin: round;
-      animation: dashSmallscreen 2.5s $ease-svg-text forwards 0.3s;
-      -webkit-animation: dashSmallscreen 2.5s $ease-svg-text forwards 0.3s;
+      animation: dash 2.5s $ease-svg-text forwards 0.3s;
+      -webkit-animation: dash 2.5s $ease-svg-text forwards 0.3s;
     }
     .text-stroke:nth-child(2) {
       animation-delay: 0.7s;
@@ -210,8 +210,8 @@ svg.intro {
     .text-stroke:nth-child(4) {
       stroke-dashoffset: 650;
       stroke-dasharray: 650;
-      animation: dash2Smallscreen 2.5s $ease-svg-text forwards 1.9s;
-      -webkit-animation: dash2Smallscreen 2.5s $ease-svg-text forwards 1.9s;
+      animation: dash2 2.5s $ease-svg-text forwards 1.9s;
+      -webkit-animation: dash2 2.5s $ease-svg-text forwards 1.9s;
     }
   }
 }
@@ -249,7 +249,7 @@ svg.intro {
 //DASH ANIMATION - LARGE SCREEN
 @-webkit-keyframes dash {
   0% {
-    stroke-dashoffset: 900;
+    stroke-dashoffset: 1390;
     stroke: $highlight-color
   }
   30% {
@@ -265,7 +265,7 @@ svg.intro {
 }
 @keyframes dash {
   0% {
-    stroke-dashoffset: 900;
+    stroke-dashoffset: 1390;
     stroke: $highlight-color
   }
   30% {
@@ -282,7 +282,7 @@ svg.intro {
 
 @-webkit-keyframes dash2 {
   0% {
-    stroke-dashoffset: 300;
+    stroke-dashoffset: 650;
     stroke: $highlight-color
   }
   30% {
@@ -298,7 +298,7 @@ svg.intro {
 }
 @keyframes dash2 {
   0% {
-    stroke-dashoffset: 300;
+    stroke-dashoffset: 650;
     stroke: $highlight-color
   }
   30% {
