@@ -1,10 +1,7 @@
-window.onload = function() {
-  window.loaded = true;
-}
+
 
 $(document).ready(function () {
   const $window = $(window),
-        windowWidth = $window.width(),
         $body = $('body'),
         $header = $('#work-header'),
         $main = $('#work-main'),
@@ -24,13 +21,31 @@ $(document).ready(function () {
         $headerBorderLeft = $('#header-border-animation > .left'),
         $headerBorderBottom = $('#header-border-animation > .bottom');
 
+window.onload = function() {
+  window.loaded = true;
 
+  if (window.innerWidth <= 432) {
+    $('.intro').addClass('go');
+    $('body').addClass('loaded');
 
-  $(function() {
+    setTimeout(function(){
+      TweenLite.to($('.intro > text'), 2.5, {fill: '#333', onComplete: function(){
+        $('.intro > text').css('animation-play-state', 'paused')}
+      })
+    }, 3000)
+  }
+}
+
+  if ($window.width() > 432) {
+    loadingAnimation();
+  }
+
+  function loadingAnimation() {
+    TweenLite.to($headerBorderTop, 0.25, {left:'50%', ease: Linear.easeNone, onComplete: animateRest})
+
     function animateRest() {
       TweenLite.to($headerBorderTop, 0.25, {left:0, ease: Linear.easeNone, onComplete: animateLeft});
     }
-
 
     function animateLeft() {
       TweenLite.to($headerBorderLeft, 0.5, {bottom:0, onComplete: animateBottom});
@@ -66,14 +81,7 @@ $(document).ready(function () {
         $svgText.css('animation-play-state', 'paused')}
       })
     }
-
-    if ($window.width() > 432) {
-      TweenLite.to($headerBorderTop, 0.25, {left:'50%', ease: Linear.easeNone, onComplete: animateRest})
-    }
-    // else {
-    //   startSVGAnimation()
-    // }
-  })
+  }
 
 
 
