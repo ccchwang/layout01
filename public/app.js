@@ -44124,7 +44124,7 @@
 	
 	  window.onload = function () {
 	    window.loaded = true;
-	    startSVGAnimation();
+	
 	    if (window.innerWidth <= 432) {
 	      startSVGAnimation();
 	    }
@@ -44150,9 +44150,9 @@
 	      $headerBorderLeft = $('#header-border-animation > .left'),
 	      $headerBorderBottom = $('#header-border-animation > .bottom');
 	
-	  // if ($window.width() > 432) {
-	  //   loadingAnimation();
-	  // }
+	  if ($window.width() > 432) {
+	    loadingAnimation();
+	  }
 	
 	  function loadingAnimation() {
 	    TweenLite.to($headerBorderTop, 0.25, { left: '50%', ease: Linear.easeNone, onComplete: animateRest });
