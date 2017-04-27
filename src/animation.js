@@ -4,6 +4,7 @@ window.onload = function() {
 
 $(document).ready(function () {
   const $window = $(window),
+        windowWidth = $window.width(),
         $body = $('body'),
         $header = $('#work-header'),
         $main = $('#work-main'),
@@ -24,10 +25,8 @@ $(document).ready(function () {
         $headerBorderBottom = $('#header-border-animation > .bottom');
 
 
+
   $(function() {
-    TweenLite.to($headerBorderTop, 0.25, {left:'50%', ease: Linear.easeNone, onComplete: animateRest});
-
-
     function animateRest() {
       TweenLite.to($headerBorderTop, 0.25, {left:0, ease: Linear.easeNone, onComplete: animateLeft});
     }
@@ -63,17 +62,38 @@ $(document).ready(function () {
     }
 
     function fillSVGText() {
-      let delay = $window.width() < 992 ? 4500 : 5000;
-
       TweenLite.to($svgText, 2.5, {fill: '#333', onComplete: function(){
-
         $svgText.css('animation-play-state', 'paused')}
       })
+    }
+
+    if ($window.width() > 432) {
+      TweenLite.to($headerBorderTop, 0.25, {left:'50%', ease: Linear.easeNone, onComplete: animateRest})
+    }
+    else {
+      $('#header-border').css('border-color', '#f7fb8e')
+      $svgIntro.addClass('go');
+      $body.addClass('loaded');
     }
   })
 
 
 
+  //*** PARALLAX SCROLLING FOR HEADER IMAGE
+  $window.on('scroll', function () {
+    if (window.openedSection) {
+      let $smallHeader = $('.scroll-header');
+      let smallHeaderTop = $smallHeader.offset().top;
+      let windowTop = $window.scrollTop();
+      let calc = 0;
+
+      if (windowTop > smallHeaderTop) {
+        calc = (windowTop - smallHeaderTop) / 2
+        }
+
+      $smallHeader.css({'background-position': `center ${calc}px`});
+    }
+  });
 
 
   //*** MAKE WORK SECTION STICKY
@@ -97,7 +117,7 @@ $(document).ready(function () {
         calc = (windowTop - smallHeaderTop) / 2
         }
 
-      $smallHeader.css({'background-position' : `center ${calc}px`});
+      $smallHeader.css({'background-position': `center ${calc}px`});
     }
 
 

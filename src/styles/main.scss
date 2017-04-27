@@ -192,8 +192,8 @@ svg.intro {
       fill: transparent;
       stroke: #333;
       stroke-width: 5px;
-      stroke-dashoffset: 950;
-      stroke-dasharray: 950;
+      stroke-dashoffset: 1390;
+      stroke-dasharray: 1390;
       stroke-linecap: butt;
       stroke-linejoin: round;
       animation: dashSmallscreen 2.5s $ease-svg-text forwards;
@@ -316,7 +316,7 @@ svg.intro {
 //DASH ANIMATION - SMALL SCREEN
 @-webkit-keyframes dashSmallscreen {
   0% {
-    stroke-dashoffset: 950;
+    stroke-dashoffset: 1390;
     stroke: #57ffb9
   }
   70% {
@@ -330,7 +330,7 @@ svg.intro {
 }
 @keyframes dashSmallscreen {
   0% {
-    stroke-dashoffset: 950;
+    stroke-dashoffset: 1390;
     stroke: #57ffb9
   }
   70% {
