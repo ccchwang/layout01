@@ -70,9 +70,9 @@ $(document).ready(function () {
     if ($window.width() > 432) {
       TweenLite.to($headerBorderTop, 0.25, {left:'50%', ease: Linear.easeNone, onComplete: animateRest})
     }
-    else {
-      startSVGAnimation()
-    }
+    // else {
+    //   startSVGAnimation()
+    // }
   })
 
 
