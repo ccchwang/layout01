@@ -163,7 +163,7 @@ body.loaded {
 }
 
 #header-img {
-  background-image: url('/public/images/header-img.jpg');
+  //background-image: url('/public/images/header-img.jpg');
   background-size: cover;
   background-color: white;
   height: 100%;
@@ -249,7 +249,6 @@ svg.intro {
 //DASH ANIMATION - LARGE SCREEN
 @-webkit-keyframes dash {
   0% {
-    stroke-dashoffset: 1390;
     stroke: $highlight-color
   }
   30% {
@@ -265,7 +264,6 @@ svg.intro {
 }
 @keyframes dash {
   0% {
-    stroke-dashoffset: 1390;
     stroke: $highlight-color
   }
   30% {
@@ -282,7 +280,6 @@ svg.intro {
 
 @-webkit-keyframes dash2 {
   0% {
-    stroke-dashoffset: 650;
     stroke: $highlight-color
   }
   30% {
@@ -298,7 +295,6 @@ svg.intro {
 }
 @keyframes dash2 {
   0% {
-    stroke-dashoffset: 650;
     stroke: $highlight-color
   }
   30% {
@@ -307,71 +303,6 @@ svg.intro {
   80% {
     stroke: #019c5c
   }
-  100% {
-    stroke: #333;
-    stroke-dashoffset: 0;
-  }
-}
-
-//DASH ANIMATION - SMALL SCREEN
-@-webkit-keyframes dashSmallscreen {
-  0% {
-    stroke-dashoffset: 1390;
-    stroke: #57ffb9
-  }
-  70% {
-    stroke: #008c52
-  }
-
-  100% {
-    stroke: #333;
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes dashSmallscreen {
-  0% {
-    stroke-dashoffset: 1390;
-    stroke: #57ffb9
-  }
-  70% {
-    stroke: #008c52
-  }
-
-  100% {
-    stroke: #333;
-    stroke-dashoffset: 0;
-  }
-}
-
-@-webkit-keyframes dash2Smallscreen {
-  0% {
-    stroke-dashoffset: 650;
-    stroke: $highlight-color
-  }
-  30% {
-    stroke: #57ffb9
-  }
-  80% {
-    stroke: #008c52
-  }
-
-  100% {
-    stroke: #333;
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes dash2Smallscreen {
-  0% {
-    stroke-dashoffset: 650;
-    stroke: $highlight-color
-  }
-  30% {
-    stroke: #57ffb9
-  }
-  80% {
-    stroke: #008c52
-  }
-
   100% {
     stroke: #333;
     stroke-dashoffset: 0;
@@ -490,6 +421,8 @@ svg.intro {
 .header-text-wrapper {
   padding: 45px 60px;
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 2000;
   text-align: left;
 }
@@ -874,14 +807,10 @@ svg.intro {
       .text-stroke {
         stroke-dashoffset: 900;
         stroke-dasharray: 900;
-        animation-name: dash;
-        -webkit-animation-name: dash
       }
       .text-stroke:nth-child(4) {
         stroke-dashoffset: 300;
         stroke-dasharray: 300;
-        animation-name: dash2;
-        -webkit-animation-name: dash2;
       }
     }
   }

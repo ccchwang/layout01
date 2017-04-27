@@ -1,4 +1,13 @@
 $(document).ready(function () {
+
+  window.onload = function() {
+    window.loaded = true;
+
+    if (window.innerWidth <= 432) {
+      startSVGAnimation()
+    }
+  }
+
   const $window = $(window),
         $body = $('body'),
         $header = $('#work-header'),
@@ -21,14 +30,6 @@ $(document).ready(function () {
 
   if ($window.width() > 432) {
     loadingAnimation();
-  }
-
-  window.onload = function() {
-    window.loaded = true;
-
-    if (window.innerWidth <= 432) {
-      startSVGAnimation()
-    }
   }
 
   function loadingAnimation() {
@@ -64,7 +65,7 @@ $(document).ready(function () {
       $body.addClass('loaded');
 
       setTimeout(function(){
-        //document.getElementById("vid").play();
+        document.getElementById("vid").play();
         fillSVGText()
       }, 3000)
     }
