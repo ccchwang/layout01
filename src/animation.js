@@ -18,7 +18,7 @@ $(document).ready(function () {
         $xBtnP = $('.x-btn > p'),
         $svgIntro = $('.intro'),
         $svgText = $('.intro > text'),
-        $headerBorder = $('#header-border'),
+        $headerImage = $('.header-image'),
         $headerBorderTop = $('#header-border-animation > .top'),
         $headerBorderLeft = $('#header-border-animation > .left'),
         $headerBorderBottom = $('#header-border-animation > .bottom');
@@ -56,13 +56,17 @@ $(document).ready(function () {
       $svgIntro.addClass('go');
       $body.addClass('loaded');
 
-      fillSVGText()
+      setTimeout(function(){
+        document.getElementById("vid").play();
+        fillSVGText()
+      }, 3000)
     }
 
     function fillSVGText() {
       let delay = $window.width() < 992 ? 4500 : 5000;
 
-      TweenLite.to($svgText, 2.5, {fill: '#333', delay: 3, onComplete: function(){
+      TweenLite.to($svgText, 2.5, {fill: '#333', onComplete: function(){
+
         $svgText.css('animation-play-state', 'paused')}
       })
     }
@@ -83,17 +87,19 @@ $(document).ready(function () {
     let windowTop = $window.scrollTop();
 
 
-//     let img = $('.header-image').offset().top
+    //PARALLAX SCROLLING FOR HEADER IMAGE
+    if (window.openedSection) {
+      let $smallHeader = $('.scroll-header');
+      let smallHeaderTop = $smallHeader.offset().top;
+      let calc = 0;
 
-// if (windowTop > img) {
+      if (windowTop > smallHeaderTop) {
+        calc = (windowTop - smallHeaderTop) / 2
+        }
 
-//   let diff = windowTop - img;
-// TweenLite.to($('.header-image'), 0.0001, {top: diff})
-//       //$('.header-image').css('top', diff)
-//     }
-//     else {
-//       TweenLite.to($('.header-image'), 0.0001, {top: 0})
-//     }
+      $smallHeader.css({'background-position' : `center ${calc}px`});
+    }
+
 
 
     let mainBottom = $main.height() + mainTop;
@@ -153,12 +159,15 @@ $(document).ready(function () {
         //give height to hidden content
         $(`#${section} > .work-item-content`).addClass('expanded-content');
 
-
         //make page expand;
         TweenLite.to($header, 0.6, {width:'25%', ease: Power2.easeInOut, delay: 0.3});
         TweenLite.to($content, 0.6, {width:'75%', left: '25%', ease: Power2.easeInOut, delay: 0.3, onComplete: function(){
           //when page expanded, raise up header image
           $(`#${section} > .work-item-header`).addClass('small-header');
+
+          //add parallax scrolling to header image
+          $(`#${section} > .work-item-header > .header-image`).addClass('scroll-header');
+          window.openedSection = true;
 
         }});
 
@@ -197,6 +206,10 @@ $(document).ready(function () {
 
       //drop down header
       $itemHeader.removeClass('small-header')
+
+      //remove parallax scrolling off header image
+      $headerImage.removeClass('scroll-header');
+      window.openedSection = false;
 
       //make header img clickable
       $openedElem.addClass('closed');

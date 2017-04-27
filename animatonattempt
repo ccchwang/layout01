@@ -269,10 +269,11 @@ svg.intro {
     stroke: $highlight-color
   }
   30% {
+//    -webkit-linear-gradient(135deg,#13ff9d 0%,#995dd6 100%)
     stroke: #13ff9d
   }
   60% {
-    stroke: #019c5c
+    stroke: #995dd6
   }
   100% {
     stroke: #333;
@@ -299,13 +300,13 @@ svg.intro {
 @keyframes dash2 {
   0% {
     stroke-dashoffset: 300;
-    stroke: $highlight-color
-  }
-  30% {
     stroke: #13ff9d
   }
+  // 30% {
+  //   stroke: #13ff9d
+  // }
   80% {
-    stroke: #019c5c
+    stroke: #995dd6
   }
   100% {
     stroke: #333;
@@ -480,9 +481,8 @@ svg.intro {
 }
 
 .header-image {
-  transition: 10s transform linear;
+  transition: 10s transform linear, 0.1s top linear;
   background-size: cover;
-  background-position: center 0px;
   position: relative;
   top: 0
 }
@@ -720,8 +720,7 @@ svg.intro {
   display: none;
 }
 .small-header {
-  height: 62vh;
-  transition-delay: 0.9s
+  height: 55vh
 }
 .expanded-content {
   height: 100%;
@@ -908,27 +907,27 @@ svg.intro {
 
 ///////
 
-#work-header {
-  -webkit-transition: width 0.6s $ease-expand-page;
-  -moz-transition: width 0.6s $ease-expand-page;
-  -ms-transition: width 0.6s $ease-expand-page;
-  -o-transition: width 0.6s $ease-expand-page;
-  transition: width 0.6s $ease-expand-page;
-}
+// #work-header {
+//   -webkit-transition: width 0.6s $ease-expand-page;
+//   -moz-transition: width 0.6s $ease-expand-page;
+//   -ms-transition: width 0.6s $ease-expand-page;
+//   -o-transition: width 0.6s $ease-expand-page;
+//   transition: width 0.6s $ease-expand-page;
+// }
 
-.work-content {
-  transition: 0.6s $ease-expand-page;
+// .work-content {
+//   transition: 0.6s $ease-expand-page;
 
-}
+// }
 
-.minimized {
-  width: 25%;
-}
+// .minimized {
+//   width: 25%;
+// }
 
-.expanded-column {
-  width: 75%;
-  left: 25%
-}
+// .expanded-column {
+//   width: 75%;
+//   left: 25%
+// }
 
 .add-border {
   border-right: 1px solid #dcdcdc

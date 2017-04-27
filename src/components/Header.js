@@ -47,9 +47,11 @@ export default function Header() {
         </div>
 
         <div id="header-border">
-          <div id="header-img" />
+          {/*<div id="header-img" />*/}
 
-
+         <video id="vid" loop style={{height: '100%'}}>
+          <source src="/public/images/me5950832-palm-leaves-isolated-on-white-background-1280x720-q3-37237.mp4" type="video/mp4" />
+        </video>
         </div>
       </Col>
 
