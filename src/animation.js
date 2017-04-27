@@ -64,7 +64,7 @@ $(document).ready(function () {
       $body.addClass('loaded');
 
       setTimeout(function(){
-        document.getElementById("vid").play();
+        //document.getElementById("vid").play();
         fillSVGText()
       }, 3000)
     }
