@@ -26,7 +26,7 @@ export default function Work () {
 
 
         {/*** OMNI ***/}
-        <div className="work-item closed" id="omni">
+        <div className="work-item closed small-screen" id="omni">
 
           {/* OMNI - header image */}
           <div className="work-item-header">
