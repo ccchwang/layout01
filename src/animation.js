@@ -10,9 +10,12 @@ $(document).ready(function () {
 
   const $window = $(window),
         $body = $('body'),
-        $header = $('#work-header'),
-        $main = $('#work-main'),
-        $content = $('.work-content'),
+        $work = $('#work-main'),
+        $about = $('#about-main'),
+        $workHeader = $('#work-header'),
+        $workContent = $('.work-content'),
+        $aboutHeader = $('#about-header'),
+        $aboutContent = $('.about-content'),
         $itemHeader = $('.work-item-header'),
         $itemContent = $('.work-item-content'),
         $xBtn = $('.x-btn'),
@@ -96,58 +99,62 @@ $(document).ready(function () {
   });
 
 
-  //*** MAKE WORK SECTION STICKY
+  //*** MAKE WORK & ABOUT SECTION STICKY
   $window.on('scroll resize', function () {
 
-    //height of all work section content minus height of window
-    let headerTop = $content.height() - $window.height();
-
     //#work-main: distance from top/bottom of window
-    let mainTop = $main.offset().top;
+    let workTop = $work.offset().top;
+    let workBottom = $work.height() + workTop;
+    //height of all work section content minus height of window
+    let workHeaderTop = $workContent.height() - $window.height();
+
+    //#about-main
+    let aboutTop = $about.offset().top;
+    let aboutBottom = $about.height() + aboutTop;
+    let aboutHeaderTop = $aboutContent.height() - $window.height();
+
+    //window
     let windowTop = $window.scrollTop();
-
-
-    //PARALLAX SCROLLING FOR HEADER IMAGE
-    if (window.openedSection) {
-      let $smallHeader = $('.scroll-header');
-      let smallHeaderTop = $smallHeader.offset().top;
-      let calc = 0;
-
-      if (windowTop > smallHeaderTop) {
-        calc = (windowTop - smallHeaderTop) / 2
-        }
-
-      $smallHeader.css({'background-position': `center ${calc}px`});
-    }
-
-
-
-    let mainBottom = $main.height() + mainTop;
     let windowBottom = $window.height() + windowTop;
 
-    if (windowBottom > mainBottom) {
-      $header.removeClass('fixed-header');
-      $header.css('top', headerTop);
+    //logic for work
+    if (windowBottom > workBottom) {
+      $workHeader.removeClass('fixed-header');
+      $workHeader.css('top', workHeaderTop);
 
       if ($window.width() >= 992) {
         $xBtn.removeClass('fixed-btn');
-        $xBtn.css('top', headerTop + 20)
+        $xBtn.css('top', workHeaderTop + 20)
       }
     }
-    else if (windowTop > mainTop) {
-      $header.addClass('fixed-header');
+    else if (windowTop > workTop) {
+      $workHeader.addClass('fixed-header');
       $xBtn.addClass('fixed-btn');
-      $header.css('top', 0);
+      $workHeader.css('top', 0);
       $xBtn.css('top', 20)
     }
     else {
-      $header.removeClass('fixed-header');
-      $header.css('top', 0);
+      $workHeader.removeClass('fixed-header');
+      $workHeader.css('top', 0);
 
       if ($window.width() >= 992) {
         $xBtn.removeClass('fixed-btn');
         $xBtn.css('top', 20)
       }
+    }
+
+    //logic for about
+    if (windowBottom > aboutBottom) {
+      $aboutHeader.removeClass('fixed-header');
+      $aboutHeader.css('top', aboutHeaderTop);
+    }
+    else if (windowTop > aboutTop) {
+      $aboutHeader.addClass('fixed-header');
+      $aboutHeader.css('top', 0);
+    }
+    else {
+      $aboutHeader.removeClass('fixed-header');
+      $aboutHeader.css('top', 0);
     }
   });
 
@@ -177,7 +184,7 @@ $(document).ready(function () {
         $headerImage.addClass('scale-up')
 
         //give border to title block
-        $header.addClass('add-border');
+        $workHeader.addClass('add-border');
 
         //give height to hidden content
         $(`#${section} > .work-item-content`).addClass('expanded-content');
@@ -185,8 +192,8 @@ $(document).ready(function () {
 
         setTimeout(function(){
           //make page expand
-          $header.addClass('minimized');
-          $content.addClass('expanded-column');
+          $workHeader.addClass('minimized');
+          $workContent.addClass('expanded-column');
 
           //raise up header image
           $(`#${section} > .work-item-header`).addClass('small-header');
@@ -197,7 +204,7 @@ $(document).ready(function () {
         }, 300)
 
         // TweenLite.to($header, 0.6, {width:'25%', ease: Power2.easeInOut, delay: 0.3});
-        // TweenLite.to($content, 0.6, {width:'75%', left: '25%', ease: Power2.easeInOut, delay: 0.3, onComplete: function(){
+        // TweenLite.to($workContent, 0.6, {width:'75%', left: '25%', ease: Power2.easeInOut, delay: 0.3, onComplete: function(){
         //   //when page expanded, raise up header image
         //   $(`#${section} > .work-item-header`).addClass('small-header');
 
@@ -238,7 +245,7 @@ $(document).ready(function () {
     e.stopPropagation();
     let $openedElem = $('.opened');
 
-    TweenLite.to($body, 0.4, {scrollTop: $content.offset().top, onComplete: function () {
+    TweenLite.to($body, 0.4, {scrollTop: $workContent.offset().top, onComplete: function () {
 
       //drop down header
       $itemHeader.removeClass('small-header')
@@ -277,21 +284,21 @@ $(document).ready(function () {
         $itemContent.removeClass('expanded-content');
 
         //close page
-        $header.removeClass('minimized');
-        $content.removeClass('expanded-column');
+        $workHeader.removeClass('minimized');
+        $workContent.removeClass('expanded-column');
 
         //show hidden sections again
         $('.work-content > div').removeClass('hide-section')
         $window.scrollTop($openedElem.offset().top)
 
         //remove border from title block
-        $header.removeClass('add-border');
+        $workHeader.removeClass('add-border');
       }, 800)
 
 
       // //close page
       // TweenLite.to($header, 0.6, {width:'33.33333333%', delay: 0.8, ease: Power3.easeInOut});
-      // TweenLite.to($content, 0.6, {width:'66.66666667%', left: '33.3%', delay: 0.8, ease: Power3.easeInOut, onComplete: function(){
+      // TweenLite.to($workContent, 0.6, {width:'66.66666667%', left: '33.3%', delay: 0.8, ease: Power3.easeInOut, onComplete: function(){
       //   //after page closed, remove height from hidden content
       //   $itemContent.removeClass('expanded-content');
 

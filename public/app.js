@@ -101,7 +101,7 @@
 	exports.i(__webpack_require__(4), "");
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: \"Playfair Display\";\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nbody {\n  margin: 0;\n  overflow: hidden;\n  position: fixed; }\n\nbody.loaded {\n  overflow: auto;\n  position: initial; }\n\n.img-responsive {\n  height: 100%;\n  width: 100%; }\n\n.next-btn {\n  width: 163px;\n  height: 64.8px;\n  border: 5px solid #424242;\n  background-color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n  .next-btn span {\n    font-size: 18px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 3px;\n    margin: 0;\n    margin-top: 1px;\n    width: 57px;\n    border-bottom: 1px solid white; }\n\n.next-btn:hover span {\n  border-color: #424242; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 12px 15px 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#menu {\n  position: fixed;\n  z-index: 3000;\n  left: 25px;\n  top: 25px; }\n\n#menu-btn {\n  width: 41px;\n  height: 41px;\n  padding-top: 8px; }\n\n.menu-item {\n  font-size: 1.2em;\n  padding: 6px 11px 8px; }\n\n#header {\n  height: 90vh;\n  position: relative;\n  overflow: hidden;\n  z-index: 2;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n\n#header-main {\n  position: relative;\n  height: 75vh;\n  top: 7.5vh;\n  z-index: 2;\n  padding: 0;\n  text-align: left; }\n\n#header-border-animation {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  overflow: hidden; }\n\n#header-border-animation > .top {\n  position: absolute;\n  border-top: 15px solid #f7fb8e;\n  top: 0;\n  width: 100vw;\n  left: 100%; }\n\n#header-border-animation > .bottom {\n  position: absolute;\n  border-bottom: 15px solid #f7fb8e;\n  width: 100vw;\n  height: 75vh;\n  right: 100%; }\n\n#header-border {\n  height: 100%;\n  width: 100%;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e; }\n\n#header-img {\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\nsvg.intro {\n  position: absolute;\n  height: 300px;\n  width: 290px;\n  top: 13vh;\n  left: 6vw;\n  z-index: 50; }\n  svg.intro .text {\n    display: none; }\n  svg.intro.go .text {\n    font-family: \"Playfair Display\";\n    font-size: 5.5em;\n    font-weight: 900;\n    display: block; }\n  svg.intro.go .text-stroke {\n    fill: transparent;\n    stroke: #333;\n    stroke-width: 5px;\n    stroke-dashoffset: 1390;\n    stroke-dasharray: 1390;\n    stroke-linecap: butt;\n    stroke-linejoin: round;\n    animation: dash 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 0.3s;\n    -webkit-animation: dash 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 0.3s; }\n  svg.intro.go .text-stroke:nth-child(2) {\n    animation-delay: 0.7s;\n    -webkit-animation-delay: 0.7s; }\n  svg.intro.go .text-stroke:nth-child(3) {\n    animation-delay: 1.3s;\n    -webkit-animation-delay: 1.3s; }\n  svg.intro.go .text-stroke:nth-child(4) {\n    stroke-dashoffset: 650;\n    stroke-dasharray: 650;\n    animation: dash2 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 1.9s;\n    -webkit-animation: dash2 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 1.9s; }\n\n#svg-text-1 {\n  transform: translateY(110px);\n  -webkit-transform: translateY(110px); }\n\n#svg-text-2 {\n  transform: translateY(187px);\n  -webkit-transform: translateY(187px); }\n\n#svg-text-3 {\n  transform: translateY(240px);\n  -webkit-transform: translateY(240px); }\n\n.svg-text-4 {\n  transform: translateY(265px);\n  -webkit-transform: translateY(265px); }\n\n#small-text {\n  font-family: \"Poppins\";\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 1.15em;\n  letter-spacing: 2px; }\n\n.svg-fill {\n  fill: #333 !important; }\n\n@-webkit-keyframes dash {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  60% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@keyframes dash {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  60% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@-webkit-keyframes dash2 {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  80% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@keyframes dash2 {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  80% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-main {\n  z-index: 2; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n.about-content {\n  font-family: \"Poppins\";\n  background-color: white;\n  text-align: left;\n  padding: 90px 100px; }\n\n#about-btn::before, #work-btn::before, #contact-btn::before {\n  content: '';\n  position: absolute;\n  z-index: -1;\n  width: 0%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: #f7fb8e;\n  transition: 0.3s; }\n\n#about-btn:hover, #work-btn:hover, #contact-btn:hover {\n  color: #424242 !important;\n  transition: 0.3s; }\n\n#about-btn, #work-btn, #contact-btn {\n  transition: color 0.3s; }\n\n#about-btn:focus::before, #about-btn:hover::before,\n#work-btn:focus::before, #work-btn:hover::before,\n#contact-btn:focus::before, #contact-btn:hover::before {\n  width: 100%; }\n\n.intro-emphasis {\n  font-family: 'poppins';\n  font-style: normal;\n  font-weight: 600;\n  font-size: 25px; }\n\n.about-heading-text {\n  display: flex;\n  flex-direction: column;\n  margin-bottom: 10px;\n  font-size: 25px;\n  font-weight: 600;\n  font-family: \"Poppins\";\n  text-transform: uppercase;\n  letter-spacing: 3px; }\n  .about-heading-text .divider {\n    width: 35px;\n    border-bottom: 3px solid #424242;\n    display: inline-block; }\n\n.about-text ul {\n  list-style-type: square;\n  padding-left: 21px; }\n\n.about-text p, .about-text li {\n  font-family: \"Poppins\";\n  font-size: 17px;\n  font-weight: 300; }\n\n.about-text li {\n  line-height: 25px; }\n\n.mini-heading {\n  font-style: italic;\n  font-size: 20px;\n  line-height: 30px; }\n\n.video-container {\n  display: flex;\n  flex-direction: column;\n  width: 560px;\n  text-align: center;\n  margin-bottom: 55px; }\n\n.video-date {\n  font-size: 15px;\n  font-family: 'poppins';\n  text-transform: uppercase;\n  letter-spacing: 2px;\n  font-weight: 300; }\n\n.video-title {\n  font-size: 25px;\n  font-style: italic;\n  line-height: 28px;\n  margin: 8px 0; }\n\n.work-content {\n  height: auto;\n  right: 0;\n  background-color: white;\n  padding: 0; }\n\n.work-item {\n  overflow: hidden;\n  position: relative; }\n\n.work-item-header {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  min-height: 270px;\n  overflow: hidden;\n  transition: 0.8s height cubic-bezier(0.77, 0, 0.175, 1);\n  -webkit-transition: 0.8s height cubic-bezier(0.77, 0, 0.175, 1); }\n\n.work-item-content {\n  background-color: white;\n  text-align: left;\n  height: 0; }\n\n.header-image {\n  transition: 10s transform linear;\n  background-size: cover;\n  background-position: center 0px;\n  position: relative;\n  top: 0; }\n\n.header-text-wrapper {\n  padding: 45px 60px;\n  position: absolute;\n  top: 0;\n  left: 0;\n  text-align: left; }\n\n.header-title {\n  margin: 0;\n  color: white;\n  font-family: \"Poppins\";\n  font-size: 4.5em;\n  font-weight: 600; }\n\n.header-subtitle {\n  color: white;\n  font-size: 21px;\n  font-style: italic;\n  transition: 0.3s; }\n\n.subtitle-wrapper {\n  position: absolute;\n  width: 300px;\n  margin-top: -38px;\n  margin-left: 5px;\n  transition: 0.4s 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275); }\n\n.border-wrapper {\n  position: relative;\n  overflow: hidden;\n  width: 168px;\n  height: 64.8px;\n  margin-top: 10px;\n  margin-left: 5px; }\n\n.border-wrapper::before {\n  content: 'SEE MORE';\n  font-family: \"Poppins\";\n  color: white;\n  font-size: 18px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: 20.5px;\n  left: -104px;\n  transition: 0.6s 0.3s;\n  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n\n.border-top {\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  width: 168px;\n  right: 50%;\n  transition: right 0.2s 0.6s;\n  transition-timing-function: ease-in; }\n\n.border-bottom {\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 168px;\n  height: 64.8px;\n  left: 100%;\n  transition: left 0.2s 0.2s;\n  transition-timing-function: ease-in; }\n\n.border-right {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  right: 0;\n  bottom: 100%;\n  transition: bottom 0.2s 0.4s;\n  transition-timing-function: ease-in; }\n\n.border-left {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  left: 0;\n  top: 100%;\n  transition: top 0.2s;\n  transition-timing-function: ease-in; }\n\n.x-btn {\n  visibility: hidden;\n  position: absolute;\n  z-index: 1;\n  top: 20px;\n  right: 20px;\n  overflow: hidden;\n  width: 50px;\n  height: 50px;\n  cursor: pointer; }\n\n.x-btn > p {\n  font-family: \"Poppins\";\n  color: white;\n  background-color: #424242;\n  font-size: 20px;\n  padding: 15px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: -1.6px;\n  left: -46px; }\n\n.x-btn > .top {\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  width: 50px;\n  right: 100%; }\n\n.x-btn > .right {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 50px;\n  right: 0;\n  bottom: 100%; }\n\n.x-btn > .bottom {\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 50px;\n  height: 50px;\n  left: 100%; }\n\n.x-btn > .left {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 50px;\n  left: 0;\n  top: 100%; }\n\n.work-item.closed:hover {\n  cursor: pointer; }\n  .work-item.closed:hover .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n  .work-item.closed:hover .header-image {\n    transform: scale(1.4);\n    -webkit-transform: scale(1.4); }\n  .work-item.closed:hover .border-top {\n    right: 0;\n    transition: right 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-bottom {\n    left: 0;\n    transition: left 0.2s;\n    transition-delay: 0.4s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-right {\n    bottom: 0;\n    transition: bottom 0.2s;\n    transition-delay: 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-left {\n    top: 0;\n    transition: top 0.2s;\n    transition-delay: 0.6s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; }\n  .work-item.closed:hover .border-wrapper:hover {\n    filter: grayscale(0) sepia(100%) contrast(100%) saturate(7.5); }\n\n#contact-main {\n  z-index: 2; }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n.hide-section {\n  display: none; }\n\n.small-header {\n  height: 62vh;\n  transition-delay: 0.85s; }\n\n.expanded-content {\n  height: 100%;\n  padding: 70px; }\n\n.fixed-btn {\n  position: fixed !important; }\n\n.scale-up {\n  transform: scale(1.3); }\n\n@media screen and (min-width: 321px) {\n  svg.intro {\n    height: 350px;\n    width: 320px; }\n    svg.intro.go .text {\n      font-size: 6.6em; }\n  #svg-text-2 {\n    transform: translateY(207px);\n    -webkit-transform: translateY(207px); }\n  #svg-text-3 {\n    transform: translateY(271px);\n    -webkit-transform: translateY(271px); }\n  .svg-text-4 {\n    transform: translateY(304px);\n    -webkit-transform: translateY(304px); }\n  #small-text {\n    font-size: 1.42em; }\n  .title-text {\n    font-size: 3em;\n    padding: 15px 20px 20px; }\n  .menu-item {\n    font-size: 1.4em;\n    padding: 7px 13px 9px; } }\n\n@media screen and (min-width: 415px) {\n  #header {\n    height: 100vh; }\n  #header-main {\n    top: 12.5vh; }\n  #header-border {\n    border-color: #888; } }\n\n@media screen and (min-width: 668px) {\n  #svg-text-2 {\n    transform: translateY(225px);\n    -webkit-transform: translateY(225px); }\n  #svg-text-3 {\n    transform: translateY(303px);\n    -webkit-transform: translateY(303px); }\n  .svg-text-4 {\n    transform: translateY(344px);\n    -webkit-transform: translateY(344px); }\n  #small-text {\n    font-size: 1.8em; }\n  svg.intro {\n    width: 400px; }\n    svg.intro.go .text {\n      font-size: 8em; } }\n\n@media screen and (min-width: 992px) {\n  #header-main {\n    height: 85vh;\n    top: 7.5vh; }\n  #header-border-animation > .top {\n    border-width: 7px;\n    width: 67vw; }\n  #header-border-animation > .bottom {\n    border-width: 7px;\n    height: 85vh;\n    width: 67vw; }\n  #header-border-animation > .left {\n    position: absolute;\n    border-right: 7px solid #f7fb8e;\n    height: 85vh;\n    left: 0;\n    bottom: 100%; }\n  #header-border {\n    padding-left: 20px;\n    border-left: 7px solid #888;\n    border-width: 7px; }\n  #small-text {\n    font-size: 1.8em; }\n  svg.intro {\n    top: 25%;\n    left: -145px;\n    height: 380px;\n    width: 400px; }\n    svg.intro.go .text-stroke {\n      stroke-dashoffset: 900;\n      stroke-dasharray: 900; }\n    svg.intro.go .text-stroke:nth-child(4) {\n      stroke-dashoffset: 300;\n      stroke-dasharray: 300; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 200; }\n  .fixed-header {\n    position: fixed !important; }\n  .work-content {\n    position: relative;\n    z-index: 100;\n    left: 33.3%; }\n  #work-header {\n    -webkit-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -moz-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -ms-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -o-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .work-content {\n    transition: 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .minimized {\n    width: 25%; }\n  .expanded-column {\n    width: 75%;\n    left: 25%; }\n  .add-border {\n    border-right: 1px solid #dcdcdc; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 991px) {\n  .work-item.closed.small-screen .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n  .work-item.closed.small-screen .border-top {\n    right: 0;\n    transition: right 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed.small-screen .border-bottom {\n    left: 0;\n    transition: left 0.2s;\n    transition-delay: 0.4s;\n    transition-timing-function: ease-in; }\n  .work-item.closed.small-screen .border-right {\n    bottom: 0;\n    transition: bottom 0.2s;\n    transition-delay: 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed.small-screen .border-left {\n    top: 0;\n    transition: top 0.2s;\n    transition-delay: 0.6s;\n    transition-timing-function: ease-in; }\n  .work-item.closed.small-screen .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:before {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: \"Playfair Display\";\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nbody {\n  margin: 0;\n  overflow: hidden;\n  position: fixed; }\n\nbody.loaded {\n  overflow: auto;\n  position: initial; }\n\n.img-responsive {\n  height: 100%;\n  width: 100%; }\n\n.next-btn {\n  width: 163px;\n  height: 64.8px;\n  border: 5px solid #424242;\n  background-color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n  .next-btn span {\n    font-size: 18px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 3px;\n    margin: 0;\n    margin-top: 1px;\n    width: 57px;\n    border-bottom: 1px solid white; }\n\n.next-btn:hover span {\n  border-color: #424242; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 12px 15px 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#menu {\n  position: fixed;\n  z-index: 3000;\n  left: 25px;\n  top: 25px; }\n\n#menu-btn {\n  width: 41px;\n  height: 41px;\n  padding-top: 8px; }\n\n.menu-item {\n  font-size: 1.2em;\n  padding: 6px 11px 8px; }\n\n#header {\n  height: 90vh;\n  position: relative;\n  overflow: hidden;\n  z-index: 2;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n\n#header-main {\n  position: relative;\n  height: 75vh;\n  top: 7.5vh;\n  z-index: 2;\n  padding: 0;\n  text-align: left; }\n\n#header-border-animation {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  overflow: hidden; }\n\n#header-border-animation > .top {\n  position: absolute;\n  border-top: 15px solid #f7fb8e;\n  top: 0;\n  width: 100vw;\n  left: 100%; }\n\n#header-border-animation > .bottom {\n  position: absolute;\n  border-bottom: 15px solid #f7fb8e;\n  width: 100vw;\n  height: 75vh;\n  right: 100%; }\n\n#header-border {\n  height: 100%;\n  width: 100%;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e; }\n\n#header-img {\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\nsvg.intro {\n  position: absolute;\n  height: 300px;\n  width: 290px;\n  top: 13vh;\n  left: 6vw;\n  z-index: 50; }\n  svg.intro .text {\n    display: none; }\n  svg.intro.go .text {\n    font-family: \"Playfair Display\";\n    font-size: 5.5em;\n    font-weight: 900;\n    display: block; }\n  svg.intro.go .text-stroke {\n    fill: transparent;\n    stroke: #333;\n    stroke-width: 5px;\n    stroke-dashoffset: 1390;\n    stroke-dasharray: 1390;\n    stroke-linecap: butt;\n    stroke-linejoin: round;\n    animation: dash 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 0.3s;\n    -webkit-animation: dash 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 0.3s; }\n  svg.intro.go .text-stroke:nth-child(2) {\n    animation-delay: 0.7s;\n    -webkit-animation-delay: 0.7s; }\n  svg.intro.go .text-stroke:nth-child(3) {\n    animation-delay: 1.3s;\n    -webkit-animation-delay: 1.3s; }\n  svg.intro.go .text-stroke:nth-child(4) {\n    stroke-dashoffset: 650;\n    stroke-dasharray: 650;\n    animation: dash2 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 1.9s;\n    -webkit-animation: dash2 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 1.9s; }\n\n#svg-text-1 {\n  transform: translateY(110px);\n  -webkit-transform: translateY(110px); }\n\n#svg-text-2 {\n  transform: translateY(187px);\n  -webkit-transform: translateY(187px); }\n\n#svg-text-3 {\n  transform: translateY(240px);\n  -webkit-transform: translateY(240px); }\n\n.svg-text-4 {\n  transform: translateY(265px);\n  -webkit-transform: translateY(265px); }\n\n#small-text {\n  font-family: \"Poppins\";\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 1.15em;\n  letter-spacing: 2px; }\n\n.svg-fill {\n  fill: #333 !important; }\n\n@-webkit-keyframes dash {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  60% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@keyframes dash {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  60% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@-webkit-keyframes dash2 {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  80% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@keyframes dash2 {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  80% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-main {\n  z-index: 2; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n.about-content {\n  font-family: \"Poppins\";\n  text-align: left;\n  padding: 0px 100px;\n  height: auto;\n  right: 0;\n  background-color: white; }\n\n#about-btn::before, #work-btn::before, #contact-btn::before {\n  content: '';\n  position: absolute;\n  z-index: -1;\n  width: 0%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: #f7fb8e;\n  transition: 0.3s; }\n\n#about-btn:hover, #work-btn:hover, #contact-btn:hover {\n  color: #424242 !important;\n  transition: 0.3s; }\n\n#about-btn, #work-btn, #contact-btn {\n  transition: color 0.3s; }\n\n#about-btn:focus::before, #about-btn:hover::before,\n#work-btn:focus::before, #work-btn:hover::before,\n#contact-btn:focus::before, #contact-btn:hover::before {\n  width: 100%; }\n\n.intro-emphasis {\n  font-family: 'poppins';\n  font-style: normal;\n  font-weight: 600;\n  font-size: 25px; }\n\n.about-heading-text {\n  display: flex;\n  flex-direction: column;\n  margin-bottom: 10px;\n  font-size: 35px;\n  font-weight: 300;\n  font-family: \"Poppins\";\n  text-transform: uppercase;\n  letter-spacing: 3px; }\n  .about-heading-text .divider {\n    width: 35px;\n    border-bottom: 2px solid #424242;\n    display: inline-block; }\n\n.about-text {\n  padding-bottom: 90px; }\n  .about-text ul {\n    list-style-type: square;\n    padding-left: 21px;\n    margin-top: 5px; }\n  .about-text p, .about-text li {\n    font-family: \"Poppins\";\n    font-size: 17px;\n    font-weight: 300; }\n  .about-text li {\n    line-height: 25px; }\n  .about-text .grouped {\n    width: 48%;\n    padding-bottom: 15px;\n    margin: 5px; }\n\n.mini-heading {\n  font-style: italic;\n  font-size: 20px; }\n\n.video-container {\n  display: flex;\n  flex-direction: column;\n  width: 560px;\n  text-align: center;\n  margin-bottom: 55px; }\n\n.video-date {\n  font-size: 15px;\n  font-family: 'poppins';\n  text-transform: uppercase;\n  letter-spacing: 2px;\n  font-weight: 300; }\n\n.video-title {\n  font-size: 25px;\n  font-style: italic;\n  line-height: 28px;\n  margin: 8px 0; }\n\n.work-content {\n  height: auto;\n  right: 0;\n  background-color: white;\n  padding: 0; }\n\n.work-item {\n  overflow: hidden;\n  position: relative; }\n\n.work-item-header {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  min-height: 270px;\n  overflow: hidden;\n  transition: 0.8s height cubic-bezier(0.77, 0, 0.175, 1);\n  -webkit-transition: 0.8s height cubic-bezier(0.77, 0, 0.175, 1); }\n\n.work-item-content {\n  background-color: white;\n  text-align: left;\n  height: 0; }\n\n.header-image {\n  transition: 10s transform linear;\n  background-size: cover;\n  background-position: center 0px;\n  position: relative;\n  top: 0; }\n\n.header-text-wrapper {\n  padding: 45px 60px;\n  position: absolute;\n  top: 0;\n  left: 0;\n  text-align: left; }\n\n.header-title {\n  margin: 0;\n  color: white;\n  font-family: \"Poppins\";\n  font-size: 4.5em;\n  font-weight: 600; }\n\n.header-subtitle {\n  color: white;\n  font-size: 21px;\n  font-style: italic;\n  transition: 0.3s; }\n\n.subtitle-wrapper {\n  position: absolute;\n  width: 300px;\n  margin-top: -38px;\n  margin-left: 5px;\n  transition: 0.4s 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275); }\n\n.border-wrapper {\n  position: relative;\n  overflow: hidden;\n  width: 168px;\n  height: 64.8px;\n  margin-top: 10px;\n  margin-left: 5px; }\n\n.border-wrapper::before {\n  content: 'SEE MORE';\n  font-family: \"Poppins\";\n  color: white;\n  font-size: 18px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: 20.5px;\n  left: -104px;\n  transition: 0.6s 0.3s;\n  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n\n.border-top {\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  width: 168px;\n  right: 50%;\n  transition: right 0.2s 0.6s;\n  transition-timing-function: ease-in; }\n\n.border-bottom {\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 168px;\n  height: 64.8px;\n  left: 100%;\n  transition: left 0.2s 0.2s;\n  transition-timing-function: ease-in; }\n\n.border-right {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  right: 0;\n  bottom: 100%;\n  transition: bottom 0.2s 0.4s;\n  transition-timing-function: ease-in; }\n\n.border-left {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  left: 0;\n  top: 100%;\n  transition: top 0.2s;\n  transition-timing-function: ease-in; }\n\n.x-btn {\n  visibility: hidden;\n  position: absolute;\n  z-index: 1;\n  top: 20px;\n  right: 20px;\n  overflow: hidden;\n  width: 50px;\n  height: 50px;\n  cursor: pointer; }\n\n.x-btn > p {\n  font-family: \"Poppins\";\n  color: white;\n  background-color: #424242;\n  font-size: 20px;\n  padding: 15px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: -1.6px;\n  left: -46px; }\n\n.x-btn > .top {\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  width: 50px;\n  right: 100%; }\n\n.x-btn > .right {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 50px;\n  right: 0;\n  bottom: 100%; }\n\n.x-btn > .bottom {\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 50px;\n  height: 50px;\n  left: 100%; }\n\n.x-btn > .left {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 50px;\n  left: 0;\n  top: 100%; }\n\n.work-item.closed:hover {\n  cursor: pointer; }\n  .work-item.closed:hover .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n  .work-item.closed:hover .header-image {\n    transform: scale(1.4);\n    -webkit-transform: scale(1.4); }\n  .work-item.closed:hover .border-top {\n    right: 0;\n    transition: right 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-bottom {\n    left: 0;\n    transition: left 0.2s;\n    transition-delay: 0.4s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-right {\n    bottom: 0;\n    transition: bottom 0.2s;\n    transition-delay: 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-left {\n    top: 0;\n    transition: top 0.2s;\n    transition-delay: 0.6s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; }\n  .work-item.closed:hover .border-wrapper:hover {\n    filter: grayscale(0) sepia(100%) contrast(100%) saturate(7.5); }\n\n#contact-main {\n  z-index: 2; }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n.hide-section {\n  display: none; }\n\n.small-header {\n  height: 62vh;\n  transition-delay: 0.9s; }\n\n.expanded-content {\n  height: 100%;\n  padding: 70px; }\n\n.fixed-btn {\n  position: fixed !important; }\n\n.scale-up {\n  transform: scale(1.3); }\n\n@media screen and (min-width: 321px) {\n  svg.intro {\n    height: 350px;\n    width: 320px; }\n    svg.intro.go .text {\n      font-size: 6.6em; }\n  #svg-text-2 {\n    transform: translateY(207px);\n    -webkit-transform: translateY(207px); }\n  #svg-text-3 {\n    transform: translateY(271px);\n    -webkit-transform: translateY(271px); }\n  .svg-text-4 {\n    transform: translateY(304px);\n    -webkit-transform: translateY(304px); }\n  #small-text {\n    font-size: 1.42em; }\n  .title-text {\n    font-size: 3em;\n    padding: 15px 20px 20px; }\n  .menu-item {\n    font-size: 1.4em;\n    padding: 7px 13px 9px; } }\n\n@media screen and (min-width: 415px) {\n  #header {\n    height: 100vh; }\n  #header-main {\n    top: 12.5vh; }\n  #header-border {\n    border-color: #888; } }\n\n@media screen and (min-width: 668px) {\n  #svg-text-2 {\n    transform: translateY(225px);\n    -webkit-transform: translateY(225px); }\n  #svg-text-3 {\n    transform: translateY(303px);\n    -webkit-transform: translateY(303px); }\n  .svg-text-4 {\n    transform: translateY(344px);\n    -webkit-transform: translateY(344px); }\n  #small-text {\n    font-size: 1.8em; }\n  svg.intro {\n    width: 400px; }\n    svg.intro.go .text {\n      font-size: 8em; } }\n\n@media screen and (min-width: 992px) {\n  #header-main {\n    height: 85vh;\n    top: 7.5vh; }\n  #header-border-animation > .top {\n    border-width: 7px;\n    width: 67vw; }\n  #header-border-animation > .bottom {\n    border-width: 7px;\n    height: 85vh;\n    width: 67vw; }\n  #header-border-animation > .left {\n    position: absolute;\n    border-right: 7px solid #f7fb8e;\n    height: 85vh;\n    left: 0;\n    bottom: 100%; }\n  #header-border {\n    padding-left: 20px;\n    border-left: 7px solid #888;\n    border-width: 7px; }\n  #small-text {\n    font-size: 1.8em; }\n  svg.intro {\n    top: 25%;\n    left: -145px;\n    height: 380px;\n    width: 400px; }\n    svg.intro.go .text-stroke {\n      stroke-dashoffset: 900;\n      stroke-dasharray: 900; }\n    svg.intro.go .text-stroke:nth-child(4) {\n      stroke-dashoffset: 300;\n      stroke-dasharray: 300; }\n  #about-header {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 200; }\n  .about-content, .work-content {\n    position: relative;\n    z-index: 100;\n    left: 33.3%; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 200; }\n  .fixed-header {\n    position: fixed !important; }\n  #work-header {\n    -webkit-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -moz-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -ms-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -o-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .work-content {\n    transition: 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .minimized {\n    width: 25%; }\n  .expanded-column {\n    width: 75%;\n    left: 25%; }\n  .add-border {\n    border-right: 1px solid #dcdcdc; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 991px) {\n  .work-item.closed.small-screen .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n  .work-item.closed.small-screen .border-top {\n    right: 0;\n    transition: right 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed.small-screen .border-bottom {\n    left: 0;\n    transition: left 0.2s;\n    transition-delay: 0.4s;\n    transition-timing-function: ease-in; }\n  .work-item.closed.small-screen .border-right {\n    bottom: 0;\n    transition: bottom 0.2s;\n    transition-delay: 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed.small-screen .border-left {\n    top: 0;\n    transition: top 0.2s;\n    transition-delay: 0.6s;\n    transition-timing-function: ease-in; }\n  .work-item.closed.small-screen .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:before {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
 	
 	// exports
 
@@ -41608,7 +41608,7 @@
 	      { className: 'about-content', xs: 12, md: 8 },
 	      _react2.default.createElement(
 	        'div',
-	        { style: { fontSize: '28px', fontStyle: 'italic' } },
+	        { style: { fontSize: '28px', fontStyle: 'italic', paddingTop: '100px' } },
 	        'I\u2019m a ',
 	        _react2.default.createElement(
 	          'span',
@@ -41648,8 +41648,9 @@
 	        _react2.default.createElement(
 	          'p',
 	          null,
-	          'I am interested in interactive design and building immersive experiences. Currently, I\'m learning the 3D library three.js to further my skills in _____.'
+	          'I am interested in interactive design and building immersive experiences. Currently, I\'m learning the 3D library three.js to further my skills in creating beautiful 3D user-centric experiences.'
 	        ),
+	        _react2.default.createElement('br', null),
 	        _react2.default.createElement('br', null),
 	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
@@ -41660,191 +41661,213 @@
 	        ),
 	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
-	          'span',
-	          { className: 'mini-heading' },
-	          'Preferred Stack'
-	        ),
-	        _react2.default.createElement('br', null),
-	        _react2.default.createElement(
-	          'ul',
-	          null,
+	          'div',
+	          { style: { display: 'flex', flexWrap: 'wrap' } },
 	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Node.js'
+	            'div',
+	            { className: 'grouped' },
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'mini-heading' },
+	              'Preferred Stack'
+	            ),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement(
+	              'ul',
+	              null,
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Node.js'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Express'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'PostgreSQL/Sequelize'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'React.js'
+	              )
+	            )
 	          ),
 	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Express'
+	            'div',
+	            { className: 'grouped' },
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'mini-heading' },
+	              'Frontend Tools'
+	            ),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement(
+	              'ul',
+	              null,
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'CSS3'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'HTML5'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Sass'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'jQuery'
+	              )
+	            )
 	          ),
 	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'PostgreSQL/Sequelize'
+	            'div',
+	            { className: 'grouped' },
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'mini-heading' },
+	              'Experience'
+	            ),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement(
+	              'ul',
+	              null,
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Data visualization (Victory.js)'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Virtual reality (A-Frame)'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Mobile apps (React Native)'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Real-time communications (Socket.io)'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Wire frames (Balsamiq)'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Animation (GreenSock)'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                '3D modeling (Blender)'
+	              )
+	            )
 	          ),
 	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'React.js'
+	            'div',
+	            { className: 'grouped' },
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'mini-heading' },
+	              'Development practices'
+	            ),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement(
+	              'ul',
+	              null,
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Agile development'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Test-driven development (Jasmine, Mocha, Chai)'
+	              )
+	            )
 	          )
 	        ),
 	        _react2.default.createElement('br', null),
-	        _react2.default.createElement(
-	          'span',
-	          { className: 'mini-heading' },
-	          'Frontend Tools'
-	        ),
-	        _react2.default.createElement('br', null),
-	        _react2.default.createElement(
-	          'ul',
-	          null,
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'CSS3'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'HTML5'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Sass'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'jQuery'
-	          )
-	        ),
-	        _react2.default.createElement('br', null),
-	        _react2.default.createElement(
-	          'span',
-	          { className: 'mini-heading' },
-	          'Experience'
-	        ),
-	        _react2.default.createElement('br', null),
-	        _react2.default.createElement(
-	          'ul',
-	          null,
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Data visualization (Victory.js)'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Virtual reality (A-Frame)'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Mobile apps (React Native)'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Real-time communications (Socket.io)'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Wire frames (Balsamiq)'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Animation (GreenSock)'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            '3D modeling (Blender)'
-	          )
-	        ),
-	        _react2.default.createElement('br', null),
-	        _react2.default.createElement(
-	          'span',
-	          { className: 'mini-heading' },
-	          'Development practices'
-	        ),
-	        _react2.default.createElement('br', null),
-	        _react2.default.createElement(
-	          'ul',
-	          null,
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Agile development'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Test-driven development (Jasmine, Mocha, Chai)'
-	          )
-	        ),
 	        _react2.default.createElement('br', null),
 	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'about-heading-text' },
-	          'My Talks',
+	          'Talks',
 	          _react2.default.createElement('span', { className: 'divider' })
 	        ),
 	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'video-container' },
+	          { style: { display: 'flex', flexDirection: 'column', alignItems: 'center' } },
 	          _react2.default.createElement(
-	            'span',
-	            { className: 'video-date' },
-	            'March 2017'
-	          ),
-	          _react2.default.createElement(
-	            'span',
-	            { className: 'video-title', style: { padding: '0 150px' } },
-	            'How to Leverage React.js for Beautiful UI'
-	          ),
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/75XmHauQNdA', frameBorder: '0', allowFullScreen: true })
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'video-container' },
-	          _react2.default.createElement(
-	            'span',
-	            { className: 'video-date' },
-	            'March 2017'
-	          ),
-	          _react2.default.createElement(
-	            'span',
-	            { className: 'video-title', style: { padding: '0 110px' } },
-	            'Introducing a New UI Animation Library for React.js'
-	          ),
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/krAzPZE3s1I', frameBorder: '0', allowFullScreen: true })
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'video-container' },
-	          _react2.default.createElement(
-	            'span',
-	            { className: 'video-date' },
-	            'April 2017'
-	          ),
-	          _react2.default.createElement(
-	            'span',
-	            { className: 'video-title', style: { padding: '0 110px' } },
-	            'Presenting Omni:',
+	            'div',
+	            { className: 'video-container' },
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'video-date' },
+	              'March 2017'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'video-title', style: { padding: '0 150px' } },
+	              'How to Leverage React.js for Beautiful UI'
+	            ),
 	            _react2.default.createElement('br', null),
-	            'A Dream Journal/Analysis App'
+	            _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/75XmHauQNdA', frameBorder: '0', allowFullScreen: true })
 	          ),
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/VQYodA9GZ20', frameBorder: '0', allowFullScreen: true })
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'video-container' },
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'video-date' },
+	              'March 2017'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'video-title', style: { padding: '0 110px' } },
+	              'Introducing a New UI Animation Library for React.js'
+	            ),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/krAzPZE3s1I', frameBorder: '0', allowFullScreen: true })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'video-container' },
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'video-date' },
+	              'April 2017'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'video-title', style: { padding: '0 110px' } },
+	              'Presenting Omni:',
+	              _react2.default.createElement('br', null),
+	              'A Dream Journal/Analysis App'
+	            ),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/VQYodA9GZ20', frameBorder: '0', allowFullScreen: true })
+	          )
 	        ),
 	        _react2.default.createElement('br', null),
 	        _react2.default.createElement('br', null),
@@ -41853,6 +41876,43 @@
 	          { className: 'about-heading-text' },
 	          'Past Life',
 	          _react2.default.createElement('span', { className: 'divider' })
+	        ),
+	        _react2.default.createElement('br', null),
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'mini-heading' },
+	          'Fundraising Manager, ecoAmerica'
+	        ),
+	        _react2.default.createElement('br', null),
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'mini-heading' },
+	          'Washington, D.C. (Dec 2014-Dec 2016)'
+	        ),
+	        _react2.default.createElement('br', null),
+	        _react2.default.createElement(
+	          'ul',
+	          { style: { marginTop: '5px' } },
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'Oversaw production of a grant report, letters of inquiry, and extensive proposal within 6 weeks time. As a result, secured $3M grant as part of two-person team.'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'Managed portfolio of 150+ fundraising prospects.'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'Led implementation of Salesforce database and became power user for organization.'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'Defined and codified workflow systems and processes for newly-formed team.'
+	          )
 	        )
 	      )
 	    )
@@ -44361,9 +44421,12 @@
 	
 	  var $window = $(window),
 	      $body = $('body'),
-	      $header = $('#work-header'),
-	      $main = $('#work-main'),
-	      $content = $('.work-content'),
+	      $work = $('#work-main'),
+	      $about = $('#about-main'),
+	      $workHeader = $('#work-header'),
+	      $workContent = $('.work-content'),
+	      $aboutHeader = $('#about-header'),
+	      $aboutContent = $('.about-content'),
 	      $itemHeader = $('.work-item-header'),
 	      $itemContent = $('.work-item-content'),
 	      $xBtn = $('.x-btn'),
@@ -44444,53 +44507,58 @@
 	    }
 	  });
 	
-	  //*** MAKE WORK SECTION STICKY
+	  //*** MAKE WORK & ABOUT SECTION STICKY
 	  $window.on('scroll resize', function () {
 	
-	    //height of all work section content minus height of window
-	    var headerTop = $content.height() - $window.height();
-	
 	    //#work-main: distance from top/bottom of window
-	    var mainTop = $main.offset().top;
+	    var workTop = $work.offset().top;
+	    var workBottom = $work.height() + workTop;
+	    //height of all work section content minus height of window
+	    var workHeaderTop = $workContent.height() - $window.height();
+	
+	    //#about-main
+	    var aboutTop = $about.offset().top;
+	    var aboutBottom = $about.height() + aboutTop;
+	    var aboutHeaderTop = $aboutContent.height() - $window.height();
+	
+	    //window
 	    var windowTop = $window.scrollTop();
-	
-	    //PARALLAX SCROLLING FOR HEADER IMAGE
-	    if (window.openedSection) {
-	      var $smallHeader = $('.scroll-header');
-	      var smallHeaderTop = $smallHeader.offset().top;
-	      var calc = 0;
-	
-	      if (windowTop > smallHeaderTop) {
-	        calc = (windowTop - smallHeaderTop) / 2;
-	      }
-	
-	      $smallHeader.css({ 'background-position': 'center ' + calc + 'px' });
-	    }
-	
-	    var mainBottom = $main.height() + mainTop;
 	    var windowBottom = $window.height() + windowTop;
 	
-	    if (windowBottom > mainBottom) {
-	      $header.removeClass('fixed-header');
-	      $header.css('top', headerTop);
+	    //logic for work
+	    if (windowBottom > workBottom) {
+	      $workHeader.removeClass('fixed-header');
+	      $workHeader.css('top', workHeaderTop);
 	
 	      if ($window.width() >= 992) {
 	        $xBtn.removeClass('fixed-btn');
-	        $xBtn.css('top', headerTop + 20);
+	        $xBtn.css('top', workHeaderTop + 20);
 	      }
-	    } else if (windowTop > mainTop) {
-	      $header.addClass('fixed-header');
+	    } else if (windowTop > workTop) {
+	      $workHeader.addClass('fixed-header');
 	      $xBtn.addClass('fixed-btn');
-	      $header.css('top', 0);
+	      $workHeader.css('top', 0);
 	      $xBtn.css('top', 20);
 	    } else {
-	      $header.removeClass('fixed-header');
-	      $header.css('top', 0);
+	      $workHeader.removeClass('fixed-header');
+	      $workHeader.css('top', 0);
 	
 	      if ($window.width() >= 992) {
 	        $xBtn.removeClass('fixed-btn');
 	        $xBtn.css('top', 20);
 	      }
+	    }
+	
+	    //logic for about
+	    if (windowBottom > aboutBottom) {
+	      $aboutHeader.removeClass('fixed-header');
+	      $aboutHeader.css('top', aboutHeaderTop);
+	    } else if (windowTop > aboutTop) {
+	      $aboutHeader.addClass('fixed-header');
+	      $aboutHeader.css('top', 0);
+	    } else {
+	      $aboutHeader.removeClass('fixed-header');
+	      $aboutHeader.css('top', 0);
 	    }
 	  });
 	
@@ -44519,15 +44587,15 @@
 	          $headerImage.addClass('scale-up');
 	
 	          //give border to title block
-	          $header.addClass('add-border');
+	          $workHeader.addClass('add-border');
 	
 	          //give height to hidden content
 	          $('#' + section + ' > .work-item-content').addClass('expanded-content');
 	
 	          setTimeout(function () {
 	            //make page expand
-	            $header.addClass('minimized');
-	            $content.addClass('expanded-column');
+	            $workHeader.addClass('minimized');
+	            $workContent.addClass('expanded-column');
 	
 	            //raise up header image
 	            $('#' + section + ' > .work-item-header').addClass('small-header');
@@ -44538,7 +44606,7 @@
 	          }, 300);
 	
 	          // TweenLite.to($header, 0.6, {width:'25%', ease: Power2.easeInOut, delay: 0.3});
-	          // TweenLite.to($content, 0.6, {width:'75%', left: '25%', ease: Power2.easeInOut, delay: 0.3, onComplete: function(){
+	          // TweenLite.to($workContent, 0.6, {width:'75%', left: '25%', ease: Power2.easeInOut, delay: 0.3, onComplete: function(){
 	          //   //when page expanded, raise up header image
 	          //   $(`#${section} > .work-item-header`).addClass('small-header');
 	
@@ -44573,7 +44641,7 @@
 	    e.stopPropagation();
 	    var $openedElem = $('.opened');
 	
-	    TweenLite.to($body, 0.4, { scrollTop: $content.offset().top, onComplete: function onComplete() {
+	    TweenLite.to($body, 0.4, { scrollTop: $workContent.offset().top, onComplete: function onComplete() {
 	
 	        //drop down header
 	        $itemHeader.removeClass('small-header');
@@ -44612,20 +44680,20 @@
 	          $itemContent.removeClass('expanded-content');
 	
 	          //close page
-	          $header.removeClass('minimized');
-	          $content.removeClass('expanded-column');
+	          $workHeader.removeClass('minimized');
+	          $workContent.removeClass('expanded-column');
 	
 	          //show hidden sections again
 	          $('.work-content > div').removeClass('hide-section');
 	          $window.scrollTop($openedElem.offset().top);
 	
 	          //remove border from title block
-	          $header.removeClass('add-border');
+	          $workHeader.removeClass('add-border');
 	        }, 800);
 	
 	        // //close page
 	        // TweenLite.to($header, 0.6, {width:'33.33333333%', delay: 0.8, ease: Power3.easeInOut});
-	        // TweenLite.to($content, 0.6, {width:'66.66666667%', left: '33.3%', delay: 0.8, ease: Power3.easeInOut, onComplete: function(){
+	        // TweenLite.to($workContent, 0.6, {width:'66.66666667%', left: '33.3%', delay: 0.8, ease: Power3.easeInOut, onComplete: function(){
 	        //   //after page closed, remove height from hidden content
 	        //   $itemContent.removeClass('expanded-content');
 	

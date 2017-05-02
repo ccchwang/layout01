@@ -331,10 +331,13 @@ svg.intro {
 
 .about-content {
   font-family: $sanserif-font;
-  background-color: white;
   text-align: left;
-  padding: 90px 100px;
+  padding: 0px 100px;
+  height: auto;
+  right: 0;
+  background-color: white;
 }
+
 
 #about-btn::before, #work-btn::before, #contact-btn::before {
   content: '';
@@ -377,15 +380,15 @@ svg.intro {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 35px;
+  font-weight: 300;
   font-family: $sanserif-font;
   text-transform: uppercase;
   letter-spacing: 3px;
 
   .divider {
     width: 35px;
-    border-bottom: 3px solid #424242;
+    border-bottom: 2px solid #424242;
     display: inline-block;
   }
 }
@@ -393,9 +396,11 @@ svg.intro {
 
 
 .about-text {
+  padding-bottom: 90px;
   ul {
     list-style-type: square;
     padding-left: 21px;
+    margin-top: 5px;
   }
   p, li {
     font-family: $sanserif-font;
@@ -405,12 +410,16 @@ svg.intro {
   li {
     line-height: 25px;
   }
+  .grouped {
+    width: 48%;
+    padding-bottom: 15px;
+    margin: 5px;
+  }
 }
 
 .mini-heading {
   font-style: italic;
-    font-size: 20px;
-        line-height: 30px;
+  font-size: 20px;
 }
 .video-container {
   display: flex;
@@ -708,7 +717,7 @@ svg.intro {
 }
 .small-header {
   height: 62vh;
-  transition-delay: 0.85s
+  transition-delay: 0.9s
 }
 .expanded-content {
   height: 100%;
@@ -868,7 +877,19 @@ svg.intro {
     }
   }
 
+  //ABOUT
+  #about-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+  }
 
+  .about-content, .work-content {
+    position: relative;
+    z-index: 100;
+    left: 33.3%;
+  }
 
 
   //WORK
@@ -883,11 +904,6 @@ svg.intro {
     position: fixed !important;
   }
 
-  .work-content {
-    position: relative;
-    z-index: 100;
-    left: 33.3%;
-  }
 
 
 
@@ -904,7 +920,6 @@ svg.intro {
 
 .work-content {
   transition: 0.6s $ease-expand-page;
-
 }
 
 .minimized {
