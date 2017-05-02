@@ -365,19 +365,75 @@ svg.intro {
 
 // about - text
 
-.about-heading-text {
-  font-size: 30px;
-  font-family: $sanserif-font;
-  font-weight: 500
+
+.intro-emphasis {
+  font-family: 'poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
 }
+
+.about-heading-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: $sanserif-font;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  .divider {
+    width: 35px;
+    border-bottom: 3px solid #424242;
+    display: inline-block;
+  }
+}
+
+
 
 .about-text {
-  font-family: $sanserif-font;
-  font-size: 17px;
-  font-weight: 300;
-  line-height: 25px;
+  ul {
+    list-style-type: square;
+    padding-left: 21px;
+  }
+  p, li {
+    font-family: $sanserif-font;
+    font-size: 17px;
+    font-weight: 300;
+  }
+  li {
+    line-height: 25px;
+  }
 }
 
+.mini-heading {
+  font-style: italic;
+    font-size: 20px;
+        line-height: 30px;
+}
+.video-container {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  text-align: center;
+  margin-bottom: 55px
+}
+
+.video-date {
+  font-size: 15px;
+  font-family: 'poppins';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.video-title {
+  font-size: 25px;
+  font-style: italic;
+  line-height: 28px;
+  margin: 8px 0;
+}
 
 // WORK
 
@@ -435,15 +491,15 @@ svg.intro {
 
 .header-subtitle {
   color: white;
-  font-family: $sanserif-font;
-  font-size: 19px;
+  font-size: 21px;
+  font-style: italic;
   transition: 0.3s;
 }
 
 .subtitle-wrapper {
   position: absolute;
   width: 300px;
-  margin-top: -33px;
+  margin-top: -38px;
   margin-left: 5px;
   transition: 0.4s 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -454,7 +510,7 @@ svg.intro {
   overflow: hidden;
   width: 168px;
   height: 64.8px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 5px;
 }
 

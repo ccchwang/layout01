@@ -41,7 +41,7 @@ export default function Work () {
               </div>
               <div className="subtitle-wrapper">
                 <p className="header-subtitle">Dream analysis app</p>
-                <p style={{marginTop: '-5px'}} className="header-subtitle">NERD Stack, A-frame, Victory</p>
+                <p style={{marginTop: '-10px'}} className="header-subtitle">NERD Stack, A-frame, Victory</p>
               </div>
             </div>
           </div>
