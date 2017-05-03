@@ -13,7 +13,7 @@ export default function About () {
       <Col className="about-content" xs={12} md={8}>
 
         {/* INTRO */}
-        <div style={{fontSize: '28px', fontStyle: 'italic', paddingTop: '100px'}}>I’m a <span  className='intro-emphasis'>FRONTEND WEB DEVELOPER</span> specializing in <span  className='intro-emphasis'>JAVASCRIPT</span> and the <span  className='intro-emphasis'>NERD stack.</span> I'm currently seeking a creative role that will allow me to build stunning UX/UI. You can find my resume <span className='intro-emphasis'>HERE.</span></div>
+        <div className="about-intro">I’m a <span  className='intro-emphasis'>FRONTEND WEB DEVELOPER</span> specializing in <span  className='intro-emphasis'>JAVASCRIPT</span> and the <span  className='intro-emphasis'>NERD stack.</span> I'm currently seeking a creative role that will allow me to build stunning UX/UI. You can find my resume <span className='intro-emphasis'>HERE.</span></div>
         <br /><br />
 
         {/* MAIN CONTENT CONTAINER */}
@@ -21,9 +21,8 @@ export default function About () {
           {/* SHORT BLURB */}
           <p>After years of dabbling in web design during my past life as a nonprofit fundraiser, I knew it was time to turn my side hustle into my main job. The art and science of building beautiful websites captured my imagination by providing the same creative outlet as my other passions in interior decorating and graphic design, while also being technical enough to pose a daily challenge. That's why I decided to take the plunge into web development, and I couldn’t be happier.</p>
           <br />
-          <p>I am interested in interactive design and building immersive experiences. Currently, I'm learning the 3D library three.js to further my skills in creating beautiful 3D user-centric experiences.</p>
-          <br /><br /><br />
-
+          <p>I am interested in interactive design and building immersive experiences. Currently, I'm learning the 3D library three.js to deepen my understanding of WebGL.</p>
+          <br /><br /><hr /><br /><br />
           {/*** TOOLBOX ***/}
           <div className="about-heading-text">Toolbox<span className="divider" /></div>
           <br />
@@ -73,7 +72,7 @@ export default function About () {
               </ul>
             </div>
           </div>
-          <br /><br /><br />
+          <br /><hr /><br /><br />
 
 
           {/*** TALKS ***/}
@@ -106,7 +105,7 @@ export default function About () {
               <iframe width="560" height="315" src="https://www.youtube.com/embed/VQYodA9GZ20" frameBorder="0" allowFullScreen />
             </div>
           </div>
-          <br /><br />
+          <br /><hr /><br /><br />
 
 
           {/*** PAST LIFE ***/}

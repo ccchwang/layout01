@@ -66,7 +66,7 @@ $(document).ready(function () {
 
     function startSVGAnimation() {
       $svgIntro.addClass('go');
-      // $body.addClass('loaded');
+      $body.addClass('loaded');
 
       setTimeout(function(){
         document.getElementById("vid").play();

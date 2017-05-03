@@ -332,16 +332,10 @@ svg.intro {
 .about-content {
   font-family: $sanserif-font;
   text-align: left;
-  padding: 0px 36px;
+  padding: 0px 100px;
   height: auto;
   right: 0;
   background-color: white;
-}
-
-.about-intro {
-  font-size: 22px;
-  font-style: italic;
-  padding-top: 50px
 }
 
 
@@ -379,14 +373,14 @@ svg.intro {
   font-family: 'poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .about-heading-text {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 300;
   font-family: $sanserif-font;
   text-transform: uppercase;
@@ -410,16 +404,14 @@ svg.intro {
   }
   p, li {
     font-family: $sanserif-font;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
-  }
-  p {
-    line-height: 1.6;
   }
   li {
     line-height: 25px;
   }
   .grouped {
+    width: 48%;
     padding-bottom: 15px;
     margin: 5px;
   }
@@ -427,7 +419,7 @@ svg.intro {
 
 .mini-heading {
   font-style: italic;
-  font-size: 17px;
+  font-size: 20px;
 }
 .video-container {
   display: flex;
@@ -438,7 +430,7 @@ svg.intro {
 }
 
 .video-date {
-  font-size: 13px;
+  font-size: 15px;
   font-family: 'poppins';
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -446,7 +438,7 @@ svg.intro {
 }
 
 .video-title {
-  font-size: 20px;
+  font-size: 25px;
   font-style: italic;
   line-height: 28px;
   margin: 8px 0;
@@ -777,35 +769,6 @@ svg.intro {
     font-size: 1.4em;
     padding: 7px 13px 9px
   }
-
-  //about - 321
-
-  .about-content {
-    padding: 0px 50px;
-  }
-
-  .about-intro {
-    padding-top: 50px;
-    font-size: 23px;
-  }
-  .intro-emphasis {
-    font-size: 21px;
-  }
-  .about-text p, .about-text li {
-    font-size: 16px
-  }
-  .about-heading-text {
-    font-size: 33px
-  }
-  .mini-heading {
-    font-size: 18px
-  }
-  .video-title {
-    font-size: 22px
-  }
-  .video-date {
-    font-size: 14px
-  }
 }
 
 
@@ -921,7 +884,9 @@ svg.intro {
     left: 0;
     z-index: 200;
   }
-
+.about-intro {
+  div style={{fontSize: '28px', fontStyle: 'italic', paddingTop: '100px'}}
+}
   .about-content, .work-content {
     position: relative;
     z-index: 100;
