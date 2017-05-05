@@ -341,7 +341,7 @@ svg.intro {
 .about-intro {
   font-size: 22px;
   font-style: italic;
-  padding-top: 50px
+  padding-top: 15%;
 }
 
 
@@ -421,7 +421,6 @@ svg.intro {
   }
   .grouped {
     padding-bottom: 15px;
-    margin: 5px;
   }
 }
 
@@ -432,9 +431,9 @@ svg.intro {
 .video-container {
   display: flex;
   flex-direction: column;
-  width: 560px;
+  //width: 560px;
   text-align: center;
-  margin-bottom: 55px
+  margin-bottom: 60px
 }
 
 .video-date {
@@ -778,21 +777,22 @@ svg.intro {
     padding: 7px 13px 9px
   }
 
-  //about - 321
 
+  //about - 321
   .about-content {
-    padding: 0px 50px;
+    padding: 0px 36px;
   }
 
   .about-intro {
-    padding-top: 50px;
     font-size: 23px;
   }
   .intro-emphasis {
     font-size: 21px;
   }
-  .about-text p, .about-text li {
-    font-size: 16px
+  .about-text {
+    p, li {
+      font-size: 16px
+    }
   }
   .about-heading-text {
     font-size: 33px
@@ -824,6 +824,11 @@ svg.intro {
   #header-border {
     border-color: #888;
   }
+
+  //about - 415
+  .about-content {
+    padding: 0px 50px;
+  }
 }
 
 
@@ -854,6 +859,41 @@ svg.intro {
         font-size: 8em;
       }
     }
+  }
+
+  //about - 668
+
+  .about-content {
+    padding: 0px 100px;
+  }
+
+  .about-intro {
+    font-size: 28px;
+  }
+  .intro-emphasis {
+    font-size: 25px;
+  }
+  .about-text {
+    p, li {
+      font-size: 17px;
+    }
+
+    .grouped {
+      width: 43.5%;
+      margin-right: 30px
+    }
+  }
+  .about-heading-text {
+    font-size: 35px
+  }
+  .mini-heading {
+    font-size: 20px
+  }
+  .video-title {
+    font-size: 25px
+  }
+  .video-date {
+    font-size: 15px
   }
 }
 
@@ -974,6 +1014,13 @@ svg.intro {
 
 
 /////////////
+}
+
+
+@media screen and (min-width: 1425px) {
+  .about-text .grouped {
+    width: 46%;
+  }
 }
 
 

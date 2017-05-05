@@ -12,6 +12,7 @@ export default function About () {
 
       <Col className="about-content" xs={12} md={8}>
 
+      <div style={{maxWidth: '850px', margin: '0 auto'}}>
         {/* INTRO */}
         <div className="about-intro">I’m a <span  className='intro-emphasis'>FRONTEND WEB DEVELOPER</span> specializing in <span  className='intro-emphasis'>JAVASCRIPT</span> and the <span  className='intro-emphasis'>NERD stack.</span> I'm currently seeking a creative role that will allow me to build stunning UX/UI. You can find my resume <span className='intro-emphasis'>HERE.</span></div>
         <br /><br />
@@ -84,25 +85,25 @@ export default function About () {
             {/*** tech talk ***/}
             <div className="video-container">
               <span className="video-date">March 2017</span>
-              <span className="video-title" style={{padding: '0 150px'}}>How to Leverage React.js for Beautiful UI</span>
+              <span className="video-title">How to Leverage<br />React.js for Beautiful UI</span>
               <br />
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/75XmHauQNdA" frameBorder="0" allowFullScreen />
+              {/*<iframe width="560" height="315" src="https://www.youtube.com/embed/75XmHauQNdA" frameBorder="0" allowFullScreen />*/}
             </div>
 
             {/*** stackathon ***/}
             <div className="video-container">
               <span className="video-date">March 2017</span>
-              <span className="video-title" style={{padding: '0 110px'}}>Introducing a New UI Animation Library for React.js</span>
+              <span className="video-title">Introducing a New UI<br />Animation Library for React.js</span>
               <br />
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/krAzPZE3s1I" frameBorder="0" allowFullScreen />
+              {/*<iframe width="560" height="315" src="https://www.youtube.com/embed/krAzPZE3s1I" frameBorder="0" allowFullScreen />*/}
             </div>
 
             {/*** capstone ***/}
             <div className="video-container">
               <span className="video-date">April 2017</span>
-              <span className="video-title" style={{padding: '0 110px'}}>Presenting Omni:<br />A Dream Journal/Analysis App</span>
+              <span className="video-title">Presenting Omni:<br />A Dream Journal/Analysis App</span>
               <br />
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/VQYodA9GZ20" frameBorder="0" allowFullScreen />
+              {/*<iframe width="560" height="315" src="https://www.youtube.com/embed/VQYodA9GZ20" frameBorder="0" allowFullScreen />*/}
             </div>
           </div>
           <br /><hr /><br /><br />
@@ -119,6 +120,7 @@ export default function About () {
             <li>Led implementation of Salesforce database and became power user for organization.</li>
             <li>Defined and codified workflow systems and processes for newly-formed team.</li>
           </ul>
+    </div>
   </div>
 
 
