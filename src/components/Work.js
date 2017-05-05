@@ -1,6 +1,8 @@
 import React from 'react';
 import Omni from './portfolio-items/Omni';
 import Rdi from './portfolio-items/Rdi';
+import Macbox from './portfolio-items/Macbox';
+import Nonprof from './portfolio-items/Nonprof';
 import { Row, Col } from 'react-bootstrap'
 
 export default function Work () {
@@ -28,6 +30,8 @@ export default function Work () {
 
         <Omni />
         <Rdi />
+        <Macbox />
+        <Nonprof />
 
 
 

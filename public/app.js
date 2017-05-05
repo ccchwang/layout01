@@ -58,7 +58,7 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _animation = __webpack_require__(464);
+	var _animation = __webpack_require__(467);
 	
 	var _animation2 = _interopRequireDefault(_animation);
 	
@@ -101,7 +101,7 @@
 	exports.i(__webpack_require__(4), "");
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: \"Playfair Display\";\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nbody {\n  margin: 0;\n  overflow: hidden;\n  position: fixed; }\n\nbody.loaded {\n  overflow: auto;\n  position: initial; }\n\n.img-responsive {\n  height: 100%;\n  width: 100%; }\n\n.next-btn {\n  width: 163px;\n  height: 64.8px;\n  border: 5px solid #424242;\n  background-color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 0 auto; }\n  .next-btn span {\n    font-size: 18px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 3px;\n    margin: 0;\n    margin-top: 1px;\n    width: 57px;\n    border-bottom: 1px solid white; }\n\n.next-btn:hover {\n  cursor: pointer; }\n  .next-btn:hover span {\n    border-color: #424242; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 12px 15px 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#menu {\n  position: fixed;\n  z-index: 3000;\n  left: 25px;\n  top: 25px; }\n\n#menu-btn {\n  width: 41px;\n  height: 41px;\n  padding-top: 8px; }\n\n.menu-item {\n  font-size: 1.2em;\n  padding: 6px 11px 8px; }\n\n#header {\n  height: 90vh;\n  position: relative;\n  overflow: hidden;\n  z-index: 2;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n\n#header-main {\n  position: relative;\n  height: 75vh;\n  top: 7.5vh;\n  z-index: 2;\n  padding: 0;\n  text-align: left; }\n\n#header-border-animation {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  overflow: hidden; }\n\n#header-border-animation > .top {\n  position: absolute;\n  border-top: 15px solid #f7fb8e;\n  top: 0;\n  width: 100vw;\n  left: 100%; }\n\n#header-border-animation > .bottom {\n  position: absolute;\n  border-bottom: 15px solid #f7fb8e;\n  width: 100vw;\n  height: 75vh;\n  right: 100%; }\n\n#header-border {\n  height: 100%;\n  width: 100%;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e; }\n\n#header-img {\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\nsvg.intro {\n  position: absolute;\n  height: 300px;\n  width: 290px;\n  top: 13vh;\n  left: 6vw;\n  z-index: 50; }\n  svg.intro .text {\n    display: none; }\n  svg.intro.go .text {\n    font-family: \"Playfair Display\";\n    font-size: 5.5em;\n    font-weight: 900;\n    display: block; }\n  svg.intro.go .text-stroke {\n    fill: transparent;\n    stroke: #333;\n    stroke-width: 5px;\n    stroke-dashoffset: 1390;\n    stroke-dasharray: 1390;\n    stroke-linecap: butt;\n    stroke-linejoin: round;\n    animation: dash 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 0.3s;\n    -webkit-animation: dash 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 0.3s; }\n  svg.intro.go .text-stroke:nth-child(2) {\n    animation-delay: 0.7s;\n    -webkit-animation-delay: 0.7s; }\n  svg.intro.go .text-stroke:nth-child(3) {\n    animation-delay: 1.3s;\n    -webkit-animation-delay: 1.3s; }\n  svg.intro.go .text-stroke:nth-child(4) {\n    stroke-dashoffset: 650;\n    stroke-dasharray: 650;\n    animation: dash2 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 1.9s;\n    -webkit-animation: dash2 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 1.9s; }\n\n#svg-text-1 {\n  transform: translateY(110px);\n  -webkit-transform: translateY(110px); }\n\n#svg-text-2 {\n  transform: translateY(187px);\n  -webkit-transform: translateY(187px); }\n\n#svg-text-3 {\n  transform: translateY(240px);\n  -webkit-transform: translateY(240px); }\n\n.svg-text-4 {\n  transform: translateY(265px);\n  -webkit-transform: translateY(265px); }\n\n#small-text {\n  font-family: \"Poppins\";\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 1.15em;\n  letter-spacing: 2px; }\n\n.svg-fill {\n  fill: #333 !important; }\n\n@-webkit-keyframes dash {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  60% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@keyframes dash {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  60% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@-webkit-keyframes dash2 {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  80% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@keyframes dash2 {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  80% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-main {\n  z-index: 2; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n.about-content {\n  font-family: \"Poppins\";\n  text-align: left;\n  height: auto;\n  right: 0;\n  background-color: white;\n  border-bottom: 1px solid #424242; }\n\n.content-padding {\n  padding: 0px 36px; }\n\n.about-intro {\n  font-size: 22px;\n  font-style: italic;\n  padding-top: 15%; }\n\n#about-btn::before, #work-btn::before, #contact-btn::before {\n  content: '';\n  position: absolute;\n  z-index: -1;\n  width: 0%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: #f7fb8e;\n  transition: 0.3s; }\n\n#about-btn:hover, #work-btn:hover, #contact-btn:hover {\n  color: #424242 !important;\n  transition: 0.3s; }\n\n#about-btn, #work-btn, #contact-btn {\n  transition: color 0.3s; }\n\n#about-btn:focus::before, #about-btn:hover::before,\n#work-btn:focus::before, #work-btn:hover::before,\n#contact-btn:focus::before, #contact-btn:hover::before {\n  width: 100%; }\n\n.intro-emphasis {\n  font-family: 'poppins';\n  font-style: normal;\n  font-weight: 600;\n  font-size: 20px; }\n\n.about-heading-text {\n  display: flex;\n  flex-direction: column;\n  margin-bottom: 10px;\n  font-size: 32px;\n  font-weight: 300;\n  font-family: \"Poppins\";\n  text-transform: uppercase;\n  letter-spacing: 3px; }\n  .about-heading-text .divider {\n    width: 35px;\n    border-bottom: 2px solid #424242;\n    display: inline-block; }\n  .about-heading-text .divider.light {\n    border-color: white; }\n\n.about-text ul {\n  list-style-type: square;\n  padding-left: 21px;\n  margin-top: 5px; }\n\n.about-text p, .about-text li {\n  font-family: \"Poppins\";\n  font-size: 15px;\n  font-weight: 300; }\n\n.about-text p {\n  line-height: 1.6; }\n\n.about-text li {\n  line-height: 25px; }\n\n.about-text .grouped {\n  width: 100%;\n  padding-bottom: 15px; }\n\n.mini-heading {\n  font-style: italic;\n  font-size: 17px; }\n\n.video-container {\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n  max-width: 560px;\n  text-align: center;\n  margin: 0 auto 60px; }\n\n.video-date {\n  font-size: 13px;\n  font-family: 'poppins';\n  text-transform: uppercase;\n  letter-spacing: 2px;\n  font-weight: 300; }\n\n.video-title {\n  font-size: 20px;\n  font-style: italic;\n  line-height: 28px;\n  margin: 8px 0; }\n\n.work-content {\n  height: auto;\n  right: 0;\n  background-color: white;\n  padding: 0; }\n\n.work-item {\n  overflow: hidden;\n  position: relative; }\n\n.work-item-header {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  min-height: 270px;\n  overflow: hidden;\n  transition: 0.8s height cubic-bezier(0.77, 0, 0.175, 1);\n  -webkit-transition: 0.8s height cubic-bezier(0.77, 0, 0.175, 1); }\n\n.work-item-content {\n  background-color: white;\n  text-align: left;\n  height: 0; }\n  .work-item-content a {\n    font-family: 'poppins';\n    color: #363636; }\n\n.blurb span {\n  font-family: \"Poppins\"; }\n\n.work-item-section {\n  padding-top: 72px !important;\n  padding-bottom: 72px !important; }\n  .work-item-section p {\n    margin-bottom: 0; }\n\n.features-blurb {\n  width: 75%; }\n\n.color-tab {\n  height: 130px;\n  width: 100px;\n  margin-bottom: 15px; }\n\n.tab-main {\n  width: 100%;\n  height: 70%; }\n\n.tab-title {\n  height: 30%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border: 1px solid #dcdcdc; }\n  .tab-title span {\n    font-family: 'Poppins';\n    font-weight: 300; }\n\n.centered {\n  display: flex;\n  justify-content: center; }\n\n.font-tab {\n  border: 1px solid #dcdcdc;\n  width: 100%;\n  height: 100px;\n  padding: 25px 30px;\n  color: #8a8a8a; }\n\n.font-heading {\n  font-style: italic;\n  font-size: 16px; }\n\n.header-image {\n  transition: 10s transform linear;\n  background-size: cover;\n  background-position: center 0px;\n  position: relative;\n  top: 0; }\n\n.header-text-wrapper {\n  padding: 45px 36px;\n  position: absolute;\n  top: 0;\n  left: 0;\n  text-align: left; }\n\n.header-title {\n  margin: 0;\n  color: white;\n  font-family: \"Poppins\";\n  font-size: 3.5em;\n  font-weight: 600; }\n\n.header-subtitle {\n  color: white;\n  font-size: 18px;\n  font-style: italic;\n  transition: 0.3s; }\n\n.subtitle-wrapper {\n  position: absolute;\n  width: 300px;\n  margin-top: -38px;\n  margin-left: 5px;\n  transition: 0.4s 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275); }\n\n.border-wrapper {\n  position: relative;\n  overflow: hidden;\n  width: 168px;\n  height: 64.8px;\n  margin-top: 10px;\n  margin-left: 5px; }\n\n.border-wrapper::before {\n  content: 'SEE MORE';\n  font-family: \"Poppins\";\n  color: white;\n  font-size: 18px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: 20.5px;\n  left: -104px;\n  transition: 0.6s 0.3s;\n  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n\n.border-top {\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  width: 168px;\n  right: 50%;\n  transition: right 0.2s 0.6s;\n  transition-timing-function: ease-in; }\n\n.border-bottom {\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 168px;\n  height: 64.8px;\n  left: 100%;\n  transition: left 0.2s 0.2s;\n  transition-timing-function: ease-in; }\n\n.border-right {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  right: 0;\n  bottom: 100%;\n  transition: bottom 0.2s 0.4s;\n  transition-timing-function: ease-in; }\n\n.border-left {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  left: 0;\n  top: 100%;\n  transition: top 0.2s;\n  transition-timing-function: ease-in; }\n\n.x-btn {\n  visibility: hidden;\n  position: absolute;\n  z-index: 1;\n  top: 20px;\n  right: 20px;\n  overflow: hidden;\n  width: 50px;\n  height: 50px;\n  cursor: pointer; }\n\n.x-btn > p {\n  font-family: \"Poppins\";\n  color: white;\n  background-color: #424242;\n  font-size: 20px;\n  padding: 15px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: -1.6px;\n  left: -46px; }\n\n.x-btn > .top {\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  width: 50px;\n  right: 100%; }\n\n.x-btn > .right {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 50px;\n  right: 0;\n  bottom: 100%; }\n\n.x-btn > .bottom {\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 50px;\n  height: 50px;\n  left: 100%; }\n\n.x-btn > .left {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 50px;\n  left: 0;\n  top: 100%; }\n\n.work-item.closed:hover {\n  cursor: pointer; }\n  .work-item.closed:hover .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n  .work-item.closed:hover .header-image {\n    transform: scale(1.4);\n    -webkit-transform: scale(1.4); }\n  .work-item.closed:hover .border-top {\n    right: 0;\n    transition: right 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-bottom {\n    left: 0;\n    transition: left 0.2s;\n    transition-delay: 0.4s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-right {\n    bottom: 0;\n    transition: bottom 0.2s;\n    transition-delay: 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-left {\n    top: 0;\n    transition: top 0.2s;\n    transition-delay: 0.6s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; }\n  .work-item.closed:hover .border-wrapper:hover {\n    filter: grayscale(0) sepia(100%) contrast(100%) saturate(7.5); }\n\n#contact-main {\n  z-index: 2; }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n.hide-section {\n  display: none; }\n\n.small-header {\n  height: 62vh;\n  transition-delay: 0.9s; }\n\n.expanded-content {\n  height: 100%; }\n\n.fixed-btn {\n  position: fixed !important; }\n\n.scale-up {\n  transform: scale(1.3); }\n\n@media screen and (min-width: 321px) {\n  svg.intro {\n    height: 350px;\n    width: 320px; }\n    svg.intro.go .text {\n      font-size: 6.6em; }\n  #svg-text-2 {\n    transform: translateY(207px);\n    -webkit-transform: translateY(207px); }\n  #svg-text-3 {\n    transform: translateY(271px);\n    -webkit-transform: translateY(271px); }\n  .svg-text-4 {\n    transform: translateY(304px);\n    -webkit-transform: translateY(304px); }\n  #small-text {\n    font-size: 1.42em; }\n  .title-text {\n    font-size: 3em;\n    padding: 15px 20px 20px; }\n  .menu-item {\n    font-size: 1.4em;\n    padding: 7px 13px 9px; }\n  .about-intro {\n    font-size: 23px; }\n  .intro-emphasis {\n    font-size: 21px; }\n  .about-text p, .about-text li {\n    font-size: 16px; }\n  .about-heading-text {\n    font-size: 33px; }\n  .mini-heading {\n    font-size: 18px; }\n  .video-title {\n    font-size: 22px; }\n  .video-date {\n    font-size: 14px; }\n  .header-text-wrapper {\n    padding-right: 50px;\n    padding-left: 50px; }\n  .header-title {\n    font-size: 4em; }\n  .header-subtitle {\n    font-size: 20px; } }\n\n@media screen and (min-width: 414px) {\n  .content-padding {\n    padding: 0px 50px; }\n  .header-text-wrapper {\n    padding-right: 60px;\n    padding-left: 60px; } }\n\n@media screen and (min-width: 415px) {\n  #header {\n    height: 100vh; }\n  #header-main {\n    top: 12.5vh; }\n  #header-border {\n    border-color: #888; }\n  .header-title {\n    font-size: 4.5em; }\n  .header-subtitle {\n    font-size: 21px; } }\n\n@media screen and (min-width: 668px) {\n  #svg-text-2 {\n    transform: translateY(225px);\n    -webkit-transform: translateY(225px); }\n  #svg-text-3 {\n    transform: translateY(303px);\n    -webkit-transform: translateY(303px); }\n  .svg-text-4 {\n    transform: translateY(344px);\n    -webkit-transform: translateY(344px); }\n  #small-text {\n    font-size: 1.8em; }\n  svg.intro {\n    width: 400px; }\n    svg.intro.go .text {\n      font-size: 8em; }\n  .content-padding {\n    padding: 0px 100px; }\n  .about-intro {\n    font-size: 28px; }\n  .intro-emphasis {\n    font-size: 25px; }\n  .about-text p, .about-text li {\n    font-size: 17px; }\n  .about-text .grouped {\n    width: 45.5%;\n    margin-right: 20px; }\n  .about-heading-text {\n    font-size: 35px; }\n  .mini-heading {\n    font-size: 20px; }\n  .video-title {\n    font-size: 25px; }\n  .video-date {\n    font-size: 15px; }\n  .features-blurb {\n    width: 70%; } }\n\n@media screen and (min-width: 992px) {\n  #header-main {\n    height: 85vh;\n    top: 7.5vh; }\n  #header-border-animation > .top {\n    border-width: 7px;\n    width: 67vw; }\n  #header-border-animation > .bottom {\n    border-width: 7px;\n    height: 85vh;\n    width: 67vw; }\n  #header-border-animation > .left {\n    position: absolute;\n    border-right: 7px solid #f7fb8e;\n    height: 85vh;\n    left: 0;\n    bottom: 100%; }\n  #header-border {\n    padding-left: 20px;\n    border-left: 7px solid #888;\n    border-width: 7px; }\n  #small-text {\n    font-size: 1.8em; }\n  svg.intro {\n    top: 25%;\n    left: -145px;\n    height: 380px;\n    width: 400px; }\n    svg.intro.go .text-stroke {\n      stroke-dashoffset: 900;\n      stroke-dasharray: 900; }\n    svg.intro.go .text-stroke:nth-child(4) {\n      stroke-dashoffset: 300;\n      stroke-dasharray: 300; }\n  #about-header {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 200; }\n  .about-content, .work-content {\n    position: relative;\n    z-index: 100;\n    left: 33.3%; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 200; }\n  .fixed-header {\n    position: fixed !important; }\n  .work-item-section {\n    padding-right: 172px;\n    padding-left: 172px; }\n  .work-item-section.long {\n    padding-top: 100px !important;\n    padding-bottom: 100px !important; }\n  #work-header {\n    -webkit-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -moz-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -ms-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -o-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .work-content {\n    transition: 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .minimized {\n    width: 25%; }\n  .expanded-column {\n    width: 75%;\n    left: 25%; }\n  .add-border {\n    border-right: 1px solid #dcdcdc; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 991px) {\n  .work-item.closed.small-screen .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n  .work-item.closed.small-screen .border-top {\n    right: 0;\n    transition: right 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed.small-screen .border-bottom {\n    left: 0;\n    transition: left 0.2s;\n    transition-delay: 0.4s;\n    transition-timing-function: ease-in; }\n  .work-item.closed.small-screen .border-right {\n    bottom: 0;\n    transition: bottom 0.2s;\n    transition-delay: 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed.small-screen .border-left {\n    top: 0;\n    transition: top 0.2s;\n    transition-delay: 0.6s;\n    transition-timing-function: ease-in; }\n  .work-item.closed.small-screen .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:before {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: \"Playfair Display\";\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nbody {\n  margin: 0;\n  overflow: hidden;\n  position: fixed; }\n\nbody.loaded {\n  overflow: auto;\n  position: initial; }\n\n.img-responsive {\n  height: 100%;\n  width: 100%; }\n\n.next-btn {\n  width: 163px;\n  height: 64.8px;\n  border: 5px solid #424242;\n  background-color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 0 auto; }\n  .next-btn span {\n    font-size: 18px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 3px;\n    margin: 0;\n    margin-top: 1px;\n    width: 57px;\n    border-bottom: 1px solid white; }\n\n.next-btn:hover {\n  cursor: pointer; }\n  .next-btn:hover span {\n    border-color: #424242; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 12px 15px 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#menu {\n  position: fixed;\n  z-index: 3000;\n  left: 25px;\n  top: 25px; }\n\n#menu-btn {\n  width: 41px;\n  height: 41px;\n  padding-top: 8px; }\n\n.menu-item {\n  font-size: 1.2em;\n  padding: 6px 11px 8px; }\n\n#header {\n  height: 90vh;\n  position: relative;\n  overflow: hidden;\n  z-index: 2;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n\n#header-main {\n  position: relative;\n  height: 75vh;\n  top: 7.5vh;\n  z-index: 2;\n  padding: 0;\n  text-align: left; }\n\n#header-border-animation {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  overflow: hidden; }\n\n#header-border-animation > .top {\n  position: absolute;\n  border-top: 15px solid #f7fb8e;\n  top: 0;\n  width: 100vw;\n  left: 100%; }\n\n#header-border-animation > .bottom {\n  position: absolute;\n  border-bottom: 15px solid #f7fb8e;\n  width: 100vw;\n  height: 75vh;\n  right: 100%; }\n\n#header-border {\n  height: 100%;\n  width: 100%;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e; }\n\n#header-img {\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\nsvg.intro {\n  position: absolute;\n  height: 300px;\n  width: 290px;\n  top: 13vh;\n  left: 6vw;\n  z-index: 50; }\n  svg.intro .text {\n    display: none; }\n  svg.intro.go .text {\n    font-family: \"Playfair Display\";\n    font-size: 5.5em;\n    font-weight: 900;\n    display: block; }\n  svg.intro.go .text-stroke {\n    fill: transparent;\n    stroke: #333;\n    stroke-width: 5px;\n    stroke-dashoffset: 1390;\n    stroke-dasharray: 1390;\n    stroke-linecap: butt;\n    stroke-linejoin: round;\n    animation: dash 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 0.3s;\n    -webkit-animation: dash 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 0.3s; }\n  svg.intro.go .text-stroke:nth-child(2) {\n    animation-delay: 0.7s;\n    -webkit-animation-delay: 0.7s; }\n  svg.intro.go .text-stroke:nth-child(3) {\n    animation-delay: 1.3s;\n    -webkit-animation-delay: 1.3s; }\n  svg.intro.go .text-stroke:nth-child(4) {\n    stroke-dashoffset: 650;\n    stroke-dasharray: 650;\n    animation: dash2 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 1.9s;\n    -webkit-animation: dash2 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 1.9s; }\n\n#svg-text-1 {\n  transform: translateY(110px);\n  -webkit-transform: translateY(110px); }\n\n#svg-text-2 {\n  transform: translateY(187px);\n  -webkit-transform: translateY(187px); }\n\n#svg-text-3 {\n  transform: translateY(240px);\n  -webkit-transform: translateY(240px); }\n\n.svg-text-4 {\n  transform: translateY(265px);\n  -webkit-transform: translateY(265px); }\n\n#small-text {\n  font-family: \"Poppins\";\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 1.15em;\n  letter-spacing: 2px; }\n\n.svg-fill {\n  fill: #333 !important; }\n\n@-webkit-keyframes dash {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  60% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@keyframes dash {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  60% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@-webkit-keyframes dash2 {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  80% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@keyframes dash2 {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  80% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-main {\n  z-index: 2; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n.about-content {\n  font-family: \"Poppins\";\n  text-align: left;\n  height: auto;\n  right: 0;\n  background-color: white;\n  border-bottom: 1px solid #424242; }\n\n.content-padding {\n  padding: 0px 36px; }\n\n.about-intro {\n  font-size: 22px;\n  font-style: italic;\n  padding-top: 15%; }\n\n#about-btn::before, #work-btn::before, #contact-btn::before {\n  content: '';\n  position: absolute;\n  z-index: -1;\n  width: 0%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: #f7fb8e;\n  transition: 0.3s; }\n\n#about-btn:hover, #work-btn:hover, #contact-btn:hover {\n  color: #424242 !important;\n  transition: 0.3s; }\n\n#about-btn, #work-btn, #contact-btn {\n  transition: color 0.3s; }\n\n#about-btn:focus::before, #about-btn:hover::before,\n#work-btn:focus::before, #work-btn:hover::before,\n#contact-btn:focus::before, #contact-btn:hover::before {\n  width: 100%; }\n\n.intro-emphasis {\n  font-family: 'poppins';\n  font-style: normal;\n  font-weight: 600;\n  font-size: 20px; }\n\n.about-heading-text {\n  display: flex;\n  flex-direction: column;\n  margin-bottom: 10px;\n  font-size: 32px;\n  font-weight: 300;\n  font-family: \"Poppins\";\n  text-transform: uppercase;\n  letter-spacing: 3px; }\n  .about-heading-text .divider {\n    width: 35px;\n    border-bottom: 2px solid #424242;\n    display: inline-block; }\n  .about-heading-text .divider.light {\n    border-color: white; }\n\n.about-text ul {\n  list-style-type: square;\n  padding-left: 21px;\n  margin-top: 5px; }\n\n.about-text p, .about-text li {\n  font-family: \"Poppins\";\n  font-size: 15px;\n  font-weight: 300; }\n\n.about-text p {\n  line-height: 1.6; }\n\n.about-text li {\n  line-height: 25px; }\n\n.about-text .grouped {\n  width: 100%;\n  padding-bottom: 15px; }\n\n.mini-heading {\n  font-style: italic;\n  font-size: 17px; }\n\n.video-container {\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n  max-width: 560px;\n  text-align: center;\n  margin: 0 auto 60px; }\n\n.video-date {\n  font-size: 13px;\n  font-family: 'poppins';\n  text-transform: uppercase;\n  letter-spacing: 2px;\n  font-weight: 300; }\n\n.video-title {\n  font-size: 20px;\n  font-style: italic;\n  line-height: 28px;\n  margin: 8px 0; }\n\n.work-content {\n  height: auto;\n  right: 0;\n  background-color: white;\n  padding: 0; }\n\n.work-item {\n  overflow: hidden;\n  position: relative; }\n\n.work-item-header {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  min-height: 270px;\n  overflow: hidden;\n  transition: 0.8s height cubic-bezier(0.77, 0, 0.175, 1);\n  -webkit-transition: 0.8s height cubic-bezier(0.77, 0, 0.175, 1); }\n\n.work-item-content {\n  background-color: white;\n  text-align: left;\n  height: 0; }\n  .work-item-content a {\n    font-family: 'poppins';\n    color: #363636; }\n\n.blurb span {\n  font-family: \"Poppins\"; }\n\n.work-item-section {\n  padding-top: 72px !important;\n  padding-bottom: 72px !important; }\n  .work-item-section p {\n    margin-bottom: 0; }\n\n.features-blurb {\n  width: 100%; }\n\n.color-tab {\n  height: 130px;\n  width: 100px;\n  margin-bottom: 15px; }\n\n.tab-main {\n  width: 100%;\n  height: 70%; }\n\n.tab-title {\n  height: 30%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border: 1px solid #dcdcdc; }\n  .tab-title span {\n    font-family: 'Poppins';\n    font-weight: 300; }\n\n.centered {\n  display: flex;\n  justify-content: center; }\n\n.font-tab {\n  border: 1px solid #dcdcdc;\n  width: 100%;\n  height: 100px;\n  padding: 25px 30px;\n  color: #8a8a8a; }\n\n.font-heading {\n  font-style: italic;\n  font-size: 16px; }\n\n.header-image {\n  transition: 10s transform linear;\n  background-size: cover;\n  background-position: center 0px;\n  position: relative;\n  top: 0; }\n\n.header-text-wrapper {\n  padding: 45px 36px;\n  position: absolute;\n  top: 0;\n  left: 0;\n  text-align: left; }\n\n.header-title {\n  margin: 0;\n  color: white;\n  font-family: \"Poppins\";\n  font-size: 3.5em;\n  font-weight: 600; }\n\n.header-subtitle {\n  color: white;\n  font-size: 18px;\n  font-style: italic;\n  transition: 0.3s; }\n\n.subtitle-wrapper {\n  position: absolute;\n  width: 350px;\n  margin-top: -38px;\n  margin-left: 5px;\n  transition: 0.4s 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275); }\n\n.border-wrapper {\n  position: relative;\n  overflow: hidden;\n  width: 168px;\n  height: 64.8px;\n  margin-top: 10px;\n  margin-left: 5px; }\n\n.border-wrapper::before {\n  content: 'SEE MORE';\n  font-family: \"Poppins\";\n  color: white;\n  font-size: 18px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: 20.5px;\n  left: -104px;\n  transition: 0.6s 0.3s;\n  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n\n.border-top {\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  width: 168px;\n  right: 50%;\n  transition: right 0.2s 0.6s;\n  transition-timing-function: ease-in; }\n\n.border-bottom {\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 168px;\n  height: 64.8px;\n  left: 100%;\n  transition: left 0.2s 0.2s;\n  transition-timing-function: ease-in; }\n\n.border-right {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  right: 0;\n  bottom: 100%;\n  transition: bottom 0.2s 0.4s;\n  transition-timing-function: ease-in; }\n\n.border-left {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 64.8px;\n  left: 0;\n  top: 100%;\n  transition: top 0.2s;\n  transition-timing-function: ease-in; }\n\n.x-btn {\n  visibility: hidden;\n  position: absolute;\n  z-index: 1;\n  top: 20px;\n  right: 20px;\n  overflow: hidden;\n  width: 50px;\n  height: 50px;\n  cursor: pointer; }\n\n.x-btn > p {\n  font-family: \"Poppins\";\n  color: white;\n  background-color: #424242;\n  font-size: 20px;\n  padding: 15px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: -1.6px;\n  left: -46px; }\n\n.x-btn > .top {\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  width: 50px;\n  right: 100%; }\n\n.x-btn > .right {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 50px;\n  right: 0;\n  bottom: 100%; }\n\n.x-btn > .bottom {\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 50px;\n  height: 50px;\n  left: 100%; }\n\n.x-btn > .left {\n  position: absolute;\n  border-right: 5px solid white;\n  height: 50px;\n  left: 0;\n  top: 100%; }\n\n.work-item.closed:hover {\n  cursor: pointer; }\n  .work-item.closed:hover .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n  .work-item.closed:hover .header-image {\n    transform: scale(1.4);\n    -webkit-transform: scale(1.4); }\n  .work-item.closed:hover .border-top {\n    right: 0;\n    transition: right 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-bottom {\n    left: 0;\n    transition: left 0.2s;\n    transition-delay: 0.4s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-right {\n    bottom: 0;\n    transition: bottom 0.2s;\n    transition-delay: 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-left {\n    top: 0;\n    transition: top 0.2s;\n    transition-delay: 0.6s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; }\n  .work-item.closed:hover .border-wrapper:hover {\n    filter: grayscale(0) sepia(100%) contrast(100%) saturate(7.5); }\n\n#contact-main {\n  z-index: 2; }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n.hide-section {\n  display: none; }\n\n.small-header {\n  height: 62vh;\n  transition-delay: 0.9s; }\n\n.expanded-content {\n  height: 100%; }\n\n.fixed-btn {\n  position: fixed !important; }\n\n.scale-up {\n  transform: scale(1.3); }\n\n@media screen and (min-width: 321px) {\n  svg.intro {\n    height: 350px;\n    width: 320px; }\n    svg.intro.go .text {\n      font-size: 6.6em; }\n  #svg-text-2 {\n    transform: translateY(207px);\n    -webkit-transform: translateY(207px); }\n  #svg-text-3 {\n    transform: translateY(271px);\n    -webkit-transform: translateY(271px); }\n  .svg-text-4 {\n    transform: translateY(304px);\n    -webkit-transform: translateY(304px); }\n  #small-text {\n    font-size: 1.42em; }\n  .title-text {\n    font-size: 3em;\n    padding: 15px 20px 20px; }\n  .menu-item {\n    font-size: 1.4em;\n    padding: 7px 13px 9px; }\n  .about-intro {\n    font-size: 23px; }\n  .intro-emphasis {\n    font-size: 21px; }\n  .about-text p, .about-text li {\n    font-size: 16px; }\n  .about-heading-text {\n    font-size: 33px; }\n  .mini-heading {\n    font-size: 18px; }\n  .video-title {\n    font-size: 22px; }\n  .video-date {\n    font-size: 14px; }\n  .header-text-wrapper {\n    padding-right: 50px;\n    padding-left: 50px; }\n  .header-title {\n    font-size: 4em; }\n  .header-subtitle {\n    font-size: 20px; } }\n\n@media screen and (min-width: 414px) {\n  .content-padding {\n    padding: 0px 50px; }\n  .header-text-wrapper {\n    padding-right: 60px;\n    padding-left: 60px; } }\n\n@media screen and (min-width: 415px) {\n  #header {\n    height: 100vh; }\n  #header-main {\n    top: 12.5vh; }\n  #header-border {\n    border-color: #888; }\n  .header-title {\n    font-size: 4.5em; }\n  .header-subtitle {\n    font-size: 21px; } }\n\n@media screen and (min-width: 668px) {\n  #svg-text-2 {\n    transform: translateY(225px);\n    -webkit-transform: translateY(225px); }\n  #svg-text-3 {\n    transform: translateY(303px);\n    -webkit-transform: translateY(303px); }\n  .svg-text-4 {\n    transform: translateY(344px);\n    -webkit-transform: translateY(344px); }\n  #small-text {\n    font-size: 1.8em; }\n  svg.intro {\n    width: 400px; }\n    svg.intro.go .text {\n      font-size: 8em; }\n  .content-padding {\n    padding: 0px 100px; }\n  .about-intro {\n    font-size: 28px; }\n  .intro-emphasis {\n    font-size: 25px; }\n  .about-text p, .about-text li {\n    font-size: 17px; }\n  .about-text .grouped {\n    width: 45.5%;\n    margin-right: 20px; }\n  .about-heading-text {\n    font-size: 35px; }\n  .mini-heading {\n    font-size: 20px; }\n  .video-title {\n    font-size: 25px; }\n  .video-date {\n    font-size: 15px; }\n  .features-blurb {\n    width: 70%; } }\n\n@media screen and (min-width: 992px) {\n  #header-main {\n    height: 85vh;\n    top: 7.5vh; }\n  #header-border-animation > .top {\n    border-width: 7px;\n    width: 67vw; }\n  #header-border-animation > .bottom {\n    border-width: 7px;\n    height: 85vh;\n    width: 67vw; }\n  #header-border-animation > .left {\n    position: absolute;\n    border-right: 7px solid #f7fb8e;\n    height: 85vh;\n    left: 0;\n    bottom: 100%; }\n  #header-border {\n    padding-left: 20px;\n    border-left: 7px solid #888;\n    border-width: 7px; }\n  #small-text {\n    font-size: 1.8em; }\n  svg.intro {\n    top: 25%;\n    left: -145px;\n    height: 380px;\n    width: 400px; }\n    svg.intro.go .text-stroke {\n      stroke-dashoffset: 900;\n      stroke-dasharray: 900; }\n    svg.intro.go .text-stroke:nth-child(4) {\n      stroke-dashoffset: 300;\n      stroke-dasharray: 300; }\n  #about-header {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 200; }\n  .about-content, .work-content {\n    position: relative;\n    z-index: 100;\n    left: 33.3%; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 200; }\n  .fixed-header {\n    position: fixed !important; }\n  .work-item-section {\n    padding-right: 172px;\n    padding-left: 172px; }\n  .work-item-section.long {\n    padding-top: 100px !important;\n    padding-bottom: 100px !important; }\n  #work-header {\n    -webkit-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -moz-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -ms-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -o-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .work-content {\n    transition: 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .minimized {\n    width: 25%; }\n  .expanded-column {\n    width: 75%;\n    left: 25%; }\n  .add-border {\n    border-right: 1px solid #dcdcdc; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 991px) {\n  .work-item.closed.small-screen .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n  .work-item.closed.small-screen .border-top {\n    right: 0;\n    transition: right 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed.small-screen .border-bottom {\n    left: 0;\n    transition: left 0.2s;\n    transition-delay: 0.4s;\n    transition-timing-function: ease-in; }\n  .work-item.closed.small-screen .border-right {\n    bottom: 0;\n    transition: bottom 0.2s;\n    transition-delay: 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed.small-screen .border-left {\n    top: 0;\n    transition: top 0.2s;\n    transition-delay: 0.6s;\n    transition-timing-function: ease-in; }\n  .work-item.closed.small-screen .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; } }\n\n#turt-mcsquirt {\n  width: 60px;\n  height: 60px; }\n  #turt-mcsquirt img {\n    width: 100%; }\n\n#alfalfa {\n  margin: 0 auto;\n  width: 50px;\n  height: 50px; }\n  #alfalfa img {\n    width: 100%; }\n\n#app {\n  text-align: center; }\n\n#maze {\n  display: inline-block;\n  padding: 30px; }\n  #maze .maze-row:before, #maze .maze-row:before {\n    display: table;\n    content: '';\n    clear: both; }\n  #maze .maze-row .maze-cell {\n    background-image: url(/public/images/grass.jpg);\n    background-size: cover;\n    border-radius: 2px;\n    float: left;\n    width: 60px;\n    height: 60px; }\n    #maze .maze-row .maze-cell.wall-top {\n      border-top: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-bottom {\n      border-bottom: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-left {\n      border-left: 2px solid black; }\n    #maze .maze-row .maze-cell.wall-right {\n      border-right: 2px solid black; }\n\n#win {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background: white;\n  margin: 0;\n  text-align: center;\n  font-family: \"Helvetica Neue\";\n  font-size: 52px; }\n", ""]);
 	
 	// exports
 
@@ -22182,15 +22182,15 @@
 	
 	var _Work2 = _interopRequireDefault(_Work);
 	
-	var _Contact = __webpack_require__(444);
+	var _Contact = __webpack_require__(447);
 	
 	var _Contact2 = _interopRequireDefault(_Contact);
 	
-	var _Footer = __webpack_require__(445);
+	var _Footer = __webpack_require__(448);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
-	var _MainMenu = __webpack_require__(446);
+	var _MainMenu = __webpack_require__(449);
 	
 	var _MainMenu2 = _interopRequireDefault(_MainMenu);
 	
@@ -41947,13 +41947,21 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Omni = __webpack_require__(468);
+	var _Omni = __webpack_require__(444);
 	
 	var _Omni2 = _interopRequireDefault(_Omni);
 	
-	var _Rdi = __webpack_require__(469);
+	var _Rdi = __webpack_require__(445);
 	
 	var _Rdi2 = _interopRequireDefault(_Rdi);
+	
+	var _Macbox = __webpack_require__(446);
+	
+	var _Macbox2 = _interopRequireDefault(_Macbox);
+	
+	var _Nonprof = __webpack_require__(468);
+	
+	var _Nonprof2 = _interopRequireDefault(_Nonprof);
 	
 	var _reactBootstrap = __webpack_require__(189);
 	
@@ -41994,13 +42002,1147 @@
 	        _react2.default.createElement('div', { className: 'left' })
 	      ),
 	      _react2.default.createElement(_Omni2.default, null),
-	      _react2.default.createElement(_Rdi2.default, null)
+	      _react2.default.createElement(_Rdi2.default, null),
+	      _react2.default.createElement(_Macbox2.default, null),
+	      _react2.default.createElement(_Nonprof2.default, null)
 	    )
 	  );
 	}
 
 /***/ },
 /* 444 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = Omni;
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function Omni() {
+	
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "work-item closed small-screen", id: "omni" },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "work-item-header" },
+	      _react2.default.createElement("div", { className: "header-image img-responsive", style: { backgroundImage: "url('/public/images/3.png')" } }),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "header-text-wrapper" },
+	        _react2.default.createElement(
+	          "h1",
+	          { className: "header-title" },
+	          "Omni"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "border-wrapper" },
+	          _react2.default.createElement("div", { className: "border-top" }),
+	          _react2.default.createElement("div", { className: "border-right" }),
+	          _react2.default.createElement("div", { className: "border-bottom" }),
+	          _react2.default.createElement("div", { className: "border-left" })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "subtitle-wrapper" },
+	          _react2.default.createElement(
+	            "p",
+	            { className: "header-subtitle" },
+	            "Dream analysis app"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            { style: { marginTop: '-10px' }, className: "header-subtitle" },
+	            "NERD Stack, A-Frame, Victory"
+	          )
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "section",
+	      { className: "work-item-content about-text" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding blurb" },
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          _react2.default.createElement(
+	            "span",
+	            { style: { fontWeight: '600' } },
+	            "Omni is an app that believes in the power of dreams."
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "With Omni, users can log their dreams via the web or mobile app. Once logged, Omni analyzes it for the values of five key emotions - surprise, anger, fear, sadness, and joy. We then uses these values to produce a unique 3D/VR representation of the dream - lovingly called a dream \u2018sprite\u2019. These sprites give users a creative, visual way to explore the underlying emotions behind their dreams.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "The app also provides a personalized dashboard of sleep statistics. Lastly, Omni gives you the chance to explore a 3D realm populated with the sprites of other users, allowing you to take a peek into the subconscious of other people."
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding long centered", style: { backgroundColor: '#333', color: 'white' } },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "features-blurb" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-heading-text" },
+	            "Features",
+	            _react2.default.createElement("span", { className: "divider light" })
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "span",
+	            { className: "mini-heading", style: { color: '#f7fb8e' } },
+	            "Mobile App"
+	          ),
+	          _react2.default.createElement(
+	            "ul",
+	            null,
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Add a new dream entry."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "View past dream entries."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "For each entry, view corresponding dream sprite in 3D and VR."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "View public dream entries of other users."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "View certain sleep and dream statistics."
+	            )
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "span",
+	            { className: "mini-heading", style: { color: '#f7fb8e' } },
+	            "Web App"
+	          ),
+	          _react2.default.createElement(
+	            "ul",
+	            null,
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "All functionalities of mobile."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Edit/delete a dream."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "View personalized dashboard of sleep and dream statistics, such as hours slept in last week, average of emotions for all dreams, etc."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Explore 3D realm of the public dreams of other users, and be able to read those dreams."
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding long" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-heading-text" },
+	          "Typography",
+	          _react2.default.createElement("span", { className: "divider" })
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "font-tab" },
+	          _react2.default.createElement(
+	            "span",
+	            { className: "font-heading" },
+	            "Quicksand"
+	          )
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "font-tab" },
+	          _react2.default.createElement(
+	            "span",
+	            { className: "font-heading" },
+	            "Open Sans"
+	          )
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-heading-text" },
+	          "Colors",
+	          _react2.default.createElement("span", { className: "divider" })
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { style: { display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap' } },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#242424' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#242424"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#333' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#333333"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#C8D8FC' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#C8D8FC"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#C8B7D5' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#C8B7D5"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#A974D5' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#A974D5"
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement("br", null)
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding long centered", style: { backgroundColor: 'rgb(239, 239, 239)' } },
+	        _react2.default.createElement(
+	          "div",
+	          null,
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-heading-text" },
+	            "The Stack",
+	            _react2.default.createElement("span", { className: "divider" })
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "ul",
+	            null,
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Node.js"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Express"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Sequelize/PostgreSQL"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "React.js"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "React-Native (mobile app)"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "A-Frame (3D/VR rendering)"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Victory (data visualization)"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "CSS3"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "HTML"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement("br", null)
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding long", style: { backgroundColor: '#333', color: 'white' } },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-heading-text" },
+	          "Presentation",
+	          _react2.default.createElement("span", { className: "divider light" })
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "video-container" },
+	          _react2.default.createElement(
+	            "span",
+	            { className: "video-date", style: { color: '#f7fb8e' } },
+	            "April 2017"
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            { className: "video-title" },
+	            "Presenting Omni:",
+	            _react2.default.createElement("br", null),
+	            "A Dream Journal/Analysis App"
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("iframe", { style: { width: '100%' }, height: "315", src: "https://www.youtube.com/embed/VQYodA9GZ20", frameBorder: "0", allowFullScreen: true })
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding", style: { borderBottom: '1px solid gainsboro' } },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-heading-text" },
+	          "Src",
+	          _react2.default.createElement("span", { className: "divider" })
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Code (mobile): ",
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://github.com/Omni-Project/omni-mobile", target: "_blank", rel: "noopener noreferrer" },
+	            "github.com/Omni-Project/omni-mobile"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Code (web): ",
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://github.com/Omni-Project/omni-desktop", target: "_blank", rel: "noopener noreferrer" },
+	            "github.com/Omni-Project/omni-desktop"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Demo (web): ",
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://omni-project.herokuapp.com/", target: "_blank", rel: "noopener noreferrer" },
+	            "omni-project.herokuapp.com"
+	          )
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "next-btn" },
+	          _react2.default.createElement(
+	            "span",
+	            null,
+	            "Next"
+	          )
+	        )
+	      )
+	    )
+	  );
+	}
+
+/***/ },
+/* 445 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = Rdi;
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function Rdi() {
+	
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "work-item closed small-screen", id: "rdi" },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "work-item-header" },
+	      _react2.default.createElement("div", { className: "header-image img-responsive", style: { backgroundImage: "url('/public/images/3.png')" } }),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "header-text-wrapper" },
+	        _react2.default.createElement(
+	          "h1",
+	          { className: "header-title" },
+	          "react-dynamic-UI"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "border-wrapper" },
+	          _react2.default.createElement("div", { className: "border-top" }),
+	          _react2.default.createElement("div", { className: "border-right" }),
+	          _react2.default.createElement("div", { className: "border-bottom" }),
+	          _react2.default.createElement("div", { className: "border-left" })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "subtitle-wrapper" },
+	          _react2.default.createElement(
+	            "p",
+	            { className: "header-subtitle" },
+	            "UI library for React.js"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            { style: { marginTop: '-10px' }, className: "header-subtitle" },
+	            "Node.js, React.js, CSS3, HTML5"
+	          )
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "section",
+	      { className: "work-item-content about-text" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding blurb" },
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          _react2.default.createElement(
+	            "span",
+	            { style: { fontWeight: '600' } },
+	            "react-dynamic-UI is a UI toolkit for React.js that offers components with built-in animation."
+	          ),
+	          " Why yet ",
+	          _react2.default.createElement(
+	            "span",
+	            { style: { fontStyle: 'italic' } },
+	            "another"
+	          ),
+	          " UI library? My goal was to fulfill a need for UI building blocks that can animate out of the box while also being native to React.js. The components animate based on user interaction, i.e. scroll and hover. Users can mix and match components and animation effects to achieve a truly custom design. I hope that react-dynamic-UI will make it easier for others to implement UI animations into their next React app."
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding long centered", style: { backgroundColor: '#333', color: 'white' } },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "features-blurb" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-heading-text" },
+	            "Features",
+	            _react2.default.createElement("span", { className: "divider light" })
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "ul",
+	            null,
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Easily installable as npm package."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Natively implements React.js patterns."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Components include Navbar, Jumbotron, Drawer, and more."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Components can be configured with various animation effects: fadeUp, fadeAppear, fadeInLeft, and fadeInRight."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Components are modular and useful on their own or together."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Designed to be unopinionated and preserve end user\u2019s defined styles and classes."
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding long" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-heading-text" },
+	          "Demo Typography",
+	          _react2.default.createElement("span", { className: "divider" })
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "font-tab" },
+	          _react2.default.createElement(
+	            "span",
+	            { className: "font-heading" },
+	            "Helvetica Neue"
+	          )
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-heading-text" },
+	          "Demo Colors",
+	          _react2.default.createElement("span", { className: "divider" })
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { style: { display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap' } },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#437F91' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#437F91"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#9FD7E1' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#9FD7E1"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#CBE8ED' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#CBE8ED"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#F25C5E' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#F25C5E"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#FFA566' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#FFA566"
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement("br", null)
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding long centered", style: { backgroundColor: 'rgb(239, 239, 239)' } },
+	        _react2.default.createElement(
+	          "div",
+	          null,
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-heading-text" },
+	            "The Stack",
+	            _react2.default.createElement("span", { className: "divider" })
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "ul",
+	            null,
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Node.js"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "React.js"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "CSS3"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "HTML5"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement("br", null)
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding long", style: { backgroundColor: '#333', color: 'white' } },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-heading-text" },
+	          "Presentation",
+	          _react2.default.createElement("span", { className: "divider light" })
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "video-container" },
+	          _react2.default.createElement(
+	            "span",
+	            { className: "video-date", style: { color: '#f7fb8e' } },
+	            "March 2017"
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            { className: "video-title" },
+	            "Introducing a New UI",
+	            _react2.default.createElement("br", null),
+	            "Animation Library for React.js"
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("iframe", { style: { width: '100%' }, height: "315", src: "https://www.youtube.com/embed/krAzPZE3s1I", frameBorder: "0", allowFullScreen: true })
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding", style: { borderBottom: '1px solid gainsboro' } },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-heading-text" },
+	          "Src",
+	          _react2.default.createElement("span", { className: "divider" })
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Code: ",
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://github.com/chloehwang/react-dynamic-UI", target: "_blank", rel: "noopener noreferrer" },
+	            "github.com/chloehwang/react-dynamic-UI"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "NPM: ",
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://www.npmjs.com/package/react-dynamic-ui", target: "_blank", rel: "noopener noreferrer" },
+	            "npmjs.com/package/react-dynamic-ui"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Demo: ",
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://rdi-demo.herokuapp.com/", target: "_blank", rel: "noopener noreferrer" },
+	            "rdi-demo.herokuapp.com"
+	          )
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "next-btn" },
+	          _react2.default.createElement(
+	            "span",
+	            null,
+	            "Next"
+	          )
+	        )
+	      )
+	    )
+	  );
+	}
+
+/***/ },
+/* 446 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = Rdi;
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function Rdi() {
+	
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "work-item closed small-screen", id: "macbox" },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "work-item-header" },
+	      _react2.default.createElement("div", { className: "header-image img-responsive", style: { backgroundImage: "url('/public/images/3.png')" } }),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "header-text-wrapper" },
+	        _react2.default.createElement(
+	          "h1",
+	          { className: "header-title" },
+	          "Macbox"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "border-wrapper" },
+	          _react2.default.createElement("div", { className: "border-top" }),
+	          _react2.default.createElement("div", { className: "border-right" }),
+	          _react2.default.createElement("div", { className: "border-bottom" }),
+	          _react2.default.createElement("div", { className: "border-left" })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "subtitle-wrapper" },
+	          _react2.default.createElement(
+	            "p",
+	            { className: "header-subtitle" },
+	            "Prototype e-commerce site"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            { style: { marginTop: '-10px' }, className: "header-subtitle" },
+	            "NERD Stack, React-Redux, CSS3"
+	          )
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "section",
+	      { className: "work-item-content about-text" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding blurb" },
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Macbox is a prototype e-commerce site."
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding long centered", style: { backgroundColor: '#333', color: 'white' } },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "features-blurb" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-heading-text" },
+	            "Features",
+	            _react2.default.createElement("span", { className: "divider light" })
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "ul",
+	            null,
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Easily installable as npm package."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Natively implements React.js patterns."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Components include Navbar, Jumbotron, Drawer, and more."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Components can be configured with various animation effects: fadeUp, fadeAppear, fadeInLeft, and fadeInRight."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Components are modular and useful on their own or together."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Designed to be unopinionated and preserve end user\u2019s defined styles and classes."
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding long" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-heading-text" },
+	          "Typography",
+	          _react2.default.createElement("span", { className: "divider" })
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "font-tab" },
+	          _react2.default.createElement(
+	            "span",
+	            { className: "font-heading" },
+	            "Tenor Sans"
+	          )
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-heading-text" },
+	          "Colors",
+	          _react2.default.createElement("span", { className: "divider" })
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { style: { display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap' } },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#D66E98' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#D66E98"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#D6ABB1' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#D6ABB1"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#FFDCDC' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#FFDCDC"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#CDF7F4' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#CDF7F4"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#83F1EC' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#83F1EC"
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement("br", null)
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding long centered", style: { backgroundColor: 'rgb(239, 239, 239)' } },
+	        _react2.default.createElement(
+	          "div",
+	          null,
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-heading-text" },
+	            "The Stack",
+	            _react2.default.createElement("span", { className: "divider" })
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "ul",
+	            null,
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Node.js"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Express"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Sequelize/PostgreSQL"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "React.js"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "React-Redux (state)"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "ReactTransitionGroup (animation)"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "GSAP (animation)"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "CSS3"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "HTML"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement("br", null)
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding", style: { borderBottom: '1px solid gainsboro' } },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-heading-text" },
+	          "Src",
+	          _react2.default.createElement("span", { className: "divider" })
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Code: ",
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://github.com/chloehwang/macbox", target: "_blank", rel: "noopener noreferrer" },
+	            "github.com/chloehwang/macbox"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Demo: ",
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://macbox.herokuapp.com/", target: "_blank", rel: "noopener noreferrer" },
+	            "macbox.herokuapp.com"
+	          )
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "next-btn" },
+	          _react2.default.createElement(
+	            "span",
+	            null,
+	            "Next"
+	          )
+	        )
+	      )
+	    )
+	  );
+	}
+
+/***/ },
+/* 447 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42037,7 +43179,7 @@
 	}
 
 /***/ },
-/* 445 */
+/* 448 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42069,7 +43211,7 @@
 	}
 
 /***/ },
-/* 446 */
+/* 449 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42130,14 +43272,14 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _menu = __webpack_require__(447);
+	var _menu = __webpack_require__(450);
 	
 	var _menu2 = _interopRequireDefault(_menu);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ },
-/* 447 */
+/* 450 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42152,11 +43294,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _item = __webpack_require__(448);
+	var _item = __webpack_require__(451);
 	
 	var _item2 = _interopRequireDefault(_item);
 	
-	var _button = __webpack_require__(463);
+	var _button = __webpack_require__(466);
 	
 	var _button2 = _interopRequireDefault(_button);
 	
@@ -42393,7 +43535,7 @@
 	exports.default = MotionMenu;
 
 /***/ },
-/* 448 */
+/* 451 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42410,7 +43552,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactMotion = __webpack_require__(449);
+	var _reactMotion = __webpack_require__(452);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -42573,7 +43715,7 @@
 	exports.default = MenuItem;
 
 /***/ },
-/* 449 */
+/* 452 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42582,34 +43724,34 @@
 	
 	function _interopRequire(obj) { return obj && obj.__esModule ? obj['default'] : obj; }
 	
-	var _Motion = __webpack_require__(450);
+	var _Motion = __webpack_require__(453);
 	
 	exports.Motion = _interopRequire(_Motion);
 	
-	var _StaggeredMotion = __webpack_require__(457);
+	var _StaggeredMotion = __webpack_require__(460);
 	
 	exports.StaggeredMotion = _interopRequire(_StaggeredMotion);
 	
-	var _TransitionMotion = __webpack_require__(458);
+	var _TransitionMotion = __webpack_require__(461);
 	
 	exports.TransitionMotion = _interopRequire(_TransitionMotion);
 	
-	var _spring = __webpack_require__(460);
+	var _spring = __webpack_require__(463);
 	
 	exports.spring = _interopRequire(_spring);
 	
-	var _presets = __webpack_require__(461);
+	var _presets = __webpack_require__(464);
 	
 	exports.presets = _interopRequire(_presets);
 	
 	// deprecated, dummy warning function
 	
-	var _reorderKeys = __webpack_require__(462);
+	var _reorderKeys = __webpack_require__(465);
 	
 	exports.reorderKeys = _interopRequire(_reorderKeys);
 
 /***/ },
-/* 450 */
+/* 453 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42620,27 +43762,27 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _mapToZero = __webpack_require__(451);
+	var _mapToZero = __webpack_require__(454);
 	
 	var _mapToZero2 = _interopRequireDefault(_mapToZero);
 	
-	var _stripStyle = __webpack_require__(452);
+	var _stripStyle = __webpack_require__(455);
 	
 	var _stripStyle2 = _interopRequireDefault(_stripStyle);
 	
-	var _stepper3 = __webpack_require__(453);
+	var _stepper3 = __webpack_require__(456);
 	
 	var _stepper4 = _interopRequireDefault(_stepper3);
 	
-	var _performanceNow = __webpack_require__(454);
+	var _performanceNow = __webpack_require__(457);
 	
 	var _performanceNow2 = _interopRequireDefault(_performanceNow);
 	
-	var _raf = __webpack_require__(455);
+	var _raf = __webpack_require__(458);
 	
 	var _raf2 = _interopRequireDefault(_raf);
 	
-	var _shouldStopAnimation = __webpack_require__(456);
+	var _shouldStopAnimation = __webpack_require__(459);
 	
 	var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
 	
@@ -42855,7 +43997,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 451 */
+/* 454 */
 /***/ function(module, exports) {
 
 	
@@ -42879,7 +44021,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 452 */
+/* 455 */
 /***/ function(module, exports) {
 
 	
@@ -42905,7 +44047,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 453 */
+/* 456 */
 /***/ function(module, exports) {
 
 	
@@ -42953,7 +44095,7 @@
 	// array reference around.
 
 /***/ },
-/* 454 */
+/* 457 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {// Generated by CoffeeScript 1.7.1
@@ -42992,10 +44134,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ },
-/* 455 */
+/* 458 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var now = __webpack_require__(454)
+	/* WEBPACK VAR INJECTION */(function(global) {var now = __webpack_require__(457)
 	  , root = typeof window === 'undefined' ? global : window
 	  , vendors = ['moz', 'webkit']
 	  , suffix = 'AnimationFrame'
@@ -43071,7 +44213,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 456 */
+/* 459 */
 /***/ function(module, exports) {
 
 	
@@ -43107,7 +44249,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 457 */
+/* 460 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43118,27 +44260,27 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _mapToZero = __webpack_require__(451);
+	var _mapToZero = __webpack_require__(454);
 	
 	var _mapToZero2 = _interopRequireDefault(_mapToZero);
 	
-	var _stripStyle = __webpack_require__(452);
+	var _stripStyle = __webpack_require__(455);
 	
 	var _stripStyle2 = _interopRequireDefault(_stripStyle);
 	
-	var _stepper3 = __webpack_require__(453);
+	var _stepper3 = __webpack_require__(456);
 	
 	var _stepper4 = _interopRequireDefault(_stepper3);
 	
-	var _performanceNow = __webpack_require__(454);
+	var _performanceNow = __webpack_require__(457);
 	
 	var _performanceNow2 = _interopRequireDefault(_performanceNow);
 	
-	var _raf = __webpack_require__(455);
+	var _raf = __webpack_require__(458);
 	
 	var _raf2 = _interopRequireDefault(_raf);
 	
-	var _shouldStopAnimation = __webpack_require__(456);
+	var _shouldStopAnimation = __webpack_require__(459);
 	
 	var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
 	
@@ -43374,7 +44516,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 458 */
+/* 461 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43385,31 +44527,31 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _mapToZero = __webpack_require__(451);
+	var _mapToZero = __webpack_require__(454);
 	
 	var _mapToZero2 = _interopRequireDefault(_mapToZero);
 	
-	var _stripStyle = __webpack_require__(452);
+	var _stripStyle = __webpack_require__(455);
 	
 	var _stripStyle2 = _interopRequireDefault(_stripStyle);
 	
-	var _stepper3 = __webpack_require__(453);
+	var _stepper3 = __webpack_require__(456);
 	
 	var _stepper4 = _interopRequireDefault(_stepper3);
 	
-	var _mergeDiff = __webpack_require__(459);
+	var _mergeDiff = __webpack_require__(462);
 	
 	var _mergeDiff2 = _interopRequireDefault(_mergeDiff);
 	
-	var _performanceNow = __webpack_require__(454);
+	var _performanceNow = __webpack_require__(457);
 	
 	var _performanceNow2 = _interopRequireDefault(_performanceNow);
 	
-	var _raf = __webpack_require__(455);
+	var _raf = __webpack_require__(458);
 	
 	var _raf2 = _interopRequireDefault(_raf);
 	
-	var _shouldStopAnimation = __webpack_require__(456);
+	var _shouldStopAnimation = __webpack_require__(459);
 	
 	var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
 	
@@ -43865,7 +45007,7 @@
 	// that you've unmounted but that's still animating. This is where it lives
 
 /***/ },
-/* 459 */
+/* 462 */
 /***/ function(module, exports) {
 
 	
@@ -43978,7 +45120,7 @@
 	// to loop through and find a key's index each time), but I no longer care
 
 /***/ },
-/* 460 */
+/* 463 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43991,7 +45133,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _presets = __webpack_require__(461);
+	var _presets = __webpack_require__(464);
 	
 	var _presets2 = _interopRequireDefault(_presets);
 	
@@ -44006,7 +45148,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 461 */
+/* 464 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -44021,7 +45163,7 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 462 */
+/* 465 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -44044,7 +45186,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ },
-/* 463 */
+/* 466 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44061,7 +45203,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactMotion = __webpack_require__(449);
+	var _reactMotion = __webpack_require__(452);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -44171,7 +45313,7 @@
 	exports.default = MenuButton;
 
 /***/ },
-/* 464 */
+/* 467 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -44476,9 +45618,6 @@
 	});
 
 /***/ },
-/* 465 */,
-/* 466 */,
-/* 467 */,
 /* 468 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -44487,7 +45626,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.default = Omni;
+	exports.default = EfA;
 	
 	var _react = __webpack_require__(6);
 	
@@ -44495,11 +45634,11 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function Omni() {
+	function EfA() {
 	
 	  return _react2.default.createElement(
 	    "div",
-	    { className: "work-item closed small-screen", id: "omni" },
+	    { className: "work-item closed small-screen", id: "nonprof" },
 	    _react2.default.createElement(
 	      "div",
 	      { className: "work-item-header" },
@@ -44510,7 +45649,7 @@
 	        _react2.default.createElement(
 	          "h1",
 	          { className: "header-title" },
-	          "Omni"
+	          "Education for All"
 	        ),
 	        _react2.default.createElement(
 	          "div",
@@ -44526,12 +45665,12 @@
 	          _react2.default.createElement(
 	            "p",
 	            { className: "header-subtitle" },
-	            "Dream analysis app"
+	            "Website Design Concept"
 	          ),
 	          _react2.default.createElement(
 	            "p",
 	            { style: { marginTop: '-10px' }, className: "header-subtitle" },
-	            "NERD Stack, A-Frame, Victory"
+	            "CSS3, HTML"
 	          )
 	        )
 	      )
@@ -44545,488 +45684,10 @@
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          _react2.default.createElement(
-	            "span",
-	            { style: { fontWeight: '600' } },
-	            "Omni is an app that believes in the power of dreams."
-	          ),
+	          "Education for a All is a website design concept for a nonprofit organization. I drew upon my four years of experience in the nonprofit space to build a layout that efficiently serves important NGO information - including bold sections for donation appeals, key successes, newsletter sign-up, and how to get involved.",
 	          _react2.default.createElement("br", null),
 	          _react2.default.createElement("br", null),
-	          "With Omni, users can log their dreams via the web or mobile app. Once logged, Omni analyzes it for the values of five key emotions - surprise, anger, fear, sadness, and joy. We then uses these values to produce a unique 3D/VR representation of the dream - lovingly called a dream \u2018sprite\u2019. These sprites give users a creative, visual way to explore the underlying emotions behind their dreams.",
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement("br", null),
-	          "The app also provides a personalized dashboard of sleep statistics. Lastly, Omni gives you the chance to explore a 3D realm populated with the sprites of other users, allowing you to take a peek into the subconscious of other people."
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "work-item-section content-padding long centered", style: { backgroundColor: '#333', color: 'white' } },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "features-blurb" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "about-heading-text" },
-	            "Features",
-	            _react2.default.createElement("span", { className: "divider light" })
-	          ),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement(
-	            "span",
-	            { className: "mini-heading", style: { color: '#f7fb8e' } },
-	            "Mobile App"
-	          ),
-	          _react2.default.createElement(
-	            "ul",
-	            null,
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "Add a new dream entry."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "View past dream entries."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "For each entry, view corresponding dream sprite in 3D and VR."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "View public dream entries of other users."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "View certain sleep and dream statistics."
-	            )
-	          ),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement(
-	            "span",
-	            { className: "mini-heading", style: { color: '#f7fb8e' } },
-	            "Web App"
-	          ),
-	          _react2.default.createElement(
-	            "ul",
-	            null,
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "All functionalities of mobile."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "Edit/delete a dream."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "View personalized dashboard of sleep and dream statistics, such as hours slept in last week, average of emotions for all dreams, etc."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "Explore 3D realm of the public dreams of other users, and be able to read those dreams."
-	            )
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "work-item-section content-padding long" },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "about-heading-text" },
-	          "Typography",
-	          _react2.default.createElement("span", { className: "divider" })
-	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "font-tab" },
-	          _react2.default.createElement(
-	            "span",
-	            { className: "font-heading" },
-	            "Quicksand"
-	          )
-	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "font-tab" },
-	          _react2.default.createElement(
-	            "span",
-	            { className: "font-heading" },
-	            "Open Sans"
-	          )
-	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "about-heading-text" },
-	          "Colors",
-	          _react2.default.createElement("span", { className: "divider" })
-	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement(
-	          "div",
-	          { style: { display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap' } },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "color-tab" },
-	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#242424' } }),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "tab-title" },
-	              _react2.default.createElement(
-	                "span",
-	                null,
-	                "#242424"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "color-tab" },
-	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#333' } }),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "tab-title" },
-	              _react2.default.createElement(
-	                "span",
-	                null,
-	                "#333333"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "color-tab" },
-	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#C8D8FC' } }),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "tab-title" },
-	              _react2.default.createElement(
-	                "span",
-	                null,
-	                "#C8D8FC"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "color-tab" },
-	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#C8B7D5' } }),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "tab-title" },
-	              _react2.default.createElement(
-	                "span",
-	                null,
-	                "#C8B7D5"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "color-tab" },
-	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#A974D5' } }),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "tab-title" },
-	              _react2.default.createElement(
-	                "span",
-	                null,
-	                "#A974D5"
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement("br", null)
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "work-item-section content-padding long centered", style: { backgroundColor: 'rgb(239, 239, 239)' } },
-	        _react2.default.createElement(
-	          "div",
-	          null,
-	          _react2.default.createElement(
-	            "div",
-	            { className: "about-heading-text" },
-	            "The Stack",
-	            _react2.default.createElement("span", { className: "divider" })
-	          ),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement(
-	            "ul",
-	            null,
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "Node.js"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "Express"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "Sequelize/PostgreSQL"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "React.js"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "React-Native (mobile app)"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "A-Frame (3D/VR rendering)"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "Victory (data visualization)"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "CSS3"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "HTML"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement("br", null)
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "work-item-section content-padding long", style: { backgroundColor: '#333', color: 'white' } },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "about-heading-text" },
-	          "Presentation",
-	          _react2.default.createElement("span", { className: "divider light" })
-	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "video-container" },
-	          _react2.default.createElement(
-	            "span",
-	            { className: "video-date", style: { color: '#f7fb8e' } },
-	            "April 2017"
-	          ),
-	          _react2.default.createElement(
-	            "span",
-	            { className: "video-title" },
-	            "Presenting Omni:",
-	            _react2.default.createElement("br", null),
-	            "A Dream Journal/Analysis App"
-	          ),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement("iframe", { style: { width: '100%' }, height: "315", src: "https://www.youtube.com/embed/VQYodA9GZ20", frameBorder: "0", allowFullScreen: true })
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "work-item-section content-padding", style: { borderBottom: '1px solid gainsboro' } },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "about-heading-text" },
-	          "Src",
-	          _react2.default.createElement("span", { className: "divider" })
-	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Code (mobile): ",
-	          _react2.default.createElement(
-	            "a",
-	            { href: "https://github.com/Omni-Project/omni-mobile", target: "_blank", rel: "noopener noreferrer" },
-	            "github.com/Omni-Project/omni-mobile"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Code (web): ",
-	          _react2.default.createElement(
-	            "a",
-	            { href: "https://github.com/Omni-Project/omni-desktop", target: "_blank", rel: "noopener noreferrer" },
-	            "github.com/Omni-Project/omni-desktop"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Demo (web): ",
-	          _react2.default.createElement(
-	            "a",
-	            { href: "https://omni-project.herokuapp.com/", target: "_blank", rel: "noopener noreferrer" },
-	            "omni-project.herokuapp.com"
-	          )
-	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "next-btn" },
-	          _react2.default.createElement(
-	            "span",
-	            null,
-	            "Next"
-	          )
-	        )
-	      )
-	    )
-	  );
-	}
-
-/***/ },
-/* 469 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = Rdi;
-	
-	var _react = __webpack_require__(6);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function Rdi() {
-	
-	  return _react2.default.createElement(
-	    "div",
-	    { className: "work-item closed small-screen", id: "rdi" },
-	    _react2.default.createElement(
-	      "div",
-	      { className: "work-item-header" },
-	      _react2.default.createElement("div", { className: "header-image img-responsive", style: { backgroundImage: "url('/public/images/3.png')" } }),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "header-text-wrapper" },
-	        _react2.default.createElement(
-	          "h1",
-	          { className: "header-title" },
-	          "react-dynamic-UI"
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "border-wrapper" },
-	          _react2.default.createElement("div", { className: "border-top" }),
-	          _react2.default.createElement("div", { className: "border-right" }),
-	          _react2.default.createElement("div", { className: "border-bottom" }),
-	          _react2.default.createElement("div", { className: "border-left" })
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "subtitle-wrapper" },
-	          _react2.default.createElement(
-	            "p",
-	            { className: "header-subtitle" },
-	            "UI library for React.js"
-	          ),
-	          _react2.default.createElement(
-	            "p",
-	            { style: { marginTop: '-10px' }, className: "header-subtitle" },
-	            "Node.js, React.js, CSS3, HTML5"
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "section",
-	      { className: "work-item-content about-text" },
-	      _react2.default.createElement(
-	        "div",
-	        { className: "work-item-section content-padding blurb" },
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          _react2.default.createElement(
-	            "span",
-	            { style: { fontWeight: '600' } },
-	            "react-dynamic-UI is a UI toolkit for React.js that offers components with built-in animation."
-	          ),
-	          " Why yet ",
-	          _react2.default.createElement(
-	            "span",
-	            { style: { fontStyle: 'italic' } },
-	            "another"
-	          ),
-	          " UI library? My goal was to fulfill a need for UI building blocks that can animate out of the box while also being native to React.js. The components animate based on user interaction, i.e. scroll and hover. Users can mix and match components and animation effects to achieve a truly custom design. I hope that react-dynamic-UI will make it easier for others to implement UI animations into their next React app."
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "work-item-section content-padding", style: { backgroundColor: 'rgb(239, 239, 239)' } },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "about-heading-text" },
-	          "Src",
-	          _react2.default.createElement("span", { className: "divider" })
-	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Code: ",
-	          _react2.default.createElement(
-	            "a",
-	            { href: "https://github.com/chloehwang/react-dynamic-UI", target: "_blank" },
-	            "github.com/chloehwang/react-dynamic-UI"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "NPM: ",
-	          _react2.default.createElement(
-	            "a",
-	            { href: "https://www.npmjs.com/package/react-dynamic-ui", target: "_blank" },
-	            "npmjs.com/package/react-dynamic-ui"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Demo: ",
-	          _react2.default.createElement(
-	            "a",
-	            { href: "https://rdi-demo.herokuapp.com/", target: "_blank" },
-	            "rdi-demo.herokuapp.com"
-	          )
+	          "I mostly experimented with using CSS borders to create diagonal shapes that could highlight important information and be used as a recurring pattern. I also focused on"
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -45059,21 +45720,6 @@
 	              "li",
 	              null,
 	              "Components include Navbar, Jumbotron, Drawer, and more."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "Components can be configured with various animation effects: fadeUp, fadeAppear, fadeInLeft, and fadeInRight."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "Components are modular and useful on their own or together."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "Designed to be unopinionated and preserve end user\u2019s defined styles and classes."
 	            )
 	          )
 	        )
@@ -45084,7 +45730,7 @@
 	        _react2.default.createElement(
 	          "div",
 	          { className: "about-heading-text" },
-	          "Demo Typography",
+	          "Typography",
 	          _react2.default.createElement("span", { className: "divider" })
 	        ),
 	        _react2.default.createElement("br", null),
@@ -45094,7 +45740,27 @@
 	          _react2.default.createElement(
 	            "span",
 	            { className: "font-heading" },
-	            "Helvetica Neue"
+	            "Raleway"
+	          )
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "font-tab" },
+	          _react2.default.createElement(
+	            "span",
+	            { className: "font-heading" },
+	            "Montserrat"
+	          )
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "font-tab" },
+	          _react2.default.createElement(
+	            "span",
+	            { className: "font-heading" },
+	            "Poppins"
 	          )
 	        ),
 	        _react2.default.createElement("br", null),
@@ -45105,7 +45771,7 @@
 	        _react2.default.createElement(
 	          "div",
 	          { className: "about-heading-text" },
-	          "Demo Colors",
+	          "Colors",
 	          _react2.default.createElement("span", { className: "divider" })
 	        ),
 	        _react2.default.createElement("br", null),
@@ -45115,70 +45781,70 @@
 	          _react2.default.createElement(
 	            "div",
 	            { className: "color-tab" },
-	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#437F91' } }),
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#f56476' } }),
 	            _react2.default.createElement(
 	              "div",
 	              { className: "tab-title" },
 	              _react2.default.createElement(
 	                "span",
 	                null,
-	                "#437F91"
+	                "#f56476"
 	              )
 	            )
 	          ),
 	          _react2.default.createElement(
 	            "div",
 	            { className: "color-tab" },
-	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#9FD7E1' } }),
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#f7e08e' } }),
 	            _react2.default.createElement(
 	              "div",
 	              { className: "tab-title" },
 	              _react2.default.createElement(
 	                "span",
 	                null,
-	                "#9FD7E1"
+	                "#f7e08e"
 	              )
 	            )
 	          ),
 	          _react2.default.createElement(
 	            "div",
 	            { className: "color-tab" },
-	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#CBE8ED' } }),
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#fffdaa' } }),
 	            _react2.default.createElement(
 	              "div",
 	              { className: "tab-title" },
 	              _react2.default.createElement(
 	                "span",
 	                null,
-	                "#CBE8ED"
+	                "#fffdaa"
 	              )
 	            )
 	          ),
 	          _react2.default.createElement(
 	            "div",
 	            { className: "color-tab" },
-	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#F25C5E' } }),
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#53d8fb' } }),
 	            _react2.default.createElement(
 	              "div",
 	              { className: "tab-title" },
 	              _react2.default.createElement(
 	                "span",
 	                null,
-	                "#F25C5E"
+	                "#53d8fb"
 	              )
 	            )
 	          ),
 	          _react2.default.createElement(
 	            "div",
 	            { className: "color-tab" },
-	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#FFA566' } }),
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#0b3059' } }),
 	            _react2.default.createElement(
 	              "div",
 	              { className: "tab-title" },
 	              _react2.default.createElement(
 	                "span",
 	                null,
-	                "#FFA566"
+	                "#0b3059"
 	              )
 	            )
 	          )
@@ -45194,7 +45860,7 @@
 	          _react2.default.createElement(
 	            "div",
 	            { className: "about-heading-text" },
-	            "The Stack",
+	            "Built With",
 	            _react2.default.createElement("span", { className: "divider" })
 	          ),
 	          _react2.default.createElement("br", null),
@@ -45204,57 +45870,21 @@
 	            _react2.default.createElement(
 	              "li",
 	              null,
-	              "Node.js"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "React.js"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
 	              "CSS3"
 	            ),
 	            _react2.default.createElement(
 	              "li",
 	              null,
-	              "HTML5"
+	              "HTML"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Javascript"
 	            )
 	          )
 	        ),
 	        _react2.default.createElement("br", null)
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "work-item-section content-padding long", style: { backgroundColor: '#333', color: 'white' } },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "about-heading-text" },
-	          "Presentation",
-	          _react2.default.createElement("span", { className: "divider light" })
-	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "video-container" },
-	          _react2.default.createElement(
-	            "span",
-	            { className: "video-date", style: { color: '#f7fb8e' } },
-	            "March 2017"
-	          ),
-	          _react2.default.createElement(
-	            "span",
-	            { className: "video-title" },
-	            "Introducing a New UI",
-	            _react2.default.createElement("br", null),
-	            "Animation Library for React.js"
-	          ),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement("iframe", { style: { width: '100%' }, height: "315", src: "https://www.youtube.com/embed/krAzPZE3s1I", frameBorder: "0", allowFullScreen: true })
-	        )
 	      ),
 	      _react2.default.createElement(
 	        "div",
@@ -45272,18 +45902,8 @@
 	          "Code: ",
 	          _react2.default.createElement(
 	            "a",
-	            { href: "https://github.com/chloehwang/react-dynamic-UI", target: "_blank", rel: "noopener noreferrer" },
-	            "github.com/chloehwang/react-dynamic-UI"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "NPM: ",
-	          _react2.default.createElement(
-	            "a",
-	            { href: "https://www.npmjs.com/package/react-dynamic-ui", target: "_blank", rel: "noopener noreferrer" },
-	            "npmjs.com/package/react-dynamic-ui"
+	            { href: "https://github.com/chloehwang/education-for-all", target: "_blank", rel: "noopener noreferrer" },
+	            "github.com/chloehwang/education-for-all"
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -45292,8 +45912,8 @@
 	          "Demo: ",
 	          _react2.default.createElement(
 	            "a",
-	            { href: "https://rdi-demo.herokuapp.com/", target: "_blank", rel: "noopener noreferrer" },
-	            "rdi-demo.herokuapp.com"
+	            { href: "https://macbox.herokuapp.com/", target: "_blank", rel: "noopener noreferrer" },
+	            "macbox.herokuapp.com"
 	          )
 	        ),
 	        _react2.default.createElement("br", null),
