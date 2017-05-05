@@ -47,20 +47,22 @@ body.loaded {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 
   span {
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  margin: 0;
-  margin-top: 1px;
-  width: 57px;
-  border-bottom: 1px solid white;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    margin-top: 1px;
+    width: 57px;
+    border-bottom: 1px solid white;
   }
 }
 
 .next-btn:hover {
+  cursor: pointer;
   span {
     border-color:$secondary-color;
   }
@@ -332,10 +334,14 @@ svg.intro {
 .about-content {
   font-family: $sanserif-font;
   text-align: left;
-  padding: 0px 36px;
   height: auto;
   right: 0;
   background-color: white;
+  border-bottom: 1px solid $secondary-color
+}
+
+.content-padding {
+  padding: 0px 36px;
 }
 
 .about-intro {
@@ -397,12 +403,14 @@ svg.intro {
     border-bottom: 2px solid #424242;
     display: inline-block;
   }
+  .divider.light {
+    border-color: white
+  }
 }
 
 
 
 .about-text {
-  padding-bottom: 90px;
   ul {
     list-style-type: square;
     padding-left: 21px;
@@ -435,7 +443,7 @@ svg.intro {
   width: 100%;
   max-width: 560px;
   text-align: center;
-  margin-bottom: 60px
+  margin: 0 auto 60px;
 }
 
 .video-date {
@@ -481,6 +489,56 @@ svg.intro {
   background-color: white;
   text-align: left;
   height: 0;
+}
+
+.work-item-section {
+  padding-top: 72px !important;
+  padding-bottom: 72px !important;
+
+  p {
+    margin-bottom: 0
+  }
+}
+
+.color-tab {
+  height: 125px;
+  width: 100px;
+  margin-bottom: 15px
+}
+
+.tab-main {
+  width: 100%;
+  height: 75%;
+}
+
+.tab-title {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  span {
+    font-family: 'Poppins';
+    font-weight: 300;
+  }
+}
+
+.centered {
+  display: flex;
+  justify-content: center
+}
+
+.font-tab {
+  border: 1px solid #dcdcdc;
+  width: 100%;
+  height: 100px;
+  padding: 25px 30px;
+  color: #8a8a8a;
+}
+
+.font-heading {
+  font-style: italic;
+  font-size: 16px
 }
 
 .header-image {
@@ -730,7 +788,6 @@ svg.intro {
 }
 .expanded-content {
   height: 100%;
-  padding: 70px;
 }
 .fixed-btn {
   position: fixed !important;
@@ -811,7 +868,7 @@ svg.intro {
 //IPHONE 6 PLUS
 @media screen and (min-width: 414px) {
   //about - 415
-  .about-content {
+  .content-padding {
     padding: 0px 50px;
   }
 }
@@ -865,7 +922,7 @@ svg.intro {
 
   //about - 668
 
-  .about-content {
+  .content-padding {
     padding: 0px 100px;
   }
 
@@ -980,6 +1037,15 @@ svg.intro {
 
   .fixed-header {
     position: fixed !important;
+  }
+  .work-item-section {
+    padding-right: 172px;
+    padding-left: 172px
+  }
+
+  .work-item-section.long {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
   }
 
 

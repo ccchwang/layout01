@@ -10,7 +10,7 @@ export default function About () {
         <h1 className="title-text">about</h1>
       </Col>
 
-      <Col className="about-content" xs={12} md={8}>
+      <Col className="about-content content-padding" xs={12} md={8}>
 
       <div style={{maxWidth: '850px', margin: '0 auto'}}>
         {/* INTRO */}
@@ -114,7 +114,7 @@ export default function About () {
           <br />
           <span className="mini-heading">Fundraising Manager, ecoAmerica</span><br />
           <span className="mini-heading">Washington, D.C. (Dec 2014-Dec 2016)</span><br />
-          <ul style={{marginTop: '5px'}}>
+          <ul style={{marginTop: '5px', paddingBottom: '90px'}}>
             <li>Oversaw production of a grant report, letters of inquiry, and extensive proposal within 6 weeks time. As a result, secured $3M grant as part of two-person team.</li>
             <li>Managed portfolio of 150+ fundraising prospects.</li>
             <li>Led implementation of Salesforce database and became power user for organization.</li>
