@@ -41,7 +41,7 @@ export default function Work () {
               </div>
               <div className="subtitle-wrapper">
                 <p className="header-subtitle">Dream analysis app</p>
-                <p style={{marginTop: '-10px'}} className="header-subtitle">NERD Stack, A-frame, Victory</p>
+                <p style={{marginTop: '-10px'}} className="header-subtitle">NERD Stack, A-Frame, Victory</p>
               </div>
             </div>
           </div>
@@ -162,9 +162,9 @@ export default function Work () {
         {/*** RDI ***/}
         <div className="work-item closed" id="rdi">
 
-          {/* OMNI - header image */}
+          {/* RDI - header image */}
           <div className="work-item-header">
-            <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/rdi.jpg')"}} />
+            <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
 
             <div className="header-text-wrapper">
               <h1 className="header-title">react-dynamic-UI</h1>
@@ -175,8 +175,8 @@ export default function Work () {
                 <div className="border-left" />
               </div>
               <div className="subtitle-wrapper">
-                <p className="header-subtitle">Dream analysis app</p>
-                <p style={{marginTop: '-5px'}} className="header-subtitle">NERD Stack, A-frame, Victory</p>
+                <p className="header-subtitle">UI library for React.js</p>
+                <p style={{marginTop: '-5px'}} className="header-subtitle">Node.js, React.js, CSS3, HTML5</p>
               </div>
             </div>
           </div>

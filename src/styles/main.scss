@@ -501,18 +501,18 @@ svg.intro {
 }
 
 .color-tab {
-  height: 125px;
+  height: 130px;
   width: 100px;
   margin-bottom: 15px
 }
 
 .tab-main {
   width: 100%;
-  height: 75%;
+  height: 70%;
 }
 
 .tab-title {
-  height: 25%;
+  height: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -550,7 +550,7 @@ svg.intro {
 }
 
 .header-text-wrapper {
-  padding: 45px 60px;
+  padding: 45px 36px;
   position: absolute;
   top: 0;
   left: 0;
@@ -561,13 +561,13 @@ svg.intro {
   margin: 0;
   color: white;
   font-family: $sanserif-font;
-  font-size: 4.5em;
+  font-size: 3.5em;
   font-weight: 600
 }
 
 .header-subtitle {
   color: white;
-  font-size: 21px;
+  font-size: 18px;
   font-style: italic;
   transition: 0.3s;
 }
@@ -862,14 +862,42 @@ svg.intro {
   .video-date {
     font-size: 14px
   }
+
+  //work - header 321
+  .header-text-wrapper {
+    padding-right: 50px;
+    padding-left: 50px
+  }
+
+  .header-title {
+    font-size: 4em;
+  }
+
+  .header-subtitle {
+    font-size: 20px;
+  }
 }
 
 
 //IPHONE 6 PLUS
 @media screen and (min-width: 414px) {
-  //about - 415
+  //about - 414
   .content-padding {
     padding: 0px 50px;
+  }
+
+  //work- 414
+  .header-text-wrapper {
+    padding-right: 60px;
+    padding-left: 60px
+  }
+
+  .header-title {
+    font-size: 4.5em;
+  }
+
+  .header-subtitle {
+    font-size: 21px;
   }
 }
 
