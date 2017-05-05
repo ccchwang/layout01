@@ -420,6 +420,7 @@ svg.intro {
     line-height: 25px;
   }
   .grouped {
+    width: 100%;
     padding-bottom: 15px;
   }
 }
@@ -431,7 +432,8 @@ svg.intro {
 .video-container {
   display: flex;
   flex-direction: column;
-  //width: 560px;
+  width: 100%;
+  max-width: 560px;
   text-align: center;
   margin-bottom: 60px
 }
@@ -779,9 +781,6 @@ svg.intro {
 
 
   //about - 321
-  .about-content {
-    padding: 0px 36px;
-  }
 
   .about-intro {
     font-size: 23px;
@@ -809,6 +808,14 @@ svg.intro {
 }
 
 
+//IPHONE 6 PLUS
+@media screen and (min-width: 414px) {
+  //about - 415
+  .about-content {
+    padding: 0px 50px;
+  }
+}
+
 //*** BIGGER THAN PHONE PORTRAIT
 @media screen and (min-width: 415px) {
 
@@ -823,11 +830,6 @@ svg.intro {
 
   #header-border {
     border-color: #888;
-  }
-
-  //about - 415
-  .about-content {
-    padding: 0px 50px;
   }
 }
 
@@ -877,10 +879,9 @@ svg.intro {
     p, li {
       font-size: 17px;
     }
-
     .grouped {
-      width: 43.5%;
-      margin-right: 30px
+      width: 45.5%;
+      margin-right: 20px
     }
   }
   .about-heading-text {
@@ -1017,11 +1018,12 @@ svg.intro {
 }
 
 
-@media screen and (min-width: 1425px) {
-  .about-text .grouped {
-    width: 46%;
-  }
-}
+// @media screen and (min-width: 1425px) {
+//   .about-text .grouped {
+//     width: 46%;
+//     margin-right: 0
+//   }
+// }
 
 
 //***FOR SHOWING 'SEE MORE' BTN ON PHONES/TABLETS
