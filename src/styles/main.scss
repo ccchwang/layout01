@@ -489,6 +489,18 @@ svg.intro {
   background-color: white;
   text-align: left;
   height: 0;
+
+  a {
+    font-family: 'poppins';
+    color: #363636;
+  }
+}
+
+
+.blurb {
+  span {
+    font-family: $sanserif-font
+  }
 }
 
 .work-item-section {
@@ -498,6 +510,10 @@ svg.intro {
   p {
     margin-bottom: 0
   }
+}
+
+.features-blurb {
+  width: 75%
 }
 
 .color-tab {
@@ -891,14 +907,6 @@ svg.intro {
     padding-right: 60px;
     padding-left: 60px
   }
-
-  .header-title {
-    font-size: 4.5em;
-  }
-
-  .header-subtitle {
-    font-size: 21px;
-  }
 }
 
 //*** BIGGER THAN PHONE PORTRAIT
@@ -915,6 +923,15 @@ svg.intro {
 
   #header-border {
     border-color: #888;
+  }
+
+  //work - 415
+  .header-title {
+    font-size: 4.5em;
+  }
+
+  .header-subtitle {
+    font-size: 21px;
   }
 }
 
@@ -980,6 +997,10 @@ svg.intro {
   }
   .video-date {
     font-size: 15px
+  }
+
+  .features-blurb {
+    width: 70%
   }
 }
 
