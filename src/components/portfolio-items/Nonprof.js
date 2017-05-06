@@ -7,7 +7,7 @@ export default function EfA () {
 
       {/* RDI - header image */}
       <div className="work-item-header">
-        <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
+        <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/boy.png')"}} />
         <div className="header-text-wrapper">
           <h1 className="header-title">Education for All</h1>
           <div className="border-wrapper">
@@ -70,24 +70,24 @@ export default function EfA () {
           <br />
           <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap'}}>
             <div className="color-tab">
-              <div className="tab-main" style={{backgroundColor: '#f56476'}} />
-              <div className="tab-title"><span>#f56476</span></div>
+              <div className="tab-main" style={{backgroundColor: '#FF798A'}} />
+              <div className="tab-title"><span>#FF798A</span></div>
             </div>
             <div className="color-tab">
-              <div className="tab-main" style={{backgroundColor: '#f7e08e'}} />
-              <div className="tab-title"><span>#f7e08e</span></div>
+              <div className="tab-main" style={{backgroundColor: '#FFD867'}} />
+              <div className="tab-title"><span>#FFD867</span></div>
             </div>
             <div className="color-tab">
-              <div className="tab-main" style={{backgroundColor: '#fffdaa'}} />
-              <div className="tab-title"><span>#fffdaa</span></div>
+              <div className="tab-main" style={{backgroundColor: '#FFFDAA'}} />
+              <div className="tab-title"><span>#FFFDAA</span></div>
             </div>
             <div className="color-tab">
-              <div className="tab-main" style={{backgroundColor: '#53d8fb'}} />
-              <div className="tab-title"><span>#53d8fb</span></div>
+              <div className="tab-main" style={{backgroundColor: '#53D8FB'}} />
+              <div className="tab-title"><span>#53D8FB</span></div>
             </div>
             <div className="color-tab">
-              <div className="tab-main" style={{backgroundColor: '#0b3059'}} />
-              <div className="tab-title"><span>#0b3059</span></div>
+              <div className="tab-main" style={{backgroundColor: '#0B3059'}} />
+              <div className="tab-title"><span>#0B3059</span></div>
             </div>
           </div>
           <br />
@@ -101,7 +101,7 @@ export default function EfA () {
             <ul>
               <li>CSS3</li>
               <li>HTML</li>
-              <li>Javascript</li>
+              <li>jQuery</li>
             </ul>
           </div>
           <br />

@@ -92,7 +92,7 @@ $(document).ready(function () {
 
       if (windowTop > smallHeaderTop) {
         calc = (windowTop - smallHeaderTop) / 2
-        }
+      }
 
       $smallHeader.css({'background-position': `center ${calc}px`});
     }
@@ -254,6 +254,7 @@ $(document).ready(function () {
       $headerImage.removeClass('scale-up')
 
       //remove parallax scrolling off header image
+      //$headerImage.css({'background-position': `center 0px`});
       $headerImage.removeClass('scroll-header');
       window.openedSection = false;
 

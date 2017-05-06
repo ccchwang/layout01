@@ -58,7 +58,7 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _animation = __webpack_require__(467);
+	var _animation = __webpack_require__(468);
 	
 	var _animation2 = _interopRequireDefault(_animation);
 	
@@ -22182,15 +22182,15 @@
 	
 	var _Work2 = _interopRequireDefault(_Work);
 	
-	var _Contact = __webpack_require__(447);
+	var _Contact = __webpack_require__(448);
 	
 	var _Contact2 = _interopRequireDefault(_Contact);
 	
-	var _Footer = __webpack_require__(448);
+	var _Footer = __webpack_require__(449);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
-	var _MainMenu = __webpack_require__(449);
+	var _MainMenu = __webpack_require__(450);
 	
 	var _MainMenu2 = _interopRequireDefault(_MainMenu);
 	
@@ -41959,7 +41959,7 @@
 	
 	var _Macbox2 = _interopRequireDefault(_Macbox);
 	
-	var _Nonprof = __webpack_require__(468);
+	var _Nonprof = __webpack_require__(447);
 	
 	var _Nonprof2 = _interopRequireDefault(_Nonprof);
 	
@@ -43145,6 +43145,322 @@
 /* 447 */
 /***/ function(module, exports, __webpack_require__) {
 
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = EfA;
+	
+	var _react = __webpack_require__(6);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function EfA() {
+	
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "work-item closed small-screen", id: "nonprof" },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "work-item-header" },
+	      _react2.default.createElement("div", { className: "header-image img-responsive", style: { backgroundImage: "url('/public/images/boy.png')" } }),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "header-text-wrapper" },
+	        _react2.default.createElement(
+	          "h1",
+	          { className: "header-title" },
+	          "Education for All"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "border-wrapper" },
+	          _react2.default.createElement("div", { className: "border-top" }),
+	          _react2.default.createElement("div", { className: "border-right" }),
+	          _react2.default.createElement("div", { className: "border-bottom" }),
+	          _react2.default.createElement("div", { className: "border-left" })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "subtitle-wrapper" },
+	          _react2.default.createElement(
+	            "p",
+	            { className: "header-subtitle" },
+	            "Website Design Concept"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            { style: { marginTop: '-10px' }, className: "header-subtitle" },
+	            "CSS3, HTML"
+	          )
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "section",
+	      { className: "work-item-content about-text" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding blurb" },
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Education for a All is a website design concept for a nonprofit organization. I drew upon my four years of experience in the nonprofit space to build a layout that efficiently serves important NGO information - including bold sections for donation appeals, key successes, newsletter sign-up, and how to get involved.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "I mostly experimented with using CSS borders to create diagonal shapes that could highlight important information and be used as a recurring pattern. I also focused on"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding long centered", style: { backgroundColor: '#333', color: 'white' } },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "features-blurb" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-heading-text" },
+	            "Features",
+	            _react2.default.createElement("span", { className: "divider light" })
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "ul",
+	            null,
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Easily installable as npm package."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Natively implements React.js patterns."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Components include Navbar, Jumbotron, Drawer, and more."
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding long" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-heading-text" },
+	          "Typography",
+	          _react2.default.createElement("span", { className: "divider" })
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "font-tab" },
+	          _react2.default.createElement(
+	            "span",
+	            { className: "font-heading" },
+	            "Raleway"
+	          )
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "font-tab" },
+	          _react2.default.createElement(
+	            "span",
+	            { className: "font-heading" },
+	            "Montserrat"
+	          )
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "font-tab" },
+	          _react2.default.createElement(
+	            "span",
+	            { className: "font-heading" },
+	            "Poppins"
+	          )
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-heading-text" },
+	          "Colors",
+	          _react2.default.createElement("span", { className: "divider" })
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { style: { display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap' } },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#FF798A' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#FF798A"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#FFD867' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#FFD867"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#FFFDAA' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#FFFDAA"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#53D8FB' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#53D8FB"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "color-tab" },
+	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#0B3059' } }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "tab-title" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "#0B3059"
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement("br", null)
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding long centered", style: { backgroundColor: 'rgb(239, 239, 239)' } },
+	        _react2.default.createElement(
+	          "div",
+	          null,
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-heading-text" },
+	            "Built With",
+	            _react2.default.createElement("span", { className: "divider" })
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "ul",
+	            null,
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "CSS3"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "HTML"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "jQuery"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement("br", null)
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "work-item-section content-padding", style: { borderBottom: '1px solid gainsboro' } },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "about-heading-text" },
+	          "Src",
+	          _react2.default.createElement("span", { className: "divider" })
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Code: ",
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://github.com/chloehwang/education-for-all", target: "_blank", rel: "noopener noreferrer" },
+	            "github.com/chloehwang/education-for-all"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Demo: ",
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://macbox.herokuapp.com/", target: "_blank", rel: "noopener noreferrer" },
+	            "macbox.herokuapp.com"
+	          )
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "next-btn" },
+	          _react2.default.createElement(
+	            "span",
+	            null,
+	            "Next"
+	          )
+	        )
+	      )
+	    )
+	  );
+	}
+
+/***/ },
+/* 448 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
@@ -43179,7 +43495,7 @@
 	}
 
 /***/ },
-/* 448 */
+/* 449 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43211,7 +43527,7 @@
 	}
 
 /***/ },
-/* 449 */
+/* 450 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43272,14 +43588,14 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _menu = __webpack_require__(450);
+	var _menu = __webpack_require__(451);
 	
 	var _menu2 = _interopRequireDefault(_menu);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ },
-/* 450 */
+/* 451 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43294,11 +43610,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _item = __webpack_require__(451);
+	var _item = __webpack_require__(452);
 	
 	var _item2 = _interopRequireDefault(_item);
 	
-	var _button = __webpack_require__(466);
+	var _button = __webpack_require__(467);
 	
 	var _button2 = _interopRequireDefault(_button);
 	
@@ -43535,7 +43851,7 @@
 	exports.default = MotionMenu;
 
 /***/ },
-/* 451 */
+/* 452 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43552,7 +43868,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactMotion = __webpack_require__(452);
+	var _reactMotion = __webpack_require__(453);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -43715,7 +44031,7 @@
 	exports.default = MenuItem;
 
 /***/ },
-/* 452 */
+/* 453 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43724,34 +44040,34 @@
 	
 	function _interopRequire(obj) { return obj && obj.__esModule ? obj['default'] : obj; }
 	
-	var _Motion = __webpack_require__(453);
+	var _Motion = __webpack_require__(454);
 	
 	exports.Motion = _interopRequire(_Motion);
 	
-	var _StaggeredMotion = __webpack_require__(460);
+	var _StaggeredMotion = __webpack_require__(461);
 	
 	exports.StaggeredMotion = _interopRequire(_StaggeredMotion);
 	
-	var _TransitionMotion = __webpack_require__(461);
+	var _TransitionMotion = __webpack_require__(462);
 	
 	exports.TransitionMotion = _interopRequire(_TransitionMotion);
 	
-	var _spring = __webpack_require__(463);
+	var _spring = __webpack_require__(464);
 	
 	exports.spring = _interopRequire(_spring);
 	
-	var _presets = __webpack_require__(464);
+	var _presets = __webpack_require__(465);
 	
 	exports.presets = _interopRequire(_presets);
 	
 	// deprecated, dummy warning function
 	
-	var _reorderKeys = __webpack_require__(465);
+	var _reorderKeys = __webpack_require__(466);
 	
 	exports.reorderKeys = _interopRequire(_reorderKeys);
 
 /***/ },
-/* 453 */
+/* 454 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43762,27 +44078,27 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _mapToZero = __webpack_require__(454);
+	var _mapToZero = __webpack_require__(455);
 	
 	var _mapToZero2 = _interopRequireDefault(_mapToZero);
 	
-	var _stripStyle = __webpack_require__(455);
+	var _stripStyle = __webpack_require__(456);
 	
 	var _stripStyle2 = _interopRequireDefault(_stripStyle);
 	
-	var _stepper3 = __webpack_require__(456);
+	var _stepper3 = __webpack_require__(457);
 	
 	var _stepper4 = _interopRequireDefault(_stepper3);
 	
-	var _performanceNow = __webpack_require__(457);
+	var _performanceNow = __webpack_require__(458);
 	
 	var _performanceNow2 = _interopRequireDefault(_performanceNow);
 	
-	var _raf = __webpack_require__(458);
+	var _raf = __webpack_require__(459);
 	
 	var _raf2 = _interopRequireDefault(_raf);
 	
-	var _shouldStopAnimation = __webpack_require__(459);
+	var _shouldStopAnimation = __webpack_require__(460);
 	
 	var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
 	
@@ -43997,7 +44313,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 454 */
+/* 455 */
 /***/ function(module, exports) {
 
 	
@@ -44021,7 +44337,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 455 */
+/* 456 */
 /***/ function(module, exports) {
 
 	
@@ -44047,7 +44363,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 456 */
+/* 457 */
 /***/ function(module, exports) {
 
 	
@@ -44095,7 +44411,7 @@
 	// array reference around.
 
 /***/ },
-/* 457 */
+/* 458 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {// Generated by CoffeeScript 1.7.1
@@ -44134,10 +44450,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ },
-/* 458 */
+/* 459 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var now = __webpack_require__(457)
+	/* WEBPACK VAR INJECTION */(function(global) {var now = __webpack_require__(458)
 	  , root = typeof window === 'undefined' ? global : window
 	  , vendors = ['moz', 'webkit']
 	  , suffix = 'AnimationFrame'
@@ -44213,7 +44529,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 459 */
+/* 460 */
 /***/ function(module, exports) {
 
 	
@@ -44249,7 +44565,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 460 */
+/* 461 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44260,27 +44576,27 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _mapToZero = __webpack_require__(454);
+	var _mapToZero = __webpack_require__(455);
 	
 	var _mapToZero2 = _interopRequireDefault(_mapToZero);
 	
-	var _stripStyle = __webpack_require__(455);
+	var _stripStyle = __webpack_require__(456);
 	
 	var _stripStyle2 = _interopRequireDefault(_stripStyle);
 	
-	var _stepper3 = __webpack_require__(456);
+	var _stepper3 = __webpack_require__(457);
 	
 	var _stepper4 = _interopRequireDefault(_stepper3);
 	
-	var _performanceNow = __webpack_require__(457);
+	var _performanceNow = __webpack_require__(458);
 	
 	var _performanceNow2 = _interopRequireDefault(_performanceNow);
 	
-	var _raf = __webpack_require__(458);
+	var _raf = __webpack_require__(459);
 	
 	var _raf2 = _interopRequireDefault(_raf);
 	
-	var _shouldStopAnimation = __webpack_require__(459);
+	var _shouldStopAnimation = __webpack_require__(460);
 	
 	var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
 	
@@ -44516,7 +44832,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 461 */
+/* 462 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44527,31 +44843,31 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _mapToZero = __webpack_require__(454);
+	var _mapToZero = __webpack_require__(455);
 	
 	var _mapToZero2 = _interopRequireDefault(_mapToZero);
 	
-	var _stripStyle = __webpack_require__(455);
+	var _stripStyle = __webpack_require__(456);
 	
 	var _stripStyle2 = _interopRequireDefault(_stripStyle);
 	
-	var _stepper3 = __webpack_require__(456);
+	var _stepper3 = __webpack_require__(457);
 	
 	var _stepper4 = _interopRequireDefault(_stepper3);
 	
-	var _mergeDiff = __webpack_require__(462);
+	var _mergeDiff = __webpack_require__(463);
 	
 	var _mergeDiff2 = _interopRequireDefault(_mergeDiff);
 	
-	var _performanceNow = __webpack_require__(457);
+	var _performanceNow = __webpack_require__(458);
 	
 	var _performanceNow2 = _interopRequireDefault(_performanceNow);
 	
-	var _raf = __webpack_require__(458);
+	var _raf = __webpack_require__(459);
 	
 	var _raf2 = _interopRequireDefault(_raf);
 	
-	var _shouldStopAnimation = __webpack_require__(459);
+	var _shouldStopAnimation = __webpack_require__(460);
 	
 	var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
 	
@@ -45007,7 +45323,7 @@
 	// that you've unmounted but that's still animating. This is where it lives
 
 /***/ },
-/* 462 */
+/* 463 */
 /***/ function(module, exports) {
 
 	
@@ -45120,7 +45436,7 @@
 	// to loop through and find a key's index each time), but I no longer care
 
 /***/ },
-/* 463 */
+/* 464 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45133,7 +45449,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _presets = __webpack_require__(464);
+	var _presets = __webpack_require__(465);
 	
 	var _presets2 = _interopRequireDefault(_presets);
 	
@@ -45148,7 +45464,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 464 */
+/* 465 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -45163,7 +45479,7 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 465 */
+/* 466 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -45186,7 +45502,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ },
-/* 466 */
+/* 467 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45203,7 +45519,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactMotion = __webpack_require__(452);
+	var _reactMotion = __webpack_require__(453);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -45313,7 +45629,7 @@
 	exports.default = MenuButton;
 
 /***/ },
-/* 467 */
+/* 468 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -45559,6 +45875,7 @@
 	        $headerImage.removeClass('scale-up');
 	
 	        //remove parallax scrolling off header image
+	        //$headerImage.css({'background-position': `center 0px`});
 	        $headerImage.removeClass('scroll-header');
 	        window.openedSection = false;
 	
@@ -45616,322 +45933,6 @@
 	      } });
 	  });
 	});
-
-/***/ },
-/* 468 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = EfA;
-	
-	var _react = __webpack_require__(6);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function EfA() {
-	
-	  return _react2.default.createElement(
-	    "div",
-	    { className: "work-item closed small-screen", id: "nonprof" },
-	    _react2.default.createElement(
-	      "div",
-	      { className: "work-item-header" },
-	      _react2.default.createElement("div", { className: "header-image img-responsive", style: { backgroundImage: "url('/public/images/3.png')" } }),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "header-text-wrapper" },
-	        _react2.default.createElement(
-	          "h1",
-	          { className: "header-title" },
-	          "Education for All"
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "border-wrapper" },
-	          _react2.default.createElement("div", { className: "border-top" }),
-	          _react2.default.createElement("div", { className: "border-right" }),
-	          _react2.default.createElement("div", { className: "border-bottom" }),
-	          _react2.default.createElement("div", { className: "border-left" })
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "subtitle-wrapper" },
-	          _react2.default.createElement(
-	            "p",
-	            { className: "header-subtitle" },
-	            "Website Design Concept"
-	          ),
-	          _react2.default.createElement(
-	            "p",
-	            { style: { marginTop: '-10px' }, className: "header-subtitle" },
-	            "CSS3, HTML"
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "section",
-	      { className: "work-item-content about-text" },
-	      _react2.default.createElement(
-	        "div",
-	        { className: "work-item-section content-padding blurb" },
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Education for a All is a website design concept for a nonprofit organization. I drew upon my four years of experience in the nonprofit space to build a layout that efficiently serves important NGO information - including bold sections for donation appeals, key successes, newsletter sign-up, and how to get involved.",
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement("br", null),
-	          "I mostly experimented with using CSS borders to create diagonal shapes that could highlight important information and be used as a recurring pattern. I also focused on"
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "work-item-section content-padding long centered", style: { backgroundColor: '#333', color: 'white' } },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "features-blurb" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "about-heading-text" },
-	            "Features",
-	            _react2.default.createElement("span", { className: "divider light" })
-	          ),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement(
-	            "ul",
-	            null,
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "Easily installable as npm package."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "Natively implements React.js patterns."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "Components include Navbar, Jumbotron, Drawer, and more."
-	            )
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "work-item-section content-padding long" },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "about-heading-text" },
-	          "Typography",
-	          _react2.default.createElement("span", { className: "divider" })
-	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "font-tab" },
-	          _react2.default.createElement(
-	            "span",
-	            { className: "font-heading" },
-	            "Raleway"
-	          )
-	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "font-tab" },
-	          _react2.default.createElement(
-	            "span",
-	            { className: "font-heading" },
-	            "Montserrat"
-	          )
-	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "font-tab" },
-	          _react2.default.createElement(
-	            "span",
-	            { className: "font-heading" },
-	            "Poppins"
-	          )
-	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "about-heading-text" },
-	          "Colors",
-	          _react2.default.createElement("span", { className: "divider" })
-	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement(
-	          "div",
-	          { style: { display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap' } },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "color-tab" },
-	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#f56476' } }),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "tab-title" },
-	              _react2.default.createElement(
-	                "span",
-	                null,
-	                "#f56476"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "color-tab" },
-	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#f7e08e' } }),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "tab-title" },
-	              _react2.default.createElement(
-	                "span",
-	                null,
-	                "#f7e08e"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "color-tab" },
-	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#fffdaa' } }),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "tab-title" },
-	              _react2.default.createElement(
-	                "span",
-	                null,
-	                "#fffdaa"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "color-tab" },
-	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#53d8fb' } }),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "tab-title" },
-	              _react2.default.createElement(
-	                "span",
-	                null,
-	                "#53d8fb"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "color-tab" },
-	            _react2.default.createElement("div", { className: "tab-main", style: { backgroundColor: '#0b3059' } }),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "tab-title" },
-	              _react2.default.createElement(
-	                "span",
-	                null,
-	                "#0b3059"
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement("br", null)
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "work-item-section content-padding long centered", style: { backgroundColor: 'rgb(239, 239, 239)' } },
-	        _react2.default.createElement(
-	          "div",
-	          null,
-	          _react2.default.createElement(
-	            "div",
-	            { className: "about-heading-text" },
-	            "Built With",
-	            _react2.default.createElement("span", { className: "divider" })
-	          ),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement(
-	            "ul",
-	            null,
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "CSS3"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "HTML"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "Javascript"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement("br", null)
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "work-item-section content-padding", style: { borderBottom: '1px solid gainsboro' } },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "about-heading-text" },
-	          "Src",
-	          _react2.default.createElement("span", { className: "divider" })
-	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Code: ",
-	          _react2.default.createElement(
-	            "a",
-	            { href: "https://github.com/chloehwang/education-for-all", target: "_blank", rel: "noopener noreferrer" },
-	            "github.com/chloehwang/education-for-all"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Demo: ",
-	          _react2.default.createElement(
-	            "a",
-	            { href: "https://macbox.herokuapp.com/", target: "_blank", rel: "noopener noreferrer" },
-	            "macbox.herokuapp.com"
-	          )
-	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "next-btn" },
-	          _react2.default.createElement(
-	            "span",
-	            null,
-	            "Next"
-	          )
-	        )
-	      )
-	    )
-	  );
-	}
 
 /***/ }
 /******/ ]);
