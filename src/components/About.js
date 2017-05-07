@@ -14,7 +14,7 @@ export default function About () {
 
       <div style={{maxWidth: '850px', margin: '0 auto'}}>
         {/* INTRO */}
-        <div className="about-intro">I’m a <span  className='intro-emphasis'>FRONTEND WEB DEVELOPER</span> specializing in <span  className='intro-emphasis'>JAVASCRIPT</span> and the <span  className='intro-emphasis'>NERD stack.</span> I'm currently seeking a creative role that will allow me to build stunning UX/UI. You can find my resume <span className='intro-emphasis'>HERE.</span></div>
+        <div className="about-intro">I’m a <span  className='intro-emphasis'>FRONTEND WEB DEVELOPER</span> specializing in <span  className='intro-emphasis'>JAVASCRIPT</span> and the <span  className='intro-emphasis'>NERD stack.</span> I'm currently seeking a creative role that will allow me to build stunning UX/UI. You can find my resume <span className='intro-emphasis resume-link'>HERE.</span></div>
         <br /><br />
 
         {/* MAIN CONTENT CONTAINER */}

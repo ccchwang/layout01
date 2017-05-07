@@ -354,7 +354,8 @@ svg.intro {
 }
 
 
-#about-btn::before, #work-btn::before, #contact-btn::before, .contact-tool::before {
+#about-btn::before, #work-btn::before, #contact-btn::before, .contact-tool::before,
+.resume-link::before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -362,8 +363,20 @@ svg.intro {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: $highlight-color;
   transition: 0.3s;
+}
+
+#about-btn::before, #work-btn::before, #contact-btn::before, .contact-tool::before {
+  background-color: $highlight-color;
+}
+
+.resume-link::before {
+  border-bottom: 3px solid #333;
+}
+
+.resume-link {
+  position: relative;
+  cursor: pointer
 }
 
 #about-btn:hover, #work-btn:hover, #contact-btn:hover, .contact-tool:hover {
@@ -377,7 +390,8 @@ svg.intro {
 
 #about-btn:focus::before, #about-btn:hover::before,
 #work-btn:focus::before, #work-btn:hover::before,
-#contact-btn:focus::before, #contact-btn:hover::before, .contact-tool:hover::before {
+#contact-btn:focus::before, #contact-btn:hover::before, .contact-tool:hover::before,
+.resume-link:hover::before {
   width: 100%;
 }
 
