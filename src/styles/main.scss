@@ -354,7 +354,7 @@ svg.intro {
 }
 
 
-#about-btn::before, #work-btn::before, #contact-btn::before {
+#about-btn::before, #work-btn::before, #contact-btn::before, .contact-tool::before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -366,18 +366,18 @@ svg.intro {
   transition: 0.3s;
 }
 
-#about-btn:hover, #work-btn:hover, #contact-btn:hover {
+#about-btn:hover, #work-btn:hover, #contact-btn:hover, .contact-tool:hover {
   color: $secondary-color !important;
   transition: 0.3s
 }
 
-#about-btn, #work-btn, #contact-btn {
+#about-btn, #work-btn, #contact-btn, .contact-tool {
   transition: color 0.3s
 }
 
 #about-btn:focus::before, #about-btn:hover::before,
 #work-btn:focus::before, #work-btn:hover::before,
-#contact-btn:focus::before, #contact-btn:hover::before {
+#contact-btn:focus::before, #contact-btn:hover::before, .contact-tool:hover::before {
   width: 100%;
 }
 
@@ -802,7 +802,9 @@ svg.intro {
 
 .contact-toolbar {
   padding-bottom: 60px;
-  h4 {
+  .contact-tool {
+    position: relative;
+    z-index: 0;
     font-size: 16px;
     font-weight: 900;
     color: white;

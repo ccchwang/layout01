@@ -22,10 +22,10 @@ export default function Contact () {
             <br /><br />
             <span className="video-date">Reach me at:</span>
             <div className="contact-toolbar">
-              <h4>Github</h4>
-              <h4>LinkedIn</h4>
-              <h4>Email</h4>
-              <h4>Resume</h4>
+              <a href="https://github.com/chloehwang" target="_blank" rel="noopener noreferrer"><h4 className="contact-tool">Github</h4></a>
+              <a href="https://www.linkedin.com/in/chloehwang/" target="_blank" rel="noopener noreferrer"><h4 className="contact-tool">LinkedIn</h4></a>
+              <a href="mailto:c.chloeh@gmail.com?Subject=Let%27s%20Chat"><h4 className="contact-tool">Email</h4></a>
+              <a href="https://github.com/chloehwang/" target="_blank" rel="noopener noreferrer"><h4 className="contact-tool">Resume</h4></a>
             </div>
           </div>
 
