@@ -216,21 +216,11 @@ $(document).ready(function () {
         // }});
 
         //show x button
-        $xBtn.css('visibility', 'visible');
-        TweenLite.to($xBtnTop, 0.16, {right:0, delay: 0.8, onComplete: animateRight})
-
-        function animateRight() {
-          TweenLite.to($xBtnRight, 0.16, {bottom:0, onComplete: animateBottom})
-        }
-        function animateBottom() {
-          TweenLite.to($xBtnBottom, 0.16, {left:0, onComplete: animateLeft})
-        }
-        function animateLeft() {
-          TweenLite.to($xBtnLeft, 0.16, {top:0, onComplete: animateP})
-        }
-        function animateP() {
-          TweenLite.to($xBtnP, 0.18, {left:'4.5px'})
-        }
+        $xBtnTop.toggleClass('animate');
+        $xBtnRight.toggleClass('animate');
+        $xBtnBottom.toggleClass('animate');
+        $xBtnLeft.toggleClass('animate');
+        $xBtnP.toggleClass('animate');
       }});
 
 
@@ -263,23 +253,14 @@ $(document).ready(function () {
       $openedElem.addClass('closed');
       $openedElem.removeClass('opened')
 
-      //hide x button
-      TweenLite.to($xBtnP, 0.2, {left:'-46px', onComplete: animateLeft})
 
-      function animateLeft() {
-        TweenLite.to($xBtnLeft, 0.2, {top:'100%', delay: 0.1, onComplete: animateBottom})
-      }
-      function animateBottom() {
-        TweenLite.to($xBtnBottom, 0.2, {left:'100%', onComplete: animateRight})
-      }
-      function animateRight() {
-        TweenLite.to($xBtnRight, 0.2, {bottom:'100%', onComplete: animateTop})
-      }
-      function animateTop() {
-        TweenLite.to($xBtnTop, 0.2, {right:'100%', onComplete: function(){
-         $xBtn.css('visibility', 'hidden');
-        }})
-      }
+      //hide x button
+      $xBtnTop.toggleClass('animate');
+      $xBtnRight.toggleClass('animate');
+      $xBtnBottom.toggleClass('animate');
+      $xBtnLeft.toggleClass('animate');
+      $xBtnP.toggleClass('animate');
+
 
       setTimeout(function(){
         //remove height from hidden content

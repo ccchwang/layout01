@@ -363,15 +363,16 @@ svg.intro {
   height: 100%;
   top: 0;
   left: 0;
-  transition: 0.3s;
 }
 
 #about-btn::before, #work-btn::before, #contact-btn::before, .contact-tool::before {
   background-color: $highlight-color;
+  transition: 0.3s;
 }
 
 .resume-link::before {
   border-bottom: 3px solid #333;
+  transition: 0.2s;
 }
 
 .resume-link {
@@ -633,58 +634,64 @@ svg.intro {
   position: absolute;
   margin: 0;
   top: 20.5px;
-  left: -104px;
+  left: -106px;
   transition: 0.6s 0.3s;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-
-
-
-
-.border-top {
+.border-top::before,
+.border-right::before,
+.border-left::before,
+.border-bottom::before {
+  content: '';
   position: absolute;
+}
+
+.border-top::before,
+.border-bottom::before {
+  transition: width 0.2s $ease-border;
+  -webkit-transition: width 0.2s $ease-border;
+}
+
+.border-right::before,
+.border-left::before {
+  transition: height 0.2s $ease-border;
+  -webkit-transition: height 0.2s $ease-border;
+}
+
+.border-top::before {
   border-top: $main-border;
   top: 0;
-  width: 168px;
-  right: 50%;
-  transition: right 0.2s 0.6s;
-  transition-timing-function: $ease-border;
+  left: 0;
+  width: 50%;
+  transition-delay: 0.6s;
 }
 
-.border-bottom {
-  position: absolute;
+.border-bottom::before {
   border-bottom: $main-border;
   top: 0;
-  width: 168px;
-  height: 64.8px;
-  left: 100%;
-  transition: left 0.2s 0.2s;
-  transition-timing-function: $ease-border;
-}
-
-.border-right {
-  position: absolute;
-  border-right: $main-border;
-  height: 64.8px;
+  width: 0%;
+  height: 100%;
   right: 0;
-  bottom: 100%;
-  transition: bottom 0.2s 0.4s;
-  transition-timing-function: $ease-border;
+  transition-delay: 0.2s;
 }
 
-.border-left {
-  position: absolute;
+.border-right::before {
   border-right: $main-border;
-  height: 64.8px;
+  height: 0%;
+  right: 0;
+  top: 0;
+  transition-delay: 0.4s;
+}
+
+.border-left::before {
+  border-right: $main-border;
+  height: 0%;
   left: 0;
-  top: 100%;
-  transition: top 0.2s;
-  transition-timing-function: $ease-border;
+  bottom: 0;
 }
 
 .x-btn {
-  visibility: hidden;
   position: absolute;
   z-index: 1;
   top: 20px;
@@ -697,7 +704,8 @@ svg.intro {
 
 
 
-.x-btn > p {
+.x-btn > p::before {
+  content: 'X';
   font-family: "Poppins";
   color: white;
   background-color: #424242;
@@ -708,39 +716,74 @@ svg.intro {
   margin: 0;
   top: -1.6px;
   left: -46px;
+  transition: 0.2s
 }
 
-.x-btn > .top {
+.x-btn > .top::before {
+  content: '';
   position: absolute;
   border-top: $main-border;
   top: 0;
-  width: 50px;
-  right: 100%;
+  left: 0;
+  width: 0%;
+  transition: 0.2s 0.7s
 }
 
-.x-btn > .right {
+.x-btn > .right::before {
+  content: '';
   position: absolute;
   border-right: $main-border;
-  height: 50px;
+  height: 0%;
   right: 0;
-  bottom: 100%;
+  top: 0;
+  transition: 0.2s 0.5s
 }
 
-.x-btn > .bottom {
+.x-btn > .bottom::before {
+  content: '';
   position: absolute;
   border-bottom: $main-border;
   top: 0;
-  width: 50px;
-  height: 50px;
-  left: 100%;
+  width: 0%;
+  height: 100%;
+  right: 0;
+  transition: 0.2s 0.3s
 }
 
-.x-btn > .left {
+.x-btn > .left::before {
+  content: '';
   position: absolute;
   border-right: $main-border;
-  height: 50px;
+  height: 0%;
   left: 0;
-  top: 100%;
+  bottom: 0;
+  transition: 0.2s 0.1s
+}
+
+//ANIMATION CLASSES
+.x-btn > .top.animate::before {
+  width: 100%;
+  transition: width 0.16s 0.8s
+}
+
+.x-btn > .right.animate::before {
+  height: 100%;
+  transition: height 0.16s 0.96s
+}
+
+.x-btn > .bottom.animate::before {
+  width: 100%;
+  transition: width 0.16s 1.12s
+}
+
+.x-btn > .left.animate::before {
+  height: 100%;
+  transition: height 0.16s 1.28s
+}
+
+.x-btn > p.animate::before {
+  left: 4.5px;
+  transition: left 0.18s 1.44s
 }
 
 // WORK - HOVER
@@ -760,28 +803,24 @@ svg.intro {
     -webkit-transform: scale(1.4)
   }
 
-  .border-top {
-    right: 0;
-    transition: right 0.2s;
+  .border-top::before, .border-bottom::before {
+    width: 100%;
+    transition: width 0.2s;
     transition-timing-function: $ease-border;
   }
-  .border-bottom {
-    left: 0;
-    transition: left 0.2s;
+  .border-bottom::before {
     transition-delay: 0.4s;
+  }
+  .border-right::before, .border-left::before {
+    height: 100%;
+    transition: height 0.2s;
     transition-timing-function: $ease-border;
   }
-  .border-right {
-    bottom: 0;
-    transition: bottom 0.2s;
+  .border-right::before {
     transition-delay: 0.2s;
-    transition-timing-function: $ease-border;
   }
-  .border-left {
-    top: 0;
-    transition: top 0.2s;
+  .border-left::before {
     transition-delay: 0.6s;
-    transition-timing-function: $ease-border;
   }
 
   .subtitle-wrapper {
@@ -792,6 +831,7 @@ svg.intro {
 
   .border-wrapper:hover {
     filter: grayscale(0) sepia(100%) contrast(100%) saturate(7.5);
+    -webkit-filter: grayscale(0) sepia(100%) contrast(100%) saturate(7.5);
   }
 }
 

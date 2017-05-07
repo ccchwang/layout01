@@ -21,7 +21,7 @@ export default function Work () {
 
         {/*** CLOSE BUTTON ***/}
         <div className="x-btn">
-          <p>X</p>
+          <p />
           <div className="top" />
           <div className="right" />
           <div className="bottom" />
