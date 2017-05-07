@@ -811,7 +811,8 @@ svg.intro {
     background-color: #424242;
     padding: 10px 15px;
     display: inline-block;
-    margin-right: 15px
+    margin-right: 15px;
+    margin-bottom: 5px;
   }
 }
 
@@ -902,11 +903,6 @@ svg.intro {
   }
 
   //work - header 321
-  .header-text-wrapper {
-    padding-right: 50px;
-    padding-left: 50px
-  }
-
   .header-title {
     font-size: 4em;
   }
@@ -1027,7 +1023,7 @@ svg.intro {
 
   //contact - 668
   .contact-toolbar {
-    h4 {
+    .contact-tool {
       font-size: 18px;
     }
   }
