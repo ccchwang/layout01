@@ -119,7 +119,7 @@ export default function EfA () {
           <p>Code: <a href="https://github.com/chloehwang/education-for-all" target="_blank" rel="noopener noreferrer">github.com/chloehwang/education-for-all</a></p>
           <p>Demo: <a href="https://macbox.herokuapp.com/" target="_blank" rel="noopener noreferrer">macbox.herokuapp.com</a></p>
           <br /><br /><br />
-          <div className="next-btn"><span>Next</span></div>
+          <div className="next-btn nonprof"><span>Next</span></div>
         </div>
       </section>
     </div>

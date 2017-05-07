@@ -12,6 +12,14 @@ $(document).ready(function () {
         $body = $('body'),
         $work = $('#work-main'),
         $about = $('#about-main'),
+        $omni = $('#omni'),
+        $rdi = $('#rdi'),
+        $macbox = $('#macbox'),
+        $nonprof = $('#nonprof'),
+        $nextBtnOmni = $('.next-btn.omni'),
+        $nextBtnRdi = $('.next-btn.rdi'),
+        $nextBtnMacbox = $('.next-btn.macbox'),
+        $nextBtnNonprof = $('.next-btn.nonprof'),
         $workHeader = $('#work-header'),
         $workContent = $('.work-content'),
         $aboutHeader = $('#about-header'),
@@ -216,18 +224,44 @@ $(document).ready(function () {
         // }});
 
         //show x button
-        $xBtnTop.toggleClass('animate');
-        $xBtnRight.toggleClass('animate');
-        $xBtnBottom.toggleClass('animate');
-        $xBtnLeft.toggleClass('animate');
-        $xBtnP.toggleClass('animate');
+        $xBtnTop.addClass('animate');
+        $xBtnRight.addClass('animate');
+        $xBtnBottom.addClass('animate');
+        $xBtnLeft.addClass('animate');
+        $xBtnP.addClass('animate');
       }});
 
 
     })
   })
 
+$nextBtnOmni.click(function(e) {
+  $xBtn.trigger( "click" );
+  setTimeout(function(){
+   $rdi.trigger( "click" );
+  }, 1950)
+})
 
+$nextBtnRdi.click(function(e) {
+  $xBtn.trigger( "click" );
+  setTimeout(function(){
+   $macbox.trigger( "click" );
+  }, 1950)
+})
+
+$nextBtnMacbox.click(function(e) {
+  $xBtn.trigger( "click" );
+  setTimeout(function(){
+   $nonprof.trigger( "click" );
+  }, 1950)
+})
+
+$nextBtnNonprof.click(function(e) {
+  $xBtn.trigger( "click" );
+  setTimeout(function(){
+   $omni.trigger( "click" );
+  }, 1950)
+})
 
 
 
@@ -255,11 +289,11 @@ $(document).ready(function () {
 
 
       //hide x button
-      $xBtnTop.toggleClass('animate');
-      $xBtnRight.toggleClass('animate');
-      $xBtnBottom.toggleClass('animate');
-      $xBtnLeft.toggleClass('animate');
-      $xBtnP.toggleClass('animate');
+      $xBtnTop.removeClass('animate');
+      $xBtnRight.removeClass('animate');
+      $xBtnBottom.removeClass('animate');
+      $xBtnLeft.removeClass('animate');
+      $xBtnP.removeClass('animate');
 
 
       setTimeout(function(){

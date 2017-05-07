@@ -141,7 +141,7 @@ export default function Omni () {
           <p>Code (web): <a href="https://github.com/Omni-Project/omni-desktop" target="_blank" rel="noopener noreferrer">github.com/Omni-Project/omni-desktop</a></p>
           <p>Demo (web): <a href="https://omni-project.herokuapp.com/" target="_blank" rel="noopener noreferrer">omni-project.herokuapp.com</a></p>
           <br /><br /><br />
-          <div className="next-btn"><span>Next</span></div>
+          <div className="next-btn omni"><span>Next</span></div>
         </div>
       </section>
     </div>

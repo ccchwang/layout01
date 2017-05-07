@@ -139,7 +139,7 @@ export default function Rdi () {
           <p>Code: <a href="https://github.com/chloehwang/macbox" target="_blank" rel="noopener noreferrer">github.com/chloehwang/macbox</a></p>
           <p>Demo: <a href="https://macbox.herokuapp.com/" target="_blank" rel="noopener noreferrer">macbox.herokuapp.com</a></p>
           <br /><br /><br />
-          <div className="next-btn"><span>Next</span></div>
+          <div className="next-btn macbox"><span>Next</span></div>
         </div>
       </section>
     </div>

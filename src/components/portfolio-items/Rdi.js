@@ -124,7 +124,7 @@ export default function Rdi () {
           <p>NPM: <a href="https://www.npmjs.com/package/react-dynamic-ui" target="_blank" rel="noopener noreferrer">npmjs.com/package/react-dynamic-ui</a></p>
           <p>Demo: <a href="https://rdi-demo.herokuapp.com/" target="_blank" rel="noopener noreferrer">rdi-demo.herokuapp.com</a></p>
           <br /><br /><br />
-          <div className="next-btn"><span>Next</span></div>
+          <div className="next-btn rdi"><span>Next</span></div>
         </div>
       </section>
     </div>
