@@ -331,13 +331,16 @@ svg.intro {
   background-color: $highlight-color;
 }
 
-.about-content {
+.about-content, .contact-content {
   font-family: $sanserif-font;
   text-align: left;
-  height: auto;
   right: 0;
   background-color: white;
-  border-bottom: 1px solid $secondary-color
+}
+
+.about-content {
+  border-bottom: 1px solid $secondary-color;
+  height: auto;
 }
 
 .content-padding {
@@ -793,6 +796,23 @@ svg.intro {
   }
 }
 
+.contact-content {
+  min-height: 100vh
+}
+
+.contact-toolbar {
+  padding-bottom: 60px;
+  h4 {
+    font-size: 16px;
+    font-weight: 900;
+    color: white;
+    background-color: #424242;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-right: 15px
+  }
+}
+
 
 //UTIL CLASSES FOR TRANSITIONS
 .hide-section {
@@ -1001,6 +1021,13 @@ svg.intro {
 
   .features-blurb {
     width: 70%
+  }
+
+  //contact - 668
+  .contact-toolbar {
+    h4 {
+      font-size: 18px;
+    }
   }
 }
 

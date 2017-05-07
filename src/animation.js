@@ -81,19 +81,20 @@ $(document).ready(function () {
     }
 
 
-
   //*** PARALLAX SCROLLING FOR HEADER IMAGE
+  let headerHeight =  $itemHeader.height();
+
   $window.on('scroll', function () {
     if (window.openedSection) {
       let $smallHeader = $('.scroll-header');
       let smallHeaderTop = $smallHeader.offset().top;
+      let smallHeaderHeight = smallHeaderTop + headerHeight;
       let windowTop = $window.scrollTop();
       let calc = 0;
 
-      if (windowTop > smallHeaderTop) {
-        calc = (windowTop - smallHeaderTop) / 2
+      if (windowTop > smallHeaderTop && windowTop <= smallHeaderHeight) {
+        calc = (windowTop - smallHeaderTop) / 2;
       }
-
       $smallHeader.css({'background-position': `center ${calc}px`});
     }
   });
@@ -254,8 +255,8 @@ $(document).ready(function () {
       $headerImage.removeClass('scale-up')
 
       //remove parallax scrolling off header image
-      //$headerImage.css({'background-position': `center 0px`});
       $headerImage.removeClass('scroll-header');
+      TweenLite.to($headerImage, 0.5, {'background-position': 'center 0px'})
       window.openedSection = false;
 
       //make header img clickable

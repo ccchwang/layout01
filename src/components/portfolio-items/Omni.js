@@ -30,7 +30,7 @@ export default function Omni () {
         <div className="work-item-section content-padding blurb">
           <p><span style={{fontWeight: '600'}}>Omni is an app that believes in the power of dreams.</span>
           <br /><br />
-          With Omni, users can log their dreams via the web or mobile app. Once logged, Omni analyzes it for the values of five key emotions - surprise, anger, fear, sadness, and joy. We then uses these values to produce a unique 3D/VR representation of the dream - lovingly called a dream ‘sprite’. These sprites give users a creative, visual way to explore the underlying emotions behind their dreams.
+          With Omni, users can log their dreams via the web or mobile app. Once logged, Omni analyzes it for the values of five key emotions&mdash;surprise, anger, fear, sadness, and joy. We then uses these values to produce a unique 3D/VR representation of the dream&mdash;lovingly called a dream ‘sprite’. These sprites give users a creative, visual way to explore the underlying emotions behind their dreams.
           <br /><br />
           The app also provides a personalized dashboard of sleep statistics. Lastly, Omni gives you the chance to explore a 3D realm populated with the sprites of other users, allowing you to take a peek into the subconscious of other people.
           </p>
@@ -41,7 +41,7 @@ export default function Omni () {
           <div className="features-blurb">
             <div className="about-heading-text">Features<span className="divider light" /></div>
             <br />
-            <span className="mini-heading" style={{color: '#f7fb8e'}}>Mobile App</span>
+            <span className="mini-heading" style={{color: '#f7fb8e', fontWeight: 900, fontStyle: 'normal'}}>Mobile App</span>
             <ul>
               <li>Add a new dream entry.</li>
               <li>View past dream entries.</li>
@@ -50,7 +50,7 @@ export default function Omni () {
               <li>View certain sleep and dream statistics.</li>
             </ul>
             <br />
-            <span className="mini-heading" style={{color: '#f7fb8e'}}>Web App</span>
+            <span className="mini-heading" style={{color: '#f7fb8e', fontWeight: 900, fontStyle: 'normal'}}>Web App</span>
             <ul>
               <li>All functionalities of mobile.</li>
               <li>Edit/delete a dream.</li>
@@ -127,7 +127,7 @@ export default function Omni () {
           <div className="about-heading-text">Presentation<span className="divider light" /></div>
           <br /><br /><br />
           <div className="video-container">
-            <span className="video-date" style={{color: '#f7fb8e'}}>April 2017</span>
+            <span className="video-date" style={{color: '#f7fb8e', fontWeight: 600}}>April 2017</span>
             <span className="video-title">Presenting Omni:<br />A Dream Journal/Analysis App</span>
             <br />
             <iframe style={{width: '100%'}} height="315" src="https://www.youtube.com/embed/VQYodA9GZ20" frameBorder="0" allowFullScreen />

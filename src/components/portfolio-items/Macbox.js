@@ -17,7 +17,7 @@ export default function Rdi () {
             <div className="border-left" />
           </div>
           <div className="subtitle-wrapper">
-            <p className="header-subtitle">Prototype e-commerce site</p>
+            <p className="header-subtitle">Prototype e-commerce platform</p>
             <p style={{marginTop: '-10px'}} className="header-subtitle">NERD Stack, React-Redux, CSS3</p>
           </div>
         </div>
@@ -28,7 +28,9 @@ export default function Rdi () {
 
         {/* blurb */}
         <div className="work-item-section content-padding blurb">
-          <p>Macbox is a prototype e-commerce site.</p>
+          <p>Macbox is a prototype e-commerce platform built with PostgreSQL for data management in the backend and Redux to keep track of state in the frontend. It is a fullstack Javascript app and fully functional&mdash;users can complete the entire shopping flow, from browse to checkout.
+          <br /><br />
+          The objective of this project was to hone our skills in schema design, RESTful routes, authentication, and deployment. <span style={{fontWeight: '600'}}>I also used it as a way to focus on design and UI.</span> I learned the tools ReactTransitionGroup and GSAP to add animation to the site. My learnings became the basis of my talk on UI & React.js, where I demoed how to add animation to React apps.</p>
         </div>
 
         {/* features */}
@@ -37,12 +39,23 @@ export default function Rdi () {
             <div className="about-heading-text">Features<span className="divider light" /></div>
             <br />
             <ul>
-              <li>Easily installable as npm package.</li>
-              <li>Natively implements React.js patterns.</li>
-              <li>Components include Navbar, Jumbotron, Drawer, and more.</li>
-              <li>Components can be configured with various animation effects: fadeUp, fadeAppear, fadeInLeft, and fadeInRight.</li>
-              <li>Components are modular and useful on their own or together.</li>
-              <li>Designed to be unopinionated and preserve end user’s defined styles and classes.</li>
+              <li>Users can login/sign up locally, or with Facebook and Google OAuth.</li>
+              <li>Both unauthenticated guests and authenticated guests can complete the entire shopping flow:
+                <ul>
+                  <li>View products</li>
+                  <li>Share products on social networks</li>
+                  <li>Manage cart</li>
+                  <li>Checkout</li>
+                  <li>Receive email confirmation</li>
+                </ul>
+              </li>
+              <li>Additionally, authenticated users can:
+                <ul>
+                  <li>View past orders</li>
+                  <li>Leave product reviews</li>
+                  <li>Manage wishlists</li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -103,6 +116,19 @@ export default function Rdi () {
             </ul>
           </div>
           <br />
+        </div>
+
+
+        {/* presentation */}
+        <div className="work-item-section content-padding long" style={{backgroundColor: '#333', color: 'white'}}>
+          <div className="about-heading-text">Presentation<span className="divider light" /></div>
+          <br /><br /><br />
+          <div className="video-container">
+            <span className="video-date" style={{color: '#f7fb8e', fontWeight: 600}}>March 2017</span>
+            <span className="video-title">How to Leverage<br />React.js for Beautiful UI</span>
+            <br />
+            <iframe style={{width: '100%'}} height="315" src="https://www.youtube.com/embed/75XmHauQNdA" frameBorder="0" allowFullScreen />
+          </div>
         </div>
 
 

@@ -28,9 +28,9 @@ export default function EfA () {
 
         {/* blurb */}
         <div className="work-item-section content-padding blurb">
-          <p>Education for a All is a website design concept for a nonprofit organization. I drew upon my four years of experience in the nonprofit space to build a layout that efficiently serves important NGO information - including bold sections for donation appeals, key successes, newsletter sign-up, and how to get involved.
+          <p>Education for a All is a website design concept for a nonprofit organization. I drew upon my four years of experience in the nonprofit sector to build a layout that effectively serves important NGO information&mdash;including bold sections for donation appeals, key successes, newsletter sign-up, and how to get involved.
           <br /><br />
-          I mostly experimented with using CSS borders to create diagonal shapes that could highlight important information and be used as a recurring pattern. I also focused on
+          I mainly experimented with using CSS borders to create diagonal shapes that could highlight information and be used as a recurring pattern. I also focused on responsive mobile design and colors & typography.
           </p>
         </div>
 
@@ -40,9 +40,13 @@ export default function EfA () {
             <div className="about-heading-text">Features<span className="divider light" /></div>
             <br />
             <ul>
-              <li>Easily installable as npm package.</li>
-              <li>Natively implements React.js patterns.</li>
-              <li>Components include Navbar, Jumbotron, Drawer, and more.</li>
+              <li>Top content block/hero section to introduce site.</li>
+              <li>First content block with headline/introduction and three child columns.</li>
+              <li>Second content block with bold heading and button.</li>
+              <li>Third content block with two column layout.</li>
+              <li>Fourth content block with diagonal overlay design to highlight important information.</li>
+              <li>Fifth content block with form for signup and image grid for featured content.</li>
+              <li>Footer</li>
             </ul>
           </div>
         </div>

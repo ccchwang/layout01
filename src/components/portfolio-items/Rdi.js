@@ -110,7 +110,7 @@ export default function Rdi () {
           <div className="about-heading-text">Presentation<span className="divider light" /></div>
           <br /><br /><br />
           <div className="video-container">
-            <span className="video-date" style={{color: '#f7fb8e'}}>March 2017</span>
+            <span className="video-date" style={{color: '#f7fb8e', fontWeight: 600}}>March 2017</span>
             <span className="video-title">Introducing a New UI<br />Animation Library for React.js</span>
             <br />
             <iframe style={{width: '100%'}} height="315" src="https://www.youtube.com/embed/krAzPZE3s1I" frameBorder="0" allowFullScreen />
