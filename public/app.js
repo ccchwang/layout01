@@ -41817,64 +41817,7 @@
 	            _react2.default.createElement('span', { className: 'divider' })
 	          ),
 	          _react2.default.createElement('br', null),
-	          _react2.default.createElement(
-	            'div',
-	            { style: { display: 'flex', flexDirection: 'column', alignItems: 'center' } },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'video-container' },
-	              _react2.default.createElement(
-	                'span',
-	                { className: 'video-date' },
-	                'March 2017'
-	              ),
-	              _react2.default.createElement(
-	                'span',
-	                { className: 'video-title' },
-	                'How to Leverage',
-	                _react2.default.createElement('br', null),
-	                'React.js for Beautiful UI'
-	              ),
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement('iframe', { style: { width: '100%' }, height: '315', src: 'https://www.youtube.com/embed/75XmHauQNdA', frameBorder: '0', allowFullScreen: true })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'video-container' },
-	              _react2.default.createElement(
-	                'span',
-	                { className: 'video-date' },
-	                'March 2017'
-	              ),
-	              _react2.default.createElement(
-	                'span',
-	                { className: 'video-title' },
-	                'Introducing a New UI',
-	                _react2.default.createElement('br', null),
-	                'Animation Library for React.js'
-	              ),
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement('iframe', { style: { width: '100%' }, height: '315', src: 'https://www.youtube.com/embed/krAzPZE3s1I', frameBorder: '0', allowFullScreen: true })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'video-container' },
-	              _react2.default.createElement(
-	                'span',
-	                { className: 'video-date' },
-	                'April 2017'
-	              ),
-	              _react2.default.createElement(
-	                'span',
-	                { className: 'video-title' },
-	                'Presenting Omni:',
-	                _react2.default.createElement('br', null),
-	                'A Dream Journal/Analysis App'
-	              ),
-	              _react2.default.createElement('br', null),
-	              _react2.default.createElement('iframe', { style: { width: '100%' }, height: '315', src: 'https://www.youtube.com/embed/VQYodA9GZ20', frameBorder: '0', allowFullScreen: true })
-	            )
-	          ),
+	          _react2.default.createElement('div', { style: { display: 'flex', flexDirection: 'column', alignItems: 'center' } }),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement('hr', null),
 	          _react2.default.createElement('br', null),
@@ -42346,41 +42289,6 @@
 	      ),
 	      _react2.default.createElement(
 	        "div",
-	        { className: "long", style: { backgroundColor: '#333', color: 'white' } },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "max-width content-padding work-item-section" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "about-heading-text" },
-	            "Presentation",
-	            _react2.default.createElement("span", { className: "divider light" })
-	          ),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "video-container" },
-	            _react2.default.createElement(
-	              "span",
-	              { className: "video-date", style: { color: '#f7fb8e', fontWeight: 600 } },
-	              "April 2017"
-	            ),
-	            _react2.default.createElement(
-	              "span",
-	              { className: "video-title" },
-	              "Presenting Omni:",
-	              _react2.default.createElement("br", null),
-	              "A Dream Journal/Analysis App"
-	            ),
-	            _react2.default.createElement("br", null),
-	            _react2.default.createElement("iframe", { style: { width: '100%' }, height: "315", src: "https://www.youtube.com/embed/VQYodA9GZ20", frameBorder: "0", allowFullScreen: true })
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
 	        { className: "work-item-section content-padding max-width" },
 	        _react2.default.createElement(
 	          "div",
@@ -42724,41 +42632,6 @@
 	          )
 	        ),
 	        _react2.default.createElement("br", null)
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "long", style: { backgroundColor: '#333', color: 'white' } },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "max-width content-padding work-item-section" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "about-heading-text" },
-	            "Presentation",
-	            _react2.default.createElement("span", { className: "divider light" })
-	          ),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "video-container" },
-	            _react2.default.createElement(
-	              "span",
-	              { className: "video-date", style: { color: '#f7fb8e', fontWeight: 600 } },
-	              "March 2017"
-	            ),
-	            _react2.default.createElement(
-	              "span",
-	              { className: "video-title" },
-	              "Introducing a New UI",
-	              _react2.default.createElement("br", null),
-	              "Animation Library for React.js"
-	            ),
-	            _react2.default.createElement("br", null),
-	            _react2.default.createElement("iframe", { style: { width: '100%' }, height: "315", src: "https://www.youtube.com/embed/krAzPZE3s1I", frameBorder: "0", allowFullScreen: true })
-	          )
-	        )
 	      ),
 	      _react2.default.createElement(
 	        "div",
@@ -43150,41 +43023,6 @@
 	          )
 	        ),
 	        _react2.default.createElement("br", null)
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "long", style: { backgroundColor: '#333', color: 'white' } },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "max-width content-padding work-item-section" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "about-heading-text" },
-	            "Presentation",
-	            _react2.default.createElement("span", { className: "divider light" })
-	          ),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "video-container" },
-	            _react2.default.createElement(
-	              "span",
-	              { className: "video-date", style: { color: '#f7fb8e', fontWeight: 600 } },
-	              "March 2017"
-	            ),
-	            _react2.default.createElement(
-	              "span",
-	              { className: "video-title" },
-	              "How to Leverage",
-	              _react2.default.createElement("br", null),
-	              "React.js for Beautiful UI"
-	            ),
-	            _react2.default.createElement("br", null),
-	            _react2.default.createElement("iframe", { style: { width: '100%' }, height: "315", src: "https://www.youtube.com/embed/75XmHauQNdA", frameBorder: "0", allowFullScreen: true })
-	          )
-	        )
 	      ),
 	      _react2.default.createElement(
 	        "div",
