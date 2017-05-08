@@ -102,7 +102,9 @@ body.loaded {
 #menu-btn {
   width: 41px;
   height: 41px;
-  padding-top: 8px
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-item {
@@ -174,7 +176,7 @@ body.loaded {
 svg.intro {
   position: absolute;
   height: 300px;
-  width: 290px;
+  width: 1000px;
   top: 13vh;
   left: 6vw;
   z-index: 50;
@@ -942,7 +944,6 @@ svg.intro {
 
   svg.intro {
     height: 350px;
-    width: 320px;
     &.go {
       .text {
         font-size: 6.6em;
@@ -1075,7 +1076,6 @@ svg.intro {
   }
 
   svg.intro {
-    width: 400px;
     &.go {
       .text {
         font-size: 8em;
@@ -1173,18 +1173,17 @@ svg.intro {
     top: 25%;
     left: -145px;
     height: 380px;
-    width: 400px;
 
-    &.go {
-      .text-stroke {
-        stroke-dashoffset: 900;
-        stroke-dasharray: 900;
-      }
-      .text-stroke:nth-child(4) {
-        stroke-dashoffset: 300;
-        stroke-dasharray: 300;
-      }
-    }
+    // &.go {
+    //   .text-stroke {
+    //     stroke-dashoffset: 900;
+    //     stroke-dasharray: 900;
+    //   }
+    //   .text-stroke:nth-child(4) {
+    //     stroke-dashoffset: 300;
+    //     stroke-dasharray: 300;
+    //   }
+    // }
   }
 
   //ABOUT
@@ -1257,14 +1256,51 @@ svg.intro {
 
 /////////////
 }
+// @media screen and (min-width: 1300px) {
+//   svg.intro {
+//     top: 25%;
+//     left: -145px;
+//     height: 380px;
 
-
-// @media screen and (min-width: 1425px) {
-//   .about-text .grouped {
-//     width: 46%;
-//     margin-right: 0
+//     &.go {
+//       .text-stroke {
+//         stroke-dashoffset: 1390;
+//         stroke-dasharray: 1390;
+//       }
+//       .text-stroke:nth-child(4) {
+//         stroke-dashoffset: 650;
+//         stroke-dasharray: 650;
+//       }
+//     }
 //   }
 // }
+
+@media screen and (min-width: 1700px) {
+  //HEADER
+  #svg-text-2 {
+    transform: translateY(240px);
+    -webkit-transform: translateY(240px);
+  }
+  #svg-text-3 {
+    transform: translateY(320px);
+    -webkit-transform: translateY(320px);
+  }
+  .svg-text-4 {
+    transform: translateY(361px);
+    -webkit-transform: translateY(361px);
+  }
+  #small-text {
+    font-size: 2em;
+  }
+
+  svg.intro {
+    &.go {
+      .text {
+        font-size: 9em;
+      }
+    }
+  }
+}
 
 
 //***FOR SHOWING 'SEE MORE' BTN ON PHONES/TABLETS
@@ -1311,85 +1347,4 @@ svg.intro {
     }
 }
 
-
-
-// --------------------------------
-
-@mixin square($dimension) {
-  width: $dimension;
-  height: $dimension;
-}
-
-@mixin clearfix {
-  &:before, &:before {
-    display: table;
-    content: '';
-    clear: both;
-  }
-}
-
-#turt-mcsquirt {
-  @include square(60px);
-  img {
-    width: 100%;
-  }
-}
-
-#alfalfa {
-  margin: 0 auto;
-  @include square(50px);
-  img {
-    width: 100%;
-  }
-}
-
-#app {
-  text-align: center;
-}
-
-#maze {
-
-  display: inline-block;
-  padding: 30px;
-
-  .maze-row {
-
-    @include clearfix();
-
-    .maze-cell {
-
-      background-image: url(/public/images/grass.jpg);
-      background-size: cover;
-
-      $sides: ('top', 'bottom', 'left', 'right');
-
-      @each $side in $sides {
-        &.wall-#{$side} {
-          border-#{$side}: 2px solid black;
-        }
-      }
-
-      border-radius: 2px;
-
-      float: left;
-      @include square(60px);
-
-    }
-
-  }
-
-}
-
-#win {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: white;
-  margin: 0;
-  text-align: center;
-  font-family: "Helvetica Neue";
-  font-size: 52px;
-}
 
