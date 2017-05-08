@@ -1,6 +1,11 @@
 $(document).ready(function () {
 
   window.onload = function() {
+    window.loaded = true;
+
+    if (window.innerWidth <= 432) {
+      startSVGAnimation()
+    }
 
     //LOAD YOUTUBE VIDS
     (function() {
@@ -18,13 +23,6 @@ $(document).ready(function () {
           } );
         }
       })();
-
-
-    window.loaded = true;
-
-    if (window.innerWidth <= 432) {
-      startSVGAnimation()
-    }
   }
 
   const $window = $(window),
