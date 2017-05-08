@@ -7,7 +7,7 @@ export default function Macbox () {
 
       {/* macbox - header image */}
       <div className="work-item-header">
-        <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/k5.jpg')"}} />
+        <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/macbox.jpg')"}} />
         <div className="header-text-wrapper">
           <h1 className="header-title">Macbox</h1>
           <div className="border-wrapper">

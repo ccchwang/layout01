@@ -7,7 +7,7 @@ export default function EfA () {
 
       {/* Nonprof - header image */}
       <div className="work-item-header">
-        <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/boy.png')"}} />
+        <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/nonprof.jpg')"}} />
         <div className="header-text-wrapper">
           <h1 className="header-title">Education for All</h1>
           <div className="border-wrapper">
