@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function () {
 
   const $window = $(window),
@@ -31,30 +34,47 @@ $(document).ready(function () {
         $headerBorderLeft = $('#header-border-animation > .left'),
         $headerBorderBottom = $('#header-border-animation > .bottom');
 
-// window.addEventListener('load', function() {
-//     loadAnimation();
-//     loadVideos();
-//   })
 
-loadAnimation();
+
+  window.addEventListener('load', function(){
+    console.log('loaded')
+
+    $headerBorderTop.css('animation-play-state', 'running');
+    $headerBorderLeft.css('animation-play-state', 'running');
+    $headerBorderBottom.css('animation-play-state', 'running');
+
+    setTimeout(function(){
+      $svgIntro.addClass('go');
+      $body.addClass('loaded');
+      //$svgText.css('animation-play-state', 'paused')
+    }, 1500)
+    /*
+      stop circling animation
+      animate in borders
+      animate text
+
+
+    */
+
     loadVideos();
+  })
 
-  //FUNCTIONS FOR LOADING ANIMATION
-  function loadAnimation() {
-    TweenLite.to($headerBorderTop, 0.25, {left:'50%', ease: Linear.easeNone, onComplete: animateRest})
-  }
+  // //FUNCTIONS FOR LOADING ANIMATION
+  // function loadAnimation() {
+  //   TweenLite.to($headerBorderTop, 0.25, {left:'50%', ease: Linear.easeNone, onComplete: animateRest})
+  // }
 
-  function animateRest() {
-      TweenLite.to($headerBorderTop, 0.25, {left:0, ease: Linear.easeNone, onComplete: animateLeft});
-    }
+  // function animateRest() {
+  //     TweenLite.to($headerBorderTop, 0.25, {left:0, ease: Linear.easeNone, onComplete: animateLeft});
+  //   }
 
-    function animateLeft() {
-      TweenLite.to($headerBorderLeft, 0.5, {bottom:0, onComplete: animateBottom});
-    }
+  //   function animateLeft() {
+  //     TweenLite.to($headerBorderLeft, 0.5, {bottom:0, onComplete: animateBottom});
+  //   }
 
-    function animateBottom() {
-      TweenLite.to($headerBorderBottom, 0.5, {right:0, ease: Linear.easeNone, onComplete: startSVGAnimation});
-    }
+  //   function animateBottom() {
+  //     TweenLite.to($headerBorderBottom, 0.5, {right:0, ease: Linear.easeNone, onComplete: startSVGAnimation});
+  //   }
 
     // function checkLoad() {
     //   if (window.loaded) {
@@ -97,7 +117,7 @@ loadAnimation();
                 this.appendChild( iframe );
         } );
       }
-      }
+    }
 
 
   //*** PARALLAX SCROLLING FOR HEADER IMAGE

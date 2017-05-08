@@ -1624,9 +1624,16 @@ svg.intro.go .text-stroke:nth-child(4) {
     top: 7.5vh;
   }
 
+  @keyframes borderTop {
+    100% {
+      left: 0%;
+    }
+  }
+
   #header-border-animation > .top {
     border-width: 7px;
     width: 67vw;
+    animation: borderTop 0.5s linear forwards;
   }
 
   #header-border-animation > .bottom {

@@ -1191,15 +1191,37 @@ svg.intro {
     top: 7.5vh;
   }
 
+  @keyframes borderTop {
+    100% {
+      left: 0%;
+    }
+  }
+
+  @keyframes borderLeft {
+    100% {
+      bottom: 0%;
+    }
+  }
+
+  @keyframes borderBottom {
+    100% {
+      right: 0%;
+    }
+  }
+
   #header-border-animation > .top {
     border-width: 7px;
     width: 67vw;
+    animation: borderTop 0.5s $ease-expand-page forwards;
+    animation-play-state: paused
   }
 
   #header-border-animation > .bottom {
     border-width: 7px;
     height: 85vh;
     width: 67vw;
+    animation: borderBottom 0.5s $ease-expand-page forwards 1s;
+    animation-play-state: paused
   }
 
   #header-border-animation > .left {
@@ -1208,6 +1230,8 @@ svg.intro {
     height: 85vh;
     left: 0;
     bottom: 100%;
+    animation: borderLeft 0.5s $ease-expand-page forwards 0.5s;
+    animation-play-state: paused
   }
 
   #header-border {
