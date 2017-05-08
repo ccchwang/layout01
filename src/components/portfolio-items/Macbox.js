@@ -130,7 +130,7 @@ export default function Macbox () {
               <span className="video-title">How to Leverage<br />React.js for Beautiful UI</span>
               <br />
               <div className="youtube" data-embed="75XmHauQNdA">
-                <img src="https://i.ytimg.com/vi/75XmHauQNdA/hqdefault.jpg" />
+                <img src="https://i.ytimg.com/vi/75XmHauQNdA/sddefault.jpg" />
                 <div className="play-button" />
               </div>
             </div>

@@ -25,7 +25,7 @@ export default function Contact () {
               <a href="https://github.com/chloehwang" target="_blank" rel="noopener noreferrer"><h4 className="contact-tool">Github</h4></a>
               <a href="https://www.linkedin.com/in/chloehwang/" target="_blank" rel="noopener noreferrer"><h4 className="contact-tool">LinkedIn</h4></a>
               <a href="mailto:c.chloeh@gmail.com?Subject=Let%27s%20Chat"><h4 className="contact-tool">Email</h4></a>
-              <a href="https://github.com/chloehwang/" target="_blank" rel="noopener noreferrer"><h4 className="contact-tool">Resume</h4></a>
+              <a href="../../public/resume/Chloe%20Hwang%20Resume%202017.pdf" target="_blank" rel="noopener noreferrer"><h4 className="contact-tool">Resume</h4></a>
             </div>
           </div>
 

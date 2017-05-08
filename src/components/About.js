@@ -14,7 +14,7 @@ export default function About () {
 
       <div style={{maxWidth: '850px', margin: '0 auto'}}>
         {/* INTRO */}
-        <div className="about-intro">I’m a <span  className='intro-emphasis'>FRONTEND WEB DEVELOPER</span> specializing in <span  className='intro-emphasis'>JAVASCRIPT</span> and the <span  className='intro-emphasis'>NERD stack.</span> I'm currently seeking a creative role that will allow me to build stunning UX/UI. You can find my resume <span className='intro-emphasis resume-link'>HERE.</span></div>
+        <div className="about-intro">I’m a <span  className='intro-emphasis'>FRONTEND WEB DEVELOPER</span> specializing in <span  className='intro-emphasis'>JAVASCRIPT</span> and the <span  className='intro-emphasis'>NERD stack.</span> I'm currently seeking a creative role that will allow me to build stunning UX/UI. You can find my resume <a href="../../public/resume/Chloe%20Hwang%20Resume%202017.pdf" target="_blank" rel="noopener noreferrer" style={{color: 'black', textDecoration: 'none'}}><span className="intro-emphasis resume-link">HERE.</span></a></div>
         <br /><br />
 
         {/* MAIN CONTENT CONTAINER */}
@@ -88,7 +88,7 @@ export default function About () {
               <span className="video-title">How to Leverage<br />React.js for Beautiful UI</span>
               <br />
               <div className="youtube" data-embed="75XmHauQNdA">
-                <img src="https://i.ytimg.com/vi/75XmHauQNdA/hqdefault.jpg" />
+                <img src="https://i.ytimg.com/vi/75XmHauQNdA/sddefault.jpg" />
                 <div className="play-button" />
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function About () {
               <span className="video-title">Introducing a New UI<br />Animation Library for React.js</span>
               <br />
               <div className="youtube" data-embed="krAzPZE3s1I">
-                <img src="https://i.ytimg.com/vi/krAzPZE3s1I/hqdefault.jpg" />
+                <img src="https://i.ytimg.com/vi/krAzPZE3s1I/sddefault.jpg" />
                 <div className="play-button" />
               </div>
             </div>
@@ -110,7 +110,7 @@ export default function About () {
               <span className="video-title">Presenting Omni:<br />A Dream Journal/Analysis App</span>
               <br />
               <div className="youtube" data-embed="VQYodA9GZ20">
-                <img src="https://i.ytimg.com/vi/VQYodA9GZ20/hqdefault.jpg" />
+                <img src="https://i.ytimg.com/vi/VQYodA9GZ20/sddefault.jpg" />
                 <div className="play-button" />
               </div>
             </div>

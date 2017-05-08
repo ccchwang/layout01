@@ -134,7 +134,7 @@ export default function Omni () {
               <span className="video-title">Presenting Omni:<br />A Dream Journal/Analysis App</span>
               <br />
               <div className="youtube" data-embed="VQYodA9GZ20">
-                <img src="https://i.ytimg.com/vi/VQYodA9GZ20/hqdefault.jpg" />
+                <img src="https://i.ytimg.com/vi/VQYodA9GZ20/sddefault.jpg" />
                 <div className="play-button" />
               </div>
             </div>

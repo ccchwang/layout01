@@ -121,7 +121,7 @@ export default function Rdi () {
               <span className="video-title">Introducing a New UI<br />Animation Library for React.js</span>
               <br />
               <div className="youtube" data-embed="krAzPZE3s1I">
-                <img src="https://i.ytimg.com/vi/krAzPZE3s1I/hqdefault.jpg" />
+                <img src="https://i.ytimg.com/vi/krAzPZE3s1I/sddefault.jpg" />
                 <div className="play-button" />
               </div>
             </div>
