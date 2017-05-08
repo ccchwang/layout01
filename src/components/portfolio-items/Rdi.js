@@ -7,7 +7,7 @@ export default function Rdi () {
 
       {/* RDI - header image */}
       <div className="work-item-header">
-        <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
+        <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/rdi.jpg')"}} />
         <div className="header-text-wrapper">
           <h1 className="header-title">react-dynamic-UI</h1>
           <div className="border-wrapper">

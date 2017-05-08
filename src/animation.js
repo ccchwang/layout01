@@ -40,7 +40,6 @@ $(document).ready(function () {
         $headerBorderBottom = $('#header-border-animation > .bottom');
 
   if ($window.width() > 432) {
-    $body.addClass('loaded');
     loadingAnimation();
   }
 
@@ -77,7 +76,6 @@ $(document).ready(function () {
       $body.addClass('loaded');
 
       setTimeout(function(){
-        document.getElementById("vid").play();
         fillSVGText()
       }, 3000)
     }
