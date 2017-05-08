@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default function Rdi () {
+export default function Macbox () {
 
   return (
     <div className="work-item closed small-screen" id="macbox">
 
-      {/* RDI - header image */}
+      {/* macbox - header image */}
       <div className="work-item-header">
         <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/3.png')"}} />
         <div className="header-text-wrapper">
@@ -27,7 +27,7 @@ export default function Rdi () {
       <section className="work-item-content about-text">
 
         {/* blurb */}
-        <div className="work-item-section content-padding blurb">
+        <div className="work-item-section content-padding blurb max-width">
           <p>Macbox is a prototype e-commerce platform built with PostgreSQL for data management in the backend and Redux to keep track of state in the frontend. It is a fullstack Javascript app and fully functional&mdash;users can complete the entire shopping flow, from browse to checkout.
           <br /><br />
           The objective of this project was to hone our skills in schema design, RESTful routes, authentication, and deployment. <span style={{fontWeight: '600'}}>I also used it as a way to focus on design and UI.</span> I learned the tools ReactTransitionGroup and GSAP to add animation to the site. My learnings became the basis of my talk on UI & React.js, where I demoed how to add animation to React apps.</p>
@@ -61,12 +61,13 @@ export default function Rdi () {
         </div>
 
         {/* typography & colors */}
-        <div className="work-item-section content-padding long">
+        <div className="work-item-section content-padding long max-width">
 
           <div className="about-heading-text">Typography<span className="divider" /></div>
           <br />
           <div className="font-tab">
             <span className="font-heading">Tenor Sans</span>
+            <img className="font-img" src="/public/images/macbox-tenor.png" />
           </div>
 
           <br /><br /><br /><br /><br />
@@ -120,20 +121,22 @@ export default function Rdi () {
 
 
         {/* presentation */}
-        <div className="work-item-section content-padding long" style={{backgroundColor: '#333', color: 'white'}}>
-          <div className="about-heading-text">Presentation<span className="divider light" /></div>
-          <br /><br /><br />
-          <div className="video-container">
-            <span className="video-date" style={{color: '#f7fb8e', fontWeight: 600}}>March 2017</span>
-            <span className="video-title">How to Leverage<br />React.js for Beautiful UI</span>
-            <br />
-            <iframe style={{width: '100%'}} height="315" src="https://www.youtube.com/embed/75XmHauQNdA" frameBorder="0" allowFullScreen />
+        <div className="long" style={{backgroundColor: '#333', color: 'white'}}>
+          <div className="max-width content-padding work-item-section">
+            <div className="about-heading-text">Presentation<span className="divider light" /></div>
+            <br /><br /><br />
+            <div className="video-container">
+              <span className="video-date" style={{color: '#f7fb8e', fontWeight: 600}}>March 2017</span>
+              <span className="video-title">How to Leverage<br />React.js for Beautiful UI</span>
+              <br />
+              <iframe style={{width: '100%'}} height="315" src="https://www.youtube.com/embed/75XmHauQNdA" frameBorder="0" allowFullScreen />
+            </div>
           </div>
         </div>
 
 
 
-        <div className="work-item-section content-padding" style={{borderBottom: '1px solid gainsboro'}}>
+        <div className="work-item-section content-padding max-width">
           <div className="about-heading-text">Src<span className="divider" /></div>
           <br />
           <p>Code: <a href="https://github.com/chloehwang/macbox" target="_blank" rel="noopener noreferrer">github.com/chloehwang/macbox</a></p>

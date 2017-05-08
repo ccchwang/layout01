@@ -5,7 +5,7 @@ export default function EfA () {
   return (
     <div className="work-item closed small-screen" id="nonprof">
 
-      {/* RDI - header image */}
+      {/* Nonprof - header image */}
       <div className="work-item-header">
         <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/boy.png')"}} />
         <div className="header-text-wrapper">
@@ -23,11 +23,11 @@ export default function EfA () {
         </div>
       </div>
 
-      {/* Macbox - content */}
+      {/* Nonprof - content */}
       <section className="work-item-content about-text">
 
         {/* blurb */}
-        <div className="work-item-section content-padding blurb">
+        <div className="work-item-section content-padding blurb max-width">
           <p>Education for a All is a website design concept for a nonprofit organization. I drew upon my four years of experience in the nonprofit sector to build a layout that effectively serves important NGO information&mdash;including bold sections for donation appeals, key successes, newsletter sign-up, and how to get involved.
           <br /><br />
           I mainly experimented with using CSS borders to create diagonal shapes that could highlight information and be used as a recurring pattern. I also focused on responsive mobile design and colors & typography.
@@ -52,20 +52,23 @@ export default function EfA () {
         </div>
 
         {/* typography & colors */}
-        <div className="work-item-section content-padding long">
+        <div className="work-item-section content-padding long max-width">
 
           <div className="about-heading-text">Typography<span className="divider" /></div>
           <br />
           <div className="font-tab">
-            <span className="font-heading">Raleway</span>
-          </div>
-          <br />
-          <div className="font-tab">
             <span className="font-heading">Montserrat</span>
+            <img className="font-img" src="/public/images/nonprof-montserrat.png" />
           </div>
           <br />
           <div className="font-tab">
             <span className="font-heading">Poppins</span>
+            <img className="font-img" src="/public/images/nonprof-poppins.png" />
+          </div>
+          <br />
+          <div className="font-tab">
+            <span className="font-heading">Raleway</span>
+            <img className="font-img" src="/public/images/nonprof-raleway.png" />
           </div>
 
           <br /><br /><br /><br /><br />
@@ -113,7 +116,7 @@ export default function EfA () {
 
 
 
-        <div className="work-item-section content-padding" style={{borderBottom: '1px solid gainsboro'}}>
+        <div className="work-item-section content-padding max-width">
           <div className="about-heading-text">Src<span className="divider" /></div>
           <br />
           <p>Code: <a href="https://github.com/chloehwang/education-for-all" target="_blank" rel="noopener noreferrer">github.com/chloehwang/education-for-all</a></p>

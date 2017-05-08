@@ -27,7 +27,7 @@ export default function Rdi () {
       <section className="work-item-content about-text">
 
         {/* blurb */}
-        <div className="work-item-section content-padding blurb">
+        <div className="work-item-section content-padding blurb max-width">
           <p><span style={{fontWeight: '600'}}>react-dynamic-UI is a UI toolkit for React.js that offers components with built-in animation.</span> Why yet <span style={{fontStyle: 'italic'}}>another</span> UI library? My goal was to fulfill a need for UI building blocks that can animate out of the box while also being native to React.js. The components animate based on user interaction, i.e. scroll and hover. Users can mix and match components and animation effects to achieve a truly custom design. I hope that react-dynamic-UI will make it easier for others to implement UI animations into their next React app.</p>
         </div>
 
@@ -48,12 +48,18 @@ export default function Rdi () {
         </div>
 
         {/* typography & colors */}
-        <div className="work-item-section content-padding long">
+        <div className="work-item-section content-padding long max-width">
 
           <div className="about-heading-text">Demo Typography<span className="divider" /></div>
           <br />
           <div className="font-tab">
             <span className="font-heading">Helvetica Neue</span>
+            <img className="font-img" src="/public/images/rdi-helvetica.png" />
+          </div>
+          <br />
+          <div className="font-tab">
+            <span className="font-heading">Lato</span>
+            <img className="font-img" src="/public/images/rdi-lato.png" />
           </div>
 
           <br /><br /><br /><br /><br />
@@ -106,18 +112,20 @@ export default function Rdi () {
 
 
         {/* presentation */}
-        <div className="work-item-section content-padding long" style={{backgroundColor: '#333', color: 'white'}}>
-          <div className="about-heading-text">Presentation<span className="divider light" /></div>
-          <br /><br /><br />
-          <div className="video-container">
-            <span className="video-date" style={{color: '#f7fb8e', fontWeight: 600}}>March 2017</span>
-            <span className="video-title">Introducing a New UI<br />Animation Library for React.js</span>
-            <br />
-            <iframe style={{width: '100%'}} height="315" src="https://www.youtube.com/embed/krAzPZE3s1I" frameBorder="0" allowFullScreen />
+        <div className="long" style={{backgroundColor: '#333', color: 'white'}}>
+          <div className="max-width content-padding work-item-section">
+            <div className="about-heading-text">Presentation<span className="divider light" /></div>
+            <br /><br /><br />
+            <div className="video-container">
+              <span className="video-date" style={{color: '#f7fb8e', fontWeight: 600}}>March 2017</span>
+              <span className="video-title">Introducing a New UI<br />Animation Library for React.js</span>
+              <br />
+              <iframe style={{width: '100%'}} height="315" src="https://www.youtube.com/embed/krAzPZE3s1I" frameBorder="0" allowFullScreen />
+            </div>
           </div>
         </div>
 
-        <div className="work-item-section content-padding" style={{borderBottom: '1px solid gainsboro'}}>
+        <div className="work-item-section content-padding max-width">
           <div className="about-heading-text">Src<span className="divider" /></div>
           <br />
           <p>Code: <a href="https://github.com/chloehwang/react-dynamic-UI" target="_blank" rel="noopener noreferrer">github.com/chloehwang/react-dynamic-UI</a></p>

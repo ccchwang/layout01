@@ -27,7 +27,7 @@ export default function Omni () {
       <section className="work-item-content about-text">
 
         {/* blurb */}
-        <div className="work-item-section content-padding blurb">
+        <div className="work-item-section content-padding blurb max-width">
           <p><span style={{fontWeight: '600'}}>Omni is an app that believes in the power of dreams.</span>
           <br /><br />
           With Omni, users can log their dreams via the web or mobile app. Once logged, Omni analyzes it for the values of five key emotions&mdash;surprise, anger, fear, sadness, and joy. We then uses these values to produce a unique 3D/VR representation of the dream&mdash;lovingly called a dream ‘sprite’. These sprites give users a creative, visual way to explore the underlying emotions behind their dreams.
@@ -61,16 +61,18 @@ export default function Omni () {
         </div>
 
         {/* typography & colors */}
-        <div className="work-item-section content-padding long">
+        <div className="work-item-section content-padding long max-width">
 
           <div className="about-heading-text">Typography<span className="divider" /></div>
           <br />
           <div className="font-tab">
             <span className="font-heading">Quicksand</span>
+            <img className="font-img" src="/public/images/omni-quicksand.png" />
           </div>
           <br />
           <div className="font-tab">
             <span className="font-heading">Open Sans</span>
+            <img className="font-img" src="/public/images/omni-opensans.png" />
           </div>
 
           <br /><br /><br /><br /><br />
@@ -123,18 +125,20 @@ export default function Omni () {
         </div>
 
         {/* presentation */}
-        <div className="work-item-section content-padding long" style={{backgroundColor: '#333', color: 'white'}}>
-          <div className="about-heading-text">Presentation<span className="divider light" /></div>
-          <br /><br /><br />
-          <div className="video-container">
-            <span className="video-date" style={{color: '#f7fb8e', fontWeight: 600}}>April 2017</span>
-            <span className="video-title">Presenting Omni:<br />A Dream Journal/Analysis App</span>
-            <br />
-            <iframe style={{width: '100%'}} height="315" src="https://www.youtube.com/embed/VQYodA9GZ20" frameBorder="0" allowFullScreen />
+        <div className="long" style={{backgroundColor: '#333', color: 'white'}}>
+          <div className="max-width content-padding work-item-section">
+            <div className="about-heading-text">Presentation<span className="divider light" /></div>
+            <br /><br /><br />
+            <div className="video-container">
+              <span className="video-date" style={{color: '#f7fb8e', fontWeight: 600}}>April 2017</span>
+              <span className="video-title">Presenting Omni:<br />A Dream Journal/Analysis App</span>
+              <br />
+              <iframe style={{width: '100%'}} height="315" src="https://www.youtube.com/embed/VQYodA9GZ20" frameBorder="0" allowFullScreen />
+            </div>
           </div>
         </div>
 
-        <div className="work-item-section content-padding" style={{borderBottom: '1px solid gainsboro'}}>
+        <div className="work-item-section content-padding max-width">
           <div className="about-heading-text">Src<span className="divider" /></div>
           <br />
           <p>Code (mobile): <a href="https://github.com/Omni-Project/omni-mobile" target="_blank" rel="noopener noreferrer">github.com/Omni-Project/omni-mobile</a></p>
