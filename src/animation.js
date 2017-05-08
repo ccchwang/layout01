@@ -1,30 +1,5 @@
 $(document).ready(function () {
 
-  window.onload = function() {
-    window.loaded = true;
-
-    if (window.innerWidth <= 432) {
-      startSVGAnimation()
-    }
-
-    //LOAD YOUTUBE VIDS
-    (function() {
-        var youtube = document.querySelectorAll( ".youtube" );
-
-        for (var i = 0; i < youtube.length; i++) {
-          youtube[i].addEventListener( "click", function() {
-              var iframe = document.createElement( "iframe" );
-                  iframe.setAttribute( "frameborder", "0" );
-                  iframe.setAttribute( "allowfullscreen", "" );
-                  iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
-
-                  this.innerHTML = "";
-                  this.appendChild( iframe );
-          } );
-        }
-      })();
-  }
-
   const $window = $(window),
         $body = $('body'),
         $work = $('#work-main'),
@@ -56,15 +31,19 @@ $(document).ready(function () {
         $headerBorderLeft = $('#header-border-animation > .left'),
         $headerBorderBottom = $('#header-border-animation > .bottom');
 
-  if ($window.width() > 432) {
-    loadingAnimation();
-  }
+// window.addEventListener('load', function() {
+//     loadAnimation();
+//     loadVideos();
+//   })
 
-  function loadingAnimation() {
+loadAnimation();
+    loadVideos();
+
+  //FUNCTIONS FOR LOADING ANIMATION
+  function loadAnimation() {
     TweenLite.to($headerBorderTop, 0.25, {left:'50%', ease: Linear.easeNone, onComplete: animateRest})
   }
 
-  //FUNCTIONS FOR LOADING ANIMATION
   function animateRest() {
       TweenLite.to($headerBorderTop, 0.25, {left:0, ease: Linear.easeNone, onComplete: animateLeft});
     }
@@ -74,19 +53,19 @@ $(document).ready(function () {
     }
 
     function animateBottom() {
-      TweenLite.to($headerBorderBottom, 0.25, {right:'60%', ease: Linear.easeNone, onComplete: checkLoad});
+      TweenLite.to($headerBorderBottom, 0.5, {right:0, ease: Linear.easeNone, onComplete: startSVGAnimation});
     }
 
-    function checkLoad() {
-      if (window.loaded) {
-        TweenLite.to($headerBorderBottom, 0.25, {right:0, ease: Linear.easeNone, onComplete: startSVGAnimation});
-      }
-      else {
-        window.onload = function() {
-          TweenLite.to($headerBorderBottom, 0.25, {right:0, ease: Linear.easeNone, onComplete: startSVGAnimation});
-        }
-      }
-    }
+    // function checkLoad() {
+    //   if (window.loaded) {
+    //     TweenLite.to($headerBorderBottom, 0.25, {right:0, ease: Linear.easeNone, onComplete: startSVGAnimation});
+    //   }
+    //   else {
+    //     window.onload = function() {
+    //       TweenLite.to($headerBorderBottom, 0.25, {right:0, ease: Linear.easeNone, onComplete: startSVGAnimation});
+    //     }
+    //   }
+    // }
 
     function startSVGAnimation() {
       $svgIntro.addClass('go');
@@ -102,6 +81,23 @@ $(document).ready(function () {
         $svgText.css('animation-play-state', 'paused')}
       })
     }
+
+    //LOAD YOUTUBE VIDS
+    function loadVideos () {
+      var youtube = document.querySelectorAll( ".youtube" );
+
+      for (var i = 0; i < youtube.length; i++) {
+        youtube[i].addEventListener( "click", function() {
+            var iframe = document.createElement( "iframe" );
+                iframe.setAttribute( "frameborder", "0" );
+                iframe.setAttribute( "allowfullscreen", "" );
+                iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+
+                this.innerHTML = "";
+                this.appendChild( iframe );
+        } );
+      }
+      }
 
 
   //*** PARALLAX SCROLLING FOR HEADER IMAGE
