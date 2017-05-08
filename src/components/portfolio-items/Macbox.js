@@ -120,6 +120,22 @@ export default function Macbox () {
         </div>
 
 
+        {/* presentation */}
+        <div className="long" style={{backgroundColor: '#333', color: 'white'}}>
+          <div className="max-width content-padding work-item-section">
+            <div className="about-heading-text">Presentation<span className="divider light" /></div>
+            <br /><br /><br />
+            <div className="video-container">
+              <span className="video-date" style={{color: '#f7fb8e', fontWeight: 600}}>March 2017</span>
+              <span className="video-title">How to Leverage<br />React.js for Beautiful UI</span>
+              <br />
+              <div className="youtube" data-embed="75XmHauQNdA">
+                <img src="https://i.ytimg.com/vi/75XmHauQNdA/hqdefault.jpg" />
+                <div className="play-button" />
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 

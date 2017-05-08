@@ -111,7 +111,22 @@ export default function Rdi () {
 
 
 
-
+        {/* presentation */}
+        <div className="long" style={{backgroundColor: '#333', color: 'white'}}>
+          <div className="max-width content-padding work-item-section">
+            <div className="about-heading-text">Presentation<span className="divider light" /></div>
+            <br /><br /><br />
+            <div className="video-container">
+              <span className="video-date" style={{color: '#f7fb8e', fontWeight: 600}}>March 2017</span>
+              <span className="video-title">Introducing a New UI<br />Animation Library for React.js</span>
+              <br />
+              <div className="youtube" data-embed="krAzPZE3s1I">
+                <img src="https://i.ytimg.com/vi/krAzPZE3s1I/hqdefault.jpg" />
+                <div className="play-button" />
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div className="work-item-section content-padding max-width">
           <div className="about-heading-text">Src<span className="divider" /></div>

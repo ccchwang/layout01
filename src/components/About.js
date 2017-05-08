@@ -83,7 +83,37 @@ export default function About () {
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
             {/*** tech talk ***/}
+            <div className="video-container">
+              <span className="video-date">March 2017</span>
+              <span className="video-title">How to Leverage<br />React.js for Beautiful UI</span>
+              <br />
+              <div className="youtube" data-embed="75XmHauQNdA">
+                <img src="https://i.ytimg.com/vi/75XmHauQNdA/hqdefault.jpg" />
+                <div className="play-button" />
+              </div>
+            </div>
 
+            {/*** stackathon ***/}
+            <div className="video-container">
+              <span className="video-date">March 2017</span>
+              <span className="video-title">Introducing a New UI<br />Animation Library for React.js</span>
+              <br />
+              <div className="youtube" data-embed="krAzPZE3s1I">
+                <img src="https://i.ytimg.com/vi/krAzPZE3s1I/hqdefault.jpg" />
+                <div className="play-button" />
+              </div>
+            </div>
+
+            {/*** capstone ***/}
+            <div className="video-container">
+              <span className="video-date">April 2017</span>
+              <span className="video-title">Presenting Omni:<br />A Dream Journal/Analysis App</span>
+              <br />
+              <div className="youtube" data-embed="VQYodA9GZ20">
+                <img src="https://i.ytimg.com/vi/VQYodA9GZ20/hqdefault.jpg" />
+                <div className="play-button" />
+              </div>
+            </div>
           </div>
           <br /><hr /><br /><br />
 

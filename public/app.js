@@ -101,7 +101,7 @@
 	exports.i(__webpack_require__(4), "");
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box;\n  font-family: \"Playfair Display\";\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nbody {\n  margin: 0;\n  overflow: hidden;\n  position: fixed; }\n\nbody.loaded {\n  overflow: auto;\n  position: initial; }\n\n.img-responsive {\n  height: 100%;\n  width: 100%; }\n\n.next-btn {\n  width: 163px;\n  height: 64.8px;\n  border: 5px solid #424242;\n  background-color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 0 auto; }\n  .next-btn span {\n    font-size: 18px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 3px;\n    margin: 0;\n    margin-top: 1px;\n    width: 57px;\n    border-bottom: 1px solid white; }\n\n.next-btn:hover {\n  cursor: pointer; }\n  .next-btn:hover span {\n    border-color: #424242; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 12px 15px 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#menu {\n  position: fixed;\n  z-index: 3000;\n  left: 25px;\n  top: 25px; }\n\n#menu-btn {\n  width: 41px;\n  height: 41px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.menu-item {\n  font-size: 1.2em;\n  padding: 6px 11px 8px; }\n\n#header {\n  height: 90vh;\n  position: relative;\n  overflow: hidden;\n  z-index: 2;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n\n#header-main {\n  position: relative;\n  height: 75vh;\n  top: 7.5vh;\n  z-index: 2;\n  padding: 0;\n  text-align: left; }\n\n#header-border-animation {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  overflow: hidden; }\n\n#header-border-animation > .top {\n  position: absolute;\n  border-top: 15px solid #f7fb8e;\n  top: 0;\n  width: 100vw;\n  left: 100%; }\n\n#header-border-animation > .bottom {\n  position: absolute;\n  border-bottom: 15px solid #f7fb8e;\n  width: 100vw;\n  height: 75vh;\n  right: 100%; }\n\n#header-border {\n  height: 100%;\n  width: 100%;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.png\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\nsvg.intro {\n  position: absolute;\n  height: 300px;\n  width: 1000px;\n  top: 13vh;\n  left: 6vw;\n  z-index: 50; }\n  svg.intro .text {\n    display: none; }\n  svg.intro.go .text {\n    font-family: \"Playfair Display\";\n    font-size: 5.5em;\n    font-weight: 900;\n    display: block; }\n  svg.intro.go .text-stroke {\n    fill: transparent;\n    stroke: #333;\n    stroke-width: 5px;\n    stroke-dashoffset: 1390;\n    stroke-dasharray: 1390;\n    stroke-linecap: butt;\n    stroke-linejoin: round;\n    animation: dash 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 0.3s;\n    -webkit-animation: dash 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 0.3s; }\n  svg.intro.go .text-stroke:nth-child(2) {\n    animation-delay: 0.7s;\n    -webkit-animation-delay: 0.7s; }\n  svg.intro.go .text-stroke:nth-child(3) {\n    animation-delay: 1.3s;\n    -webkit-animation-delay: 1.3s; }\n  svg.intro.go .text-stroke:nth-child(4) {\n    stroke-dashoffset: 650;\n    stroke-dasharray: 650;\n    animation: dash2 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 1.9s;\n    -webkit-animation: dash2 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 1.9s; }\n\n#svg-text-1 {\n  transform: translateY(110px);\n  -webkit-transform: translateY(110px); }\n\n#svg-text-2 {\n  transform: translateY(187px);\n  -webkit-transform: translateY(187px); }\n\n#svg-text-3 {\n  transform: translateY(240px);\n  -webkit-transform: translateY(240px); }\n\n.svg-text-4 {\n  transform: translateY(265px);\n  -webkit-transform: translateY(265px); }\n\n#small-text {\n  font-family: \"Poppins\";\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 1.15em;\n  letter-spacing: 2px; }\n\n.svg-fill {\n  fill: #333 !important; }\n\n@-webkit-keyframes dash {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  60% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@keyframes dash {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  60% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@-webkit-keyframes dash2 {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  80% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@keyframes dash2 {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  80% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-main {\n  z-index: 20; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n.about-content, .contact-content {\n  font-family: \"Poppins\";\n  text-align: left;\n  right: 0;\n  background-color: white; }\n\n.contact-content {\n  border-top: 1px solid gainsboro; }\n\n.about-content {\n  border-bottom: 1px solid #424242;\n  height: auto; }\n\n.content-padding {\n  padding: 0px 36px; }\n\n.about-intro {\n  font-size: 22px;\n  font-style: italic;\n  padding-top: 15%; }\n\n#about-btn::before, #work-btn::before, #contact-btn::before, .contact-tool::before,\n.resume-link::before {\n  content: '';\n  position: absolute;\n  z-index: -1;\n  width: 0%;\n  height: 100%;\n  top: 0;\n  left: 0; }\n\n#about-btn::before, #work-btn::before, #contact-btn::before, .contact-tool::before {\n  background-color: #f7fb8e;\n  transition: 0.3s; }\n\n.resume-link::before {\n  border-bottom: 3px solid #333;\n  transition: 0.2s; }\n\n.resume-link {\n  position: relative;\n  cursor: pointer; }\n\n#about-btn:hover, #work-btn:hover, #contact-btn:hover, .contact-tool:hover {\n  color: #424242 !important;\n  transition: 0.3s; }\n\n#about-btn, #work-btn, #contact-btn, .contact-tool {\n  transition: color 0.3s; }\n\n#about-btn:focus::before, #about-btn:hover::before,\n#work-btn:focus::before, #work-btn:hover::before,\n#contact-btn:focus::before, #contact-btn:hover::before, .contact-tool:hover::before,\n.resume-link:hover::before {\n  width: 100%; }\n\n.intro-emphasis {\n  font-family: 'poppins';\n  font-style: normal;\n  font-weight: 600;\n  font-size: 20px; }\n\n.about-heading-text {\n  display: flex;\n  flex-direction: column;\n  margin-bottom: 10px;\n  font-size: 32px;\n  font-weight: 300;\n  font-family: \"Poppins\";\n  text-transform: uppercase;\n  letter-spacing: 3px; }\n  .about-heading-text .divider {\n    width: 35px;\n    border-bottom: 2px solid #424242;\n    display: inline-block; }\n  .about-heading-text .divider.light {\n    border-color: white; }\n\n.about-text ul {\n  list-style-type: square;\n  padding-left: 21px;\n  margin-top: 5px; }\n\n.about-text p, .about-text li {\n  font-family: \"Poppins\";\n  font-size: 15px;\n  font-weight: 300; }\n\n.about-text p {\n  line-height: 1.6; }\n\n.about-text li {\n  line-height: 25px; }\n\n.about-text .grouped {\n  width: 100%;\n  padding-bottom: 15px; }\n\n.mini-heading {\n  font-style: italic;\n  font-size: 17px; }\n\n.video-container {\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n  max-width: 560px;\n  text-align: center;\n  margin: 0 auto 60px; }\n\n.video-date {\n  font-size: 13px;\n  font-family: 'poppins';\n  text-transform: uppercase;\n  letter-spacing: 2px;\n  font-weight: 300; }\n\n.video-title {\n  font-size: 20px;\n  font-style: italic;\n  line-height: 28px;\n  margin: 8px 0; }\n\n#work-main {\n  z-index: 20;\n  background-color: white; }\n\n.work-content {\n  height: auto;\n  right: 0;\n  padding: 0; }\n\n.work-item {\n  overflow: hidden;\n  position: relative; }\n\n.work-item-header {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  min-height: 270px;\n  overflow: hidden;\n  transition: 0.8s height cubic-bezier(0.77, 0, 0.175, 1);\n  -webkit-transition: 0.8s height cubic-bezier(0.77, 0, 0.175, 1); }\n\n.work-item-content {\n  background-color: white;\n  text-align: left;\n  height: 0; }\n  .work-item-content a {\n    font-family: 'poppins';\n    color: #363636; }\n\n.blurb span {\n  font-family: \"Poppins\"; }\n\n.work-item-section {\n  padding-top: 72px !important;\n  padding-bottom: 72px !important; }\n  .work-item-section p {\n    margin-bottom: 0; }\n\n.max-width {\n  max-width: 1000px;\n  margin: 0 auto; }\n\n.features-blurb {\n  width: 100%; }\n\n.color-tab {\n  height: 130px;\n  width: 100px;\n  margin-bottom: 15px; }\n\n.tab-main {\n  width: 100%;\n  height: 70%; }\n\n.tab-title {\n  height: 30%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border: 1px solid #dcdcdc; }\n  .tab-title span {\n    font-family: 'Poppins';\n    font-weight: 300; }\n\n.centered {\n  display: flex;\n  justify-content: center;\n  max-width: none; }\n\n.font-tab {\n  border: 1px solid #dcdcdc;\n  width: 100%;\n  padding: 30px 34px 30px 35px;\n  color: #8a8a8a; }\n\n.font-img {\n  padding-top: 15px;\n  width: 100%;\n  max-width: 533px; }\n\n.font-heading {\n  font-style: italic;\n  font-size: 16px;\n  display: block; }\n\n.header-image {\n  transition: 10s transform linear;\n  background-size: cover;\n  background-position: center 0px;\n  position: relative;\n  top: 0; }\n\n.header-text-wrapper {\n  padding: 45px 36px;\n  position: absolute;\n  top: 0;\n  left: 0;\n  text-align: left; }\n\n.header-title {\n  margin: 0;\n  color: white;\n  font-family: \"Poppins\";\n  font-size: 3.5em;\n  font-weight: 600; }\n\n.header-subtitle {\n  color: white;\n  font-size: 18px;\n  font-style: italic;\n  transition: 0.3s; }\n\n.subtitle-wrapper {\n  position: absolute;\n  width: 350px;\n  margin-top: -38px;\n  margin-left: 5px;\n  transition: 0.4s 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275); }\n\n.border-wrapper {\n  position: relative;\n  overflow: hidden;\n  width: 168px;\n  height: 64.8px;\n  margin-top: 10px;\n  margin-left: 5px; }\n\n.border-wrapper::before {\n  content: 'SEE MORE';\n  font-family: \"Poppins\";\n  font-weight: 300;\n  color: white;\n  font-size: 18px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: 20.5px;\n  left: -106px;\n  transition: 0.6s 0.3s;\n  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n\n.border-top::before,\n.border-right::before,\n.border-left::before,\n.border-bottom::before {\n  content: '';\n  position: absolute; }\n\n.border-top::before,\n.border-bottom::before {\n  transition: width 0.2s ease-in;\n  -webkit-transition: width 0.2s ease-in; }\n\n.border-right::before,\n.border-left::before {\n  transition: height 0.2s ease-in;\n  -webkit-transition: height 0.2s ease-in; }\n\n.border-top::before {\n  border-top: 5px solid white;\n  top: 0;\n  left: 0;\n  width: 50%;\n  transition-delay: 0.6s; }\n\n.border-bottom::before {\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 0%;\n  height: 100%;\n  right: 0;\n  transition-delay: 0.2s; }\n\n.border-right::before {\n  border-right: 5px solid white;\n  height: 0%;\n  right: 0;\n  top: 0;\n  transition-delay: 0.4s; }\n\n.border-left::before {\n  border-right: 5px solid white;\n  height: 0%;\n  left: 0;\n  bottom: 0; }\n\n.x-btn {\n  position: absolute;\n  z-index: 1;\n  top: 20px;\n  right: 20px;\n  overflow: hidden;\n  width: 50px;\n  height: 50px;\n  cursor: pointer; }\n\n.x-btn > p::before {\n  content: 'X';\n  font-family: \"Poppins\";\n  color: white;\n  background-color: #424242;\n  font-size: 20px;\n  padding: 15px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: -1.6px;\n  left: -46px;\n  transition: 0.2s; }\n\n.x-btn > .top::before {\n  content: '';\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  left: 0;\n  width: 0%;\n  transition: 0.2s 0.7s; }\n\n.x-btn > .right::before {\n  content: '';\n  position: absolute;\n  border-right: 5px solid white;\n  height: 0%;\n  right: 0;\n  top: 0;\n  transition: 0.2s 0.5s; }\n\n.x-btn > .bottom::before {\n  content: '';\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 0%;\n  height: 100%;\n  right: 0;\n  transition: 0.2s 0.3s; }\n\n.x-btn > .left::before {\n  content: '';\n  position: absolute;\n  border-right: 5px solid white;\n  height: 0%;\n  left: 0;\n  bottom: 0;\n  transition: 0.2s 0.1s; }\n\n.x-btn > .top.animate::before {\n  width: 100%;\n  transition: width 0.16s 0.8s; }\n\n.x-btn > .right.animate::before {\n  height: 100%;\n  transition: height 0.16s 0.96s; }\n\n.x-btn > .bottom.animate::before {\n  width: 100%;\n  transition: width 0.16s 1.12s; }\n\n.x-btn > .left.animate::before {\n  height: 100%;\n  transition: height 0.16s 1.28s; }\n\n.x-btn > p.animate::before {\n  left: 4.5px;\n  transition: left 0.18s 1.44s; }\n\n.work-item.closed:hover {\n  cursor: pointer; }\n  .work-item.closed:hover .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n  .work-item.closed:hover .header-image {\n    transform: scale(1.4);\n    -webkit-transform: scale(1.4); }\n  .work-item.closed:hover .border-top::before, .work-item.closed:hover .border-bottom::before {\n    width: 100%;\n    transition: width 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-bottom::before {\n    transition-delay: 0.4s; }\n  .work-item.closed:hover .border-right::before, .work-item.closed:hover .border-left::before {\n    height: 100%;\n    transition: height 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-right::before {\n    transition-delay: 0.2s; }\n  .work-item.closed:hover .border-left::before {\n    transition-delay: 0.6s; }\n  .work-item.closed:hover .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; }\n  .work-item.closed:hover .border-wrapper:hover {\n    filter: grayscale(0) sepia(100%) contrast(100%) saturate(7.5);\n    -webkit-filter: grayscale(0) sepia(100%) contrast(100%) saturate(7.5); }\n\n#contact-main {\n  z-index: 10; }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n.contact-content {\n  min-height: 100vh; }\n\n.contact-toolbar {\n  padding-bottom: 60px; }\n  .contact-toolbar .contact-tool {\n    position: relative;\n    z-index: 0;\n    font-size: 16px;\n    font-weight: 900;\n    color: white;\n    background-color: #424242;\n    padding: 10px 15px;\n    display: inline-block;\n    margin-right: 15px;\n    margin-bottom: 5px; }\n\n.hide-section {\n  display: none; }\n\n.small-header {\n  height: 62vh;\n  transition-delay: 0.9s; }\n\n.expanded-content {\n  height: 100%; }\n\n.fixed-btn {\n  position: fixed !important; }\n\n.scale-up {\n  transform: scale(1.3); }\n\n#footer-text {\n  position: fixed;\n  background-color: #f7fb8e;\n  top: 55%;\n  display: block;\n  z-index: 0;\n  padding: 15px 14px 14px 18px;\n  text-align: left; }\n  #footer-text p {\n    font-family: \"Poppins\";\n    text-transform: uppercase;\n    margin: 0; }\n  #footer-text .small {\n    font-size: 25px;\n    font-weight: 300;\n    letter-spacing: 3.8px;\n    margin-top: -15px;\n    margin-left: 3px; }\n  #footer-text .big {\n    font-weight: 600;\n    letter-spacing: 3px; }\n\n@media screen and (min-width: 321px) {\n  svg.intro {\n    height: 350px; }\n    svg.intro.go .text {\n      font-size: 6.6em; }\n  #svg-text-2 {\n    transform: translateY(207px);\n    -webkit-transform: translateY(207px); }\n  #svg-text-3 {\n    transform: translateY(271px);\n    -webkit-transform: translateY(271px); }\n  .svg-text-4 {\n    transform: translateY(304px);\n    -webkit-transform: translateY(304px); }\n  #small-text {\n    font-size: 1.42em; }\n  .title-text {\n    font-size: 3em;\n    padding: 15px 20px 20px; }\n  .menu-item {\n    font-size: 1.4em;\n    padding: 7px 13px 9px; }\n  .about-intro {\n    font-size: 23px; }\n  .intro-emphasis {\n    font-size: 21px; }\n  .about-text p, .about-text li {\n    font-size: 16px; }\n  .about-heading-text {\n    font-size: 33px; }\n  .mini-heading {\n    font-size: 18px; }\n  .video-title {\n    font-size: 22px; }\n  .video-date {\n    font-size: 14px; }\n  .header-title {\n    font-size: 4em; }\n  .header-subtitle {\n    font-size: 20px; } }\n\n@media screen and (min-width: 414px) {\n  .content-padding {\n    padding: 0px 50px; }\n  .header-text-wrapper {\n    padding-right: 60px;\n    padding-left: 60px; } }\n\n@media screen and (min-width: 415px) {\n  #header {\n    height: 100vh; }\n  #header-main {\n    top: 12.5vh; }\n  #header-border {\n    border-color: #888; }\n  .header-title {\n    font-size: 4.5em; }\n  .header-subtitle {\n    font-size: 21px; } }\n\n@media screen and (min-width: 668px) {\n  #svg-text-2 {\n    transform: translateY(225px);\n    -webkit-transform: translateY(225px); }\n  #svg-text-3 {\n    transform: translateY(303px);\n    -webkit-transform: translateY(303px); }\n  .svg-text-4 {\n    transform: translateY(344px);\n    -webkit-transform: translateY(344px); }\n  #small-text {\n    font-size: 1.8em; }\n  svg.intro.go .text {\n    font-size: 8em; }\n  .content-padding {\n    padding: 0px 100px; }\n  .about-intro {\n    font-size: 28px; }\n  .intro-emphasis {\n    font-size: 25px; }\n  .about-text p, .about-text li {\n    font-size: 17px; }\n  .about-text .grouped {\n    width: 45.5%;\n    margin-right: 20px; }\n  .about-heading-text {\n    font-size: 35px; }\n  .mini-heading {\n    font-size: 20px; }\n  .video-title {\n    font-size: 25px; }\n  .video-date {\n    font-size: 15px; }\n  .features-blurb {\n    width: 70%;\n    max-width: 440px; }\n  .contact-toolbar .contact-tool {\n    font-size: 18px; } }\n\n@media screen and (min-width: 992px) {\n  #header-main {\n    height: 85vh;\n    top: 7.5vh; }\n  #header-border-animation > .top {\n    border-width: 7px;\n    width: 67vw; }\n  #header-border-animation > .bottom {\n    border-width: 7px;\n    height: 85vh;\n    width: 67vw; }\n  #header-border-animation > .left {\n    position: absolute;\n    border-right: 7px solid #f7fb8e;\n    height: 85vh;\n    left: 0;\n    bottom: 100%; }\n  #header-border {\n    padding-left: 20px;\n    border-left: 7px solid #888;\n    border-width: 7px; }\n  #small-text {\n    font-size: 1.8em; }\n  svg.intro {\n    top: 25%;\n    left: -145px;\n    height: 380px; }\n  #about-header {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 200; }\n  .about-content, .work-content {\n    position: relative;\n    z-index: 100;\n    left: 33.3%; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 200; }\n  .fixed-header {\n    position: fixed !important; }\n  .work-item-section {\n    padding-right: 172px;\n    padding-left: 172px; }\n  .work-item-section.long {\n    padding-top: 100px !important;\n    padding-bottom: 100px !important; }\n  #work-header {\n    -webkit-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -moz-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -ms-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -o-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .work-content {\n    transition: 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .minimized {\n    width: 25%; }\n  .expanded-column {\n    width: 75%;\n    left: 25%; }\n  .add-border {\n    border-right: 1px solid #dcdcdc; } }\n\n@media screen and (min-width: 1700px) {\n  #svg-text-2 {\n    transform: translateY(240px);\n    -webkit-transform: translateY(240px); }\n  #svg-text-3 {\n    transform: translateY(320px);\n    -webkit-transform: translateY(320px); }\n  .svg-text-4 {\n    transform: translateY(361px);\n    -webkit-transform: translateY(361px); }\n  #small-text {\n    font-size: 2em; }\n  svg.intro.go .text {\n    font-size: 9em; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 991px) {\n  .work-item.closed.small-screen .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n  .work-item.closed.small-screen .border-top::before,\n  .work-item.closed.small-screen .border-bottom::before {\n    width: 100%;\n    transition: width 0.2s ease-in;\n    -webkit-transition: width 0.2s ease-in; }\n  .work-item.closed.small-screen .border-right::before,\n  .work-item.closed.small-screen .border-left::before {\n    height: 100%;\n    transition: height 0.2s ease-in;\n    -webkit-transition: height 0.2s ease-in; }\n  .work-item.closed.small-screen .border-bottom::before {\n    transition-delay: 0.4s; }\n  .work-item.closed.small-screen .border-right::before {\n    transition-delay: 0.2s; }\n  .work-item.closed.small-screen .border-left::before {\n    transition-delay: 0.6s; }\n  .work-item.closed.small-screen .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; } }\n", ""]);
+	exports.push([module.id, ".youtube {\n  background-color: #000;\n  margin-bottom: 30px;\n  position: relative;\n  padding-top: 56.25%;\n  overflow: hidden;\n  cursor: pointer; }\n\n.youtube img {\n  width: 100%;\n  top: -16.84%;\n  left: 0;\n  opacity: 0.7; }\n\n.youtube .play-button {\n  width: 90px;\n  height: 60px;\n  background-color: #333;\n  box-shadow: rgba(0, 0, 0, 0.156863) 0px 5px 10px, rgba(0, 0, 0, 0.227451) 0px 5px 10px;\n  z-index: 1;\n  opacity: 0.8; }\n\n.youtube .play-button:before {\n  content: \"\";\n  border-style: solid;\n  border-width: 15px 0 15px 26.0px;\n  border-color: transparent transparent transparent #fff; }\n\n.youtube img,\n.youtube .play-button {\n  cursor: pointer; }\n\n.youtube img,\n.youtube iframe,\n.youtube .play-button,\n.youtube .play-button:before {\n  position: absolute; }\n\n.youtube .play-button,\n.youtube .play-button:before {\n  top: 50%;\n  left: 50%;\n  transform: translate3d(-50%, -50%, 0); }\n\n.youtube iframe {\n  height: 100%;\n  width: 100%;\n  top: 0;\n  left: 0; }\n\n* {\n  box-sizing: border-box;\n  font-family: \"Playfair Display\";\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nbody {\n  margin: 0;\n  overflow: hidden;\n  position: fixed; }\n\nbody.loaded {\n  overflow: auto;\n  position: initial; }\n\n.img-responsive {\n  height: 100%;\n  width: 100%; }\n\n.next-btn {\n  width: 163px;\n  height: 64.8px;\n  border: 5px solid #424242;\n  background-color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 0 auto; }\n  .next-btn span {\n    font-size: 18px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 3px;\n    margin: 0;\n    margin-top: 1px;\n    width: 57px;\n    border-bottom: 1px solid white; }\n\n.next-btn:hover {\n  cursor: pointer; }\n  .next-btn:hover span {\n    border-color: #424242; }\n\n.title-block {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.title-text {\n  color: #424242;\n  font-size: 2em;\n  border: 1px solid black;\n  padding: 12px 15px 15px;\n  font-weight: 900;\n  margin: 0; }\n\n#menu {\n  position: fixed;\n  z-index: 3000;\n  left: 25px;\n  top: 25px; }\n\n#menu-btn {\n  width: 41px;\n  height: 41px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.menu-item {\n  font-size: 1.2em;\n  padding: 6px 11px 8px; }\n\n#header {\n  height: 90vh;\n  position: relative;\n  overflow: hidden;\n  z-index: 2;\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0285/1316/products/WP179-thepalmswhite-01_large.jpg?v=1443643524\");\n  background-attachment: fixed;\n  padding: 0; }\n\n#header-main {\n  position: relative;\n  height: 75vh;\n  top: 7.5vh;\n  z-index: 2;\n  padding: 0;\n  text-align: left; }\n\n#header-border-animation {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  overflow: hidden; }\n\n#header-border-animation > .top {\n  position: absolute;\n  border-top: 15px solid #f7fb8e;\n  top: 0;\n  width: 100vw;\n  left: 100%; }\n\n#header-border-animation > .bottom {\n  position: absolute;\n  border-bottom: 15px solid #f7fb8e;\n  width: 100vw;\n  height: 75vh;\n  right: 100%; }\n\n#header-border {\n  height: 100%;\n  width: 100%;\n  padding: 20px 0;\n  border-top: 15px solid #f7fb8e;\n  border-bottom: 15px solid #f7fb8e; }\n\n#header-img {\n  background-image: url(\"/public/images/header-img.png\");\n  background-size: cover;\n  background-color: white;\n  height: 100%; }\n\nsvg.intro {\n  position: absolute;\n  height: 300px;\n  width: 1000px;\n  top: 13vh;\n  left: 6vw;\n  z-index: 50; }\n  svg.intro .text {\n    display: none; }\n  svg.intro.go .text {\n    font-family: \"Playfair Display\";\n    font-size: 5.5em;\n    font-weight: 900;\n    display: block; }\n  svg.intro.go .text-stroke {\n    fill: transparent;\n    stroke: #333;\n    stroke-width: 5px;\n    stroke-dashoffset: 1390;\n    stroke-dasharray: 1390;\n    stroke-linecap: butt;\n    stroke-linejoin: round;\n    animation: dash 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 0.3s;\n    -webkit-animation: dash 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 0.3s; }\n  svg.intro.go .text-stroke:nth-child(2) {\n    animation-delay: 0.7s;\n    -webkit-animation-delay: 0.7s; }\n  svg.intro.go .text-stroke:nth-child(3) {\n    animation-delay: 1.3s;\n    -webkit-animation-delay: 1.3s; }\n  svg.intro.go .text-stroke:nth-child(4) {\n    stroke-dashoffset: 650;\n    stroke-dasharray: 650;\n    animation: dash2 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 1.9s;\n    -webkit-animation: dash2 2.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards 1.9s; }\n\n#svg-text-1 {\n  transform: translateY(110px);\n  -webkit-transform: translateY(110px); }\n\n#svg-text-2 {\n  transform: translateY(187px);\n  -webkit-transform: translateY(187px); }\n\n#svg-text-3 {\n  transform: translateY(240px);\n  -webkit-transform: translateY(240px); }\n\n.svg-text-4 {\n  transform: translateY(265px);\n  -webkit-transform: translateY(265px); }\n\n#small-text {\n  font-family: \"Poppins\";\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 1.15em;\n  letter-spacing: 2px; }\n\n.svg-fill {\n  fill: #333 !important; }\n\n@-webkit-keyframes dash {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  60% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@keyframes dash {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  60% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@-webkit-keyframes dash2 {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  80% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n@keyframes dash2 {\n  0% {\n    stroke: #f7fb8e; }\n  30% {\n    stroke: #13ff9d; }\n  80% {\n    stroke: #019c5c; }\n  100% {\n    stroke: #333;\n    stroke-dashoffset: 0; } }\n\n#header-overlay {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.85;\n  background-color: #b5b4b4; }\n\n#about-main {\n  z-index: 20; }\n\n#about-header {\n  background-color: #f7fb8e; }\n\n.about-content, .contact-content {\n  font-family: \"Poppins\";\n  text-align: left;\n  right: 0;\n  background-color: white; }\n\n.contact-content {\n  border-top: 1px solid gainsboro; }\n\n.about-content {\n  border-bottom: 1px solid #424242;\n  height: auto; }\n\n.content-padding {\n  padding: 0px 36px; }\n\n.about-intro {\n  font-size: 22px;\n  font-style: italic;\n  padding-top: 15%; }\n\n#about-btn::before, #work-btn::before, #contact-btn::before, .contact-tool::before,\n.resume-link::before {\n  content: '';\n  position: absolute;\n  z-index: -1;\n  width: 0%;\n  height: 100%;\n  top: 0;\n  left: 0; }\n\n#about-btn::before, #work-btn::before, #contact-btn::before, .contact-tool::before {\n  background-color: #f7fb8e;\n  transition: 0.3s; }\n\n.resume-link::before {\n  border-bottom: 3px solid #333;\n  transition: 0.2s; }\n\n.resume-link {\n  position: relative;\n  cursor: pointer; }\n\n#about-btn:hover, #work-btn:hover, #contact-btn:hover, .contact-tool:hover {\n  color: #424242 !important;\n  transition: 0.3s; }\n\n#about-btn, #work-btn, #contact-btn, .contact-tool {\n  transition: color 0.3s; }\n\n#about-btn:focus::before, #about-btn:hover::before,\n#work-btn:focus::before, #work-btn:hover::before,\n#contact-btn:focus::before, #contact-btn:hover::before, .contact-tool:hover::before,\n.resume-link:hover::before {\n  width: 100%; }\n\n.intro-emphasis {\n  font-family: 'poppins';\n  font-style: normal;\n  font-weight: 600;\n  font-size: 20px; }\n\n.about-heading-text {\n  display: flex;\n  flex-direction: column;\n  margin-bottom: 10px;\n  font-size: 32px;\n  font-weight: 300;\n  font-family: \"Poppins\";\n  text-transform: uppercase;\n  letter-spacing: 3px; }\n  .about-heading-text .divider {\n    width: 35px;\n    border-bottom: 2px solid #424242;\n    display: inline-block; }\n  .about-heading-text .divider.light {\n    border-color: white; }\n\n.about-text ul {\n  list-style-type: square;\n  padding-left: 21px;\n  margin-top: 5px; }\n\n.about-text p, .about-text li {\n  font-family: \"Poppins\";\n  font-size: 15px;\n  font-weight: 300; }\n\n.about-text p {\n  line-height: 1.6; }\n\n.about-text li {\n  line-height: 25px; }\n\n.about-text .grouped {\n  width: 100%;\n  padding-bottom: 15px; }\n\n.mini-heading {\n  font-style: italic;\n  font-size: 17px; }\n\n.video-container {\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n  max-width: 560px;\n  text-align: center;\n  margin: 0 auto 60px; }\n\n.video-date {\n  font-size: 13px;\n  font-family: 'poppins';\n  text-transform: uppercase;\n  letter-spacing: 2px;\n  font-weight: 300; }\n\n.video-title {\n  font-size: 20px;\n  font-style: italic;\n  line-height: 28px;\n  margin: 8px 0; }\n\n#work-main {\n  z-index: 20;\n  background-color: white; }\n\n.work-content {\n  height: auto;\n  right: 0;\n  padding: 0; }\n\n.work-item {\n  overflow: hidden;\n  position: relative; }\n\n.work-item-header {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  min-height: 270px;\n  overflow: hidden;\n  transition: 0.8s height cubic-bezier(0.77, 0, 0.175, 1);\n  -webkit-transition: 0.8s height cubic-bezier(0.77, 0, 0.175, 1); }\n\n.work-item-content {\n  background-color: white;\n  text-align: left;\n  height: 0; }\n  .work-item-content a {\n    font-family: 'poppins';\n    color: #363636; }\n\n.blurb span {\n  font-family: \"Poppins\"; }\n\n.work-item-section {\n  padding-top: 72px !important;\n  padding-bottom: 72px !important; }\n  .work-item-section p {\n    margin-bottom: 0; }\n\n.max-width {\n  max-width: 1000px;\n  margin: 0 auto; }\n\n.features-blurb {\n  width: 100%; }\n\n.color-tab {\n  height: 130px;\n  width: 100px;\n  margin-bottom: 15px; }\n\n.tab-main {\n  width: 100%;\n  height: 70%; }\n\n.tab-title {\n  height: 30%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border: 1px solid #dcdcdc; }\n  .tab-title span {\n    font-family: 'Poppins';\n    font-weight: 300; }\n\n.centered {\n  display: flex;\n  justify-content: center;\n  max-width: none; }\n\n.font-tab {\n  border: 1px solid #dcdcdc;\n  width: 100%;\n  padding: 30px 34px 30px 35px;\n  color: #8a8a8a; }\n\n.font-img {\n  padding-top: 15px;\n  width: 100%;\n  max-width: 533px; }\n\n.font-heading {\n  font-style: italic;\n  font-size: 16px;\n  display: block; }\n\n.header-image {\n  transition: 10s transform linear;\n  background-size: cover;\n  background-position: center 0px;\n  position: relative;\n  top: 0; }\n\n.header-text-wrapper {\n  padding: 45px 36px;\n  position: absolute;\n  top: 0;\n  left: 0;\n  text-align: left; }\n\n.header-title {\n  margin: 0;\n  color: white;\n  font-family: \"Poppins\";\n  font-size: 3.5em;\n  font-weight: 600; }\n\n.header-subtitle {\n  color: white;\n  font-size: 18px;\n  font-style: italic;\n  transition: 0.3s; }\n\n.subtitle-wrapper {\n  position: absolute;\n  width: 350px;\n  margin-top: -38px;\n  margin-left: 5px;\n  transition: 0.4s 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275); }\n\n.border-wrapper {\n  position: relative;\n  overflow: hidden;\n  width: 168px;\n  height: 64.8px;\n  margin-top: 10px;\n  margin-left: 5px; }\n\n.border-wrapper::before {\n  content: 'SEE MORE';\n  font-family: \"Poppins\";\n  font-weight: 300;\n  color: white;\n  font-size: 18px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: 20.5px;\n  left: -106px;\n  transition: 0.6s 0.3s;\n  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n\n.border-top::before,\n.border-right::before,\n.border-left::before,\n.border-bottom::before {\n  content: '';\n  position: absolute; }\n\n.border-top::before,\n.border-bottom::before {\n  transition: width 0.2s ease-in;\n  -webkit-transition: width 0.2s ease-in; }\n\n.border-right::before,\n.border-left::before {\n  transition: height 0.2s ease-in;\n  -webkit-transition: height 0.2s ease-in; }\n\n.border-top::before {\n  border-top: 5px solid white;\n  top: 0;\n  left: 0;\n  width: 50%;\n  transition-delay: 0.6s; }\n\n.border-bottom::before {\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 0%;\n  height: 100%;\n  right: 0;\n  transition-delay: 0.2s; }\n\n.border-right::before {\n  border-right: 5px solid white;\n  height: 0%;\n  right: 0;\n  top: 0;\n  transition-delay: 0.4s; }\n\n.border-left::before {\n  border-right: 5px solid white;\n  height: 0%;\n  left: 0;\n  bottom: 0; }\n\n.x-btn {\n  position: absolute;\n  z-index: 1;\n  top: 20px;\n  right: 20px;\n  overflow: hidden;\n  width: 50px;\n  height: 50px;\n  cursor: pointer; }\n\n.x-btn > p::before {\n  content: 'X';\n  font-family: \"Poppins\";\n  color: white;\n  background-color: #424242;\n  font-size: 20px;\n  padding: 15px;\n  letter-spacing: 3px;\n  position: absolute;\n  margin: 0;\n  top: -1.6px;\n  left: -46px;\n  transition: 0.2s; }\n\n.x-btn > .top::before {\n  content: '';\n  position: absolute;\n  border-top: 5px solid white;\n  top: 0;\n  left: 0;\n  width: 0%;\n  transition: 0.2s 0.7s; }\n\n.x-btn > .right::before {\n  content: '';\n  position: absolute;\n  border-right: 5px solid white;\n  height: 0%;\n  right: 0;\n  top: 0;\n  transition: 0.2s 0.5s; }\n\n.x-btn > .bottom::before {\n  content: '';\n  position: absolute;\n  border-bottom: 5px solid white;\n  top: 0;\n  width: 0%;\n  height: 100%;\n  right: 0;\n  transition: 0.2s 0.3s; }\n\n.x-btn > .left::before {\n  content: '';\n  position: absolute;\n  border-right: 5px solid white;\n  height: 0%;\n  left: 0;\n  bottom: 0;\n  transition: 0.2s 0.1s; }\n\n.x-btn > .top.animate::before {\n  width: 100%;\n  transition: width 0.16s 0.8s; }\n\n.x-btn > .right.animate::before {\n  height: 100%;\n  transition: height 0.16s 0.96s; }\n\n.x-btn > .bottom.animate::before {\n  width: 100%;\n  transition: width 0.16s 1.12s; }\n\n.x-btn > .left.animate::before {\n  height: 100%;\n  transition: height 0.16s 1.28s; }\n\n.x-btn > p.animate::before {\n  left: 4.5px;\n  transition: left 0.18s 1.44s; }\n\n.work-item.closed:hover {\n  cursor: pointer; }\n  .work-item.closed:hover .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n  .work-item.closed:hover .header-image {\n    transform: scale(1.4);\n    -webkit-transform: scale(1.4); }\n  .work-item.closed:hover .border-top::before, .work-item.closed:hover .border-bottom::before {\n    width: 100%;\n    transition: width 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-bottom::before {\n    transition-delay: 0.4s; }\n  .work-item.closed:hover .border-right::before, .work-item.closed:hover .border-left::before {\n    height: 100%;\n    transition: height 0.2s;\n    transition-timing-function: ease-in; }\n  .work-item.closed:hover .border-right::before {\n    transition-delay: 0.2s; }\n  .work-item.closed:hover .border-left::before {\n    transition-delay: 0.6s; }\n  .work-item.closed:hover .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; }\n  .work-item.closed:hover .border-wrapper:hover {\n    filter: grayscale(0) sepia(100%) contrast(100%) saturate(7.5);\n    -webkit-filter: grayscale(0) sepia(100%) contrast(100%) saturate(7.5); }\n\n#contact-main {\n  z-index: 10; }\n\n#contact-header {\n  background-color: #424242; }\n  #contact-header .title-text {\n    border-color: white;\n    color: white; }\n\n.contact-content {\n  min-height: 100vh; }\n\n.contact-toolbar {\n  padding-bottom: 60px; }\n  .contact-toolbar .contact-tool {\n    position: relative;\n    z-index: 0;\n    font-size: 16px;\n    font-weight: 900;\n    color: white;\n    background-color: #424242;\n    padding: 10px 15px;\n    display: inline-block;\n    margin-right: 15px;\n    margin-bottom: 5px; }\n\n.hide-section {\n  display: none; }\n\n.small-header {\n  height: 62vh;\n  transition-delay: 0.9s; }\n\n.expanded-content {\n  height: 100%; }\n\n.fixed-btn {\n  position: fixed !important; }\n\n.scale-up {\n  transform: scale(1.3); }\n\n#footer-text {\n  position: fixed;\n  background-color: #f7fb8e;\n  top: 55%;\n  display: block;\n  z-index: 0;\n  padding: 15px 14px 14px 18px;\n  text-align: left; }\n  #footer-text p {\n    font-family: \"Poppins\";\n    text-transform: uppercase;\n    margin: 0; }\n  #footer-text .small {\n    font-size: 25px;\n    font-weight: 300;\n    letter-spacing: 3.8px;\n    margin-top: -15px;\n    margin-left: 3px; }\n  #footer-text .big {\n    font-weight: 600;\n    letter-spacing: 3px; }\n\n@media screen and (min-width: 321px) {\n  svg.intro {\n    height: 350px; }\n    svg.intro.go .text {\n      font-size: 6.6em; }\n  #svg-text-2 {\n    transform: translateY(207px);\n    -webkit-transform: translateY(207px); }\n  #svg-text-3 {\n    transform: translateY(271px);\n    -webkit-transform: translateY(271px); }\n  .svg-text-4 {\n    transform: translateY(304px);\n    -webkit-transform: translateY(304px); }\n  #small-text {\n    font-size: 1.42em; }\n  .title-text {\n    font-size: 3em;\n    padding: 15px 20px 20px; }\n  .menu-item {\n    font-size: 1.4em;\n    padding: 7px 13px 9px; }\n  .about-intro {\n    font-size: 23px; }\n  .intro-emphasis {\n    font-size: 21px; }\n  .about-text p, .about-text li {\n    font-size: 16px; }\n  .about-heading-text {\n    font-size: 33px; }\n  .mini-heading {\n    font-size: 18px; }\n  .video-title {\n    font-size: 22px; }\n  .video-date {\n    font-size: 14px; }\n  .header-title {\n    font-size: 4em; }\n  .header-subtitle {\n    font-size: 20px; } }\n\n@media screen and (min-width: 414px) {\n  .content-padding {\n    padding: 0px 50px; }\n  .header-text-wrapper {\n    padding-right: 60px;\n    padding-left: 60px; } }\n\n@media screen and (min-width: 415px) {\n  #header {\n    height: 100vh; }\n  #header-main {\n    top: 12.5vh; }\n  #header-border {\n    border-color: #888; }\n  .header-title {\n    font-size: 4.5em; }\n  .header-subtitle {\n    font-size: 21px; } }\n\n@media screen and (min-width: 668px) {\n  #svg-text-2 {\n    transform: translateY(225px);\n    -webkit-transform: translateY(225px); }\n  #svg-text-3 {\n    transform: translateY(303px);\n    -webkit-transform: translateY(303px); }\n  .svg-text-4 {\n    transform: translateY(344px);\n    -webkit-transform: translateY(344px); }\n  #small-text {\n    font-size: 1.8em; }\n  svg.intro.go .text {\n    font-size: 8em; }\n  .content-padding {\n    padding: 0px 100px; }\n  .about-intro {\n    font-size: 28px; }\n  .intro-emphasis {\n    font-size: 25px; }\n  .about-text p, .about-text li {\n    font-size: 17px; }\n  .about-text .grouped {\n    width: 45.5%;\n    margin-right: 20px; }\n  .about-heading-text {\n    font-size: 35px; }\n  .mini-heading {\n    font-size: 20px; }\n  .video-title {\n    font-size: 25px; }\n  .video-date {\n    font-size: 15px; }\n  .features-blurb {\n    width: 70%;\n    max-width: 440px; }\n  .contact-toolbar .contact-tool {\n    font-size: 18px; } }\n\n@media screen and (min-width: 992px) {\n  #header-main {\n    height: 85vh;\n    top: 7.5vh; }\n  #header-border-animation > .top {\n    border-width: 7px;\n    width: 67vw; }\n  #header-border-animation > .bottom {\n    border-width: 7px;\n    height: 85vh;\n    width: 67vw; }\n  #header-border-animation > .left {\n    position: absolute;\n    border-right: 7px solid #f7fb8e;\n    height: 85vh;\n    left: 0;\n    bottom: 100%; }\n  #header-border {\n    padding-left: 20px;\n    border-left: 7px solid #888;\n    border-width: 7px; }\n  #small-text {\n    font-size: 1.8em; }\n  svg.intro {\n    top: 25%;\n    left: -145px;\n    height: 380px; }\n  #about-header {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 200; }\n  .about-content, .work-content {\n    position: relative;\n    z-index: 100;\n    left: 33.3%; }\n  #work-header {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 200; }\n  .fixed-header {\n    position: fixed !important; }\n  .work-item-section {\n    padding-right: 172px;\n    padding-left: 172px; }\n  .work-item-section.long {\n    padding-top: 100px !important;\n    padding-bottom: 100px !important; }\n  #work-header {\n    -webkit-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -moz-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -ms-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    -o-transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);\n    transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .work-content {\n    transition: 0.6s cubic-bezier(0.77, 0, 0.175, 1); }\n  .minimized {\n    width: 25%; }\n  .expanded-column {\n    width: 75%;\n    left: 25%; }\n  .add-border {\n    border-right: 1px solid #dcdcdc; } }\n\n@media screen and (min-width: 1700px) {\n  #svg-text-2 {\n    transform: translateY(240px);\n    -webkit-transform: translateY(240px); }\n  #svg-text-3 {\n    transform: translateY(320px);\n    -webkit-transform: translateY(320px); }\n  .svg-text-4 {\n    transform: translateY(361px);\n    -webkit-transform: translateY(361px); }\n  #small-text {\n    font-size: 2em; }\n  svg.intro.go .text {\n    font-size: 9em; } }\n\n@media only screen and (min-device-width: 320px) and (max-device-width: 991px) {\n  .work-item.closed.small-screen .border-wrapper::before {\n    left: 32px;\n    transition: 0.5s;\n    transition-delay: 0.9s;\n    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }\n  .work-item.closed.small-screen .border-top::before,\n  .work-item.closed.small-screen .border-bottom::before {\n    width: 100%;\n    transition: width 0.2s ease-in;\n    -webkit-transition: width 0.2s ease-in; }\n  .work-item.closed.small-screen .border-right::before,\n  .work-item.closed.small-screen .border-left::before {\n    height: 100%;\n    transition: height 0.2s ease-in;\n    -webkit-transition: height 0.2s ease-in; }\n  .work-item.closed.small-screen .border-bottom::before {\n    transition-delay: 0.4s; }\n  .work-item.closed.small-screen .border-right::before {\n    transition-delay: 0.2s; }\n  .work-item.closed.small-screen .border-left::before {\n    transition-delay: 0.6s; }\n  .work-item.closed.small-screen .subtitle-wrapper {\n    margin-top: -15px;\n    opacity: 0;\n    transition: 0.2s; } }\n", ""]);
 	
 	// exports
 
@@ -41817,7 +41817,79 @@
 	            _react2.default.createElement('span', { className: 'divider' })
 	          ),
 	          _react2.default.createElement('br', null),
-	          _react2.default.createElement('div', { style: { display: 'flex', flexDirection: 'column', alignItems: 'center' } }),
+	          _react2.default.createElement(
+	            'div',
+	            { style: { display: 'flex', flexDirection: 'column', alignItems: 'center' } },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'video-container' },
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'video-date' },
+	                'March 2017'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'video-title' },
+	                'How to Leverage',
+	                _react2.default.createElement('br', null),
+	                'React.js for Beautiful UI'
+	              ),
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'youtube', 'data-embed': '75XmHauQNdA' },
+	                _react2.default.createElement('img', { src: 'https://i.ytimg.com/vi/75XmHauQNdA/hqdefault.jpg' }),
+	                _react2.default.createElement('div', { className: 'play-button' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'video-container' },
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'video-date' },
+	                'March 2017'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'video-title' },
+	                'Introducing a New UI',
+	                _react2.default.createElement('br', null),
+	                'Animation Library for React.js'
+	              ),
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'youtube', 'data-embed': 'krAzPZE3s1I' },
+	                _react2.default.createElement('img', { src: 'https://i.ytimg.com/vi/krAzPZE3s1I/hqdefault.jpg' }),
+	                _react2.default.createElement('div', { className: 'play-button' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'video-container' },
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'video-date' },
+	                'April 2017'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'video-title' },
+	                'Presenting Omni:',
+	                _react2.default.createElement('br', null),
+	                'A Dream Journal/Analysis App'
+	              ),
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'youtube', 'data-embed': 'VQYodA9GZ20' },
+	                _react2.default.createElement('img', { src: 'https://i.ytimg.com/vi/VQYodA9GZ20/hqdefault.jpg' }),
+	                _react2.default.createElement('div', { className: 'play-button' })
+	              )
+	            )
+	          ),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement('hr', null),
 	          _react2.default.createElement('br', null),
@@ -42289,6 +42361,46 @@
 	      ),
 	      _react2.default.createElement(
 	        "div",
+	        { className: "long", style: { backgroundColor: '#333', color: 'white' } },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "max-width content-padding work-item-section" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-heading-text" },
+	            "Presentation",
+	            _react2.default.createElement("span", { className: "divider light" })
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "video-container" },
+	            _react2.default.createElement(
+	              "span",
+	              { className: "video-date", style: { color: '#f7fb8e', fontWeight: 600 } },
+	              "April 2017"
+	            ),
+	            _react2.default.createElement(
+	              "span",
+	              { className: "video-title" },
+	              "Presenting Omni:",
+	              _react2.default.createElement("br", null),
+	              "A Dream Journal/Analysis App"
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "youtube", "data-embed": "VQYodA9GZ20" },
+	              _react2.default.createElement("img", { src: "https://i.ytimg.com/vi/VQYodA9GZ20/hqdefault.jpg" }),
+	              _react2.default.createElement("div", { className: "play-button" })
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
 	        { className: "work-item-section content-padding max-width" },
 	        _react2.default.createElement(
 	          "div",
@@ -42632,6 +42744,46 @@
 	          )
 	        ),
 	        _react2.default.createElement("br", null)
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "long", style: { backgroundColor: '#333', color: 'white' } },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "max-width content-padding work-item-section" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-heading-text" },
+	            "Presentation",
+	            _react2.default.createElement("span", { className: "divider light" })
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "video-container" },
+	            _react2.default.createElement(
+	              "span",
+	              { className: "video-date", style: { color: '#f7fb8e', fontWeight: 600 } },
+	              "March 2017"
+	            ),
+	            _react2.default.createElement(
+	              "span",
+	              { className: "video-title" },
+	              "Introducing a New UI",
+	              _react2.default.createElement("br", null),
+	              "Animation Library for React.js"
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "youtube", "data-embed": "krAzPZE3s1I" },
+	              _react2.default.createElement("img", { src: "https://i.ytimg.com/vi/krAzPZE3s1I/hqdefault.jpg" }),
+	              _react2.default.createElement("div", { className: "play-button" })
+	            )
+	          )
+	        )
 	      ),
 	      _react2.default.createElement(
 	        "div",
@@ -43023,6 +43175,46 @@
 	          )
 	        ),
 	        _react2.default.createElement("br", null)
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "long", style: { backgroundColor: '#333', color: 'white' } },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "max-width content-padding work-item-section" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "about-heading-text" },
+	            "Presentation",
+	            _react2.default.createElement("span", { className: "divider light" })
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "video-container" },
+	            _react2.default.createElement(
+	              "span",
+	              { className: "video-date", style: { color: '#f7fb8e', fontWeight: 600 } },
+	              "March 2017"
+	            ),
+	            _react2.default.createElement(
+	              "span",
+	              { className: "video-title" },
+	              "How to Leverage",
+	              _react2.default.createElement("br", null),
+	              "React.js for Beautiful UI"
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "youtube", "data-embed": "75XmHauQNdA" },
+	              _react2.default.createElement("img", { src: "https://i.ytimg.com/vi/75XmHauQNdA/hqdefault.jpg" }),
+	              _react2.default.createElement("div", { className: "play-button" })
+	            )
+	          )
+	        )
 	      ),
 	      _react2.default.createElement(
 	        "div",
@@ -45673,11 +45865,29 @@
 /* 468 */
 /***/ function(module, exports) {
 
-	'use strict';
+	"use strict";
 	
 	$(document).ready(function () {
 	
 	  window.onload = function () {
+	
+	    //LOAD YOUTUBE VIDS
+	    (function () {
+	      var youtube = document.querySelectorAll(".youtube");
+	
+	      for (var i = 0; i < youtube.length; i++) {
+	        youtube[i].addEventListener("click", function () {
+	          var iframe = document.createElement("iframe");
+	          iframe.setAttribute("frameborder", "0");
+	          iframe.setAttribute("allowfullscreen", "");
+	          iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
+	
+	          this.innerHTML = "";
+	          this.appendChild(iframe);
+	        });
+	      }
+	    })();
+	
 	    window.loaded = true;
 	
 	    if (window.innerWidth <= 432) {
@@ -45777,7 +45987,7 @@
 	      if (windowTop > smallHeaderTop && windowTop <= smallHeaderHeight) {
 	        calc = (windowTop - smallHeaderTop) / 2;
 	      }
-	      $smallHeader.css({ 'background-position': 'center ' + calc + 'px' });
+	      $smallHeader.css({ 'background-position': "center " + calc + "px" });
 	    }
 	  });
 	
@@ -45840,19 +46050,19 @@
 	  var sections = ['omni', 'rdi', 'macbox', 'nonprof'];
 	
 	  sections.forEach(function (section, i) {
-	    $('#' + section).click(function (e) {
+	    $("#" + section).click(function (e) {
 	      e.stopPropagation();
 	
-	      if ($('#' + section).hasClass('opened')) {
+	      if ($("#" + section).hasClass('opened')) {
 	        return;
 	      }
 	
 	      //make header img unclickable
-	      $('#' + section).removeClass('closed');
-	      $('#' + section).addClass('opened');
+	      $("#" + section).removeClass('closed');
+	      $("#" + section).addClass('opened');
 	
 	      //scroll to section
-	      TweenLite.to($body, 0.4, { scrollTop: $('#' + section).offset().top, onComplete: function onComplete() {
+	      TweenLite.to($body, 0.4, { scrollTop: $("#" + section).offset().top, onComplete: function onComplete() {
 	          //hide other sections
 	          $('.work-content > div.closed').addClass('hide-section');
 	          $window.scrollTop($('.opened').offset().top);
@@ -45864,7 +46074,7 @@
 	          $workHeader.addClass('add-border');
 	
 	          //give height to hidden content
-	          $('#' + section + ' > .work-item-content').addClass('expanded-content');
+	          $("#" + section + " > .work-item-content").addClass('expanded-content');
 	
 	          setTimeout(function () {
 	            //make page expand
@@ -45872,10 +46082,10 @@
 	            $workContent.addClass('expanded-column');
 	
 	            //raise up header image
-	            $('#' + section + ' > .work-item-header').addClass('small-header');
+	            $("#" + section + " > .work-item-header").addClass('small-header');
 	
 	            //add parallax scrolling to header image
-	            $('#' + section + ' > .work-item-header > .header-image').addClass('scroll-header');
+	            $("#" + section + " > .work-item-header > .header-image").addClass('scroll-header');
 	            window.openedSection = true;
 	          }, 300);
 	
