@@ -45927,8 +45927,7 @@
 	      $headerBorderBottom = $('#header-border-animation > .bottom');
 	
 	  if ($window.width() > 432) {
-	    $body.addClass('loaded');
-	    //loadingAnimation();
+	    loadingAnimation();
 	  }
 	
 	  function loadingAnimation() {
