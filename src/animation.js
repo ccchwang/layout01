@@ -1,4 +1,6 @@
-
+ window.addEventListener('load', function(){
+    $('#app').css('display', 'initial')
+  })
 
 
 $(document).ready(function () {
@@ -36,28 +38,7 @@ $(document).ready(function () {
 
 
 
-  window.addEventListener('load', function(){
-    console.log('loaded')
 
-    $headerBorderTop.css('animation-play-state', 'running');
-    $headerBorderLeft.css('animation-play-state', 'running');
-    $headerBorderBottom.css('animation-play-state', 'running');
-
-    setTimeout(function(){
-      $svgIntro.addClass('go');
-      $body.addClass('loaded');
-      //$svgText.css('animation-play-state', 'paused')
-    }, 1500)
-    /*
-      stop circling animation
-      animate in borders
-      animate text
-
-
-    */
-
-    loadVideos();
-  })
 
   // //FUNCTIONS FOR LOADING ANIMATION
   // function loadAnimation() {
@@ -87,20 +68,7 @@ $(document).ready(function () {
     //   }
     // }
 
-    function startSVGAnimation() {
-      $svgIntro.addClass('go');
-      $body.addClass('loaded');
-
-      setTimeout(function(){
-        fillSVGText()
-      }, 3000)
-    }
-
-    function fillSVGText() {
-      TweenLite.to($svgText, 2.5, {fill: '#333', onComplete: function(){
-        $svgText.css('animation-play-state', 'paused')}
-      })
-    }
+    loadVideos()
 
     //LOAD YOUTUBE VIDS
     function loadVideos () {

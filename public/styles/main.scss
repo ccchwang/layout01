@@ -13,6 +13,92 @@ $ease-expand-page: cubic-bezier(.77,0,.175,1);
 $ease-svg-text: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 // --------------------------------
 
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: $secondary-color;
+  z-index: 3500;
+  transition: top 1.5s $ease-expand-page 0.5s
+}
+
+.pace::after, .pace::before {
+  text-align: center;
+  width: 220px;
+  font-family: 'poppins';
+  color: #f7fb8e;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  border: 5px solid;
+  padding: 20px 25px;
+  margin: 0;
+  top: 45vh;
+  position: absolute;
+  left: 43vw;
+}
+
+.pace::before {
+  content: 'LOADING...';
+}
+
+.pace::after {
+  content: 'WELCOME';
+  opacity: 0
+}
+
+@-webkit-keyframes disappearTxt {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes disappearTxt {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes appearTxt {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appearTxt {
+  100% {
+    opacity: 1;
+  }
+}
+
+.pace-inactive {
+  top: -100vh;
+  transition: top 1s $ease-expand-page 1s
+}
+.pace.pace-inactive::before {
+  animation: disappearTxt 0.35s forwards 0.15s;
+  -webkit-animation: disappearTxt 0.35s forwards 0.15s;
+}
+
+.pace.pace-inactive::after {
+  animation: appearTxt 0.6s forwards 0.5s;
+  -webkit-animation: appearTxt 0.6s forwards 0.5s;
+}
+
+.pace .pace-progress {
+  background: #f7fb8e;
+  position: absolute;
+  z-index: 4000;
+  top: 0;
+  right: 100%;
+  width: 100vw;
+  height: 15px;
+}
+
 .youtube {
     background-color: #000;
     margin-bottom: 30px;
@@ -76,13 +162,10 @@ $ease-svg-text: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 body {
   margin: 0;
-  overflow: hidden;
-  position: fixed
 }
 
-body.loaded {
-  overflow: auto;
-  position: initial
+#app {
+  display: none
 }
 
 .img-responsive {
