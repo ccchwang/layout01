@@ -25,24 +25,24 @@ $ease-svg-text: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   top: 0;
   display: flex;
   justify-content: center;
-  background-color: $secondary-color;
+  background: linear-gradient(45deg, #F7FB8D, #82d08b);
   z-index: 3500;
-  transition: top 1.5s $ease-expand-page 0.5s
+  transition: top 2s $ease-expand-page 0.5s
 }
 
 .pace::after, .pace::before {
   text-align: center;
-  width: 220px;
+  width: 266px;
   font-family: 'poppins';
   color: white;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 600;
-  letter-spacing: 4px;
-  border: 5px solid #f7fb8e;
-  padding: 20px 25px;
+  letter-spacing: 5px;
+  border: 3px solid #f7fb8e;
+  padding: 28px 32px 25px 34px;
   margin: 0;
   position: absolute;
-  top: 50%
+  top: 43%
 }
 
 .pace::before {
@@ -274,12 +274,12 @@ body {
   border-bottom: 15px solid $highlight-color;
 }
 
-// #header-img {
-//   background-image: url('/public/images/header-img-1.jpg');
-//   background-size: cover;
-//   background-color: white;
-//   height: 100%;
-// }
+#header-img {
+  background-image: url('/public/images/header-img-1.jpg');
+  background-size: cover;
+  background-color: white;
+  height: 100%;
+}
 
 
 svg.intro {

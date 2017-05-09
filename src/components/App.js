@@ -46,11 +46,15 @@ export default class extends Component {
 
 
         <div id="header-border">
-          <div style={{height: '100%', width: '100%', overflow: 'hidden'}}>
+          <div id="header-img" />
+
+         {/*
+         <div style={{height: '100%', width: '100%', overflow: 'hidden'}}>
           <video id="header-vid" autoPlay loop>
             <source src="/public/images/me5950832-palm-leaves-isolated-on-white-background-1280x720-q3-37237.mp4" type="video/mp4" />
           </video>
           </div>
+        */}
         </div>
       </Col>
 
