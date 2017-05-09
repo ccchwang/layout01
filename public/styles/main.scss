@@ -27,7 +27,6 @@ $ease-svg-text: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   justify-content: center;
   background: linear-gradient(45deg, #F7FB8D, #82d08b);
   z-index: 3500;
-  transition: top 2s $ease-expand-page 0.5s
 }
 
 .pace::after, .pace::before {
@@ -78,16 +77,16 @@ $ease-svg-text: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 .pace-inactive {
   top: -100vh;
-  transition: top 1s $ease-expand-page 1.1s
+  transition: top 0.8s $ease-expand-page 1.15s
 }
 .pace.pace-inactive::before {
-  animation: disappearTxt 0.35s forwards 0.15s;
-  -webkit-animation: disappearTxt 0.35s forwards 0.15s;
+  animation: disappearTxt 0.35s forwards 0.20s;
+  -webkit-animation: disappearTxt 0.35s forwards 0.20s;
 }
 
 .pace.pace-inactive::after {
-  animation: appearTxt 0.6s forwards 0.5s;
-  -webkit-animation: appearTxt 0.6s forwards 0.5s;
+  animation: appearTxt 0.6s forwards 0.55s;
+  -webkit-animation: appearTxt 0.6s forwards 0.55s;
 }
 
 .pace .pace-progress {
@@ -163,6 +162,11 @@ $ease-svg-text: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 body {
   margin: 0;
+  overflow: hidden;
+}
+
+body.pace-done {
+  overflow: initial
 }
 
 .img-responsive {
