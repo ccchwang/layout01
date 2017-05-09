@@ -1,5 +1,3 @@
-import '../../public/styles/main.scss'
-
 import React, {Component} from 'react';
 import MainMenu from '../MainMenu'
 import { Grid, Row, Col } from 'react-bootstrap'
