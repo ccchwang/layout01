@@ -1,8 +1,3 @@
- window.addEventListener('load', function(){
-    $('#app').css('display', 'initial')
-  })
-
-
 $(document).ready(function () {
 
   const $window = $(window),
@@ -29,49 +24,11 @@ $(document).ready(function () {
         $xBtnBottom = $('.x-btn > .bottom'),
         $xBtnLeft = $('.x-btn > .left'),
         $xBtnP = $('.x-btn > p'),
-        $svgIntro = $('.intro'),
-        $svgText = $('.intro > text'),
-        $headerImage = $('.header-image'),
-        $headerBorderTop = $('#header-border-animation > .top'),
-        $headerBorderLeft = $('#header-border-animation > .left'),
-        $headerBorderBottom = $('#header-border-animation > .bottom');
+        $headerImage = $('.header-image');
 
-
-
-
-
-  // //FUNCTIONS FOR LOADING ANIMATION
-  // function loadAnimation() {
-  //   TweenLite.to($headerBorderTop, 0.25, {left:'50%', ease: Linear.easeNone, onComplete: animateRest})
-  // }
-
-  // function animateRest() {
-  //     TweenLite.to($headerBorderTop, 0.25, {left:0, ease: Linear.easeNone, onComplete: animateLeft});
-  //   }
-
-  //   function animateLeft() {
-  //     TweenLite.to($headerBorderLeft, 0.5, {bottom:0, onComplete: animateBottom});
-  //   }
-
-  //   function animateBottom() {
-  //     TweenLite.to($headerBorderBottom, 0.5, {right:0, ease: Linear.easeNone, onComplete: startSVGAnimation});
-  //   }
-
-    // function checkLoad() {
-    //   if (window.loaded) {
-    //     TweenLite.to($headerBorderBottom, 0.25, {right:0, ease: Linear.easeNone, onComplete: startSVGAnimation});
-    //   }
-    //   else {
-    //     window.onload = function() {
-    //       TweenLite.to($headerBorderBottom, 0.25, {right:0, ease: Linear.easeNone, onComplete: startSVGAnimation});
-    //     }
-    //   }
-    // }
-
-    loadVideos()
 
     //LOAD YOUTUBE VIDS
-    function loadVideos () {
+    (function () {
       var youtube = document.querySelectorAll( ".youtube" );
 
       for (var i = 0; i < youtube.length; i++) {
@@ -85,7 +42,7 @@ $(document).ready(function () {
                 this.appendChild( iframe );
         } );
       }
-    }
+    })()
 
 
   //*** PARALLAX SCROLLING FOR HEADER IMAGE
@@ -183,7 +140,7 @@ $(document).ready(function () {
       $(`#${section}`).addClass('opened')
 
       //scroll to section
-      TweenLite.to($body, 0.4, {scrollTop:$(`#${section}`).offset().top, onComplete: function () {
+      $body.animate({scrollTop:$(`#${section}`).offset().top}, 400, function() {
         //hide other sections
         $('.work-content > div.closed').addClass('hide-section');
         $window.scrollTop($('.opened').offset().top)
@@ -211,26 +168,13 @@ $(document).ready(function () {
           window.openedSection = true;
         }, 300)
 
-        // TweenLite.to($header, 0.6, {width:'25%', ease: Power2.easeInOut, delay: 0.3});
-        // TweenLite.to($workContent, 0.6, {width:'75%', left: '25%', ease: Power2.easeInOut, delay: 0.3, onComplete: function(){
-        //   //when page expanded, raise up header image
-        //   $(`#${section} > .work-item-header`).addClass('small-header');
-
-        //   //add parallax scrolling to header image
-        //   $(`#${section} > .work-item-header > .header-image`).addClass('scroll-header');
-        //   window.openedSection = true;
-
-        // }});
-
         //show x button
         $xBtnTop.addClass('animate');
         $xBtnRight.addClass('animate');
         $xBtnBottom.addClass('animate');
         $xBtnLeft.addClass('animate');
         $xBtnP.addClass('animate');
-      }});
-
-
+    });
     })
   })
 
@@ -269,8 +213,7 @@ $nextBtnNonprof.click(function(e) {
     e.stopPropagation();
     let $openedElem = $('.opened');
 
-    TweenLite.to($body, 0.4, {scrollTop: $workContent.offset().top, onComplete: function () {
-
+    $body.animate({scrollTop: $workContent.offset().top}, 400, function() {
       //drop down header
       $itemHeader.removeClass('small-header')
 
@@ -279,7 +222,7 @@ $nextBtnNonprof.click(function(e) {
 
       //remove parallax scrolling off header image
       $headerImage.removeClass('scroll-header');
-      TweenLite.to($headerImage, 0.5, {'background-position': 'center 0px'})
+      $headerImage.css({'background-position' : 'center 0px'});
       window.openedSection = false;
 
       //make header img clickable
@@ -310,22 +253,7 @@ $nextBtnNonprof.click(function(e) {
         //remove border from title block
         $workHeader.removeClass('add-border');
       }, 800)
-
-
-      // //close page
-      // TweenLite.to($header, 0.6, {width:'33.33333333%', delay: 0.8, ease: Power3.easeInOut});
-      // TweenLite.to($workContent, 0.6, {width:'66.66666667%', left: '33.3%', delay: 0.8, ease: Power3.easeInOut, onComplete: function(){
-      //   //after page closed, remove height from hidden content
-      //   $itemContent.removeClass('expanded-content');
-
-      //   //show hidden sections again
-      //   $('.work-content > div').removeClass('hide-section')
-      //   $window.scrollTop($openedElem.offset().top)
-
-      //   //remove border from title block
-      //   $header.removeClass('add-border');
-      // }});
-    }})
+    })
 
   })
 
