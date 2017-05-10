@@ -426,8 +426,8 @@ template {
   display: none;
 }
 
-/* MY CODE
-   ========================================================================== */
+
+
 
 .pace {
   -webkit-pointer-events: none;
@@ -438,14 +438,8 @@ template {
       user-select: none;
   height: 100vh;
   width: 100vw;
-  position: fixed;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: fixed;
   background: linear-gradient(45deg, #F7FB8D, #82d08b);
   z-index: 3500;
 }
@@ -460,9 +454,12 @@ template {
   letter-spacing: 5px;
   border: 3px solid #f7fb8e;
   padding: 28px 32px 25px 34px;
-  margin: 0;
   position: absolute;
   top: 43%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pace::before {
@@ -540,8 +537,8 @@ template {
   width: 90px;
   height: 60px;
   background-color: #333;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.156863) 0px 5px 10px, rgba(0, 0, 0, 0.227451) 0px 5px 10px;
-          box-shadow: rgba(0, 0, 0, 0.156863) 0px 5px 10px, rgba(0, 0, 0, 0.227451) 0px 5px 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15686) 0px 5px 10px, rgba(0, 0, 0, 0.22745) 0px 5px 10px;
+          box-shadow: rgba(0, 0, 0, 0.15686) 0px 5px 10px, rgba(0, 0, 0, 0.22745) 0px 5px 10px;
   z-index: 1;
   opacity: 0.9;
 }
@@ -593,8 +590,15 @@ body {
   overflow: hidden;
 }
 
+#app {
+  visibility: hidden;
+}
+
 body.pace-done {
   overflow: initial;
+}
+body.pace-done #app {
+  visibility: initial;
 }
 
 .img-responsive {
@@ -809,7 +813,6 @@ svg.intro .text {
 .resume-link::before {
   content: '';
   position: absolute;
-  z-index: -1;
   width: 0%;
   height: 100%;
   top: 0;
@@ -817,12 +820,14 @@ svg.intro .text {
 }
 
 #about-btn::before, #work-btn::before, #contact-btn::before, .contact-tool::before {
+  z-index: -1;
   background-color: #f7fb8e;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .resume-link::before {
+  z-index: 0;
   border-bottom: 3px solid #333;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -1393,10 +1398,14 @@ svg.intro .text {
   position: fixed;
   background-color: #f7fb8e;
   top: 55%;
-  display: block;
   z-index: 0;
   padding: 15px 13px 13px 18px;
   text-align: left;
+  width: 142px;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 #footer-text p {
   font-family: "Poppins";

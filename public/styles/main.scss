@@ -385,7 +385,6 @@ svg.intro {
 .resume-link::before {
   content: '';
   position: absolute;
-  z-index: -1;
   width: 0%;
   height: 100%;
   top: 0;
@@ -393,11 +392,13 @@ svg.intro {
 }
 
 #about-btn::before, #work-btn::before, #contact-btn::before, .contact-tool::before {
+  z-index: -1;
   background-color: $highlight-color;
   transition: 0.3s;
 }
 
 .resume-link::before {
+  z-index: 0;
   border-bottom: 3px solid #333;
   transition: 0.2s;
 }
