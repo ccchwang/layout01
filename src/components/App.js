@@ -1,3 +1,5 @@
+import '../../public/styles/main.scss'
+
 import React, {Component} from 'react';
 import MainMenu from '../MainMenu'
 import { Grid, Row, Col } from 'react-bootstrap'
@@ -815,7 +817,7 @@ export default class extends Component {
 
       {/*FOOTER*/}
       <Row className="show-grid">
-        <Col xs={12} id="header" style={{display: 'flex', justifyContent: 'center'}}>
+        <Col xs={12} id="header">
 
         <div id="header-overlay" />
         <div id="footer-text">
