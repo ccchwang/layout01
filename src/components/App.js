@@ -797,7 +797,7 @@ export default class extends Component {
           <br />
           {/* SHORT BLURB */}
           <div className="about-text blurb">
-            <p>I'm most interested in crafting digital experiences at creative agencies or advocacy organizations. If you'd like to collaborate or discuss an opportunity, please don't hesitate to contact me.</p>
+            <p>I'm most interested in crafting digital experiences at creative agencies or advocacy groups. If you'd like to collaborate or discuss an opportunity, please don't hesitate to contact me.</p>
             <br /><br />
             <span className="video-date">Reach me at:</span>
             <div className="contact-toolbar">
