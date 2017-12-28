@@ -1,15 +1,15 @@
 import React from 'react';
 
 export default function Macbox () {
-
   return (
     <div className="work-item closed small-screen" id="macbox">
-
       {/* macbox - header image */}
       <div className="work-item-header">
         <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/macbox.jpg')"}} />
         <div className="header-text-wrapper">
-          <h1 className="header-title">Macbox</h1>
+          <h1 className="header-title">
+            Macbox
+          </h1>
           <div className="border-wrapper">
             <div className="border-top" />
             <div className="border-right" />
@@ -17,30 +17,42 @@ export default function Macbox () {
             <div className="border-left" />
           </div>
           <div className="subtitle-wrapper">
-            <p className="header-subtitle">Prototype e-commerce platform</p>
-            <p style={{marginTop: '-10px'}} className="header-subtitle">NERD Stack, React-Redux, CSS3</p>
+            <p className="header-subtitle">
+              Prototype e-commerce platform
+            </p>
+            <p style={{marginTop: '-10px'}} className="header-subtitle">
+              NERD Stack, React-Redux, CSS3
+            </p>
           </div>
         </div>
       </div>
 
       {/* Macbox - content */}
       <section className="work-item-content about-text">
-
         {/* blurb */}
         <div className="work-item-section content-padding blurb max-width">
-          <p>Macbox is a prototype e-commerce platform built with PostgreSQL for data management in the backend and Redux to keep track of state in the frontend. It is a fullstack Javascript app and fully functional&mdash;users can complete the entire shopping flow, from browse to checkout.
-          <br /><br />
-          The objective of this project was to hone our skills in schema design, RESTful routes, authentication, and deployment. <span style={{fontWeight: '600'}}>I also used it as a way to focus on design and UI.</span> I learned the tools ReactTransitionGroup and GSAP to add animation to the site. My learnings became the basis of my talk on UI & React.js, where I demoed how to add animation to React apps.</p>
+          <p>
+            Macbox is a prototype e-commerce platform built with PostgreSQL for data management in the backend and Redux to keep track of state in the frontend. It is a fullstack Javascript app and fully functional&mdash;users can complete the entire shopping flow, from browse to checkout.
+            <br /><br />
+            The objective of this project was to hone our skills in schema design, RESTful routes, authentication, and deployment. <span style={{fontWeight: '600'}}>I also used it as a way to focus on design and UI.</span> I learned the tools ReactTransitionGroup and GSAP to add animation to the site. My learnings became the basis of my talk on UI & React.js, where I demoed how to add animation to React apps.
+          </p>
         </div>
 
         {/* features */}
         <div className="work-item-section content-padding long centered" style={{backgroundColor: '#333', color: 'white'}}>
           <div className="features-blurb">
-            <div className="about-heading-text">Features<span className="divider light" /></div>
+            <div className="about-heading-text">
+              Features<span className="divider light" />
+            </div>
+
             <br />
+
             <ul>
-              <li>Users can login/sign up locally, or with Facebook and Google OAuth.</li>
-              <li>Both unauthenticated guests and authenticated guests can complete the entire shopping flow:
+              <li>
+                Users can login/sign up locally, or with Facebook and Google OAuth.
+              </li>
+              <li>
+                Both unauthenticated guests and authenticated guests can complete the entire shopping flow:
                 <ul>
                   <li>View products</li>
                   <li>Share products on social networks</li>
@@ -49,7 +61,8 @@ export default function Macbox () {
                   <li>Receive email confirmation</li>
                 </ul>
               </li>
-              <li>Additionally, authenticated users can:
+              <li>
+                Additionally, authenticated users can:
                 <ul>
                   <li>View past orders</li>
                   <li>Leave product reviews</li>
@@ -62,9 +75,12 @@ export default function Macbox () {
 
         {/* typography & colors */}
         <div className="work-item-section content-padding long max-width">
+          <div className="about-heading-text">
+            Typography<span className="divider" />
+          </div>
 
-          <div className="about-heading-text">Typography<span className="divider" /></div>
           <br />
+
           <div className="font-tab">
             <span className="font-heading">Tenor Sans</span>
             <img className="font-img" src="/public/images/macbox-tenor.png" />
@@ -72,8 +88,12 @@ export default function Macbox () {
 
           <br /><br /><br /><br /><br />
 
-          <div className="about-heading-text">Colors<span className="divider" /></div>
+          <div className="about-heading-text">
+            Colors<span className="divider" />
+          </div>
+
           <br />
+
           <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flexWrap: 'wrap'}}>
             <div className="color-tab">
               <div className="tab-main" style={{backgroundColor: '#D66E98'}} />
@@ -96,14 +116,19 @@ export default function Macbox () {
               <div className="tab-title"><span>#83F1EC</span></div>
             </div>
           </div>
+
           <br />
         </div>
 
         {/* the stack */}
         <div className="work-item-section content-padding long centered" style={{backgroundColor: 'rgb(239, 239, 239)'}}>
           <div>
-            <div className="about-heading-text">The Stack<span className="divider" /></div>
+            <div className="about-heading-text">
+              The Stack<span className="divider" />
+            </div>
+
             <br />
+
             <ul>
               <li>Node.js</li>
               <li>Express</li>
@@ -116,19 +141,29 @@ export default function Macbox () {
               <li>HTML</li>
             </ul>
           </div>
+
           <br />
         </div>
-
 
         {/* presentation */}
         <div className="long" style={{backgroundColor: '#333', color: 'white'}}>
           <div className="max-width content-padding work-item-section">
-            <div className="about-heading-text">Presentation<span className="divider light" /></div>
+            <div className="about-heading-text">
+              Presentation<span className="divider light" />
+            </div>
+
             <br /><br /><br />
+
             <div className="video-container">
-              <span className="video-date" style={{color: '#f7fb8e', fontWeight: 600}}>March 2017</span>
-              <span className="video-title">How to Leverage<br />React.js for Beautiful UI</span>
+              <span className="video-date" style={{color: '#f7fb8e', fontWeight: 600}}>
+                March 2017
+              </span>
+              <span className="video-title">
+                How to Leverage<br />React.js for Beautiful UI
+              </span>
+
               <br />
+
               <div className="youtube" data-embed="75XmHauQNdA">
                 <img src="https://i.ytimg.com/vi/75XmHauQNdA/sddefault.jpg" />
                 <div className="play-button" />
@@ -137,19 +172,29 @@ export default function Macbox () {
           </div>
         </div>
 
-
-
+        {/* src */}
         <div className="work-item-section content-padding max-width">
-          <div className="about-heading-text">Src<span className="divider" /></div>
+          <div className="about-heading-text">
+            Src<span className="divider" />
+          </div>
+
           <br />
-          <p>Code: <a href="https://github.com/chloehwang/macbox" target="_blank" rel="noopener noreferrer">github.com/chloehwang/macbox</a></p>
-          <p>Demo: <a href="https://macbox.herokuapp.com/" target="_blank" rel="noopener noreferrer">macbox.herokuapp.com</a></p>
+
+          <p>Code:&nbsp;
+            <a href="https://github.com/chloehwang/macbox" target="_blank" rel="noopener noreferrer">github.com/chloehwang/macbox</a>
+          </p>
+          <p>Demo:&nbsp;
+            <a href="https://macbox.herokuapp.com/" target="_blank" rel="noopener noreferrer">macbox.herokuapp.com</a>
+          </p>
+
           <br /><br /><br />
-          <div className="next-btn macbox"><span>Next</span></div>
+
+          <div className="next-btn macbox">
+            <span>Next</span>
+          </div>
         </div>
       </section>
     </div>
   )
-
 }
 
