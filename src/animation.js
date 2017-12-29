@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  require('smoothscroll-polyfill').polyfill();
 
   const Animation = {
     init() {
@@ -108,22 +109,23 @@ $(document).ready(function() {
       const sections = ['omni', 'rdi', 'macbox', 'nonprof'];
 
       sections.forEach((section, i) => {
-        let currSection = $(`#${section}`);
+        let elem = $(`#${section}`);
 
-        currSection.click(e => {
+        elem.click(e => {
           e.stopPropagation();
+          this.currSection = elem;
 
-          if (currSection.hasClass('opened')) {
+          if (this.currSection.hasClass('opened')) {
             return;
           }
 
           //make header img unclickable
-          currSection.removeClass('closed')
-          currSection.addClass('opened')
+          this.currSection.removeClass('closed')
+          this.currSection.addClass('opened')
 
           //scroll to section
           window.scroll({
-            top: currSection.offset().top,
+            top: this.currSection.offset().top,
             left: 0,
             behavior: 'smooth'
           });
@@ -131,10 +133,9 @@ $(document).ready(function() {
           setTimeout(() => {
             //hide other sections
             $('.work-content > div.closed').addClass('hide-section');
-            //this.window.scrollTop($('.opened').offset().top)
 
             //make sure there's no jump when other sections get hidden
-            this.window.scrollTop($('.opened').offset().top)
+            this.window.scrollTop(this.currSection.offset().top)
 
             //make header image scale up
             this.headerImage.addClass('scale-up')
@@ -290,7 +291,7 @@ $(document).ready(function() {
         }, 1950)
       })
     }
-  }
+  };
 
   Animation.init();
 })
