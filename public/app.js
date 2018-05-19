@@ -41649,17 +41649,10 @@
 	});
 	
 	exports.default = function () {
-	  var scrollToElement = function scrollToElement(e) {
-	    var section = e.target.id.split("-")[0];
-	    var element = '#' + section + '-main';
+	  var scrollToElement = function scrollToElement(section) {
+	    var elementTop = document.getElementById(section + '-main').offsetTop;
 	
-	    if ($(window).width() >= 992) {
-	      element = section === 'work' ? '.work-content' : '#' + section + '-main';
-	    }
-	
-	    $('body').animate({
-	      scrollTop: $(element).offset().top
-	    }, 800);
+	    window.scroll({ top: elementTop, left: 0, behavior: 'smooth' });
 	  };
 	
 	  return _react2.default.createElement(
@@ -41678,17 +41671,23 @@
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { onClick: scrollToElement, id: 'about-btn', className: 'button' },
+	        { onClick: function onClick() {
+	            return scrollToElement('about');
+	          }, id: 'about-btn', className: 'button' },
 	        'about'
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { onClick: scrollToElement, id: 'work-btn', className: 'button' },
+	        { onClick: function onClick() {
+	            return scrollToElement('work');
+	          }, id: 'work-btn', className: 'button' },
 	        'work'
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { onClick: scrollToElement, id: 'contact-btn', className: 'button' },
+	        { onClick: function onClick() {
+	            return scrollToElement('contact');
+	          }, id: 'contact-btn', className: 'button' },
 	        'contact'
 	      )
 	    )
