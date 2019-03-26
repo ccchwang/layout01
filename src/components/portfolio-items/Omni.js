@@ -161,53 +161,8 @@ export default function Omni () {
 
         </div>
 
-        {/* presentation */}
-        <div className="long" style={{backgroundColor: '#333', color: 'white'}}>
-          <div className="max-width content-padding work-item-section">
-            <div className="about-heading-text">
-              Presentation<span className="divider light" />
-            </div>
-
-            <br /><br /><br />
-
-            <div className="video-container">
-              <span className="video-date" style={{color: '#f7fb8e', fontWeight: 600}}>
-                April 2017
-              </span>
-              <span className="video-title">
-                Presenting Omni:<br />A Dream Journal/Analysis App
-              </span>
-
-              <br />
-
-              <div className="youtube" data-embed="VQYodA9GZ20">
-                <img src="https://i.ytimg.com/vi/VQYodA9GZ20/sddefault.jpg" />
-                <div className="play-button" />
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* src */}
         <div className="work-item-section content-padding max-width">
-          <div className="about-heading-text">
-            Src<span className="divider" />
-          </div>
-
-          <br />
-
-          <p>Code (mobile):&nbsp;
-            <a href="https://github.com/Omni-Project/omni-mobile" target="_blank" rel="noopener noreferrer">github.com/Omni-Project/omni-mobile</a>
-          </p>
-          <p>Code (web):&nbsp;
-            <a href="https://github.com/Omni-Project/omni-desktop" target="_blank" rel="noopener noreferrer">github.com/Omni-Project/omni-desktop</a>
-          </p>
-          <p>Demo (web):&nbsp;
-            <a href="https://omni-project.herokuapp.com/" target="_blank" rel="noopener noreferrer">omni-project.herokuapp.com</a>
-          </p>
-
-          <br /><br /><br />
-
           <div className="next-btn omni">
             <span>Next</span>
           </div>

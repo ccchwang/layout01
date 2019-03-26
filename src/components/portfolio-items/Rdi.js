@@ -131,53 +131,8 @@ export default function Rdi () {
           <br />
         </div>
 
-        {/* presentation */}
-        <div className="long" style={{backgroundColor: '#333', color: 'white'}}>
-          <div className="max-width content-padding work-item-section">
-            <div className="about-heading-text">
-              Presentation<span className="divider light" />
-            </div>
-
-            <br /><br /><br />
-
-            <div className="video-container">
-              <span className="video-date" style={{color: '#f7fb8e', fontWeight: 600}}>
-                March 2017
-              </span>
-              <span className="video-title">
-                Introducing a New UI<br />Animation Library for React.js
-              </span>
-
-              <br />
-
-              <div className="youtube" data-embed="krAzPZE3s1I">
-                <img src="https://i.ytimg.com/vi/krAzPZE3s1I/sddefault.jpg" />
-                <div className="play-button" />
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* src */}
         <div className="work-item-section content-padding max-width">
-          <div className="about-heading-text">
-            Src<span className="divider" />
-          </div>
-
-          <br />
-
-          <p>Code:&nbsp;
-            <a href="https://github.com/chloehwang/react-dynamic-UI" target="_blank" rel="noopener noreferrer">github.com/chloehwang/react-dynamic-UI</a>
-          </p>
-          <p>NPM:&nbsp;
-            <a href="https://www.npmjs.com/package/react-dynamic-ui" target="_blank" rel="noopener noreferrer">npmjs.com/package/react-dynamic-ui</a>
-          </p>
-          <p>Demo:&nbsp;
-            <a href="https://rdi-demo.herokuapp.com/" target="_blank" rel="noopener noreferrer">rdi-demo.herokuapp.com</a>
-          </p>
-
-          <br /><br /><br />
-
           <div className="next-btn rdi">
             <span>Next</span>
           </div>

@@ -8,9 +8,9 @@ export default function Footer() {
         <div id="header-overlay" />
 
         <div id="footer-text">
-          <p className="big" style={{fontSize: '70px', marginTop: '-15px'}}>Ch</p>
-          <p className="big" style={{fontSize: '56px', marginTop: '-35px'}}>loe</p>
-          <p className="small">Hwang</p>
+          <p className="big" style={{fontSize: '70px', marginTop: '-15px'}}>Ali</p>
+          <p className="big" style={{fontSize: '56px', marginTop: '-35px'}}>iice</p>
+          <p className="small">Walker</p>
         </div>
       </Col>
     </Row>

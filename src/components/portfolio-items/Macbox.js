@@ -145,50 +145,8 @@ export default function Macbox () {
           <br />
         </div>
 
-        {/* presentation */}
-        <div className="long" style={{backgroundColor: '#333', color: 'white'}}>
-          <div className="max-width content-padding work-item-section">
-            <div className="about-heading-text">
-              Presentation<span className="divider light" />
-            </div>
-
-            <br /><br /><br />
-
-            <div className="video-container">
-              <span className="video-date" style={{color: '#f7fb8e', fontWeight: 600}}>
-                March 2017
-              </span>
-              <span className="video-title">
-                How to Leverage<br />React.js for Beautiful UI
-              </span>
-
-              <br />
-
-              <div className="youtube" data-embed="75XmHauQNdA">
-                <img src="https://i.ytimg.com/vi/75XmHauQNdA/sddefault.jpg" />
-                <div className="play-button" />
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* src */}
         <div className="work-item-section content-padding max-width">
-          <div className="about-heading-text">
-            Src<span className="divider" />
-          </div>
-
-          <br />
-
-          <p>Code:&nbsp;
-            <a href="https://github.com/chloehwang/macbox" target="_blank" rel="noopener noreferrer">github.com/chloehwang/macbox</a>
-          </p>
-          <p>Demo:&nbsp;
-            <a href="https://macbox.herokuapp.com/" target="_blank" rel="noopener noreferrer">macbox.herokuapp.com</a>
-          </p>
-
-          <br /><br /><br />
-
           <div className="next-btn macbox">
             <span>Next</span>
           </div>

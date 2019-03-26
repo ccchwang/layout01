@@ -137,21 +137,6 @@ export default function Nonprof () {
 
         {/* src */}
         <div className="work-item-section content-padding max-width">
-          <div className="about-heading-text">
-            Src<span className="divider" />
-          </div>
-
-          <br />
-
-          <p>Code:&nbsp;
-            <a href="https://github.com/chloehwang/education-for-all" target="_blank" rel="noopener noreferrer">github.com/chloehwang/education-for-all</a>
-          </p>
-          <p>Demo:&nbsp;
-            <a href="https://chloehwang.github.io/education-for-all/" target="_blank" rel="noopener noreferrer">chloehwang.github.io/education-for-all</a>
-          </p>
-
-          <br /><br /><br />
-
           <div className="next-btn nonprof">
             <span>Next</span>
           </div>

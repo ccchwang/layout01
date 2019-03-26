@@ -12,7 +12,7 @@ export default function Contact () {
         <div style={{maxWidth: '850px', margin: '0 auto'}}>
           {/* INTRO */}
           <div className="about-intro">
-            I’m currently looking for new opportunities in Washington, DC.
+          Aliquam efficitur tincidunt diam non aliquam aenean el dignissim.
           </div>
 
           <br />
@@ -20,7 +20,7 @@ export default function Contact () {
           {/* SHORT BLURB */}
           <div className="about-text blurb">
             <p>
-              I'm most interested in crafting digital experiences at creative agencies or advocacy organizations. If you'd like to collaborate or discuss an opportunity, please don't hesitate to contact me.
+              Mauris sagittis sagittis augue elementum gravida. Vivamus blandit tortor elementum tortor rutrum, sit amet posuere justo elementum. Ut vulputate hendrerit sodales. Nullam eu lectus vitae dui feugiat commodo faucibus in quam. Suspendisse finibus ante sed lorem tempus condimentum. Etiam eu sem at lectus tincidunt dignissim nec ut augue.
             </p>
 
             <br /><br />
@@ -28,16 +28,16 @@ export default function Contact () {
             <span className="video-date">Reach me at:</span>
 
             <div className="contact-toolbar">
-              <a href="https://github.com/chloehwang" target="_blank" rel="noopener noreferrer">
+              <a href="#">
                 <h4 className="contact-tool">Github</h4>
               </a>
-              <a href="https://www.linkedin.com/in/chloehwang/" target="_blank" rel="noopener noreferrer">
+              <a href="#">
                 <h4 className="contact-tool">LinkedIn</h4>
               </a>
-              <a href="mailto:c.chloeh@gmail.com?Subject=Let%27s%20Chat">
+              <a href="#">
                 <h4 className="contact-tool">Email</h4>
               </a>
-              <a href="../../public/resume/Chloe%20Hwang%20Resume%202017.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="#">
                 <h4 className="contact-tool">Resume</h4>
               </a>
             </div>

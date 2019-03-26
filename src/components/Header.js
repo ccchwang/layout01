@@ -10,17 +10,17 @@ export default function Header() {
 
       <Col md={8} id="header-main" >
         <svg className="intro">
-          <text textAnchor="start" x="10" id="svg-text-1" className="text text-stroke" clipPath="url(#text1)">Chloe</text>
-          <text textAnchor="start" x="10" id='svg-text-2' className="text text-stroke" clipPath="url(#text2)">Hwang</text>
+          <text textAnchor="start" x="10" id="svg-text-1" className="text text-stroke" clipPath="url(#text1)">Alice</text>
+          <text textAnchor="start" x="10" id='svg-text-2' className="text text-stroke" clipPath="url(#text2)">Walker</text>
           <text textAnchor="start" x="10" id='svg-text-3' className="text text-stroke" clipPath="url(#text3)">—</text>
           <text textAnchor="start" x="10" className="text text-stroke svg-text-4" id="small-text" clipPath="url(#text4)">Frontend Web Developer</text>
 
           <defs>
             <clipPath id="text1">
-              <text textAnchor="start" x="10" className="text">Chloe</text>
+              <text textAnchor="start" x="10" className="text">Alice</text>
             </clipPath>
             <clipPath id="text2">
-              <text textAnchor="start" x="10" className="text">Hwang</text>
+              <text textAnchor="start" x="10" className="text">Walker</text>
             </clipPath>
             <clipPath id="text3">
               <text textAnchor="start" x="10" className="text">—</text>
