@@ -15,7 +15,7 @@ export default function () {
         margin={60}
       >
         <div id="menu-btn" className="button">
-          <img src="/public/images/bars.png" id="menu-icon" />
+          <img src="./public/images/bars.png" id="menu-icon" />
         </div>
         <div onClick={() => scrollToElement('about')} id="about-btn" className="button">
           about

@@ -5,7 +5,7 @@ export default function Rdi () {
     <div className="work-item closed small-screen" id="rdi">
       {/* RDI - header image */}
       <div className="work-item-header">
-        <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/rdi.jpg')"}} />
+        <div className="header-image img-responsive" style={{backgroundImage: "url('./public/images/rdi.jpg')"}} />
         <div className="header-text-wrapper">
           <h1 className="header-title">
             react-dynamic-UI
@@ -66,14 +66,14 @@ export default function Rdi () {
 
           <div className="font-tab">
             <span className="font-heading">Helvetica Neue</span>
-            <img className="font-img" src="/public/images/rdi-helvetica.png" />
+            <img className="font-img" src="./public/images/rdi-helvetica.png" />
           </div>
 
           <br />
 
           <div className="font-tab">
             <span className="font-heading">Lato</span>
-            <img className="font-img" src="/public/images/rdi-lato.png" />
+            <img className="font-img" src="./public/images/rdi-lato.png" />
           </div>
 
           <br /><br /><br /><br /><br />

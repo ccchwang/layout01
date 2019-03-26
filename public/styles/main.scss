@@ -263,7 +263,7 @@ body.pace-done {
   position: relative;
   overflow: hidden;
   z-index: 2;
-  background-image: url('/public/images/palms.jpg');
+  background-image: url('../../public/images/palms.jpg');
   background-attachment: fixed;
   padding: 0;
 }
@@ -287,7 +287,7 @@ body.pace-done {
 }
 
 #header-img {
-  background-image: url('/public/images/header-img-1.jpg');
+  background-image: url('../../public/images/header-img-1.jpg');
   background-size: cover;
   background-color: white;
   height: 100%;

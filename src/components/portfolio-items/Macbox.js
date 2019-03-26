@@ -5,7 +5,7 @@ export default function Macbox () {
     <div className="work-item closed small-screen" id="macbox">
       {/* macbox - header image */}
       <div className="work-item-header">
-        <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/macbox.jpg')"}} />
+        <div className="header-image img-responsive" style={{backgroundImage: "url('./public/images/macbox.jpg')"}} />
         <div className="header-text-wrapper">
           <h1 className="header-title">
             Macbox
@@ -83,7 +83,7 @@ export default function Macbox () {
 
           <div className="font-tab">
             <span className="font-heading">Tenor Sans</span>
-            <img className="font-img" src="/public/images/macbox-tenor.png" />
+            <img className="font-img" src="./public/images/macbox-tenor.png" />
           </div>
 
           <br /><br /><br /><br /><br />

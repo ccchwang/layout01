@@ -5,7 +5,7 @@ export default function Nonprof () {
     <div className="work-item closed small-screen" id="nonprof">
       {/* Nonprof - header image */}
       <div className="work-item-header">
-        <div className="header-image img-responsive" style={{backgroundImage: "url('/public/images/nonprof.jpg')"}} />
+        <div className="header-image img-responsive" style={{backgroundImage: "url('./public/images/nonprof.jpg')"}} />
         <div className="header-text-wrapper">
           <h1 className="header-title">
             Education for All
@@ -69,17 +69,17 @@ export default function Nonprof () {
 
           <div className="font-tab">
             <span className="font-heading">Montserrat</span>
-            <img className="font-img" src="/public/images/nonprof-montserrat.png" />
+            <img className="font-img" src="./public/images/nonprof-montserrat.png" />
           </div>
           <br />
           <div className="font-tab">
             <span className="font-heading">Poppins</span>
-            <img className="font-img" src="/public/images/nonprof-poppins.png" />
+            <img className="font-img" src="./public/images/nonprof-poppins.png" />
           </div>
           <br />
           <div className="font-tab">
             <span className="font-heading">Raleway</span>
-            <img className="font-img" src="/public/images/nonprof-raleway.png" />
+            <img className="font-img" src="./public/images/nonprof-raleway.png" />
           </div>
 
           <br /><br /><br /><br /><br />
