@@ -1,6 +1,6 @@
 # layout01
 
-My old portfolio site, a study on unique layouts and scroll jacking. Also trying out Gatsby.js. 
+My old portfolio site, a study on unique layouts and scroll jacking. Using React and trying out React Motion. 
 
 See live at [ccchwang.github.io/layout01/](https://ccchwang.github.io/layout01/).
 
